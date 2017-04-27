@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdx:document xmlns:pdx="http://www.phpdocx.com/main">
+    <pdx:config xmlns:pdx="http://www.phpdocx.com/main">
+        <pdx:template pdx:path=""/>
+        <pdx:output pdx:name="" pdx:type="docx"/>
+        <pdx:crypto>
+            <pdx:encrypt pdx:password="" pdx:src="" pdx:target=""/>
+            <pdx:protect pdx:password="" pdx:src="" pdx:target="" pdx:type=""/>
+            <pdx:removeProtection pdx:src="" pdx:target=""/>
+        </pdx:crypto>
+        <pdx:sign pdx:X509Certificate="" pdx:password="" pdx:privateKey="" pdx:src="" pdx:target=""/>
+        <pdx:transformDocument pdx:src="" pdx:target="" pdx:toc=""/>
+    </pdx:config>
+    <pdx:settings xmlns:pdx="http://www.phpdocx.com/main">
+        <pdx:addBackgroundImage pdx:src=""/>
+        <pdx:addLineNumbering pdx:countBy="" pdx:distance="" pdx:restart="" pdx:start=""/>
+        <pdx:addMacroFromDoc pdx:src=""/>
+        <pdx:addPageBorders pdx:color="" pdx:display="" pdx:offsetFrom="" pdx:space="" pdx:style="" pdx:width="" pdx:zOrder="">
+            <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+            <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+            <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+            <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+        </pdx:addPageBorders>
+        <pdx:addProperties>
+            <pdx:title>title</pdx:title>
+            <pdx:subject>subject</pdx:subject>
+            <pdx:creator>creator</pdx:creator>
+            <pdx:keywords>keywords</pdx:keywords>
+            <pdx:description>description</pdx:description>
+            <pdx:category>category</pdx:category>
+            <pdx:manager>manager</pdx:manager>
+            <pdx:company>company</pdx:company>
+            <pdx:contentStatus>contentStatus</pdx:contentStatus>
+            <pdx:customProperties>
+                <pdx:custom pdx:name="" pdx:type="text">A text</pdx:custom>
+                <pdx:custom pdx:name="" pdx:type="number">A number</pdx:custom>
+                <pdx:custom pdx:name="" pdx:type="date">A date</pdx:custom>
+                <pdx:custom pdx:name="" pdx:type="boolean">true or false</pdx:custom>
+            </pdx:customProperties>
+        </pdx:addProperties>
+        <pdx:createListStyle pdx:name="">
+            <pdx:item pdx:font="" pdx:fontSize="" pdx:format="" pdx:hanging="" pdx:left="" pdx:type=""/>
+        </pdx:createListStyle>
+        <pdx:createParagraphStyle pdx:name="">
+            <pdx:paragraphStyle>
+                <pdx:backgroundColor pdx:value=""/>
+                <pdx:bidi pdx:value=""/>
+                <pdx:bold pdx:value=""/>
+                <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="">
+                    <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+                    <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+                    <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+                    <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width=""/>
+                </pdx:border>
+                <pdx:caps pdx:value=""/>
+                <pdx:color pdx:value=""/>
+                <pdx:contextualSpacing pdx:value=""/>
+                <pdx:firstLineIndent pdx:value=""/>
+                <pdx:font pdx:value=""/>
+                <pdx:fontSize pdx:value=""/>
+                <pdx:hanging pdx:value=""/>
+                <pdx:headingLevel pdx:value=""/>
+                <pdx:italic pdx:value=""/>
+                <pdx:indentLeft pdx:value=""/>
+                <pdx:indentRight pdx:value=""/>
+                <pdx:keepLines pdx:value=""/>
+                <pdx:keepNext pdx:value=""/>
+                <pdx:LineSpacing pdx:value=""/>
+                <pdx:pageBreakBefore pdx:value=""/>
+                <pdx:pStyle pdx:value=""/>
+                <pdx:rtl pdx:value=""/>
+                <pdx:smallCaps pdx:value=""/>
+                <pdx:spacingBottom pdx:value=""/>
+                <pdx:spacingTop pdx:value=""/>
+                <pdx:tabPositions>
+                    <pdx:tabPosition pdx:leader="" pdx:position="" pdx:type=""/>
+                    <pdx:tabPosition pdx:leader="" pdx:position="" pdx:type=""/>
+                </pdx:tabPositions>
+                <pdx:textAlign pdx:value="center|right|both|distribute"/>
+                <pdx:textDirection pdx:value=""/>
+                <pdx:underline pdx:value=""/>
+                <pdx:widowControl pdx:value=""/>
+                <pdx:wordWrap pdx:value=""/>
+            </pdx:paragraphStyle>
+        </pdx:createParagraphStyle>
+        <pdx:docxSettings>
+            <pdx:autoHyphenation pdx:value=""/>
+            <pdx:bookFoldPrinting pdx:value=""/>
+            <pdx:bookFoldPrintingSheets pdx:value=""/>
+            <pdx:bookFoldRevPrinting pdx:value=""/>
+            <pdx:bordersDoNotSurroundHeader pdx:value=""/>
+            <pdx:bordersDoNotSurroundFoote pdx:value=""/>
+            <pdx:consecutiveHyphenLimit pdx:value=""/>
+            <pdx:defaultTableStyle pdx:value=""/>
+            <pdx:defaultTabStop pdx:value=""/>
+            <pdx:documentType pdx:value=""/>
+            <pdx:doNotHyphenateCaps pdx:value=""/>
+            <pdx:doNotShadeFormData pdx:value=""/>
+            <pdx:gutterAtTop pdx:value=""/>
+            <pdx:hideGrammaticalErrors pdx:value=""/>
+            <pdx:hideSpellingErrors pdx:value=""/>
+            <pdx:hyphenationZone pdx:value=""/>
+            <pdx:mirrorMargins pdx:value=""/>
+            <pdx:noPunctuationKerning pdx:value=""/>
+            <pdx:printTwoOnOne pdx:value=""/>
+            <pdx:savePreviewPicture pdx:value=""/>
+            <pdx:trackRevisions pdx:value=""/>
+            <pdx:updateFields pdx:value=""/>
+            <pdx:view pdx:value=""/>
+            <pdx:zoom pdx:value=""/>
+        </pdx:docxSettings>
+        <pdx:importHeadersAndFooters pdx:src="" pdx:type="header|footer|headerAndFooter"/>
+        <pdx:importListStyle pdx:src="" pdx:id="" pdx:name="" />
+        <pdx:importStyles pdx:src="" pdx:styleIdentifier="" pdx:type="replace|merge">
+            <pdx:styles>
+                <pdx:style pdx:name=""/>
+                <pdx:style pdx:name=""/>
+            </pdx:styles>
+        </pdx:importStyles>
+        <pdx:modifyPageLayout pdx:paperType="">
+            <pdx:layout>
+                <pdx:width pdx:value=""/>
+                <pdx:height pdx:value=""/>
+                <pdx:numberCols pdx:value=""/>
+                <pdx:orient pdx:value=""/>
+                <pdx:marginTop pdx:value=""/>
+                <pdx:marginRight pdx:value=""/>
+                <pdx:marginBottom pdx:value=""/>
+                <pdx:marginLeft pdx:value=""/>
+                <pdx:marginHeader pdx:value=""/>
+                <pdx:marginFooter pdx:value=""/>
+                <pdx:gutter pdx:value=""/>
+                <pdx:rtlGutter pdx:value=""/>
+                <pdx:onlyLastSection pdx:value=""/>
+                <pdx:sectionNumbers pdx:value=""/>
+            </pdx:layout>
+        </pdx:modifyPageLayout>
+        <pdx:parseStyles pdx:path=""/>
+        <pdx:setBackgroundColor pdx:value=""/>
+        <pdx:setDefaultFont pdx:value=""/>
+        <pdx:setEncodeUTF8 pdx:value=""/>
+        <pdx:setLanguage pdx:value=""/>
+        <pdx:setMarkAsFinal pdx:value=""/>
+    </pdx:settings>
+    <pdx:content>
+        <pdx:addBookmark pdx:type="start|end" pdx:name="" pdx:wordFragmentName="" />
+        <pdx:addBreak pdx:type="" pdx:number="" />
+        <pdx:addChart pdx:chartType="barChart|bar3DChart|bar3DChartCylinder|bar3DChartCone|bar3DChartPyramid|colChart|col3DChart|col3DChartCylinder|col3DChartCone|bar3DChartPyramid|pieChart|pie3DChart|lineChart|line3DChart|areaChart|area3DChart|radar|scatterChart|surfaceChart|ofpiechar|doughnut|bublechart" pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:type="chart">
+                <pdx:legend>
+                    <pdx:seriesLegend pdx:value="" />
+                    <pdx:seriesLegend pdx:value="" />
+                </pdx:legend>
+                <pdx:chartData>
+                    <pdx:series>
+                        <pdx:dataValue pdx:value="" />
+                        <pdx:dataValue pdx:value="" />
+                    </pdx:series>
+                    <pdx:series>
+                        <pdx:dataValue pdx:value="" />
+                        <pdx:dataValue pdx:value="" />
+                    </pdx:series>
+                </pdx:chartData>
+            </pdx:data>
+            <pdx:rotX pdx:value="" />
+            <pdx:rotY pdx:value="" />
+            <pdx:perspective pdx:value="" />
+            <pdx:axisX pdx:label="" pdx:display="vertcal|horizontal|rotated" />
+            <pdx:axisY pdx:label="" pdx:display="vertcal|horizontal|rotated" />
+            <pdx:border pdx:color="" pdx:width="" />
+            <pdx:chartAlign pdx:value="left|center|right" />
+            <pdx:color pdx:value="" />
+            <pdx:font pdx:value="" />
+            <pdx:grid pdx:horizontal="" pdx:vertical="" />
+            <pdx:legendDisplay pdx:position="b|tr|l|r|t" pdx:overlay="" pdx:showCategory="" pdx:showTable="" pdx:showPercent="" pdx:showValue="" />
+            <pdx:title pdx:value="" />
+            <pdx:sizeX pdx:value="" />
+            <pdx:sizeY pdx:value="" />
+            <pdx:textWrap pdx:value="" />
+            <pdx:scalingMax pdx:value="" />
+            <pdx:scalingMin pdx:value="" />
+            <pdx:tickLblPos pdx:value="" />
+            <pdx:majorUnit pdx:value="" />
+            <pdx:minorUnit pdx:value="" />
+            <pdx:advancedProperties>
+                <pdx:barChart pdx:groupBar="clustered|stacked|percentStacked|standard" />
+                <pdx:colChart pdx:groupBar="clustered|stacked|percentStacked|standard" />
+                <pdx:pieChart pdx:explosion="" />
+                <pdx:doughnutChart pdx:explosion="" pdx:holeSize="" />
+                <pdx:ofPieChart pdx:subtype="bar|pie" pdx:gapWidth="" pdx:secondPieSize="" pdx:splitType="auto|custom|percent|position|value" pdx:splitValue="" pdx:customSplit="" />
+                <pdx:lineChart pdx:lineSymbol="none|dot|plus|square|star|triangle|x|diamond|circle|dash" pdx:symbolSize="" pdx:smooth="" />
+                <pdx:scatterChart pdx:scatterSymbol="dot|line" pdx:symbolSize="" pdx:smooth="" />
+                <pdx:radarChart pdx:radarStyle="radar|marker|filled" />
+                <pdx:surfaceChart pdx:wireframe="" />
+            </pdx:advancedProperties>        
+        </pdx:addChart>
+        <pdx:addComment pdx:initials="" pdx:author="" pdx:date="" pdx:wordFragmentName="">
+            <pdx:textDocument>
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                <pdx:paragraphStyle />
+            </pdx:textDocument>
+            <pdx:textComment pdx:wordFragmentName="">
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:textComment>
+        </pdx:addComment>
+        <pdx:addCrossReference pdx:type="start|end" pdx:referenceName="" pdx:value="" />
+        <pdx:addDateAndHour pdx:dateFormat="" pdx:wordFragmentName="">
+            <pdx:paragraphStyle />
+        </pdx:addDateAndHour> 
+        <pdx:addEndnote pdx:wordFragmentName="">
+            <pdx:textDocument>
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                <pdx:paragraphStyle />
+            </pdx:textDocument>
+            <pdx:textEndnote>
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:textEndnote>
+            <pdx:endnoteMark pdx:customMark="">
+                <pdx:textRunStyle>
+                    <pdx:bold pdx:value="" />
+                    <pdx:caps pdx:value="" />
+                    <pdx:color pdx:value="" />
+                    <pdx:font pdx:value="" />
+                    <pdx:fontSize pdx:value="" />
+                    <pdx:italic pdx:value="" />
+                    <pdx:rtl pdx:value="" />
+                    <pdx:smallCaps pdx:value="" />
+                    <pdx:textAlign pdx:value="" />
+                    <pdx:underline pdx:value="" />
+                </pdx:textRunStyle>
+            </pdx:endnoteMark>
+            <pdx:referenceMark>
+                <pdx:textRunStyle>
+                    <pdx:bold pdx:value="" />
+                    <pdx:caps pdx:value="" />
+                    <pdx:color pdx:value="" />
+                    <pdx:font pdx:value="" />
+                    <pdx:fontSize pdx:value="" />
+                    <pdx:italic pdx:value="" />
+                    <pdx:rtl pdx:value="" />
+                    <pdx:smallCaps pdx:value="" />
+                    <pdx:textAlign pdx:value="" />
+                    <pdx:underline pdx:value="" />
+                </pdx:textRunStyle>
+            </pdx:referenceMark>
+        </pdx:addEndnote>
+        <pdx:addExternalFile pdx:src="" pdx:matchSource="" pdx:preprocess="" pdx:firstMatch="" pdx:wordFragmentName="" />
+        <pdx:addFooter>
+            <pdx:default pdx:wordFragmentName="" />
+            <pdx:even pdx:wordFragmentName="" />
+            <pdx:first pdx:wordFragmentName="" />
+        </pdx:addFooter>
+        <pdx:addFootnote pdx:wordFragmentName="">
+            <pdx:textDocument>
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                <pdx:paragraphStyle />                        
+            </pdx:textDocument>
+            <pdx:textFootnote>
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:textFootnote>
+            <pdx:footnoteMark pdx:customMark="">
+                <pdx:textRunStyle>
+                    <pdx:bold pdx:value="" />
+                    <pdx:caps pdx:value="" />
+                    <pdx:color pdx:value="" />
+                    <pdx:font pdx:value="" />
+                    <pdx:fontSize pdx:value="" />
+                    <pdx:italic pdx:value="" />
+                    <pdx:rtl pdx:value="" />
+                    <pdx:smallCaps pdx:value="" />
+                    <pdx:textAlign pdx:value="" />
+                    <pdx:underline pdx:value="" />
+                </pdx:textRunStyle>
+            </pdx:footnoteMark>
+            <pdx:referenceMark>
+                <pdx:textRunStyle>
+                    <pdx:bold pdx:value="" />
+                    <pdx:caps pdx:value="" />
+                    <pdx:color pdx:value="" />
+                    <pdx:font pdx:value="" />
+                    <pdx:fontSize pdx:value="" />
+                    <pdx:italic pdx:value="" />
+                    <pdx:rtl pdx:value="" />
+                    <pdx:smallCaps pdx:value="" />
+                    <pdx:textAlign pdx:value="" />
+                    <pdx:underline pdx:value="" />
+                </pdx:textRunStyle>
+            </pdx:referenceMark>
+        </pdx:addFootnote>
+        <pdx:addFormElement pdx:formElementType="textfield|checkbox|select" pdx:defaultValue="" pdx:wordFragmentName="">
+            <pdx:options>
+                <pdx:item>Item</pdx:item>
+                <pdx:item>Other item</pdx:item>
+            </pdx:options>
+            <pdx:paragraphStyle />
+        </pdx:addFormElement>
+        <pdx:addHeading pdx:level="" pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            <pdx:paragraphStyle />
+        </pdx:addHeading>
+        <pdx:addHeader>
+            <pdx:default pdx:wordFragmentName="" />
+            <pdx:even pdx:wordFragmentName="" />
+            <pdx:first pdx:wordFragmentName="" />
+        </pdx:addHeader>
+        <pdx:addImage pdx:imageAlign="" pdx:dpi="" pdx:scaling="" pdx:width="" pdx:height="" pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:dataType="text">path to image</pdx:data>
+            <pdx:imageSize pdx:sizeX="" pdx:sizeY="" />
+            <pdx:imageBorder pdx:borderColor="" pdx:borderStyle="" pdx:borderWidth="" />
+            <pdx:imageMargin pdx:spacingTop="" pdx:spacingRight="" pdx:spacingBottom="" pdx:spacingLeft="" />
+            <pdx:imagePosition pdx:float="" pdx:horizontalOffset="" pdx:verticalOffset="" />
+            <pdx:imageCaption pdx:showLabel="" pdx:alignCaption="" pdx:sizeCaption="" pdx:colorCaption="" pdx:lineSpacingCaption="" pdcx:captionValue="" />
+            <pdx:textWrap pdx:value="0|1|2|3|4" />
+        </pdx:addImage>
+        <pdx:addLink pdx:wordFragmentName="">
+            <pdx:linkText>
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:linkText>
+            <pdx:linkURL>
+                <pdx:data pdx:dataId="" pdx:type="URL">URL</pdx:data>
+            </pdx:linkURL>
+            <pdx:paragraphStyle />
+        </pdx:addLink>
+        <pdx:addList pdx:listType="" pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:type="list">
+                <pdx:item pdx:dataType pdx:depth="">item text</pdx:item>
+                <pdx:item pdx:dataType pdx:depth="">item text</pdx:item>
+                <pdx:item pdx:dataType pdx:depth="">item text</pdx:item>
+            </pdx:data>
+        </pdx:addList>
+        <pdx:addMathEquation pdx:type="docx|omml|mathml" pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:dataType="text">path to docx|<![CDATA[OMML code]]>|<![CDATA[MML code]]></pdx:data>
+        </pdx:addMathEquation>
+        <pdx:addMergeField pdx:name="" pdx:format="Caps|FirstCap|Lower|Upper" pdx:mappedField="" pdx:preserveFormat="" pdx:textAfter="" pdx:textBefore="" pdx:verticalFormat="" pdx:wordFragmentName="">
+            <pdx:paragraphStyle />
+        </pdx:addMergeField>
+        <pdx:addPageNumber pdx:numberType="numerical|alphabetical" pdx:defaultValue="" pdx:wordFragmentName="">
+            <pdx:paragraphStyle />
+        </pdx:addPageNumber>
+        <pdx:addSection pdx:type="nextPage|nextColumn|continuous|evenPage|oddPage" pdx:paperType="A4|A3|letter|legal|A4-landscape|A3-landscape|letter-landscape|legal-landscape|custom" pdx:wordFragmentName="">
+            <pdx:layout> 
+                <pdx:width pdx:value="" />
+                <pdx:height pdx:value="" />
+                <pdx:numberCols pdx:value="" />
+                <pdx:orient pdx:value="portrait|landscape" />
+                <pdx:marginTop pdx:value="" />
+                <pdx:marginRight pdx:value="" />
+                <pdx:marginBottom pdx:value="" />
+                <pdx:marginLeft pdx:value="" />
+                <pdx:marginHeader pdx:value="" />
+                <pdx:marginFooter pdx:value="" />
+                <pdx:gutter pdx:value="" />
+                <pdx:bidi pdx:value="" />
+                <pdx:rtl pdx:value="" />
+            </pdx:layout>
+        </pdx:addSection>
+        <pdx:addShape pdx:type="arc|curve|line|polyline|rect|roundrect|shape|oval" pdx:z-index="" pdx:wordFragmentName="">
+            <pdx:width pdx:value="" />
+            <pdx:height pdx:value="" />
+            <pdx:position pdx:value="absolute|relative" />
+            <pdx:margin pdx:marginTop="" pdx:marginLeft="" />
+            <pdx:color pdx:strokecolor="" pdx:fillcolor="" />
+            <pdx:strokeWidth pdx:value="" />
+            <pdx:arc pdx:startAngle="" pdx:endAngle="" />
+            <pdx:line pdx:from="" pdx:to="" pdx:control1="" pdx:control2="" />
+            <pdx:curve pdx:from="" pdx:to="" pdx:control1="" pdx:control2="" />
+            <pdx:polyline pdx:points="" />
+            <pdx:roundrect pdx:arcsize="" />
+            <pdx:shape pdx:path="" pdx:coordsize="" />
+        </pdx:addShape>
+        <pdx:addSimpleField pdx:fieldName="" pdx:fieldType="date|numeric|general" pdx:fieldFormat="" pdx:doNotShadeFormData="" pdx:updateFields="" pdx:wordFragmentName="">
+            <pdx:paragraphStyle />
+        </pdx:addSimpleField>
+        <pdx:addStructuredDocumentTag pdx:sdtType="comboBox|date|dropdownList|richText" pdx:wordFragmentName="">
+            <pdx:alias pdx:value="" />
+            <pdx:calendar pdx:value="" />
+            <pdx:dateFormat pdx:value="" />
+            <pdx:listItems>
+                <pdx:item pdx:value="">item</pdx:item>
+                <pdx:item pdx:value="">item</pdx:item>
+            </pdx:listItems>
+            <pdx:local pdx:value="" />
+            <pdx:lock pdx:value="sdtLocked|contentLocked|unlocked|sdtContentLocked" />
+            <pdx:placeholderText pdx:value="" />
+            <pdx:tag pdx:value="" />
+            <pdx:temporary pdx:value="" />
+            <pdx:paragraphStyle />
+        </pdx:addStructuredDocumentTag>
+        <pdx:addTable pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:type="table">
+                <pdx:row pdx:cantSplit="" pdx:minHeight="" pdx:height="" pdx:tableHeader="">
+                    <pdx:data pdx:dataId="" pdx:type="row">
+                        <pdx:cell>
+                            <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                            <pdx:rowspan pdx:value="" />
+                            <pdx:colspan pdx:value="" />
+                            <pdx:width pdx:value="" />
+                            <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="">
+                                <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                            </pdx:border>
+                            <pdx:backgroundColor pdx:value="" />
+                            <pdx:cellMargins pdx:value="" pdx:top="" pdx:right="" pdx:bottom="" pdx:left="" />
+                            <pdx:fitText pdx:value="" />
+                            <pdx:noWrap pdx:value="" />
+                            <pdx:textDirection pdx:value="" />
+                            <pdx:vAlign pdx:value="top|center|both|bottom" />
+                        </pdx:cell>
+                        <pdx:cell>
+                            <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                            <pdx:rowspan pdx:value="" />
+                            <pdx:colspan pdx:value="" />
+                            <pdx:width pdx:value="" />
+                            <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="">
+                                <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                            </pdx:border>
+                            <pdx:backgroundColor pdx:value="" />
+                            <pdx:cellMargins pdx:value="" pdx:top="" pdx:right="" pdx:bottom="" pdx:left="" />
+                            <pdx:fitText pdx:value="" />
+                            <pdx:noWrap pdx:value="" />
+                            <pdx:textDirection pdx:value="" />
+                            <pdx:vAlign pdx:value="top|center|both|bottom" />
+                        </pdx:cell>
+                    </pdx:data>
+                </pdx:row>
+                <pdx:row pdx:cantSplit="" pdx:minHeight="" pdx:height="" pdx:tableHeader="">
+                    <pdx:data pdx:dataId="" pdx:type="row">
+                        <pdx:cell>
+                            <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                            <pdx:rowspan pdx:value="" />
+                            <pdx:colspan pdx:value="" />
+                            <pdx:width pdx:value="" />
+                            <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="">
+                                <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                            </pdx:border>
+                            <pdx:backgroundColor pdx:value="" />
+                            <pdx:cellMargins pdx:value="" pdx:top="" pdx:right="" pdx:bottom="" pdx:left="" />
+                            <pdx:fitText pdx:value="" />
+                            <pdx:noWrap pdx:value="" />
+                            <pdx:textDirection pdx:value="" />
+                            <pdx:vAlign pdx:value="top|center|both|bottom" />
+                        </pdx:cell>
+                        <pdx:cell>
+                            <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                            <pdx:rowspan pdx:value="" />
+                            <pdx:colspan pdx:value="" />
+                            <pdx:width pdx:value="" />
+                            <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="">
+                                <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                                <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                            </pdx:border>
+                            <pdx:backgroundColor pdx:value="" />
+                            <pdx:cellMargins pdx:value="" pdx:top="" pdx:right="" pdx:bottom="" pdx:left="" />
+                            <pdx:fitText pdx:value="" />
+                            <pdx:noWrap pdx:value="" />
+                            <pdx:textDirection pdx:value="" />
+                            <pdx:vAlign pdx:value="top|center|both|bottom" />
+                        </pdx:cell>
+                    </pdx:data>
+                </pdx:row>
+            </pdx:data>
+            <pdx:tableProperties>
+                <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="" pdx:settings="all|outside|inside" />
+                <pdx:cantSplitRows pdx:value="" />
+                <pdx:cellMargins pdx:value="" pdx:top="" pdx:right="" pdx:bottom="" pdx:left="" />
+                <pdx:cellSpacing pdx:value="" />
+                <pdx:columnWidths pdx:width="">
+                    <pdx:column pdx:width="" />
+                    <pdx:column pdx:width="" />
+                    <pdx:column pdx:width="" />
+                </pdx:columnWidths>
+                <pdx:conditionalFormating pdx:firstRow="" pdx:lastRow="" pdx:firstCol="" pdx:lastCol="" pdx:noHBand="" pdx:noVBand="" />
+                <pdx:float pdx:value="left|center|right|outside|inside" >
+                    <pdx:textMargins pdx:value="" pdx:top="" pdx:right="" pdx:bottom="" pdx:left="" />
+                </pdx:float>
+                <pdx:tableAlign pdx:value="center|left|right" />
+                <pdx:tableIndent pdx:value="" />
+                <pdx:tableStyle pdx:id="" />
+                <pdx:width pdx:type="" pdx:value="" />
+                <pdx:paragraphStyle />
+            </pdx:tableProperties>
+        </pdx:addTable>  
+        <pdx:addTableContents pdx:autoUpdate="" pdx:displayLevels="" pdx:stylesTOC="">
+            <pdx:legendText>legend</pdx:legendText>
+            <pdx:legendText>legend</pdx:legendText>
+            <pdx:paragraphStyle />
+        </pdx:addTableContents>
+        <pdx:addText pdx:wordFragmentName="">
+            <pdx:textRun>
+                <pdx:data pdx:dataId="" pdx:dataType="text|wordFragment">text</pdx:data>
+                <pdx:textRunStyle>
+                    <pdx:bold pdx:value="" />
+                    <pdx:caps pdx:value="" />
+                    <pdx:color pdx:value="" />
+                    <pdx:columnBreak pdx:value="after|before|both" />
+                    <pdx:font pdx:value="" />
+                    <pdx:fontSize pdx:value="" />
+                    <pdx:highlightColor pdx:value="" />
+                    <pdx:italic pdx:value="" />
+                    <pdx:lineBreak pdx:value="after|before|both" />
+                    <pdx:rtl pdx:value="" />
+                    <pdx:smallCaps pdx:value="" />
+                    <pdx:spaces pdx:value="" />
+                    <pdx:tab pdx:value="" />
+                    <pdx:underline pdx:value="" />
+                </pdx:textRunStyle>
+            </pdx:textRun>
+            <pdx:textRun>
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+                <pdx:textRunStyle>
+                    <pdx:bold pdx:value="" />
+                    <pdx:caps pdx:value="" />
+                    <pdx:color pdx:value="" />
+                    <pdx:columnBreak pdx:value="after|before|both" />
+                    <pdx:font pdx:value="" />
+                    <pdx:fontSize pdx:value="" />
+                    <pdx:highlightColor pdx:value="" />
+                    <pdx:italic pdx:value="" />
+                    <pdx:lineBreak pdx:value="after|before|both" />
+                    <pdx:rtl pdx:value="" />
+                    <pdx:smallCaps pdx:value="" />
+                    <pdx:spaces pdx:value="" />
+                    <pdx:tab pdx:value="" />
+                    <pdx:underline pdx:value="" />
+                </pdx:textRunStyle>
+            </pdx:textRun>
+            <pdx:paragraphStyle>
+                <pdx:backgroundColor pdx:value="" />
+                <pdx:bidi pdx:value="" />
+                <pdx:bold pdx:value="" />
+                <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="">
+                    <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                    <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                    <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                    <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                </pdx:border>
+                <pdx:caps pdx:value="" />
+                <pdx:color pdx:value="" />
+                <pdx:contextualSpacing pdx:value="" />
+                <pdx:em pdx:value="none|dot|circle|comma|underDot" />
+                <pdx:firstLineIndent pdx:value="" />
+                <pdx:font pdx:value="" />
+                <pdx:fontSize pdx:value="" />
+                <pdx:hanging pdx:value="" />
+                <pdx:headingLevel pdx:value="" />
+                <pdx:italic pdx:value="" />
+                <pdx:indentLeft pdx:value="" />
+                <pdx:indentRight pdx:value="" />        
+                <pdx:keepLines pdx:value="" />
+                <pdx:keepNext pdx:value="" />
+                <pdx:LineSpacing pdx:value="" />
+                <pdx:pageBreakBefore pdx:value="" />
+                <pdx:pStyle pdx:value="" />
+                <pdx:rtl pdx:value="" />
+                <pdx:smallCaps pdx:value="" />
+                <pdx:spacingBottom pdx:value="" />
+                <pdx:spacingTop pdx:value="" />
+                <pdx:tabPositions>
+                    <pdx:tabPosition pdx:type="" pdx:leader="" pdx:position="" />
+                    <pdx:tabPosition pdx:type="" pdx:leader="" pdx:position="" />
+                </pdx:tabPositions>    
+                <pdx:textAlign pdx:value="center|right|both|distribute" />
+                <pdx:textDirection pdx:value="" />
+                <pdx:underline pdx:value="" />
+                <pdx:widowControl pdx:value="" />
+                <pdx:wordWrap pdx:value="" />
+            </pdx:paragraphStyle>
+        </pdx:addText>
+        <pdx:addTextBox pdx:border="" pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:type="text">data</pdx:data>
+            <pdx:height pdx:value="" />
+            <pdx:width pdx:value="" />
+            <pdx:align pdx:value="left|center|right" />
+            <pdx:contentVerticalAlign pdx:value="top|center|bottom" />
+            <pdx:fillColor pdx:value="" />
+            <pdx:textWrap pdx:value="none|tight|square|through" />
+            <pdx:borderColor pdx:value="" />
+            <pdx:borderWidth pdx:value="" />
+            <pdx:paddingBottom pdx:value="" />
+            <pdx:paddingLeft pdx:value="" />
+            <pdx:paddingTop pdx:value="" />
+            <pdx:paddingRight pdx:value="" />
+        </pdx:addTextBox>
+        <pdx:embedHTML pdx:isFile="" pdx:baseURL="" pdx:customListStyles="" pdx:downloadImages="" pdx:parseAnchors="" parseDivsAsPs="" parseFloats="" pdx:filter="" pdx:wordFragmentName="">
+            <pdx:data pdx:dataId="" pdx:type="HTML"><![CDATA[html code]]></pdx:data>
+            <pdx:wordStyles pdx:strict="">
+                <pdx:wordStyle pdx:styleType="class" pdx:name="style" />
+                <pdx:wordStyle pdx:styleType="id" pdx:name="style" />
+            </pdx:wordStyles>
+        </pdx:embedHTML>
+        <pdx:addWordML>
+            <pdx:data pdx:dataId="" pdx:dataType="text"><![CDATA[WordML code]]></pdx:data>
+        </pdx:addWordML>
+        <pdx:wordFragments>
+            <pdx:wordFragment pdx:wordFragmentName="" pdx:target="document|defaultHeader|firstHeader|evenHeader|defaultFooter|firstFooter|evenFooter|footnote|endnote|comment">
+                <pdx:content />
+            </pdx:wordFragment>
+        </pdx:wordFragments>
+    </pdx:content>
+    <pdx:templateVariables pdx:preprocessedTemplate="">
+        <pdx:clearBlocks />
+        <pdx:deleteTemplateBlocks pdx:variableName="" />
+        <pdx:modifyInputFields>
+            <pdx:inputField pdx:variableName="">
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:inputField>
+            <pdx:inputField pdx:variableName="">
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:inputField>
+        </pdx:modifyInputFields>
+        <pdx:processTemplate />
+        <pdx:removeTemplateVariable pdx:removeType="inline|block" pdx:variableName="" pdx:target="" />
+        <pdx:replaceListVariable pdx:variableName="" pdx:firstMatch="" pdx:parseLineBreaks="">
+            <pdx:data pdx:dataId="" pdx:type="list">
+                <pdx:item pdx:wordFragmentName="" pdx:depth="">item text</pdx:item>
+                <pdx:item pdx:wordFragmentName="" pdx:depth="">item text</pdx:item>
+                <pdx:item pdx:wordFragmentName="" pdx:depth="">item text</pdx:item>
+            </pdx:data>
+        </pdx:replaceListVariable>
+        <pdx:replaceTableVariable pdx:firstMatch="" pdx:parseLineBreaks="">
+            <pdx:data pdx:dataId="" pdx:type="table">
+                <pdx:row>
+                    <pdx:item pdx:variableName="" pdx:wordFragmentName="">item text</pdx:item>
+                </pdx:row>
+                <pdx:row>
+                    <pdx:item pdx:variableName="" pdx:wordFragmentName="">item text</pdx:item>
+                </pdx:row>
+            </pdx:data>
+        </pdx:replaceTableVariable>
+        <pdx:replacePlaceholderImage pdx:name="" pdx:target="" pdx:firstMatch="" pdx:width="" pdx:height="" pdx:dpi="" pdx:path="" />
+        <pdx:replaceVariableByHTML pdx:variableName="" pdx:replaceType="inline|block" pdx:isFile="" pdx:baseURL="" pdx:customListStyles="" pdx:downloadImages="" pdx:parseAnchors="" pdx:filter="" pdx:parseDivsAsPs="" pdx:parseFloats="">
+            <pdx:data pdx:dataId="" pdx:type="HTML"><![CDATA[html code]]></pdx:data>
+            <pdx:wordStyles pdx:strict="">
+                <pdx:wordStyle pdx:styleType="class" pdx:name="style" />
+                <pdx:wordStyle pdx:styleType="id" pdx:name="style" />
+            </pdx:wordStyles>
+        </pdx:replaceVariableByHTML>
+        <pdx:replaceVariableByText pdx:target="" pdx:firstMatch="" pdx:parseLineBreaks="" pdx:raw="">
+            <pdx:variable pdx:variableName="" >
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:variable>
+            <pdx:variable pdx:variableName="" >
+                <pdx:data pdx:dataId="" pdx:dataType="text">text</pdx:data>
+            </pdx:variable>
+        </pdx:replaceVariableByText>
+        <pdx:replaceVariableByExternalFile pdx:firstMatch="" pdx:matchSource="">
+            <pdx:variable pdx:variableName="one" >
+                <pdx:data pdx:dataId="" pdx:dataType="text">path to external file 1</pdx:data>
+            </pdx:variable>
+            <pdx:variable pdx:variableName="two" >
+                <pdx:data pdx:dataId="" pdx:dataType="text">path to external file 2</pdx:data>
+            </pdx:variable>
+        </pdx:replaceVariableByExternalFile>
+        <pdx:replaceVariableByWordFragment pdx:replaceType="inline|block" pdx:target="" pdx:firstMatch="" pdx:parseLineBreaks="">
+            <pdx:variable pdx:name="" pdx:wordFragmentName="" />
+            <pdx:variable pdx:name="" pdx:wordFragmentName="" />
+        </pdx:replaceVariableByWordFragment>
+        <pdx:replaceVariableByWordML pdx:type="inline|block" pdx:target="" pdx:firstMatch="">
+            <pdx:variable pdx:name="">
+                <pdx:data pdx:dataId="" pdx:dataType="text"><![CDATA[WordML code]]></pdx:data>
+            </pdx:variable>
+            <pdx:variable pdx:name="">
+                <pdx:data pdx:dataId="" pdx:dataType="text"><![CDATA[WordML code]]></pdx:data>
+            </pdx:variable>
+        </pdx:replaceVariableByWordML>
+        <pdx:setTemplateSymbol pdx:symbolValue="" />
+    </pdx:templateVariables>
+    <pdx:utilities>
+        <pdx:mergeDocx pdx:mergeType="" pdx:numbering="" pdx:preserveStyleDefaults="" pdx:lineBreaks="" pdx:forceLatestStyles="" pdx:target="">
+            <pdx:docx pdx:path="" />
+            <pdx:docx pdx:path="" />
+        </pdx:mergeDocx>
+        <pdx:mergePdf pdx:target="">
+            <pdx:pdf pdx:path="" />
+            <pdx:pdf pdx:path="" />
+        </pdx:mergePdf>
+        <pdx:parseCheckboxes pdx:src="" pdx:target="">
+            <pdx:checkbox pdx:value="" />
+            <pdx:checkbox pdx:value="" />
+        </pdx:parseCheckboxes>
+        <pdx:removeChapter pdx:src="" pdx:target="" pdx:searchTerm="" />
+        <pdx:replaceChartData pdx:src="" pdx:target="" pdx:chartNumber="">
+            <pdx:chartRowValue>
+                <pdx:chartValue pdx:value="" />
+            </pdx:chartRowValue>
+            <pdx:chartRowValue>
+                <pdx:chartValue pdx:value="" />
+            </pdx:chartRowValue>
+        </pdx:replaceChartData>
+        <pdx:searchAndHighlight pdx:src="" pdx:target="" pdx:searchTerm="" pdx:highlightColor="">
+            <pdx:valueContext pdx:value="" />
+            <pdx:valueContext pdx:value="" />
+        </pdx:searchAndHighlight>
+        <pdx:searchAndRemove pdx:src="" pdx:target="" pdx:searchTerm="">
+            <pdx:valueContext pdx:value="" />
+            <pdx:valueContext pdx:value="" />
+        </pdx:searchAndRemove>
+        <pdx:searchAndReplace pdx:src="" pdx:target="" pdx:searchTerm="" pdx:replaceTerm="">
+            <pdx:valueContext pdx:value="" />
+            <pdx:valueContext pdx:value="" />
+        </pdx:searchAndReplace>
+        <pdx:setLineNumbering pdx:countBy="" pdx:start="" pdx:distance="" pdx:restart="continuous|newPage|newSection" />
+        <pdx:watermarkDocx pdx:src="" pdx:target="" pdx:type="image|text">
+            <pdx:imagePath pdx:value="" />
+            <pdx:height pdx:value="" />
+            <pdx:option pdx:value="" />
+            <pdx:decolorate pdx:value="" />
+            <pdx:gain pdx:value="" />
+            <pdx:blacklevel pdx:value="" />
+            <pdx:remove_previous_watermarks pdx:value="" />
+            <pdx:text_orientation pdx:value="" />
+            <pdx:font pdx:value="" />
+            <pdx:color pdx:value="" />
+            <pdx:opacity pdx:value="" />
+        </pdx:watermarkDocx>
+        <pdx:watermarkRemove pdx:src="" pdx:target="" />
+    </pdx:utilities>
+</pdx:document>

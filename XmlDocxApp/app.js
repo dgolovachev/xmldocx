@@ -1,61 +1,72 @@
-﻿var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+﻿'use strict';
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+var fs = require("fs");
+var express = require("express");
+var XmlDocx = require("./xmldocxBasic/wrappers/node.js/XmlDocx.js");
+var XmlDocxHelper = require("./xmldocx-helper.js");
+var multer = require("multer");
+var PORT = 8080;
+var tempPath = "./temp"; // путь папки временного  хранения
+
+
+if (!fs.existsSync(tempPath)) {
+    fs.mkdir(tempPath);
+}
+
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'temp/');
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    }
+});
+
+var upload = multer({ storage: storage });
 
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.use(express.static(__dirname + "/public"));
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(require('stylus').middleware(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public')));
+app.post("/xmlDocx", upload.single('data'), function (request, response) {
+    console.log(request.file);
+    if (request.file) {
+        var outputName = request.file.originalname; // имя принятого файла
+        var filePath = request.file.path; // путь принятого документа
+        var ext = outputName.split(".").pop(); // расширение принятого файла
+        if (ext === "doc" || ext === "docx") {
 
-app.use('/', routes);
-app.use('/users', users);
+            // создаем xml файлы конфигурации для xmldocx
+            var helper = new XmlDocxHelper(tempPath);
+            var config = helper.getConfigXml(filePath, outputName);// второй параметр путь к обработанному файлу
+            var content = helper.getContentXml();
+            var settings = helper.getSettingsXml();
 
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+            // изменяем документ
+            var document = new XmlDocx(config);
+            document.setDocumentProperties(settings);
+            document.addContent(content);
+            document.render();
+
+            // возвращаем изменненый документ
+            response.writeHead(200, { "Content-Type": "application/msword" });
+            fs.createReadStream(filePath).pipe(response);
+
+            // удаляем временные файлы
+            //   fs.unlinkSync(filePath);
+            //   fs.unlinkSync(config);
+            //  fs.unlinkSync(content);
+            // fs.unlinkSync(settings);
+        } else {
+            //   fs.unlinkSync(filePath); // удаляем принятый файл
+            response.sendStatus(400);
+        }
+
+    } else {
+        response.sendStatus(400);
+    }
 });
 
-// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-    app.use(function (err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
-}
-
-// production error handler
-// no stacktraces leaked to user
-app.use(function (err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
-    });
+app.listen(PORT, function () {
+    console.log("server start on port: " + PORT);
 });
-
-
-module.exports = app;

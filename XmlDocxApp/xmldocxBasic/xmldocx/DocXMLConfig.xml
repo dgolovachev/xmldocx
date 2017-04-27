@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdx:config xmlns:pdx="http://www.phpdocx.com/main" >
+    <pdx:template pdx:path="" />
+    <pdx:output pdx:name="" pdx:type="docx" />
+    <pdx:crypto>
+        <pdx:encrypt pdx:password="" pdx:src="" pdx:target="" />
+        <pdx:protect pdx:password="" pdx:type="" pdx:src="" pdx:target="" />
+        <pdx:removeProtection pdx:src="" pdx:target="" />
+    </pdx:crypto>
+    <pdx:sign pdx:privateKey="" pdx:password="" pdx:X509Certificate="" pdx:src="" pdx:target="" />
+    <pdx:transformDocument pdx:src="" pdx:target="" pdx:toc="" />
+</pdx:config>

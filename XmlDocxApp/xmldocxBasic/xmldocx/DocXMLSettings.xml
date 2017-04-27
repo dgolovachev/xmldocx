@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdx:settings xmlns:pdx="http://www.phpdocx.com/main">
+    <pdx:addBackgroundImage pdx:src="" />
+    <pdx:addLineNumbering pdx:countBy="" pdx:start="" pdx:distance="" pdx:restart="" />
+    <pdx:addMacroFromDoc pdx:src="" />
+    <pdx:addPageBorders pdx:display="" pdx:color="" pdx:space="" pdx:style="" pdx:width="" pdx:offsetFrom="" pdx:zOrder="">
+        <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+        <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+        <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+        <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+    </pdx:addPageBorders>
+    <pdx:addProperties>
+        <pdx:title>title</pdx:title>
+        <pdx:subject>subject</pdx:subject>
+        <pdx:creator>creator</pdx:creator>
+        <pdx:keywords>keywords</pdx:keywords>
+        <pdx:description>description</pdx:description>
+        <pdx:category>category</pdx:category>
+        <pdx:manager>manager</pdx:manager>
+        <pdx:company>company</pdx:company>
+        <pdx:contentStatus>contentStatus</pdx:contentStatus>
+        <pdx:customProperties>
+            <pdx:custom pdx:type="text" pdx:name="">A text</pdx:custom>
+            <pdx:custom pdx:type="number" pdx:name="">A number</pdx:custom>
+            <pdx:custom pdx:type="date" pdx:name="">A date</pdx:custom>
+            <pdx:custom pdx:type="boolean" pdx:name="">true or false</pdx:custom>
+        </pdx:customProperties>
+    </pdx:addProperties>
+    <pdx:createListStyle pdx:name="">
+        <pdx:item pdx:type="" pdx:font="" pdx:fontSize="" pdx:format="" pdx:hanging="" pdx:left="" />
+    </pdx:createListStyle>
+    <pdx:createParagraphStyle pdx:name="" >
+        <pdx:paragraphStyle >
+            <pdx:backgroundColor pdx:value="" />
+            <pdx:bidi pdx:value="" />
+            <pdx:bold pdx:value="" />
+            <pdx:border pdx:color="" pdx:space="" pdx:style="" pdx:width="">
+                <pdx:top pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                <pdx:right pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                <pdx:bottom pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+                <pdx:left pdx:color="" pdx:space="" pdx:style="" pdx:width="" />
+            </pdx:border>
+            <pdx:caps pdx:value="" />
+            <pdx:color pdx:value="" />
+            <pdx:contextualSpacing pdx:value="" />
+            <pdx:firstLineIndent pdx:value="" />
+            <pdx:font pdx:value="" />
+            <pdx:fontSize pdx:value="" />
+            <pdx:hanging pdx:value="" />
+            <pdx:headingLevel pdx:value="" />
+            <pdx:italic pdx:value="" />
+            <pdx:indentLeft pdx:value="" />
+            <pdx:indentRight pdx:value="" />        
+            <pdx:keepLines pdx:value="" />
+            <pdx:keepNext pdx:value="" />
+            <pdx:LineSpacing pdx:value="" />
+            <pdx:pageBreakBefore pdx:value="" />
+            <pdx:pStyle pdx:value="" />
+            <pdx:rtl pdx:value="" />
+            <pdx:smallCaps pdx:value="" />
+            <pdx:spacingBottom pdx:value="" />
+            <pdx:spacingTop pdx:value="" />
+            <pdx:tabPositions>
+                <pdx:tabPosition pdx:type="" pdx:leader="" pdx:position="" />
+                <pdx:tabPosition pdx:type="" pdx:leader="" pdx:position="" />
+            </pdx:tabPositions>    
+            <pdx:textAlign pdx:value="center|right|both|distribute" />
+            <pdx:textDirection pdx:value="" />
+            <pdx:underline pdx:value="" />
+            <pdx:widowControl pdx:value="" />
+            <pdx:wordWrap pdx:value="" />
+        </pdx:paragraphStyle>
+    </pdx:createParagraphStyle>
+    <pdx:docxSettings>
+        <pdx:autoHyphenation pdx:value="" />
+        <pdx:bookFoldPrinting pdx:value="" />
+        <pdx:bookFoldPrintingSheets pdx:value="" />
+        <pdx:bookFoldRevPrinting pdx:value="" />
+        <pdx:bordersDoNotSurroundHeader pdx:value="" />
+        <pdx:bordersDoNotSurroundFoote pdx:value="" />
+        <pdx:consecutiveHyphenLimit pdx:value="" />
+        <pdx:defaultTableStyle pdx:value="" />
+        <pdx:defaultTabStop pdx:value="" />
+        <pdx:documentType pdx:value="" />
+        <pdx:doNotHyphenateCaps pdx:value="" />
+        <pdx:doNotShadeFormData pdx:value="" />
+        <pdx:gutterAtTop pdx:value="" />
+        <pdx:hideGrammaticalErrors pdx:value="" />
+        <pdx:hideSpellingErrors pdx:value="" />
+        <pdx:hyphenationZone pdx:value="" />
+        <pdx:mirrorMargins pdx:value="" />
+        <pdx:noPunctuationKerning pdx:value="" />
+        <pdx:printTwoOnOne pdx:value="" />
+        <pdx:savePreviewPicture pdx:value="" />
+        <pdx:trackRevisions pdx:value="" />
+        <pdx:updateFields pdx:value="" />
+        <pdx:view pdx:value="" />
+        <pdx:zoom pdx:value="" />
+    </pdx:docxSettings>
+    <pdx:importHeadersAndFooters pdx:src="" pdx:type="header|footer|headerAndFooter" />
+    <pdx:importListStyle pdx:src="" pdx:id="" pdx:name="" />
+    <pdx:importStyles pdx:src="" pdx:type="replace|merge" pdx:styleIdentifier="" >
+        <pdx:styles>
+            <pdx:style pdx:name="" />
+            <pdx:style pdx:name="" />
+        </pdx:styles>
+    </pdx:importStyles>
+    <pdx:modifyPageLayout pdx:paperType="">
+        <pdx:layout> 
+            <pdx:width pdx:value="" />
+            <pdx:height pdx:value="" />
+            <pdx:numberCols pdx:value="" />
+            <pdx:orient pdx:value="" />
+            <pdx:marginTop pdx:value="" />
+            <pdx:marginRight pdx:value="" />
+            <pdx:marginBottom pdx:value="" />
+            <pdx:marginLeft pdx:value="" />
+            <pdx:marginHeader pdx:value="" />
+            <pdx:marginFooter pdx:value="" />
+            <pdx:gutter pdx:value="" />
+            <pdx:rtlGutter pdx:value="" />
+            <pdx:onlyLastSection pdx:value="" />
+            <pdx:sectionNumbers pdx:value="" />
+        </pdx:layout>
+    </pdx:modifyPageLayout>
+    <pdx:parseStyles pdx:path="" />
+    <pdx:setBackgroundColor pdx:value="" />
+    <pdx:setDefaultFont pdx:value="" />
+    <pdx:setEncodeUTF8 pdx:value="" />
+    <pdx:setLanguage pdx:value="" />
+    <pdx:setMarkAsFinal pdx:value="" />
+</pdx:settings>

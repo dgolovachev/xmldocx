@@ -1,0 +1,2179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.phpdocx.com/main" xmlns:pdx="http://www.phpdocx.com/main">
+  <xs:element name="document">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:config"/>
+        <xs:element ref="pdx:settings"/>
+        <xs:element ref="pdx:content"/>
+        <xs:element ref="pdx:templateVariables"/>
+        <xs:element ref="pdx:utilities"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="config">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:template"/>
+        <xs:element ref="pdx:output"/>
+        <xs:element ref="pdx:crypto"/>
+        <xs:element ref="pdx:sign"/>
+        <xs:element ref="pdx:transformDocument"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="template">
+    <xs:complexType>
+      <xs:attribute name="path" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="output">
+    <xs:complexType>
+      <xs:attribute name="name" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="crypto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:encrypt"/>
+        <xs:element ref="pdx:protect"/>
+        <xs:element ref="pdx:removeProtection"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="encrypt">
+    <xs:complexType>
+      <xs:attribute name="password" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="protect">
+    <xs:complexType>
+      <xs:attribute name="password" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeProtection">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sign">
+    <xs:complexType>
+      <xs:attribute name="X509Certificate" use="required" form="qualified"/>
+      <xs:attribute name="password" use="required" form="qualified"/>
+      <xs:attribute name="privateKey" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transformDocument">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+      <xs:attribute name="toc" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:addBackgroundImage"/>
+        <xs:element ref="pdx:addLineNumbering"/>
+        <xs:element ref="pdx:addMacroFromDoc"/>
+        <xs:element ref="pdx:addPageBorders"/>
+        <xs:element ref="pdx:addProperties"/>
+        <xs:element ref="pdx:createListStyle"/>
+        <xs:element ref="pdx:createParagraphStyle"/>
+        <xs:element ref="pdx:docxSettings"/>
+        <xs:element ref="pdx:importHeadersAndFooters"/>
+        <xs:element ref="pdx:importStyles"/>
+        <xs:element ref="pdx:modifyPageLayout"/>
+        <xs:element ref="pdx:parseStyles"/>
+        <xs:element ref="pdx:setBackgroundColor"/>
+        <xs:element ref="pdx:setDefaultFont"/>
+        <xs:element ref="pdx:setEncodeUTF8"/>
+        <xs:element ref="pdx:setLanguage"/>
+        <xs:element ref="pdx:setMarkAsFinal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addBackgroundImage">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addLineNumbering">
+    <xs:complexType>
+      <xs:attribute name="countBy" use="required" form="qualified"/>
+      <xs:attribute name="distance" use="required" form="qualified"/>
+      <xs:attribute name="restart" use="required" form="qualified"/>
+      <xs:attribute name="start" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addMacroFromDoc">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addPageBorders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:top"/>
+        <xs:element ref="pdx:right"/>
+        <xs:element ref="pdx:bottom"/>
+        <xs:element ref="pdx:left"/>
+      </xs:sequence>
+      <xs:attribute name="color" use="required" form="qualified"/>
+      <xs:attribute name="display" use="required" form="qualified"/>
+      <xs:attribute name="offsetFrom" use="required" form="qualified"/>
+      <xs:attribute name="space" use="required" form="qualified"/>
+      <xs:attribute name="style" use="required" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+      <xs:attribute name="zOrder" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:title"/>
+        <xs:element ref="pdx:subject"/>
+        <xs:element ref="pdx:creator"/>
+        <xs:element ref="pdx:keywords"/>
+        <xs:element ref="pdx:description"/>
+        <xs:element ref="pdx:category"/>
+        <xs:element ref="pdx:manager"/>
+        <xs:element ref="pdx:company"/>
+        <xs:element ref="pdx:contentStatus"/>
+        <xs:element ref="pdx:customProperties"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subject" type="xs:NCName"/>
+  <xs:element name="creator" type="xs:NCName"/>
+  <xs:element name="keywords" type="xs:NCName"/>
+  <xs:element name="description" type="xs:NCName"/>
+  <xs:element name="category" type="xs:NCName"/>
+  <xs:element name="manager" type="xs:NCName"/>
+  <xs:element name="company" type="xs:NCName"/>
+  <xs:element name="contentStatus" type="xs:NCName"/>
+  <xs:element name="customProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:custom"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="custom">
+    <xs:complexType mixed="true">
+      <xs:attribute name="name" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createListStyle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:item"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createParagraphStyle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="docxSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:autoHyphenation"/>
+        <xs:element ref="pdx:bookFoldPrinting"/>
+        <xs:element ref="pdx:bookFoldPrintingSheets"/>
+        <xs:element ref="pdx:bookFoldRevPrinting"/>
+        <xs:element ref="pdx:bordersDoNotSurroundHeader"/>
+        <xs:element ref="pdx:bordersDoNotSurroundFoote"/>
+        <xs:element ref="pdx:consecutiveHyphenLimit"/>
+        <xs:element ref="pdx:defaultTableStyle"/>
+        <xs:element ref="pdx:defaultTabStop"/>
+        <xs:element ref="pdx:documentType"/>
+        <xs:element ref="pdx:doNotHyphenateCaps"/>
+        <xs:element ref="pdx:doNotShadeFormData"/>
+        <xs:element ref="pdx:gutterAtTop"/>
+        <xs:element ref="pdx:hideGrammaticalErrors"/>
+        <xs:element ref="pdx:hideSpellingErrors"/>
+        <xs:element ref="pdx:hyphenationZone"/>
+        <xs:element ref="pdx:mirrorMargins"/>
+        <xs:element ref="pdx:noPunctuationKerning"/>
+        <xs:element ref="pdx:printTwoOnOne"/>
+        <xs:element ref="pdx:savePreviewPicture"/>
+        <xs:element ref="pdx:trackRevisions"/>
+        <xs:element ref="pdx:updateFields"/>
+        <xs:element ref="pdx:view"/>
+        <xs:element ref="pdx:zoom"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autoHyphenation">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bookFoldPrinting">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bookFoldPrintingSheets">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bookFoldRevPrinting">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bordersDoNotSurroundHeader">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bordersDoNotSurroundFoote">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consecutiveHyphenLimit">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultTableStyle">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="defaultTabStop">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="documentType">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doNotHyphenateCaps">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doNotShadeFormData">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gutterAtTop">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hideGrammaticalErrors">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hideSpellingErrors">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hyphenationZone">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mirrorMargins">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="noPunctuationKerning">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="printTwoOnOne">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="savePreviewPicture">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="trackRevisions">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateFields">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="view">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zoom">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="importHeadersAndFooters">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="importStyles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:styles"/>
+      </xs:sequence>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="styleIdentifier" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="styles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:style"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="style">
+    <xs:complexType>
+      <xs:attribute name="name" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modifyPageLayout">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="pdx:layout">
+          <xs:attribute name="paperType" use="required" form="qualified"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parseStyles">
+    <xs:complexType>
+      <xs:attribute name="path" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setBackgroundColor">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setDefaultFont">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setEncodeUTF8">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setLanguage">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setMarkAsFinal">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="templateVariables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:clearBlocks"/>
+        <xs:element ref="pdx:deleteTemplateBlocks"/>
+        <xs:element ref="pdx:modifyInputFields"/>
+        <xs:element ref="pdx:processTemplate"/>
+        <xs:element ref="pdx:removeTemplateVariable"/>
+        <xs:element ref="pdx:replaceListVariable"/>
+        <xs:element ref="pdx:replaceTableVariable"/>
+        <xs:element ref="pdx:replacePlaceholderImage"/>
+        <xs:element ref="pdx:replaceVariableByHTML"/>
+        <xs:element ref="pdx:replaceVariableByText"/>
+        <xs:element ref="pdx:replaceVariableByExternalFile"/>
+        <xs:element ref="pdx:replaceVariableByWordFragment"/>
+        <xs:element ref="pdx:replaceVariableByWordML"/>
+        <xs:element ref="pdx:setTemplateSymbol"/>
+      </xs:sequence>
+      <xs:attribute name="preprocessedTemplate" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="clearBlocks">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="deleteTemplateBlocks">
+    <xs:complexType>
+      <xs:attribute name="variableName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modifyInputFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:inputField"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inputField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+      <xs:attribute name="variableName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="processTemplate">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="removeTemplateVariable">
+    <xs:complexType>
+      <xs:attribute name="removeType" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+      <xs:attribute name="variableName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceListVariable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="parseLineBreaks" use="required" form="qualified"/>
+      <xs:attribute name="variableName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceTableVariable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="parseLineBreaks" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replacePlaceholderImage">
+    <xs:complexType>
+      <xs:attribute name="dpi" use="required" form="qualified"/>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="height" use="required" form="qualified"/>
+      <xs:attribute name="name" use="required" form="qualified"/>
+      <xs:attribute name="path" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceVariableByHTML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:wordStyles"/>
+      </xs:sequence>
+      <xs:attribute name="baseURL" use="required" form="qualified"/>
+      <xs:attribute name="customListStyles" use="required" form="qualified"/>
+      <xs:attribute name="downloadImages" use="required" form="qualified"/>
+      <xs:attribute name="filter" use="required" form="qualified"/>
+      <xs:attribute name="isFile" use="required" form="qualified"/>
+      <xs:attribute name="parseAnchors" use="required" form="qualified"/>
+      <xs:attribute name="parseDivsAsPs" use="required" form="qualified"/>
+      <xs:attribute name="parseFloats" use="required" form="qualified"/>
+      <xs:attribute name="replaceType" use="required" form="qualified"/>
+      <xs:attribute name="variableName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceVariableByText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:variable"/>
+      </xs:sequence>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="parseLineBreaks" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceVariableByExternalFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:variable"/>
+      </xs:sequence>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="matchSource" use="required" form="qualified"/>
+      <xs:attribute name="preprocess" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceVariableByWordFragment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:variable"/>
+      </xs:sequence>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="parseLineBreaks" use="required" form="qualified"/>
+      <xs:attribute name="replaceType" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceVariableByWordML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:variable"/>
+      </xs:sequence>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setTemplateSymbol">
+    <xs:complexType>
+      <xs:attribute name="symbolValue" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="utilities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:mergeDocx"/>
+        <xs:element ref="pdx:mergePdf"/>
+        <xs:element ref="pdx:parseCheckboxes"/>
+        <xs:element ref="pdx:removeChapter"/>
+        <xs:element ref="pdx:replaceChartData"/>
+        <xs:element ref="pdx:searchAndHighlight"/>
+        <xs:element ref="pdx:searchAndRemove"/>
+        <xs:element ref="pdx:searchAndReplace"/>
+        <xs:element ref="pdx:setLineNumbering"/>
+        <xs:element ref="pdx:watermarkDocx"/>
+        <xs:element ref="pdx:watermarkRemove"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mergeDocx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:docx"/>
+      </xs:sequence>
+      <xs:attribute name="forceLatestStyles" use="required" form="qualified"/>
+      <xs:attribute name="lineBreaks" use="required" form="qualified"/>
+      <xs:attribute name="mergeType" use="required" form="qualified"/>
+      <xs:attribute name="numbering" use="required" form="qualified"/>
+      <xs:attribute name="preserveStyleDefaults" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="docx">
+    <xs:complexType>
+      <xs:attribute name="path" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mergePdf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:pdf"/>
+      </xs:sequence>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pdf">
+    <xs:complexType>
+      <xs:attribute name="path" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="parseCheckboxes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:checkbox"/>
+      </xs:sequence>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkbox">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeChapter">
+    <xs:complexType>
+      <xs:attribute name="searchTerm" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="replaceChartData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:chartRowValue"/>
+      </xs:sequence>
+      <xs:attribute name="chartNumber" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chartRowValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:chartValue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chartValue">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchAndHighlight">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:valueContext"/>
+      </xs:sequence>
+      <xs:attribute name="highlightColor" use="required" form="qualified"/>
+      <xs:attribute name="searchTerm" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchAndRemove">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:valueContext"/>
+      </xs:sequence>
+      <xs:attribute name="searchTerm" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchAndReplace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:valueContext"/>
+      </xs:sequence>
+      <xs:attribute name="replaceTerm" use="required" form="qualified"/>
+      <xs:attribute name="searchTerm" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setLineNumbering">
+    <xs:complexType>
+      <xs:attribute name="countBy" use="required" form="qualified"/>
+      <xs:attribute name="distance" use="required" form="qualified"/>
+      <xs:attribute name="restart" use="required" form="qualified"/>
+      <xs:attribute name="start" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="watermarkDocx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:imagePath"/>
+        <xs:element ref="pdx:height"/>
+        <xs:element ref="pdx:option"/>
+        <xs:element ref="pdx:decolorate"/>
+        <xs:element ref="pdx:gain"/>
+        <xs:element ref="pdx:blacklevel"/>
+        <xs:element ref="pdx:remove_previous_watermarks"/>
+        <xs:element ref="pdx:text_orientation"/>
+        <xs:element ref="pdx:font"/>
+        <xs:element ref="pdx:color"/>
+        <xs:element ref="pdx:opacity"/>
+      </xs:sequence>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imagePath">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="option">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="decolorate">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gain">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="blacklevel">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="remove_previous_watermarks">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text_orientation">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opacity">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="watermarkRemove">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="target" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="top">
+    <xs:complexType>
+      <xs:attribute name="color" use="required" form="qualified"/>
+      <xs:attribute name="space" use="required" form="qualified"/>
+      <xs:attribute name="style" use="required" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="right">
+    <xs:complexType>
+      <xs:attribute name="color" use="required" form="qualified"/>
+      <xs:attribute name="space" use="required" form="qualified"/>
+      <xs:attribute name="style" use="required" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bottom">
+    <xs:complexType>
+      <xs:attribute name="color" use="required" form="qualified"/>
+      <xs:attribute name="space" use="required" form="qualified"/>
+      <xs:attribute name="style" use="required" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="left">
+    <xs:complexType>
+      <xs:attribute name="color" use="required" form="qualified"/>
+      <xs:attribute name="space" use="required" form="qualified"/>
+      <xs:attribute name="style" use="required" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title">
+    <xs:complexType mixed="true">
+      <xs:attribute name="value" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType mixed="true">
+      <xs:attribute name="depth" form="qualified"/>
+      <xs:attribute name="font" form="qualified"/>
+      <xs:attribute name="fontSize" form="qualified"/>
+      <xs:attribute name="format" form="qualified"/>
+      <xs:attribute name="hanging" form="qualified"/>
+      <xs:attribute name="left" form="qualified"/>
+      <xs:attribute name="type" form="qualified"/>
+      <xs:attribute name="value" form="qualified"/>
+      <xs:attribute name="variableName" form="qualified"/>
+      <xs:attribute name="wordFragmentName" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paragraphStyle">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="pdx:backgroundColor"/>
+        <xs:element ref="pdx:bidi"/>
+        <xs:element ref="pdx:bold"/>
+        <xs:element ref="pdx:border"/>
+        <xs:element ref="pdx:caps"/>
+        <xs:element ref="pdx:color"/>
+        <xs:element ref="pdx:contextualSpacing"/>
+        <xs:element ref="pdx:firstLineIndent"/>
+        <xs:element ref="pdx:font"/>
+        <xs:element ref="pdx:fontSize"/>
+        <xs:element ref="pdx:hanging"/>
+        <xs:element ref="pdx:headingLevel"/>
+        <xs:element ref="pdx:italic"/>
+        <xs:element ref="pdx:indentLeft"/>
+        <xs:element ref="pdx:indentRight"/>
+        <xs:element ref="pdx:keepLines"/>
+        <xs:element ref="pdx:keepNext"/>
+        <xs:element ref="pdx:LineSpacing"/>
+        <xs:element ref="pdx:pageBreakBefore"/>
+        <xs:element ref="pdx:pStyle"/>
+        <xs:element ref="pdx:rtl"/>
+        <xs:element ref="pdx:smallCaps"/>
+        <xs:element ref="pdx:spacingBottom"/>
+        <xs:element ref="pdx:spacingTop"/>
+        <xs:element ref="pdx:tabPositions"/>
+        <xs:element ref="pdx:textAlign"/>
+        <xs:element ref="pdx:textDirection"/>
+        <xs:element ref="pdx:underline"/>
+        <xs:element ref="pdx:widowControl"/>
+        <xs:element ref="pdx:wordWrap"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contextualSpacing">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="firstLineIndent">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hanging">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="headingLevel">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indentLeft">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indentRight">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="keepLines">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="keepNext">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LineSpacing">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pageBreakBefore">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pStyle">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spacingBottom">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spacingTop">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tabPositions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:tabPosition"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tabPosition">
+    <xs:complexType>
+      <xs:attribute name="leader" use="required" form="qualified"/>
+      <xs:attribute name="position" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="widowControl">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wordWrap">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="layout">
+    <xs:sequence>
+      <xs:element ref="pdx:layout"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="layout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:width"/>
+        <xs:element ref="pdx:height"/>
+        <xs:element ref="pdx:numberCols"/>
+        <xs:element ref="pdx:orient"/>
+        <xs:element ref="pdx:marginTop"/>
+        <xs:element ref="pdx:marginRight"/>
+        <xs:element ref="pdx:marginBottom"/>
+        <xs:element ref="pdx:marginLeft"/>
+        <xs:element ref="pdx:marginHeader"/>
+        <xs:element ref="pdx:marginFooter"/>
+        <xs:element ref="pdx:gutter"/>
+        <xs:choice>
+          <xs:sequence>
+            <xs:element ref="pdx:bidi"/>
+            <xs:element ref="pdx:rtl"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element ref="pdx:rtlGutter"/>
+            <xs:element ref="pdx:onlyLastSection"/>
+            <xs:element ref="pdx:sectionNumbers"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="numberCols">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="orient">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginTop">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginRight">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginBottom">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginLeft">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginHeader">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marginFooter">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gutter">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rtlGutter">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="onlyLastSection">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sectionNumbers">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="content">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="pdx:addBookmark"/>
+        <xs:element ref="pdx:addBreak"/>
+        <xs:element ref="pdx:addChart"/>
+        <xs:element ref="pdx:addComment"/>
+        <xs:element ref="pdx:addDateAndHour"/>
+        <xs:element ref="pdx:addEndnote"/>
+        <xs:element ref="pdx:addExternalFile"/>
+        <xs:element ref="pdx:addFooter"/>
+        <xs:element ref="pdx:addFootnote"/>
+        <xs:element ref="pdx:addFormElement"/>
+        <xs:element ref="pdx:addHeading"/>
+        <xs:element ref="pdx:addHeader"/>
+        <xs:element ref="pdx:addImage"/>
+        <xs:element ref="pdx:addLink"/>
+        <xs:element ref="pdx:addList"/>
+        <xs:element ref="pdx:addMathEquation"/>
+        <xs:element ref="pdx:addMergeField"/>
+        <xs:element ref="pdx:addPageNumber"/>
+        <xs:element ref="pdx:addSection"/>
+        <xs:element ref="pdx:addShape"/>
+        <xs:element ref="pdx:addSimpleField"/>
+        <xs:element ref="pdx:addStructuredDocumentTag"/>
+        <xs:element ref="pdx:addTable"/>
+        <xs:element ref="pdx:addTableContents"/>
+        <xs:element ref="pdx:addText"/>
+        <xs:element ref="pdx:addTextBox"/>
+        <xs:element ref="pdx:embedHTML"/>
+        <xs:element ref="pdx:addWordML"/>
+        <xs:element ref="pdx:wordFragments"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addBookmark">
+    <xs:complexType>
+      <xs:attribute name="name" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addBreak">
+    <xs:complexType>
+      <xs:attribute name="number" use="required" form="qualified"/>
+      <xs:attribute name="type" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addChart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:rotX"/>
+        <xs:element ref="pdx:rotY"/>
+        <xs:element ref="pdx:perspective"/>
+        <xs:element ref="pdx:axisX"/>
+        <xs:element ref="pdx:axisY"/>
+        <xs:element ref="pdx:border"/>
+        <xs:element ref="pdx:chartAlign"/>
+        <xs:element ref="pdx:color"/>
+        <xs:element ref="pdx:font"/>
+        <xs:element ref="pdx:grid"/>
+        <xs:element ref="pdx:legendDisplay"/>
+        <xs:element ref="pdx:title"/>
+        <xs:element ref="pdx:sizeX"/>
+        <xs:element ref="pdx:sizeY"/>
+        <xs:element ref="pdx:textWrap"/>
+        <xs:element ref="pdx:advancedProperties"/>
+      </xs:sequence>
+      <xs:attribute name="chartType" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rotX">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rotY">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="perspective">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="axisX">
+    <xs:complexType>
+      <xs:attribute name="display" use="required" form="qualified"/>
+      <xs:attribute name="label" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="axisY">
+    <xs:complexType>
+      <xs:attribute name="display" use="required" form="qualified"/>
+      <xs:attribute name="label" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chartAlign">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="grid">
+    <xs:complexType>
+      <xs:attribute name="horizontal" use="required" form="qualified"/>
+      <xs:attribute name="vertical" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="legendDisplay">
+    <xs:complexType>
+      <xs:attribute name="overlay" use="required" form="qualified"/>
+      <xs:attribute name="position" use="required" form="qualified"/>
+      <xs:attribute name="showCategory" use="required" form="qualified"/>
+      <xs:attribute name="showPercent" use="required" form="qualified"/>
+      <xs:attribute name="showTable" use="required" form="qualified"/>
+      <xs:attribute name="showValue" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sizeX">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sizeY">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="advancedProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:barChart"/>
+        <xs:element ref="pdx:colChart"/>
+        <xs:element ref="pdx:pieChart"/>
+        <xs:element ref="pdx:doughnutChart"/>
+        <xs:element ref="pdx:ofPieChart"/>
+        <xs:element ref="pdx:lineChart"/>
+        <xs:element ref="pdx:scatterChart"/>
+        <xs:element ref="pdx:radarChart"/>
+        <xs:element ref="pdx:surfaceChart"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="barChart">
+    <xs:complexType>
+      <xs:attribute name="groupBar" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="colChart">
+    <xs:complexType>
+      <xs:attribute name="groupBar" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pieChart">
+    <xs:complexType>
+      <xs:attribute name="explosion" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="doughnutChart">
+    <xs:complexType>
+      <xs:attribute name="explosion" use="required" form="qualified"/>
+      <xs:attribute name="holeSize" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ofPieChart">
+    <xs:complexType>
+      <xs:attribute name="customSplit" use="required" form="qualified"/>
+      <xs:attribute name="gapWidth" use="required" form="qualified"/>
+      <xs:attribute name="secondPieSize" use="required" form="qualified"/>
+      <xs:attribute name="splitType" use="required" form="qualified"/>
+      <xs:attribute name="splitValue" use="required" form="qualified"/>
+      <xs:attribute name="subtype" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lineChart">
+    <xs:complexType>
+      <xs:attribute name="lineSymbol" use="required" form="qualified"/>
+      <xs:attribute name="smooth" use="required" form="qualified"/>
+      <xs:attribute name="symbolSize" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="scatterChart">
+    <xs:complexType>
+      <xs:attribute name="scatterSymbol" use="required" form="qualified"/>
+      <xs:attribute name="smooth" use="required" form="qualified"/>
+      <xs:attribute name="symbolSize" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="radarChart">
+    <xs:complexType>
+      <xs:attribute name="radarStyle" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="surfaceChart">
+    <xs:complexType>
+      <xs:attribute name="wireframe" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addComment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:textDocument"/>
+        <xs:element ref="pdx:textComment"/>
+      </xs:sequence>
+      <xs:attribute name="author" use="required" form="qualified"/>
+      <xs:attribute name="date" use="required" form="qualified"/>
+      <xs:attribute name="initials" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textComment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addDateAndHour">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="dateFormat" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addEndnote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:textDocument"/>
+        <xs:element ref="pdx:textEndnote"/>
+        <xs:element ref="pdx:endnoteMark"/>
+        <xs:element ref="pdx:referenceMark"/>
+      </xs:sequence>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textEndnote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="endnoteMark">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:textRunStyle"/>
+      </xs:sequence>
+      <xs:attribute name="customMark" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addExternalFile">
+    <xs:complexType>
+      <xs:attribute name="firstMatch" use="required" form="qualified"/>
+      <xs:attribute name="matchSource" use="required" form="qualified"/>
+      <xs:attribute name="preprocess" use="required" form="qualified"/>
+      <xs:attribute name="src" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addFooter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:default"/>
+        <xs:element ref="pdx:even"/>
+        <xs:element ref="pdx:first"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addFootnote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:textDocument"/>
+        <xs:element ref="pdx:textFootnote"/>
+        <xs:element ref="pdx:footnoteMark"/>
+        <xs:element ref="pdx:referenceMark"/>
+      </xs:sequence>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textFootnote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footnoteMark">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:textRunStyle"/>
+      </xs:sequence>
+      <xs:attribute name="customMark" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addFormElement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:options"/>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="defaultValue" use="required" form="qualified"/>
+      <xs:attribute name="formElementType" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="options">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addHeading">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="level" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addHeader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:default"/>
+        <xs:element ref="pdx:even"/>
+        <xs:element ref="pdx:first"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addImage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:imageSize"/>
+        <xs:element ref="pdx:imageBorder"/>
+        <xs:element ref="pdx:imageMargin"/>
+        <xs:element ref="pdx:imagePosition"/>
+        <xs:element ref="pdx:textWrap"/>
+      </xs:sequence>
+      <xs:attribute name="dpi" use="required" form="qualified"/>
+      <xs:attribute name="height" use="required" form="qualified"/>
+      <xs:attribute name="imageAlign" use="required" form="qualified"/>
+      <xs:attribute name="scaling" use="required" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imageSize">
+    <xs:complexType>
+      <xs:attribute name="sizeX" use="required" form="qualified"/>
+      <xs:attribute name="sizeY" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imageBorder">
+    <xs:complexType>
+      <xs:attribute name="borderColor" use="required" form="qualified"/>
+      <xs:attribute name="borderStyle" use="required" form="qualified"/>
+      <xs:attribute name="borderWidth" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imageMargin">
+    <xs:complexType>
+      <xs:attribute name="spacingBottom" use="required" form="qualified"/>
+      <xs:attribute name="spacingLeft" use="required" form="qualified"/>
+      <xs:attribute name="spacingRight" use="required" form="qualified"/>
+      <xs:attribute name="spacingTop" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imagePosition">
+    <xs:complexType>
+      <xs:attribute name="float" use="required" form="qualified"/>
+      <xs:attribute name="horizontalOffset" use="required" form="qualified"/>
+      <xs:attribute name="verticalOffset" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addLink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:linkText"/>
+        <xs:element ref="pdx:linkURL"/>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="linkText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="linkURL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+      <xs:attribute name="listType" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addMathEquation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addMergeField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="format" use="required" form="qualified"/>
+      <xs:attribute name="mappedField" use="required" form="qualified"/>
+      <xs:attribute name="name" use="required" form="qualified"/>
+      <xs:attribute name="preserveFormat" use="required" form="qualified"/>
+      <xs:attribute name="textAfter" use="required" form="qualified"/>
+      <xs:attribute name="textBefore" use="required" form="qualified"/>
+      <xs:attribute name="verticalFormat" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addPageNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="defaultValue" use="required" form="qualified"/>
+      <xs:attribute name="numberType" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addSection">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="pdx:layout">
+          <xs:attribute name="paperType" use="required" form="qualified"/>
+          <xs:attribute name="type" use="required" form="qualified"/>
+          <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addShape">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:width"/>
+        <xs:element ref="pdx:height"/>
+        <xs:element ref="pdx:position"/>
+        <xs:element ref="pdx:margin"/>
+        <xs:element ref="pdx:color"/>
+        <xs:element ref="pdx:strokeWidth"/>
+        <xs:element ref="pdx:arc"/>
+        <xs:element ref="pdx:line"/>
+        <xs:element ref="pdx:curve"/>
+        <xs:element ref="pdx:polyline"/>
+        <xs:element ref="pdx:roundrect"/>
+        <xs:element ref="pdx:shape"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+      <xs:attribute name="z-index" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="position">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="margin">
+    <xs:complexType>
+      <xs:attribute name="marginLeft" use="required" form="qualified"/>
+      <xs:attribute name="marginTop" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="strokeWidth">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="arc">
+    <xs:complexType>
+      <xs:attribute name="endAngle" use="required" form="qualified"/>
+      <xs:attribute name="startAngle" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="line">
+    <xs:complexType>
+      <xs:attribute name="control1" use="required" form="qualified"/>
+      <xs:attribute name="control2" use="required" form="qualified"/>
+      <xs:attribute name="from" use="required" form="qualified"/>
+      <xs:attribute name="to" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="curve">
+    <xs:complexType>
+      <xs:attribute name="control1" use="required" form="qualified"/>
+      <xs:attribute name="control2" use="required" form="qualified"/>
+      <xs:attribute name="from" use="required" form="qualified"/>
+      <xs:attribute name="to" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="polyline">
+    <xs:complexType>
+      <xs:attribute name="points" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="roundrect">
+    <xs:complexType>
+      <xs:attribute name="arcsize" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shape">
+    <xs:complexType>
+      <xs:attribute name="coordsize" use="required" form="qualified"/>
+      <xs:attribute name="path" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addSimpleField">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="doNotShadeFormData" use="required" form="qualified"/>
+      <xs:attribute name="fieldFormat" use="required" form="qualified"/>
+      <xs:attribute name="fieldName" use="required" form="qualified"/>
+      <xs:attribute name="fieldType" use="required" form="qualified"/>
+      <xs:attribute name="updateFields" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addStructuredDocumentTag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:alias"/>
+        <xs:element ref="pdx:calendar"/>
+        <xs:element ref="pdx:dateFormat"/>
+        <xs:element ref="pdx:listItems"/>
+        <xs:element ref="pdx:local"/>
+        <xs:element ref="pdx:lock"/>
+        <xs:element ref="pdx:placeholderText"/>
+        <xs:element ref="pdx:tag"/>
+        <xs:element ref="pdx:temporary"/>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="sdtType" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="alias">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="calendar">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dateFormat">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="local">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lock">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="placeholderText">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tag">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="temporary">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:tableProperties"/>
+      </xs:sequence>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tableProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:border"/>
+        <xs:element ref="pdx:cantSplitRows"/>
+        <xs:element ref="pdx:cellMargins"/>
+        <xs:element ref="pdx:cellSpacing"/>
+        <xs:element ref="pdx:columnWidths"/>
+        <xs:element ref="pdx:conditionalFormating"/>
+        <xs:element ref="pdx:float"/>
+        <xs:element ref="pdx:tableAlign"/>
+        <xs:element ref="pdx:tableIndent"/>
+        <xs:element ref="pdx:tableStyle"/>
+        <xs:element ref="pdx:width"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cantSplitRows">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cellSpacing">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="columnWidths">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:column"/>
+      </xs:sequence>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="column">
+    <xs:complexType>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="conditionalFormating">
+    <xs:complexType>
+      <xs:attribute name="firstCol" use="required" form="qualified"/>
+      <xs:attribute name="firstRow" use="required" form="qualified"/>
+      <xs:attribute name="lastCol" use="required" form="qualified"/>
+      <xs:attribute name="lastRow" use="required" form="qualified"/>
+      <xs:attribute name="noHBand" use="required" form="qualified"/>
+      <xs:attribute name="noVBand" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="float">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:textMargins"/>
+      </xs:sequence>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textMargins">
+    <xs:complexType>
+      <xs:attribute name="bottom" use="required" form="qualified"/>
+      <xs:attribute name="left" use="required" form="qualified"/>
+      <xs:attribute name="right" use="required" form="qualified"/>
+      <xs:attribute name="top" use="required" form="qualified"/>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tableAlign">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tableIndent">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tableStyle">
+    <xs:complexType>
+      <xs:attribute name="id" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addTableContents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:legendText"/>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="autoUpdate" use="required" form="qualified"/>
+      <xs:attribute name="displayLevels" use="required" form="qualified"/>
+      <xs:attribute name="stylesTOC" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="legendText" type="xs:NCName"/>
+  <xs:element name="addText">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:textRun"/>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:textRunStyle"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addTextBox">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:height"/>
+        <xs:element ref="pdx:width"/>
+        <xs:element ref="pdx:align"/>
+        <xs:element ref="pdx:contentVerticalAlign"/>
+        <xs:element ref="pdx:fillColor"/>
+        <xs:element ref="pdx:textWrap"/>
+        <xs:element ref="pdx:borderColor"/>
+        <xs:element ref="pdx:borderWidth"/>
+        <xs:element ref="pdx:paddingBottom"/>
+        <xs:element ref="pdx:paddingLeft"/>
+        <xs:element ref="pdx:paddingTop"/>
+        <xs:element ref="pdx:paddingRight"/>
+      </xs:sequence>
+      <xs:attribute name="border" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="align">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contentVerticalAlign">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fillColor">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="borderColor">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="borderWidth">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paddingBottom">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paddingLeft">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paddingTop">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paddingRight">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="embedHTML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:wordStyles"/>
+      </xs:sequence>
+      <xs:attribute name="parseDivsAsPs" use="required"/>
+      <xs:attribute name="parseFloats" use="required"/>
+      <xs:attribute name="baseURL" use="required" form="qualified"/>
+      <xs:attribute name="customListStyles" use="required" form="qualified"/>
+      <xs:attribute name="downloadImages" use="required" form="qualified"/>
+      <xs:attribute name="filter" use="required" form="qualified"/>
+      <xs:attribute name="isFile" use="required" form="qualified"/>
+      <xs:attribute name="parseAnchors" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addWordML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wordFragments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:wordFragment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wordFragment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:content"/>
+      </xs:sequence>
+      <xs:attribute name="target" use="required" form="qualified"/>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="data">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="pdx:item"/>
+        <xs:element ref="pdx:cell"/>
+        <xs:element ref="pdx:chartData"/>
+        <xs:element ref="pdx:legend"/>
+        <xs:element ref="pdx:row"/>
+      </xs:choice>
+      <xs:attribute name="dataId" use="required" form="qualified"/>
+      <xs:attribute name="dataType" form="qualified" type="xs:NCName"/>
+      <xs:attribute name="type" form="qualified" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:rowspan"/>
+        <xs:element ref="pdx:colspan"/>
+        <xs:element ref="pdx:width"/>
+        <xs:element ref="pdx:border"/>
+        <xs:element ref="pdx:backgroundColor"/>
+        <xs:element ref="pdx:cellMargins"/>
+        <xs:element ref="pdx:fitText"/>
+        <xs:element ref="pdx:noWrap"/>
+        <xs:element ref="pdx:textDirection"/>
+        <xs:element ref="pdx:vAlign"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rowspan">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="colspan">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fitText">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="noWrap">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vAlign">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="chartData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:series"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="series">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:dataValue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataValue">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="legend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:seriesLegend"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="seriesLegend">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="row">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:item"/>
+      </xs:choice>
+      <xs:attribute name="cantSplit" form="qualified"/>
+      <xs:attribute name="height" form="qualified"/>
+      <xs:attribute name="minHeight" form="qualified"/>
+      <xs:attribute name="tableHeader" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wordStyles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="pdx:wordStyle"/>
+      </xs:sequence>
+      <xs:attribute name="strict" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wordStyle">
+    <xs:complexType>
+      <xs:attribute name="name" use="required" form="qualified" type="xs:NCName"/>
+      <xs:attribute name="styleType" use="required" form="qualified" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="variable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="pdx:data"/>
+      </xs:sequence>
+      <xs:attribute name="name" form="qualified"/>
+      <xs:attribute name="variableName" form="qualified"/>
+      <xs:attribute name="wordFragmentName" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="valueContext">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="height">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="font">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="color">
+    <xs:complexType>
+      <xs:attribute name="fillcolor" form="qualified"/>
+      <xs:attribute name="strokecolor" form="qualified"/>
+      <xs:attribute name="value" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="backgroundColor">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bidi">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bold">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="border">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="pdx:top"/>
+        <xs:element ref="pdx:right"/>
+        <xs:element ref="pdx:bottom"/>
+        <xs:element ref="pdx:left"/>
+      </xs:sequence>
+      <xs:attribute name="color" use="required" form="qualified"/>
+      <xs:attribute name="settings" form="qualified"/>
+      <xs:attribute name="space" form="qualified"/>
+      <xs:attribute name="style" form="qualified"/>
+      <xs:attribute name="width" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="caps">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fontSize">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="italic">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rtl">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="smallCaps">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textAlign">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textDirection">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="underline">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="width">
+    <xs:complexType>
+      <xs:attribute name="type" form="qualified"/>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textWrap">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:data"/>
+        <xs:element ref="pdx:paragraphStyle"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textRunStyle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:bold"/>
+        <xs:element ref="pdx:caps"/>
+        <xs:element ref="pdx:color"/>
+        <xs:element minOccurs="0" ref="pdx:columnBreak"/>
+        <xs:element ref="pdx:font"/>
+        <xs:element ref="pdx:fontSize"/>
+        <xs:element minOccurs="0" ref="pdx:highlightColor"/>
+        <xs:element ref="pdx:italic"/>
+        <xs:element minOccurs="0" ref="pdx:lineBreak"/>
+        <xs:element ref="pdx:rtl"/>
+        <xs:element ref="pdx:smallCaps"/>
+        <xs:choice>
+          <xs:element ref="pdx:textAlign"/>
+          <xs:sequence>
+            <xs:element ref="pdx:spaces"/>
+            <xs:element ref="pdx:tab"/>
+          </xs:sequence>
+        </xs:choice>
+        <xs:element ref="pdx:underline"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="columnBreak">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="highlightColor">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lineBreak">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spaces">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tab">
+    <xs:complexType>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="referenceMark">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pdx:textRunStyle"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="default">
+    <xs:complexType>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="even">
+    <xs:complexType>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="first">
+    <xs:complexType>
+      <xs:attribute name="wordFragmentName" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cellMargins">
+    <xs:complexType>
+      <xs:attribute name="bottom" use="required" form="qualified"/>
+      <xs:attribute name="left" use="required" form="qualified"/>
+      <xs:attribute name="right" use="required" form="qualified"/>
+      <xs:attribute name="top" use="required" form="qualified"/>
+      <xs:attribute name="value" use="required" form="qualified"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

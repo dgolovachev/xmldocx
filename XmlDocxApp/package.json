@@ -1,5 +1,5 @@
 {
-  "name": "xml-docx-app",
+  "name": "xmldocx-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,11 +7,13 @@
   },
   "description": "XmlDocxApp",
   "author": {
-    "name": "GOLOVACHEV"
+    "name": "d.a.golovachev"
   },
   "dependencies": {
     "body-parser": "~1.8.1",
     "express": "~4.9.0",
-    "multer": "^1.3.0"
+    "log4js": "^1.1.1",
+    "multer": "^1.3.0",
+    "winston": "^2.3.1"
   }
 }

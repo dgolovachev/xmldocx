@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "XmlDocxApp", "XmlDocxApp\XmlDocxApp.njsproj", "{7D8F60E2-83E0-46CA-A93E-87B25B41737E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xmldocxConsole", "xmldocxConsole\xmldocxConsole.csproj", "{D95A208D-3DF8-488E-AD61-83588A7264F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testService", "testService\testService.csproj", "{7A218F2F-169F-44F6-9D13-8DDBEC19D463}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7D8F60E2-83E0-46CA-A93E-87B25B41737E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D8F60E2-83E0-46CA-A93E-87B25B41737E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D8F60E2-83E0-46CA-A93E-87B25B41737E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95A208D-3DF8-488E-AD61-83588A7264F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95A208D-3DF8-488E-AD61-83588A7264F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95A208D-3DF8-488E-AD61-83588A7264F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95A208D-3DF8-488E-AD61-83588A7264F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A218F2F-169F-44F6-9D13-8DDBEC19D463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A218F2F-169F-44F6-9D13-8DDBEC19D463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A218F2F-169F-44F6-9D13-8DDBEC19D463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A218F2F-169F-44F6-9D13-8DDBEC19D463}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

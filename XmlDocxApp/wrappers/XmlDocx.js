@@ -58,8 +58,8 @@ XmlDocx.prototype.setXmldocxPath = function(xmldocxPath) {
  * Renders Word document out of the XML data.
  */
 XmlDocx.prototype.render = function() {
-    var output = exec("php " + this.xmldocxPath + "xmldocx/XMLAPICommand.php -c" + this.config + " -d" + this.documentProperties.join(" ") + " -b'" + this.documentContent.join(" ") + "'");
-
+    var output = exec("php " + this.xmldocxPath + "xmldocx/XMLAPICommand.php -c" + this.config + " -d" + this.documentProperties.join(" ") + " -b" + this.documentContent.join(" ") + "");
+    console.log(output.spawnargs);
     if (this.debug) {
         console.log(output);
     }

@@ -11,7 +11,9 @@ RUN npm install
 
 # Install PHP
 RUN apt-get update
-#&&  apt-get install -y  apt-transport-https \
+RUN apt-get install php5 -y
+#&&  apt-get install -y 
+	# apt-transport-https \
 	#php5.6.30 \
 	#-cli \
 	#php5-curl \

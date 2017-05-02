@@ -7,17 +7,23 @@ namespace testService
     {
         static void Main()
         {
-            var url = "http://localhost:8080/xmlDocx";
+            var url = "http://localhost:8080/test";
             var filePath = @"D:\11111.docx";
 
             using (var request = new HttpRequest())
             {
                 request.AddFile("data", filePath);
-                var response = request.Post(url);
+                try
+                {
+                    var response = request.Post(url);
+                    Console.WriteLine(response.ToString());
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine(exception.Message);
+                }
 
-                Console.WriteLine(response.ToString());
             }
-
         }
     }
 }

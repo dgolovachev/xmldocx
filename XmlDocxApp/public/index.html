@@ -7,7 +7,20 @@
 </head>
 <body>
 
-    <form name="data"enctype="multipart/form-data" action="/xmlDocx" method="post">
+    <form name="data" enctype="multipart/form-data" action="/protect" method="post">
+        <p> protect </p>
+        <input type="file" name="data" />
+        <input type="submit" />
+    </form>
+
+    <form name="data" enctype="multipart/form-data" action="/signature" method="post">
+        <p> digitally signe </p>
+        <input type="file" name="data" />
+        <input type="submit" />
+    </form>
+
+    <form name="data" enctype="multipart/form-data" action="/test" method="post">
+        <p> test </p>
         <input type="file" name="data" />
         <input type="submit" />
     </form>

@@ -1,1 +1,657 @@
-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
+<?php
+
+/**
+ * Docx 2 text
+ *
+ * @category   Phpdocx
+ * @package    transform
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class Docx2Text
+{
+
+    const SEPARATOR_WINDOWS = PHP_EOL;
+    const SEPARATOR_LINUX = "\n"; //eol 
+    const SEPARATOR_TAB = "\t";
+    const DEBUG = 0;
+    const SEPARATOR_WINDOWS_DEBUG = '\n\r'; //End of line chars
+    const SEPARATOR_LINUX_DEBUG = '\n'; //constant 
+    const SEPARATOR_TAB_DEBUG = '\t';
+
+    /**
+     * object zipArchive 
+     * @var string
+     * @access private
+     */
+    private $docx;
+
+    /**
+     * object domDocument from document.xml
+     * @var string
+     * @access private
+     */
+    private $domDocument;
+
+    /**
+     * xml from document.xml
+     * @var string
+     * @access private
+     */
+    private $_document;
+
+    /**
+     * xml from numbering.xml
+     * @var string
+     * @access private
+     */
+    private $_numbering;
+
+    /**
+     *  xml from footnote
+     * @var string
+     * @access private
+     */
+    private $_footnote;
+
+    /**
+     *  xml from endnote
+     * @var string
+     * @access private
+     */
+    private $_endnote;
+
+    /**
+     * xml from word/_rels/document.rels.xml
+     * @var string
+     * @access private
+     */
+    private $_relations;
+
+    /**
+     * array of all the endnotes of the document
+     * @var string
+     * @access private
+     */
+    private $endnotes;
+
+    /**
+     * array of all the footnotes of the document
+     * @var string
+     * @access private
+     */
+    private $footnotes;
+
+    /**
+     * array of all the relations of the document
+     * @var string
+     * @access private
+     */
+    private $relations;
+
+    /**
+     * array of characters to insert like a list
+     * @var string
+     * @access private
+     */
+    private $numberingList;
+
+    /**
+     * the text content that will be exported
+     * @var string
+     * @access private
+     */
+    private $textOuput;
+
+    /**
+     * boolean variable to know if a chart will be transformed to text
+     * @var string
+     * @access private
+     */
+    private $chart2text;
+
+    /**
+     * boolean variable to know if a table will be transformed to text
+     * @var string
+     * @access private
+     */
+    private $table2text;
+
+    /**
+     * boolean variable to know if a list will be transformed to text
+     * @var string
+     * @access private
+     */
+    private $list2text;
+
+    /**
+     * boolean variable to know if a paragraph will be transformed to text
+     * @var string
+     * @access private
+     */
+    private $paragraph2text;
+
+    /**
+     * boolean variable to know if footnotes will be extracteded 
+     * @var string
+     * @access private
+     */
+    private $footnote2text;
+
+    /**
+     * boolean variable to know if endnotes will be extracted
+     * @var string
+     * @access private
+     */
+    private $endnote2text;
+
+    /**
+     * Construct
+     * @param array of boolean values of which elements should be transformed or not
+     * @access public
+     */
+    public function __construct($boolTransforms = array())
+    {
+        //table,list, paragraph, footnote, endnote, chart
+        if (isset($boolTransforms['table'])) {
+            $this->table2text = $boolTransforms['table'];
+        } else {
+            $this->table2text = true;
+        }
+
+        if (isset($boolTransforms['list'])) {
+            $this->list2text = $boolTransforms['list'];
+        } else {
+            $this->list2text = true;
+        }
+
+        if (isset($boolTransforms['paragraph'])) {
+            $this->paragraph2text = $boolTransforms['paragraph'];
+        } else {
+            $this->paragraph2text = true;
+        }
+
+        if (isset($boolTransforms['footnote'])) {
+            $this->footnote2text = $boolTransforms['footnote'];
+        } else {
+            $this->footnote2text = true;
+        }
+
+        if (isset($boolTransforms['endnote'])) {
+            $this->endnote2text = $boolTransforms['endnote'];
+        } else {
+            $this->endnote2text = true;
+        }
+
+        if (isset($boolTransforms['chart'])) {
+            $this->chart2text = $boolTransforms['chart'];
+        } else {
+            $this->chart2text = true;
+        }
+
+        $this->textOuput = '';
+        $this->docx = null;
+        $this->_numbering = '';
+        $this->numberingList = array();
+        $this->endnotes = array();
+        $this->footnotes = array();
+        $this->relations = array();
+    }
+
+    /**
+     * 
+     * Extract the content of a word document and create a text file if the name is given
+     * 
+     * @access public
+     * @param string $filename of the word document. 
+     * 
+     */
+    public function extract($filename = '')
+    {
+        if (empty($this->_document)) {
+            //xml content from document.xml is not got
+            CreateDocx::$log->fatal('There is no content from document.xml');
+            exit();
+        }
+
+        $this->domDocument = new DomDocument();
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $this->domDocument->loadXML($this->_document);
+        libxml_disable_entity_loader($optionEntityLoader);
+        //get the body node to check the content from all his children
+        $bodyNode = $this->domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main', 'body');
+        //We get the body node. it is known that there is only one body tag
+        $bodyNode = $bodyNode->item(0);
+        foreach ($bodyNode->childNodes as $child) {
+            //the children can be a table, a paragraph or a section. We only implement the 2 first option said.     
+            if ($this->table2text && $child->tagName == 'w:tbl') {
+                //this node is a table and  the content is split with tabs if the variable table2text from the class is true
+                $this->textOuput .= $this->table($child) . $this->separator();
+            } else {
+                //this node is a paragraph
+                $this->textOuput .= $this->printWP($child) . ($this->paragraph2text ? $this->separator() : '');
+            }
+        }
+        if (!empty($filename)) {
+            $this->writeFile($filename, $this->textOuput);
+        } else {
+            echo $this->textOuput;
+        }
+    }
+
+    /**
+     * Getter
+     *
+     * @access public
+     */
+    public function getDocument()
+    {
+        return $this->_document;
+    }
+
+    /**
+     * Setter
+     *
+     * @access public
+     */
+    public function setDocument($docu)
+    {
+        $this->_document = $docu;
+    }
+
+    /**
+     * Getter
+     *
+     * @access public
+     */
+    public function getDocx()
+    {
+        return $this->docx;
+    }
+
+    /**
+     * Setter
+     *
+     * @access public
+     */
+    public function setDocx($filename)
+    {
+        $this->docx = new ZipArchive();
+        $ret = $this->docx->open($filename);
+        if ($ret === true) {
+            $this->_document = $this->docx->getFromName('word/document.xml');
+        }
+    }
+
+    /**
+     * Write the file
+     *
+     * @access public
+     * @param the name of the file which is going to write
+     * @param the data of the file
+     */
+    public function writeFile($filename, $data)
+    {
+        if (!$handle = fopen($filename, 'w+')) {
+            CreateDocx::$log->fatal('Cannot open file ($filename)');
+            exit();
+        }
+        // Write $data to our opened file.
+        if (fwrite($handle, $data) === FALSE) {
+            CreateDocx::$log->fatal('Cannot write to file ($filename)');
+            exit();
+        }
+        fclose($handle);
+    }
+
+    /**
+     * extract the content to an array from endnote.xml
+     *
+     * @access private
+     */
+    private function loadEndNote()
+    {
+        if (empty($this->endnotes)) {
+            if (empty($this->_endnote)) {
+                $this->_endnote = $this->docx->getFromName('word/endnotes.xml');
+            }
+            if (!empty($this->_endnote)) {
+                $domDocument = new DomDocument();
+                $optionEntityLoader = libxml_disable_entity_loader(true);
+                $domDocument->loadXML($this->_endnote);
+                libxml_disable_entity_loader($optionEntityLoader);
+                $endnotes = $domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main', 'endnote');
+                foreach ($endnotes as $endnote) {
+                    $xml = $endnote->ownerDocument->saveXML($endnote);
+                    $this->endnotes[$endnote->getAttribute('w:id')] = trim(strip_tags($xml));
+                }
+            }
+        }
+    }
+
+    /**
+     * Extract the content to an array from footnote.xml
+     *
+     * @access private
+     */
+    private function loadFootNote()
+    {
+        if (empty($this->footnotes)) {
+            if (empty($this->_footnote)) {
+                $this->_footnote = $this->docx->getFromName('word/footnotes.xml');
+            }
+            if (!empty($this->_footnote)) {
+                $domDocument = new DomDocument();
+                $optionEntityLoader = libxml_disable_entity_loader(true);
+                $domDocument->loadXML($this->_footnote);
+                libxml_disable_entity_loader($optionEntityLoader);
+                $footnotes = $domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main', 'footnote');
+                foreach ($footnotes as $footnote) {
+                    $xml = $footnote->ownerDocument->saveXML($footnote);
+                    $this->footnotes[$footnote->getAttribute('w:id')] = trim(strip_tags($xml));
+                }
+            }
+        }
+    }
+
+    /**
+     * Extract the styles of the list to an array
+     *
+     * @access private
+     */
+    private function listNumbering()
+    {
+        $ids = array();
+        $nums = array();
+        //get the xml code from the zip archive
+        $this->_numbering = $this->docx->getFromName('word/numbering.xml');
+        if (!empty($this->_numbering)) {
+            //we use the domdocument to iterate the children of the numbering tag 
+            $domDocument = new DomDocument();
+            $optionEntityLoader = libxml_disable_entity_loader(true);
+            $domDocument->loadXML($this->_numbering);
+            libxml_disable_entity_loader($optionEntityLoader);
+            $numberings = $domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main', 'numbering');
+            //there is only one numbering tag in the numbering.xml
+            $numberings = $numberings->item(0);
+            foreach ($numberings->childNodes as $child) {
+                $flag = true; //boolean variable to know if the node is the first style of the list
+                foreach ($child->childNodes as $son) {
+                    if ($child->tagName == 'w:abstractNum' && $son->tagName == 'w:lvl') {
+                        foreach ($son->childNodes as $daughter) {
+                            if ($daughter->tagName == 'w:numFmt' && $flag) {
+                                $nums[$child->getAttribute('w:abstractNumId')] = $daughter->getAttribute('w:val'); //set the key with internal index for the listand the value it is the type of bullet
+                                $flag = false;
+                            }
+                        }
+                    } elseif ($child->tagName == 'w:num' && $son->tagName == 'w:abstractNumId') {
+                        $ids[$son->getAttribute('w:val')] = $child->getAttribute('w:numId'); //$ids is the index of the list
+                    }
+                }
+            }
+            //once we know what kind of list there is in the documents, is prepared the bullet that the library will use
+            foreach ($ids as $ind => $id) {
+                if ($nums[$ind] == 'decimal') {
+                    //if the type is decimal it means that the bullet will be numbers
+                    $this->numberingList[$id][0] = range(1, 10);
+                    $this->numberingList[$id][1] = range(1, 10);
+                    $this->numberingList[$id][2] = range(1, 10);
+                    $this->numberingList[$id][3] = range(1, 10);
+                } else {
+                    //otherwise is *, and other characters
+                    $this->numberingList[$id][0] = array('*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*');
+                    $this->numberingList[$id][1] = array(chr(175), chr(175), chr(175), chr(175), chr(175), chr(175), chr(175), chr(175), chr(175), chr(175), chr(175), chr(175));
+                    $this->numberingList[$id][2] = array(chr(237), chr(237), chr(237), chr(237), chr(237), chr(237), chr(237), chr(237), chr(237), chr(237), chr(237), chr(237));
+                    $this->numberingList[$id][3] = array(chr(248), chr(248), chr(248), chr(248), chr(248), chr(248), chr(248), chr(248), chr(248), chr(248), chr(248));
+                }
+            }
+        }
+    }
+
+    /**
+     * Extract the content of word/_rels/document._rels.xml
+     *
+     * @access private
+     */
+    private function loadRelations()
+    {
+        if (empty($this->relations)) {
+            if (empty($this->_relations)) {
+                $this->_relations = $this->docx->getFromName('word/_rels/document.xml.rels');
+            }
+            $domDocument = new DomDocument();
+            $optionEntityLoader = libxml_disable_entity_loader(true);
+            $domDocument->loadXML($this->_relations);
+            libxml_disable_entity_loader($optionEntityLoader);
+            $relations = $domDocument->getElementsByTagName('Relationships');
+            $relations = $relations->item(0);
+            foreach ($relations->childNodes as $relation) {
+                $this->relations[$relation->getAttribute('Id')]['file'] = $relation->getAttribute('Target');
+                $this->relations[$relation->getAttribute('Id')]['type'] = $relation->getAttribute('Type');
+            }
+        }
+    }
+
+    /**
+     * Print the data of the chart as formatted text
+     *
+     * @access private
+     * @param $chart
+     */
+    private function printChartDataArray($chart)
+    {
+        $ret = $this->separator();
+        $ret .= '[Chart => ' . $this->separator();
+        $ret .= "\t" . 'Type: ' . $chart->getType() . $this->separator();
+        $ret .= "\t" . 'Type Group: ' . $chart->getTypeGroup() . $this->separator();
+        $ret .= "\t" . 'Data: ' . $this->separator();
+        foreach ($chart->getData() as $key => $fila) {
+            $ret .= "\t\t" . '"' . $key . '" => ' . $this->separator();
+            foreach ($fila as $index => $value) {
+                $ret .= "\t\t\t" . '"' . $index . '" => ' . $value . $this->separator();
+            }
+        }
+        $ret .= "]" . $this->separator();
+        return $ret;
+    }
+
+    /**
+     * print the data of the chart as formatted text
+     *
+     * @access private
+     * @param $chart
+     */
+    private function printChartDataTable($chart)
+    {
+        $ret = $this->separator();
+        $ret .= '[Chart => ' . $this->separator();
+        $ret .= "\t" . 'Type: ' . $chart->getType() . $this->separator();
+        $ret .= "\t" . 'Type Group: ' . $chart->getTypeGroup() . $this->separator();
+        $ret .= "\t" . 'Data: ' . $this->separator();
+        $ret .= "\t\t";
+        foreach ($chart->getData() as $key => $fila) {
+            foreach ($fila as $index => $value) {
+                $ret .= "\t" . '"' . $index . '"';
+            }
+            break;
+        }
+        $ret .= $this->separator();
+        foreach ($chart->getData() as $key => $fila) {
+            $ret .= "\t\t\t" . '"' . $key . '"';
+            foreach ($fila as $index => $value) {
+                $ret .= "\t" . $value;
+            }
+            $ret .= $this->separator();
+        }
+        $ret .= "]" . $this->separator();
+        return $ret;
+    }
+
+    /**
+     * Extract the content of a w:p tag
+     * 
+     * @access private
+     * @param $node is an object DOMNode
+     */
+    private function printWP($node)
+    {
+        $ilvl = $numId = -1;
+        if ($this->list2text) {//transform the list in ooxml to formatted list with tabs and bullets
+            if (empty($this->numberingList)) {//check if numbering.xml is extracted from the zip archive
+                $this->listNumbering();
+            }
+            //use the xpath to get expecific children from a node
+            $xpath = new DOMXPath($this->domDocument);
+            $query = 'w:pPr/w:numPr';
+            $xmlLists = $xpath->query($query, $node);
+            $xmlLists = $xmlLists->item(0);
+
+            if (isset($xmlLists) && $xmlLists->tagName == 'w:numPr') {
+                if ($xmlLists->hasChildNodes()) {
+                    foreach ($xmlLists->childNodes as $child) {
+                        if ($child->tagName == 'w:ilvl') {
+                            $ilvl = $child->getAttribute('w:val');
+                        } elseif ($child->tagName == 'w:numId') {
+                            $numId = $child->getAttribute('w:val');
+                        }
+                    }
+                }
+            }
+            if (($ilvl != -1) && ($numId != -1)) {
+                //if is founded the style index of the list in the document and the kind of list
+                $ret = '';
+                for ($i = -1; $i < $ilvl; $i++) {
+                    if (self::DEBUG) {
+                        $ret .= self::SEPARATOR_TAB_DEBUG;
+                    } else {
+                        $ret .= self::SEPARATOR_TAB;
+                    }
+                }
+                $ret .= array_shift($this->numberingList[$numId][$ilvl]) . ' ' . $this->toText($node);  //print the bullet
+            } else {
+                $ret = $this->toText($node);
+            }
+        } else {
+            //if dont want to formatted lists, we strip from html tags
+            $ret = $this->toText($node);
+        }
+
+
+        //get the data from the charts
+        if ($this->chart2text) {
+            $query = 'w:r/w:drawing/wp:inline';
+            $xmlChart = $xpath->query($query, $node);
+            //get the relation id from the document, to get the name of the xml chart file from the relations to extract the xml code.
+            foreach ($xmlChart as $chart) {
+                foreach ($chart->childNodes as $child) {
+                    foreach ($child->childNodes as $child2) {
+                        foreach ($child2->childNodes as $child3) {
+                            $rid = $child3->getAttribute('r:id');
+                        }
+                    }
+                }
+            }
+            if (!empty($rid)) {
+                if (empty($this->relations)) {
+                    $this->loadRelations();
+                }
+                //get the name of the chart xml file from the relations docuemnt
+                $dataChart = new getDataFromXmlChart($this->docx->getFromName('word/' . $this->relations[$rid]['file']));
+                if (in_array($this->chart2text, array(2, 'table'))) {
+                    $ret .= $this->printChartDataTable($dataChart); //formatted print of the chart data
+                } else {
+                    $ret .= $this->printChartDataArray($dataChart); //formatted print of the chart data
+                }
+            }
+        }
+        //extract the expecific endnote to insert with the text content
+        if ($this->endnote2text) {
+            if (empty($this->endnotes)) {
+                $this->loadEndNote();
+            }
+            $query = 'w:r/w:endnoteReference';
+            $xmlEndNote = $xpath->query($query, $node);
+            foreach ($xmlEndNote as $note) {
+                $ret .= '[' . $this->endnotes[$note->getAttribute('w:id')] . '] ';
+            }
+        }
+        //extract the expecific footnote to insert with the text content
+        if ($this->footnote2text) {
+            if (empty($this->footnotes)) {
+                $this->loadFootNote();
+            }
+            $query = 'w:r/w:footnoteReference';
+            $xmlFootNote = $xpath->query($query, $node);
+            foreach ($xmlFootNote as $note) {
+                $ret .= '[' . $this->footnotes[$note->getAttribute('w:id')] . '] ';
+            }
+        }
+        if ((($ilvl != -1) && ($numId != -1)) || (1)) {
+            $ret .= $this->separator();
+        }
+
+        return $ret;
+    }
+
+    /**
+     * return a text end of line
+     *
+     * @access private
+     */
+    private function separator()
+    {
+        return "\r\n";
+    }
+
+    /**
+     * 
+     * Extract the content of a table node from the document.xml and return a text content
+     * 
+     * @access private
+     * @param $node is a object DOMNode
+     * 
+     */
+    private function table($node)
+    {
+        $output = '';
+        if ($node->hasChildNodes()) {
+            foreach ($node->childNodes as $child) {
+                //start a new line of the table
+                if ($child->tagName == 'w:tr') {
+                    foreach ($child->childNodes as $cell) {
+                        //start a new cell
+                        if ($cell->tagName == 'w:tc') {
+                            if ($cell->hasChildNodes()) {
+                                //
+                                foreach ($cell->childNodes as $p) {
+                                    $output .= $this->printWP($p);
+                                }
+                                $output .= self::SEPARATOR_TAB;
+                            }
+                        }
+                    }
+                }
+                $output .= $this->separator();
+            }
+        }
+        return $output;
+    }
+
+    /**
+     * 
+     * Extract the content of a node from the document.xml and return only the text content and. stripping the html tags
+     * 
+     * @access private
+     * @param $node is a object DOMNode
+     * 
+     */
+    private function toText($node)
+    {
+        $xml = $node->ownerDocument->saveXML($node);
+        return trim(strip_tags($xml));
+    }
+
+}

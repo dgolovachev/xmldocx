@@ -1,1 +1,120 @@
-pVZdb9pKEH33rxhZkYCI2hCp1VUaaCJCWyRCIqBS39Bmd2ys+ku7SwKq8t/vrG2osQ1q7vULZnfmzMyZs7O2LPfy0oJLGElkGkFiyHSQxGodpAo2CgU87yCImI+qC3zNpFaO45CHcbrl5OMncgcAT+tUJHybLaeM/yIPWgUMMcJYq9w8SXcy8NcaYHR4bfMOzJjkyOBJJmLDOcVHBQ+bUAcRioDBwpmakFB+2mut02vXfX19da4iwR2eRJ0sShhwjFUWPc2TgulkNJ4txtn2C0pFEcz2Va//yel9dHr9wjH+VaCXwAsMg09WrsVDplTB18gQMsdQAW41xmK/Ps6rtn5blkHLODbPJex/bxnnSDipTDRyjaLYcLPfwypcrLZR+LkKU0cJXijsYVlp6iKvQGYmkG8RbhDTa8wRBjD7MZ3WYlCLyEJuuD4VdPMcVoNkS+BtYm5UBKsV34O0O5nFb2vfwOzlrRb1Hv9/UIHvi/nAfAKIUK8T0aUzoDcyVsA3UlIT4efD9G+SgdvckRiWQezDPP9XRzmVtU4WmWct6wL3Qq8D9WGYC6K5kAW5h6iTeF8FHLqceJAp912lVFTeVEChp0MdPupJEbNWSOBBW2HoXV+X5Zfrr1OyM0/dDmJ8rWbU7nw+eL1VCatCnGKtYfYBHfmNOcKgEzMGiUe4fxz9BC8I8e8oTJlkEflpuAhElvDZ/vMsiXkph/ber0pjIQQfY5TGZzy9W04eZ4vvk6dFmZAzdn+wa+Y8RBYvMUopE9zD1UmbUTPKjHWBCUEDi/g6vkTOHJ/K7DvDWWULHlMTgIXdrDl9YAoEeoyujBNztKTPM2x0M/AB9GuU06Gj9dZNuUEwEQNbTkQLnMzPgZYNy12KA7u4PxRfY8SUk6QYt47kbR6yJ1gvkRGjWzWRvpt4Hl1e94X23Kte75N7xKZbXK02NMItmaTzN7Adx8XoGYWgeaBcwXSiiiRLpB67OttQbe3hjVuucLhafRvPxvO75Xj0/W6+XDzdjcarVau4LHLVMN8w88fySI9V48MIIx8alCuJpDMaFQamm9HcLVudlN8DoxNJPsoMtv8quHeJZFEbZ8fVtG6+mJfi82Jg952eDRjzxDRhYP9Yfv3wj23GZSxYSF84A3uHyoYvw8ZOHglNASHHqlFWFQU1ghWiadCTPTzdt8a0juShhq1Df96sfwE=
+<?php
+
+/**
+ * Create relationships used by images, charts...
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateChartRels extends CreateElement
+{
+
+    /**
+     * 
+     * @access protected
+     */
+    protected $_xml;
+
+    /**
+     *
+     * @access private
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateChartRels
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateChartRels();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create relationship document to use in DOCX file
+     *
+     * @access public
+     * @param int $idChart
+     */
+    public function createRelationship($idChart)
+    {
+        $this->generateRELATIONSHIPS();
+        $this->generateRELATIONSHIP($idChart);
+        $this->cleanTemplate();
+    }
+
+    /**
+     * New relationship, added to relationships XML
+     *
+     * @access protected
+     * @param int $idChart
+     * @param int $id Optional, use 1 as default
+     */
+    protected function generateRELATIONSHIP($idChart, $id = 1)
+    {
+        $xml = '<Relationship Id="rId' . $id . '" Type="http://schemas.open'
+                . 'xmlformats.org/officeDocument/2006/relationships/package" '
+                . 'Target="../embeddings/datos' . $idChart
+                . '.xlsx"></Relationship>__GENERATECHARTSPACE__';
+
+        $tag = '__GENERATERELATIONSHIPS__';
+
+        $this->_xml = str_replace($tag, $xml, $this->_xml);
+    }
+
+    /**
+     * Main tags of relationships XML
+     *
+     * @access protected
+     */
+    protected function generateRELATIONSHIPS()
+    {
+        $this->_xml = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>'
+                . '<Relationships xmlns="http://schemas.openxmlformats.org/'
+                . 'package/2006/relationships">__GENERATERELATIONSHIPS__'
+                . '</Relationships>';
+    }
+
+}

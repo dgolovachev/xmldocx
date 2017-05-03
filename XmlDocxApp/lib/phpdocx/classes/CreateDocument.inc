@@ -1,1 +1,17 @@
-VZDBbsMgEETvfMUeEx+wE6k99NTKyaFSGkXKF2yXrY1iAwIcJ6r67wXbqlJOaGfmDawQZVEIKODtM0SPFIE6DAGGwAq+rAfyjFGbBpSloWcTQ3LnwCth5Mb6OwCcWpfk2zR2SBdsOE3nLM9m6+5eN20EqP+uK1rDET0xwslbNRBpazjAx9BF3bPSCGd5kBnweFZtjO6lLMdxlNtekSTbr6eWThObMHW7+UlweK/3x/N+kq/sQ2rI8rbaPMvqSVabJWguC/0BvjAyP7lKgf93VE/f2y17Ed8ix8WP+AU=
+<?php
+
+/**
+ * Abstract class used for creating documents
+ *
+ * @category   Phpdocx
+ * @package    create
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+abstract class CreateDocument
+{
+    
+}

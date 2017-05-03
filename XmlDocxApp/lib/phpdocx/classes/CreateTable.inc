@@ -1,1 +1,1222 @@
-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
+<?php
+
+/**
+ * Create tables
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateTable extends CreateElement
+{
+
+    /**
+     * @access private
+     * @var array
+     * @static
+     */
+    private static $_borders = array('top', 'left', 'bottom', 'right');
+
+    /**
+     * @access private
+     * @var CreateTable
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     *
+     * @access public
+     * @return string
+     */
+    public function __toString()
+    {
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     *
+     * @access public
+     * @return CreateTable
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateTable();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create table
+     *
+     * @access public
+     * @param array args[0]
+     */
+    public function createTable()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+        $args[1] = CreateDocx::translateTableOptions2StandardFormat($args[1]);
+
+        if (is_array($args[0])) {
+            //Normalize table data
+            $tableData = $this->parseTableData($args[0]);
+            $this->generateTBL();
+            $this->generateTBLPR();
+            if (isset($args[1]['TBLSTYLEval'])) {
+                $this->generateTBLSTYLE($args[1]['TBLSTYLEval']);
+            } else {
+                $this->generateTBLSTYLE();
+            }
+            if (isset($args[1]['float'])) {
+                $this->generateTBLFLOAT($args[1]['float']);
+            }
+            $this->generateTBLOVERLAP();
+            if (isset($args[1]['bidi'])) {
+                $this->generateTBLBIDI($args[1]['bidi']);
+            }
+            if (isset($args[1]['tableWidth']) && is_array($args[1]['tableWidth'])) {
+                $this->generateTBLW($args[1]['tableWidth']['type'], $args[1]['tableWidth']['value']);
+            } else {
+                $this->generateTBLW('pct', 100);
+            }
+            if (isset($args[1]['jc'])) {
+                $this->generateJC($args[1]['jc']);
+            }
+            if (isset($args[1]['cellSpacing'])) {
+                $this->generateTBLCELLSPACING($args[1]['cellSpacing']);
+            }
+            if (isset($args[1]['indent'])) {
+                $this->generateTBLINDENT($args[1]['indent']);
+            }
+            if (isset($args[1]['border']) ||
+                    isset($args[1]['border_sz']) ||
+                    isset($args[1]['border_color']) ||
+                    isset($args[1]['border_spacing'])) {
+                $this->generateTBLBORDERS();
+                $sz = 6;
+                if (isset($args[1]['border_sz'])) {
+                    $sz = $args[1]['border_sz'];
+                }
+                $color = 'auto';
+                if (isset($args[1]['border_color'])) {
+                    $color = $args[1]['border_color'];
+                }
+                $spacing = '0';
+                if (isset($args[1]['border_spacing'])) {
+                    $spacing = $args[1]['border_spacing'];
+                }
+                if (isset($args[1]['border'])) {
+                    $border = $args[1]['border'];
+                } else {
+                    $border = 'solid';
+                }
+                if (!isset($args[1]['border_settings']) ||
+                        $args[1]['border_settings'] == 'all' ||
+                        $args[1]['border_settings'] == 'outside') {
+                    $this->generateTBLTOP($border, $sz, $spacing, $color);
+                    $this->generateTBLLEFT($border, $sz, $spacing, $color);
+                    $this->generateTBLBOTTOM($border, $sz, $spacing, $color);
+                    $this->generateTBLRIGHT($border, $sz, $spacing, $color);
+                }
+                if (!isset($args[1]['border_settings']) ||
+                        $args[1]['border_settings'] == 'all' ||
+                        $args[1]['border_settings'] == 'inside') {
+                    $this->generateTBLINSIDEH($border, $sz, $spacing, $color);
+                    $this->generateTBLINSIDEV($border, $sz, $spacing, $color);
+                }
+            }
+            if (isset($args[1]['tableLayout'])) {
+                $this->generateTBLLAYOUT($args[1]['tableLayout']);
+            }
+            if (isset($args[1]['cellMargin'])) {
+                $this->generateTBLCELLMARGIN($args[1]['cellMargin']);
+            }
+            if (isset($args[1]['conditionalFormatting']) && is_array($args[1]['conditionalFormatting'])) {
+                $this->generateTBLLOOK($args[1]['conditionalFormatting']);
+            }
+
+
+            $rowNumber = 0;
+            $colNumber = 0;
+            $this->generateTBLGRID();
+            if (isset($args[1]['size_col']) && is_array($args[1]['size_col'])) {
+                foreach ($args[1]['size_col'] as $key => $widthCol) {
+                    $this->generateGRIDCOL($widthCol);
+                }
+            } else {
+                foreach ($tableData as $row) {
+                    $rowLength = array();
+                    $rowLength[] = count($row);
+                }
+                $numCols = max($rowLength);
+                for ($k = 0; $k < $numCols; $k++) {
+                    if (isset($args[1]['size_col'])) {
+                        $this->generateGRIDCOL($args[1]['size_col']);
+                    } else {
+                        $this->generateGRIDCOL();
+                    }
+                }
+            }
+
+            foreach ($tableData as $row) {
+                $this->generateTR();
+                $this->generateTRPR();
+                if (isset($args[1]['cantSplitRows']) && $args[1]['cantSplitRows']) {
+                    if (isset($args[2][$rowNumber]['cantSplit'])) {
+                        $this->generateTRCANTSPLIT($args[2][$rowNumber]['cantSplit']);
+                    } else {
+                        $this->generateTRCANTSPLIT();
+                    }
+                } else if (isset($args[2][$rowNumber]['cantSplit']) &&
+                        $args[2][$rowNumber]['cantSplit']) {
+                    $this->generateTRCANTSPLIT();
+                }
+                if (isset($args[2][$rowNumber]['height']) ||
+                        isset($args[2][$rowNumber]['minHeight'])) {
+                    if (isset($args[2][$rowNumber]['height'])) {
+                        $height = $args[2][$rowNumber]['height'];
+                        $hRule = 'exact';
+                    } else {
+                        $height = $args[2][$rowNumber]['minHeight'];
+                        $hRule = 'atLeast';
+                    }
+                    $this->generateTRHEIGHT($height, $hRule);
+                }
+                if (isset($args[2][$rowNumber]['tableHeader']) &&
+                        $args[2][$rowNumber]['tableHeader']) {
+                    $this->generateTRTABLEHEADER();
+                }
+                $rowNumber++;
+                foreach ($row as $cellContent) {
+                    $cellContent = CreateDocx::translateTableOptions2StandardFormat($cellContent);
+                    $this->cleanTemplateTrPr();
+                    $this->generateTC();
+                    $this->generateTCPR();
+                    if ($rowNumber == 1 && isset($args[1]['size_col'])) {
+                        if (is_array($args[1]['size_col']) &&
+                                isset($args[1]['size_col'][$colNumber])) {
+                            $this->generateTCW($args[1]['size_col'][$colNumber]);
+                        } else if (!is_array($args[1]['size_col'])) {
+                            $this->generateTCW($args[1]['size_col']);
+                        }
+                    } else {
+                        if (isset($cellContent['width']) && is_int($cellContent['width'])) {
+                            $this->generateCELLWIDTH($cellContent['width']);
+                        }
+                    }
+                    if (isset($cellContent['colspan']) && $cellContent['colspan'] > 1) {
+                        $this->generateCELLGRIDSPAN($cellContent['colspan']);
+                    }
+                    if (isset($cellContent['rowspan']) && $cellContent['rowspan'] >= 1) {
+                        if (isset($cellContent['vmerge']) && $cellContent['vmerge'] == 'continue') {
+                            $this->generateCELLVMERGE('continue');
+                        } else {
+                            $this->generateCELLVMERGE('restart');
+                        }
+                    }
+                    //we set the drawCellBorders to false
+                    $drawCellBorders = false;
+                    $border = array();
+
+                    //Run over the general border properties
+                    if (isset($cellContent['border'])) {
+                        $drawCellBorders = true;
+                        foreach (self::$_borders as $key => $value) {
+                            $border[$value]['type'] = $cellContent['border'];
+                        }
+                    }
+                    if (isset($cellContent['border_color'])) {
+                        $drawCellBorders = true;
+                        foreach (self::$_borders as $key => $value) {
+                            $border[$value]['color'] = $cellContent['border_color'];
+                        }
+                    }
+                    if (isset($cellContent['border_spacing'])) {
+                        $drawCellBorders = true;
+                        foreach (self::$_borders as $key => $value) {
+                            $border[$value]['spacing'] = $cellContent['border_spacing'];
+                        }
+                    }
+                    if (isset($cellContent['border_sz'])) {
+                        $drawCellBorders = true;
+                        foreach (self::$_borders as $key => $value) {
+                            $border[$value]['sz'] = $cellContent['border_sz'];
+                        }
+                    }
+                    //Run over the border choices of each side
+                    foreach (self::$_borders as $key => $value) {
+                        if (isset($cellContent['border_' . $value])) {
+                            $drawCellBorders = true;
+                            $border[$value]['type'] = $cellContent['border_' . $value];
+                        }
+                        if (isset($cellContent['border_' . $value . '_color'])) {
+                            $drawCellBorders = true;
+                            $border[$value]['color'] = $cellContent['border_' . $value . '_color'];
+                        }
+                        if (isset($cellContent['border_' . $value . '_spacing'])) {
+                            $drawCellBorders = true;
+                            $border[$value]['spacing'] = $cellContent['border_' . $value . '_spacing'];
+                        }
+                        if (isset($cellContent['border_' . $value . '_sz'])) {
+                            $drawCellBorders = true;
+                            $border[$value]['sz'] = $cellContent['border_' . $value . '_sz'];
+                        }
+                    }
+                    if ($drawCellBorders) {
+                        $this->generateCELLBORDER($border);
+                    }
+                    if (isset($cellContent['background_color'])) {
+                        $this->generateCELLSHD($cellContent['background_color']);
+                    }
+                    if (isset($cellContent['noWrap'])) {
+                        $this->generateCELLNOWRAP($cellContent['noWrap']);
+                    }
+                    if (isset($cellContent['cellMargin']) && is_array($cellContent['cellMargin'])) {
+                        $this->generateCELLMARGIN($cellContent['cellMargin']);
+                    } else if (isset($cellContent['cellMargin']) && !is_array($cellContent['cellMargin'])) {
+                        $cellContent['cellMargins']['top'] = $cellContent['cellMargin'];
+                        $cellContent['cellMargins']['left'] = $cellContent['cellMargin'];
+                        $cellContent['cellMargins']['bottom'] = $cellContent['cellMargin'];
+                        $cellContent['cellMargins']['right'] = $cellContent['cellMargin'];
+                        $this->generateCELLMARGIN($cellContent['cellMargins']);
+                    }
+                    if (isset($cellContent['textDirection'])) {
+                        $this->generateCELLTEXTDIRECTION($cellContent['textDirection']);
+                    }
+                    if (isset($cellContent['fitText'])) {
+                        $this->generateCELLFITTEXT($cellContent['fitText']);
+                    }
+                    if (isset($cellContent['vAlign'])) {
+                        $this->generateCELLVALIGN($cellContent['vAlign']);
+                    }
+                    $this->cleanTemplateTcPr();
+
+                    /* if ($cellContent['value'] instanceof CreateText) {
+                      if (!empty($cellContent['value']->_embeddedText[0]['cell_color'])) {
+                      $this->generateSHD(
+                      'solid',
+                      $cellContent['value']->_embeddedText[0]['cell_color']
+                      );
+                      }
+                      } else {
+                      $this->generateSHD();
+                      } */
+                    if ($cellContent['value'] instanceof WordFragment || $cellContent['value'] instanceof DOCPathResult) {
+                        $this->_xml = str_replace('__GENERATETC__', (string) $cellContent['value'], $this->_xml);
+                    } else {
+                        $this->generateP($cellContent['value'], $args[1]);
+                    }
+                    $colNumber++;
+                }
+                $this->cleanTemplateR();
+            }
+        }
+    }
+
+    /**
+     * Add list
+     *
+     * @param string $list
+     * @access protected
+     */
+    protected function addList($list)
+    {
+        $this->_xml = str_replace('__GENERATEP__', $list, $this->_xml);
+    }
+
+    /**
+     * Generate w:cantSplit
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateTRCANTSPLIT($val = 'true')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':cantSplit w:val="' . $val . '"/>__GENERATETRPR__';
+        $this->_xml = str_replace('__GENERATETRPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tcBorders
+     *
+     * @param array $border
+     * @access protected
+     */
+    protected function generateCELLBORDER($border)
+    {
+        $xml = '<w:tcBorders>';
+        foreach (self::$_borders as $key => $value) {
+            if (isset($border[$value])) {
+                if (isset($border[$value]['type'])) {
+                    $border_type = $border[$value]['type'];
+                } else {
+                    $border_type = 'single';
+                }
+                if (isset($border[$value]['color'])) {
+                    $border_color = $border[$value]['color'];
+                } else {
+                    $border_color = '000000';
+                }
+                if (isset($border[$value]['sz'])) {
+                    $border_sz = $border[$value]['sz'];
+                } else {
+                    $border_sz = 6;
+                }
+                if (isset($border[$value]['spacing'])) {
+                    $border_spacing = $border[$value]['spacing'];
+                } else {
+                    $border_spacing = 0;
+                }
+                $xml .= '<w:' . $value . ' w:val="' . $border_type . '" w:color="' . $border_color . '" w:sz="' . $border_sz . '" w:space="' . $border_spacing . '"/>';
+            }
+        }
+        $xml .= '</w:tcBorders>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:gridSpan
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateCELLGRIDSPAN($val)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':gridSpan ' . CreateElement::NAMESPACEWORD . ':val="' . $val . '"/>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tcMar
+     *
+     * @param array $cellMargin
+     * @access protected
+     */
+    protected function generateCELLMARGIN($cellMargin)
+    {
+        $sides = array('top', 'left', 'bottom', 'right');
+        $xml = '<w:tcMar>';
+        foreach ($cellMargin as $key => $value) {
+            if (in_array($key, $sides)) {
+                $xml .= '<w:' . $key . ' w:w="' . $value . '" w:type="dxa" />';
+            }
+        }
+        $xml .= '</w:tcMar>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:noWrap
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateCELLNOWRAP($val)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':noWrap ' . CreateElement::NAMESPACEWORD . ':val="' . $val . '"/>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:shd
+     *
+     * @param string $color
+     * @access protected
+     */
+    protected function generateCELLSHD($color)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':shd  w:val ="clear" w:fill="' . $color . '"/>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tcFitText
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateCELLFITTEXT($val)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tcFitText ' . CreateElement::NAMESPACEWORD . ':val="' . $val . '"/>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:textDirection
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateCELLTEXTDIRECTION($val)
+    {
+        $textDirections = array('btLr', 'tbRl', 'lrTb', 'tbRl', 'btLr', 'lrTbV', 'tbRlV', 'tbLrV');
+        if (in_array($val, $textDirections)) {
+            $xml = '<' . CreateElement::NAMESPACEWORD .
+                    ':textDirection ' . CreateElement::NAMESPACEWORD . ':val="' . $val . '"/>__GENERATETCPR__';
+            $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+        }
+    }
+
+    /**
+     * Generate w:vAlign
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateCELLVALIGN($val)
+    {
+        $valign = array('top', 'center', 'both', 'bottom');
+        if (in_array($val, $valign)) {
+            $xml = '<' . CreateElement::NAMESPACEWORD .
+                    ':vAlign ' . CreateElement::NAMESPACEWORD . ':val="' . $val . '"/>__GENERATETCPR__';
+            $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+        }
+    }
+
+    /**
+     * Generate w:vmerge
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateCELLVMERGE($val)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':vMerge ' . CreateElement::NAMESPACEWORD . ':val="' . $val . '"/>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:vmerge
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateCELLWIDTH($val)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tcW ' . CreateElement::NAMESPACEWORD . ':w="' . $val . '" w:type="dxa" />__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:gridcols
+     *
+     * @param string $w
+     * @access protected
+     */
+    protected function generateGRIDCOLS($w)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tblGrid ' .
+                CreateElement::NAMESPACEWORD . ':w="' . $w . '"></' .
+                CreateElement::NAMESPACEWORD . ':tblGrid>__GENERATEGRIDCOLS__';
+        $this->_xml = str_replace('__GENERATEGRIDCOLS__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:gridcol
+     *
+     * @access protected
+     */
+    protected function generateGRIDCOL($width = 1)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':gridCol';
+        if (!empty($width)) {
+            $xml .= ' w:w="' . $width . '" ';
+        }
+        $xml .= '/>__GENERATEGRIDCOL__';
+        $this->_xml = str_replace('__GENERATEGRIDCOL__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:hmerge
+     *
+     * @access protected
+     * @deprecated
+     * @param string $val
+     */
+    protected function generateHMERGE($val = '')
+    {
+        
+    }
+
+    /**
+     * Generate w:jc
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateJC($val = '')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':jc ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':jc>';
+        $this->_xml = str_replace('__GENERATEJC__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:p
+     *
+     * @access protected
+     */
+    protected function generateP($value = null, $options = null)
+    {
+        $xmlWF = new WordFragment();
+        $xmlWF->addText($value, $options['textProperties']);
+        $xml = (string) $xmlWF;
+        $this->_xml = str_replace('__GENERATETC__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:shd
+     *
+     * @param string $val
+     * @param string $color
+     * @param string $fill
+     * @param string $bgcolor
+     * @param string $themeFill
+     * @access protected
+     */
+    protected function generateSHD($val = 'horz-cross', $color = 'ff0000', $fill = '', $bgcolor = '', $themeFill = '')
+    {
+        $xmlAux = '<' . CreateElement::NAMESPACEWORD . ':shd w:val="' .
+                $val . '"';
+        if ($color != '')
+            $xmlAux .= ' w:color="' . $color . '"';
+        if ($fill != '')
+            $xmlAux .= ' w:fill="' . $fill . '"';
+        if ($bgcolor != '')
+            $xmlAux .= ' wx:bgcolor="' . $bgcolor . '"';
+        if ($themeFill != '')
+            $xmlAux .= ' w:themeFill="' . $themeFill . '"';
+        $xmlAux .= '></' . CreateElement::NAMESPACEWORD . ':shd>';
+        $this->_xml = str_replace('__GENERATETCPR__', $xmlAux, $this->_xml);
+    }
+
+    /**
+     * Generate w:tableLayout
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateTBLLAYOUT($val = 'autofit')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tblLayout ' .
+                CreateElement::NAMESPACEWORD . ':type="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':tblLayout>';
+        $this->_xml = str_replace('__GENERATETBLLAYOUT__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:bidiVisual
+     *
+     * @param array $float
+     * @access protected
+     */
+    protected function generateTBLBIDI($val)
+    {
+        $xml = '<w:bidiVisual w:val="' . $val . '" />';
+        $this->_xml = str_replace('__GENERATETBLBIDI__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblborders
+     *
+     * @access protected
+     */
+    protected function generateTBLBORDERS()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tblBorders>__GENERATETBLBORDER__</' .
+                CreateElement::NAMESPACEWORD . ':tblBorders>';
+        $this->_xml = str_replace('__GENERATETBLBORDERS__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblbottom
+     *
+     * @param string $val
+     * @param string $sz
+     * @param string $space
+     * @param string $color
+     * @access protected
+     */
+    protected function generateTBLBOTTOM($val = "single", $sz = "4", $space = '0', $color = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':bottom ' . CreateElement::NAMESPACEWORD .
+                ':val="' . $val . '" ' . CreateElement::NAMESPACEWORD .
+                ':sz="' . $sz . '" ' . CreateElement::NAMESPACEWORD .
+                ':space="' . $space . '" ' . CreateElement::NAMESPACEWORD .
+                ':color="' . $color . '"></' . CreateElement::NAMESPACEWORD .
+                ':bottom>__GENERATETBLBORDER__';
+        $this->_xml = str_replace('__GENERATETBLBORDER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tbl
+     *
+     * @access protected
+     */
+    protected function generateTBL()
+    {
+        $this->_xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tbl>__GENERATETBL__</' . CreateElement::NAMESPACEWORD .
+                ':tbl>';
+    }
+
+    /**
+     * Generate w:tblpPr
+     *
+     * @param array $float
+     * @access protected
+     */
+    protected function generateTBLFLOAT($float)
+    {
+        $margin = array();
+        foreach (self::$_borders as $value) {
+            if (isset($float['textMargin_' . $value])) {
+                $margin[$value] = (int) $float['textMargin_' . $value];
+            } else {
+                $margin[$value] = 0;
+            }
+        }
+        if (isset($float['align'])) {
+            $align = $float['align'];
+        } else {
+            $align = 'left';
+        }
+
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tblpPr ';
+        $xml .= 'w:leftFromText="' . $margin['left'] . '" ';
+        $xml .= 'w:rightFromText="' . $margin['right'] . '" ';
+        $xml .= 'w:topFromText="' . $margin['top'] . '" ';
+        $xml .= 'w:bottomFromText="' . $margin['bottom'] . '" ';
+        $xml .= 'w:vertAnchor="text" w:horzAnchor ="margin" ';
+        $xml .= 'w:tblpXSpec ="' . $align . '" w:tblpYSpec="inside" />';
+
+        $this->_xml = str_replace('__GENERATETBLFLOAT__', $xml, $this->_xml);
+        //exit($this->_xml);
+    }
+
+    /**
+     * Generate w:tblstyle
+     *
+     * @param string $strVal
+     * @access protected
+     */
+    protected function generateTBLSTYLE($strVal = 'TableGridPHPDOCX')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tblStyle ' . CreateElement::NAMESPACEWORD .
+                ':val="' . $strVal . '"></' . CreateElement::NAMESPACEWORD .
+                ':tblStyle>';
+        $this->_xml = str_replace('__GENERATETBLSTYLE__', $xml, $this->_xml);
+        //exit($this->_xml);
+    }
+
+    /**
+     * Generate w:tblcellspacing
+     *
+     * @param string $w
+     * @param string $type
+     * @access protected
+     */
+    protected function generateTBLCELLSPACING($w = '', $type = 'dxa')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tblCellSpacing ' . CreateElement::NAMESPACEWORD .
+                ':w="' . $w . '" ' . CreateElement::NAMESPACEWORD .
+                ':type="' . $type . '"></' . CreateElement::NAMESPACEWORD .
+                ':tblCellSpacing>';
+        $this->_xml = str_replace(
+                '__GENERATETBLCELLSPACING__', $xml, $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:tblInd
+     *
+     * @param string $w
+     * @param string $type
+     * @access protected
+     */
+    protected function generateTBLINDENT($w = '', $type = 'dxa')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tblInd ' . CreateElement::NAMESPACEWORD .
+                ':w="' . $w . '" ' . CreateElement::NAMESPACEWORD .
+                ':type="' . $type . '"></' . CreateElement::NAMESPACEWORD .
+                ':tblInd>';
+        $this->_xml = str_replace(
+                '__GENERATETBLINDENT__', $xml, $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:tblCellMar
+     *
+     * @param array $cellMargin
+     * @access protected
+     */
+    protected function generateTBLCELLMARGIN($cellMargin)
+    {
+        if (!is_array($cellMargin)) {
+            $cellMargins['top'] = $cellMargin;
+            $cellMargins['left'] = $cellMargin;
+            $cellMargins['bottom'] = $cellMargin;
+            $cellMargins['right'] = $cellMargin;
+        } else {
+            $cellMargins = $cellMargin;
+        }
+        $sides = array('top', 'left', 'bottom', 'right');
+        $xml = '<w:tblCellMar>';
+        foreach ($cellMargins as $key => $value) {
+            if (in_array($key, $sides)) {
+                $xml .= '<w:' . $key . ' w:w="' . $value . '" w:type="dxa" />';
+            }
+        }
+        $xml .= '</w:tblCellMar>';
+        $this->_xml = str_replace(
+                '__GENERATETBLCELLMARGINS__', $xml, $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:tblgrid
+     *
+     * @access protected
+     */
+    protected function generateTBLGRID()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tblGrid>__GENERATEGRIDCOL__</' .
+                CreateElement::NAMESPACEWORD .
+                ':tblGrid>__GENERATETBL__';
+        $this->_xml = str_replace('__GENERATETBL__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblinsideh
+     *
+     * @param string $val
+     * @param string $sz
+     * @param string $space
+     * @param string $color
+     * @access protected
+     */
+    protected function generateTBLINSIDEH($val = "single", $sz = "4", $space = '0', $color = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':insideH ' . CreateElement::NAMESPACEWORD .
+                ':val="' . $val . '" ' . CreateElement::NAMESPACEWORD .
+                ':sz="' . $sz . '" ' . CreateElement::NAMESPACEWORD .
+                ':space="' . $space . '" ' . CreateElement::NAMESPACEWORD .
+                ':color="' . $color . '"></' . CreateElement::NAMESPACEWORD .
+                ':insideH>__GENERATETBLBORDER__';
+        $this->_xml = str_replace('__GENERATETBLBORDER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblinsidev
+     *
+     * @param string $val
+     * @param string $sz
+     * @param string $space
+     * @param string $color
+     * @access protected
+     */
+    protected function generateTBLINSIDEV($val = "single", $sz = "4", $space = '0', $color = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':insideV ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '" ' .
+                CreateElement::NAMESPACEWORD . ':sz="' . $sz . '" ' .
+                CreateElement::NAMESPACEWORD . ':space="' . $space . '" ' .
+                CreateElement::NAMESPACEWORD . ':color="' . $color . '"></' .
+                CreateElement::NAMESPACEWORD . ':insideV>__GENERATETBLBORDER__';
+        $this->_xml = str_replace('__GENERATETBLBORDER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblleft
+     *
+     * @param string $val
+     * @param string $sz
+     * @param string $space
+     * @param string $color
+     * @access protected
+     */
+    protected function generateTBLLEFT($val = "single", $sz = "4", $space = '0', $color = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':left ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '" ' .
+                CreateElement::NAMESPACEWORD . ':sz="' . $sz . '" ' .
+                CreateElement::NAMESPACEWORD . ':space="' . $space . '" ' .
+                CreateElement::NAMESPACEWORD . ':color="' . $color . '"></' .
+                CreateElement::NAMESPACEWORD . ':left>__GENERATETBLBORDER__';
+        $this->_xml = str_replace('__GENERATETBLBORDER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblLook
+     *
+     * @param array $conditionalFormatting
+     * @access protected
+     */
+    protected function generateTBLLOOK($conditionalFormatting)
+    {
+        //0x0020=Apply first row conditional formatting
+        //0x0040=Apply last row conditional formatting
+        //0x0080=Apply first column conditional formatting
+        //0x0100=Apply last column conditional formatting
+        //0x0200=Do not apply row banding conditional formatting
+        //0x0400=Do not apply column banding conditional formatting
+
+        $mask = array();
+        $mask['firstRow'] = 0x0020;
+        $mask['lastRow'] = 0x0040;
+        $mask['firstCol'] = 0x0080;
+        $mask['lastCol'] = 0x0100;
+        $mask['noHBand'] = 0x0200;
+        $mask['noVBand'] = 0x0400;
+
+        $result = 0;
+
+        foreach ($conditionalFormatting as $key => $value) {
+            if (!empty($value)) {
+                $result |= $mask[$key];
+            }
+        }
+        $valHex = dechex($result);
+        if (strlen($valHex) == 1) {
+            $val = '000' . (string) $valHex;
+        } else if (strlen($valHex) == 2) {
+            $val = '00' . (string) $valHex;
+        } else if (strlen($valHex) == 3) {
+            $val = '0' . (string) $valHex;
+        } else if (strlen($valHex) == 4) {
+            $val = (string) $valHex;
+        }
+
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tblLook ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '" ></' .
+                CreateElement::NAMESPACEWORD . ':tblLook>';
+        $this->_xml = str_replace('__GENERATETBLLOOK__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tbloverlap
+     *
+     * @param string $val
+     * @access protected
+     */
+    protected function generateTBLOVERLAP($val = 'never')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tblOverlap ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':tblOverlap>';
+        $this->_xml = str_replace('__GENERATETBLOVERLAP__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblpr
+     *
+     * @access protected
+     */
+    protected function generateTBLPR()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tblPr>__GENERATETBLSTYLE____GENERATETBLFLOAT____GENERATETBLOVERLAP____GENERATETBLBIDI____GENERATETBLW__' .
+                '__GENERATEJC____GENERATETBLCELLSPACING____GENERATETBLINDENT__' .
+                '__GENERATETBLBORDERS____GENERATESHD____GENERATETBLLAYOUT____GENERATETBLCELLMARGINS__' .
+                '__GENERATETBLLOOK__</' .
+                CreateElement::NAMESPACEWORD . ':tblPr>__GENERATETBL__';
+        $this->_xml = str_replace('__GENERATETBL__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblright
+     *
+     * @param string $val
+     * @param string $sz
+     * @param string $space
+     * @param string $color
+     * @access protected
+     */
+    protected function generateTBLRIGHT($val = 'single', $sz = '4', $space = '0', $color = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':right ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '" ' .
+                CreateElement::NAMESPACEWORD . ':sz="' . $sz . '" ' .
+                CreateElement::NAMESPACEWORD . ':space="' . $space . '" ' .
+                CreateElement::NAMESPACEWORD . ':color="' . $color . '"></' .
+                CreateElement::NAMESPACEWORD . ':right>__GENERATETBLBORDER__';
+        $this->_xml = str_replace('__GENERATETBLBORDER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tbltop
+     *
+     * @param string $val
+     * @param string $sz
+     * @param string $space
+     * @param string $color
+     * @access protected
+     */
+    protected function generateTBLTOP($val = 'single', $sz = '4', $space = '0', $color = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':top ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '" ' .
+                CreateElement::NAMESPACEWORD . ':sz="' . $sz . '" ' .
+                CreateElement::NAMESPACEWORD . ':space="' . $space . '" ' .
+                CreateElement::NAMESPACEWORD . ':color="' . $color . '"></' .
+                CreateElement::NAMESPACEWORD . ':top>__GENERATETBLBORDER__';
+        $this->_xml = str_replace('__GENERATETBLBORDER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblw
+     *
+     * @param string $type
+     * @param string $w
+     * @access protected
+     */
+    protected function generateTBLW($type, $value)
+    {
+        if ($type == 'pct') {
+            $value = $value * 50;
+        }
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tblW ' .
+                CreateElement::NAMESPACEWORD . ':w="' . $value . '" ' .
+                CreateElement::NAMESPACEWORD . ':type="' . $type . '"></' .
+                CreateElement::NAMESPACEWORD . ':tblW>';
+        $this->_xml = str_replace('__GENERATETBLW__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tc
+     *
+     * @access protected
+     */
+    protected function generateTC()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tc >__GENERATETC__</' .
+                CreateElement::NAMESPACEWORD . ':tc>__GENERATETR__';
+        $this->_xml = str_replace('__GENERATETR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tcpr
+     *
+     * @access protected
+     */
+    protected function generateTCPR()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tcPr>__GENERATETCPR__</' . CreateElement::NAMESPACEWORD .
+                ':tcPr>__GENERATETC__';
+        $this->_xml = str_replace('__GENERATETC__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tcw
+     *
+     * @param string $w
+     * @param string $type
+     * @access protected
+     */
+    protected function generateTCW($w = '', $type = 'dxa')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':tcW ' .
+                CreateElement::NAMESPACEWORD . ':w="' . $w . '" ' .
+                CreateElement::NAMESPACEWORD . ':type="' . $type . '"></' .
+                CreateElement::NAMESPACEWORD . ':tcW>__GENERATETCPR__';
+        $this->_xml = str_replace('__GENERATETCPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tr
+     *
+     * @access protected
+     */
+    protected function generateTR()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tr >__GENERATETRPR____GENERATETR__</' .
+                CreateElement::NAMESPACEWORD . ':tr>__GENERATETBL__';
+        $this->_xml = str_replace('__GENERATETBL__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:trheight
+     *
+     * @param int $height
+     * @param string $hRule
+     * @access protected
+     */
+    protected function generateTRHEIGHT($height = '', $hRule = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':trHeight ' .
+                CreateElement::NAMESPACEWORD . ':val="' . (int) $height .
+                '" w:hRule="' . $hRule . '"></' .
+                CreateElement::NAMESPACEWORD . ':trHeight>__GENERATETRPR__';
+        $this->_xml = str_replace('__GENERATETRPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:trpr
+     *
+     * @access protected
+     */
+    protected function generateTRPR()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':trPr>__GENERATETRPR__</' . CreateElement::NAMESPACEWORD .
+                ':trPr>';
+        $this->_xml = str_replace('__GENERATETRPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:tblHeader
+     *
+     * @access protected
+     */
+    protected function generateTRTABLEHEADER()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':tblHeader />__GENERATETRPR__';
+        $this->_xml = str_replace('__GENERATETRPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Clean template r token
+     *
+     * @access private
+     */
+    private function cleanTemplateR()
+    {
+        $this->_xml = preg_replace('/__GENERATETR__/', '', $this->_xml);
+    }
+
+    /**
+     * Clean template trpr token
+     *
+     * @access private
+     */
+    private function cleanTemplateTrPr()
+    {
+        $this->_xml = preg_replace('/__GENERATETRPR__/', '', $this->_xml);
+    }
+
+    /**
+     * Clean template trpr token
+     *
+     * @access private
+     */
+    private function cleanTemplateTcPr()
+    {
+        $this->_xml = preg_replace('/__GENERATETCPR__/', '', $this->_xml);
+    }
+
+    /**
+     * Prepares the table data for insertion
+     * @param array $tableData
+     * @access private
+     */
+    private function parseTableData($tableData)
+    {
+        $parsedData = array();
+        $colCount = array();
+        foreach ($tableData as $rowNumber => $row) {
+            $parsedData[$rowNumber] = array();
+            $colNumber = 0;
+            foreach ($row as $col => $cell) {
+                //Check if in the previous row there was a cell with rowspan > 1
+                while (isset($parsedData[$rowNumber - 1][$colNumber]['rowspan']) &&
+                $parsedData[$rowNumber - 1][$colNumber]['rowspan'] > 1) {
+                    //replicate the array
+                    $parsedData[$rowNumber][$colNumber] = $parsedData[$rowNumber - 1][$colNumber];
+                    //reduce by one the rowspan
+                    $parsedData[$rowNumber][$colNumber]['rowspan'] = $parsedData[$rowNumber - 1][$colNumber]['rowspan'] - 1;
+                    //set up the vmerge and content values
+                    $parsedData[$rowNumber][$colNumber]['vmerge'] = 'continue';
+                    $parsedData[$rowNumber][$colNumber]['value'] = NULL;
+                    if (isset($parsedData[$rowNumber - 1][$colNumber]['colspan'])) {
+                        $colNumber += $parsedData[$rowNumber - 1][$colNumber]['colspan'];
+                    } else {
+                        $colNumber++;
+                    }
+                }
+                if (is_array($cell)) {
+                    $parsedData[$rowNumber][$colNumber] = $cell;
+                } else {
+                    $parsedData[$rowNumber][$colNumber]['value'] = $cell;
+                }
+                if (isset($parsedData[$rowNumber][$colNumber]['colspan'])) {
+                    $colNumber += $parsedData[$rowNumber][$colNumber]['colspan'];
+                } else {
+                    $colNumber++;
+                }
+            }
+            //check that there are no trailing rawspans after running through all cols
+            if ($rowNumber > 0) {
+                $colDiff = $colCount[$rowNumber - 1] - $colNumber;
+                if ($colDiff > 0) {
+                    for ($k = 0; $k < $colDiff; $k++) {
+                        //Check if in the previous row there was a cell with rowspan > 1
+                        while (isset($parsedData[$rowNumber - 1][$colNumber]['rowspan']) &&
+                        $parsedData[$rowNumber - 1][$colNumber]['rowspan'] > 1) {
+                            //replicate the array
+                            $parsedData[$rowNumber][$colNumber] = $parsedData[$rowNumber - 1][$colNumber];
+                            //reduce by one the rowspan
+                            $parsedData[$rowNumber][$colNumber]['rowspan'] = $parsedData[$rowNumber - 1][$colNumber]['rowspan'] - 1;
+                            //set up the vmerge and content values
+                            $parsedData[$rowNumber][$colNumber]['vmerge'] = 'continue';
+                            $parsedData[$rowNumber][$colNumber]['value'] = NULL;
+                            if (isset($parsedData[$rowNumber - 1][$colNumber]['colspan'])) {
+                                $colNumber += $parsedData[$rowNumber - 1][$colNumber]['colspan'];
+                            } else {
+                                $colNumber++;
+                            }
+                        }
+                    }
+                }
+            }
+            $colCount[$rowNumber] = $colNumber;
+        }
+        return $parsedData;
+    }
+
+}

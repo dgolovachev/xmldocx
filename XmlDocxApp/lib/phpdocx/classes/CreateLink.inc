@@ -1,1 +1,304 @@
-3Vhtb9pIEP7Or5hDkUyqHCSVeh9oiZJLnSY6QpChulZVZG3sBawY29pdJ42q/Peb3bWNwWBsSKvq+IKx5/WZeWbWNBqdN28a8AYuGCWCgu8FDxxi7gVTEPS7AC4YXnMUkVJnDgpNQ/YMAMNZ5IbOd3U7Is4DmVK8C9SncxoIrsXD6Jl505kAuMguW84hDAhzKIEhC93YcbwwoBxuYl94c+p6BEbtflsayH9aMyGibqfz9PTUfjt3nbYTzg+VF99zaMCV90gHBf3rC3MwMtXjR8o4epCP3x6f/NU+ftc+PkkUg4fEes54YkPaR6lOw/EJ5wlAfamBuNDATW+ZOuHGj0ZDGlJ4yk/6BWfEcShaiJj3iPLZbS6I8JzkZ0d9JyKgH8GB7QV4GTgUehDEvv++ro9HwpISrvVzYEsIXt+q8IRPX9/sJAxEwSp2FoLEYkdschPf+6s4q1swiQNHyNawbSc10jpUEj8aad+pi5eC1490f6curefzhkzRwJyKWegeAaMiZgEHJ2YMGxC+3PSrBANnWjGBGiz9q2hlU9QiHCnNQtSJ3QMx8/ifp/b3Ofbr+kRGqO5TEQZpFpA1ejgBRbhaqSzIWcounUpCriyjKRXXifdCSt4EWpz6k243z8UeDD73+4c5OfkpykFAn3KxtQ7fZwovq6itam+C7hMVgrI2nGs8RKhmNiB3dih+aaURFx11eZn1BKkarJoMPynasbS9LdxkNFWNV46cnxTuJZreFq2eeOuDTVY2CYDO76nrUle3AkZNXBcZBaGY4e7LVjI+fpArngt+BILc+5S32+3dB5ij91/ifG2v5GYB0sEwkumdezSlAWVoxsqzY+XZZf/jxdW51TLu6dQLjM2CZUauB6OxNTa/jFtLrbCbsSwiTiMib5QENbRuby9NC4WnjMxHgjCxYwrWsPTp5e1gPGrlW6dEeDT+2jdbxpUXUfYYOLEflgS1wEx2WNVUzcDdMdEMXrowsZkAqu2rEVQWa55uvgPC2Dmb8m/HdzCWh13NnC3CJ3fw2epXk317B7oqFXhUkT/ZE4IO8J60YuM0seVvCenG2pS1zi8kH9Eg/o94V4tKKUuJ7o9SzhHdnL8L364DTyRsU+3PuTcNcDn6MVW7Etekp7bKflz8ZqjBbNQhpdSScRk1yCl15JA0KpHUw+TXU3QrEeUh8g+PcyqykmY5Hq6eIgsSK7x/KTerQSixmqBUy6hGqcRoAuOq0cIYU63TK+ZYaEy9m5dEdeBFSXVC6xWC2XzE0y0PT92J717MsqMdFNqVhYI6gm7qo0R9/BzR5c5J9fKnvWWe5XUL/YT28SVMgvnBgPbyvwzd7uD8xhwNzy/Mf2+tj/jYSNMAY6k48lNdWQbSa66zkA9VajRPP3T28XRqFEuotxvmbTMa+QTfwwzb/mQOTOt8bFq2bRylqBzldTYOqlyNZxg2y50PaldZ1Cjv1dehafWvB/+0lNqWZa6q65TAtgZlY5EQsK7n9prs2n3XlInisT5kz73mSfN0Ad7QtteXq8zvsp+0YKUwy7dWJsf1rjBLT224jSSexD+CmNP0Pzk/dIg/CznuHg4unZDYF1Urkjt3JLPHWLVqFMq0V30yJADNdHmE3dxrRoxyPBvQ5ilkPQLr6abClDzDuu3lf1eioUxtlmEFwonJdh6ldUiWnXnWc6xq8RRYadxrZ+dWbaGHpqzaIoHlcqhpuUsZ08hyXLZGn//GEtWtqtbasbCVK7q1bNba/9aQGFN7ToQzazU7S2Or01wOtnD42JmlKcRL2Ko5+SqWVqtUuVLD0jKpUgH1OS3BTTt/NeiS5IrkSBL/vfDb2ukLCFcB2Xcx/+KWeqlA3JF49mlV9q7OY3ynq8xr/fYrVfabxTri3SYxOk8GMV6VnVIrRlF/dw63bs+Xxn8=
+<?php
+
+/**
+ * Create links using text strings
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateLink extends CreateElement
+{
+
+    /**
+     *
+     * @access private
+     * @static
+     */
+    private static $_instance = null;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_link;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_title;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_font;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateLink
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateLink();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Getter. Access to link var
+     *
+     * @access public
+     * @return string
+     */
+    public function getLink()
+    {
+        return $this->_link;
+    }
+
+    /**
+     * Getter. Access to title var
+     *
+     * @access public
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->_title;
+    }
+
+    /**
+     * Getter. Access to font var
+     *
+     * @access public
+     * @return string
+     */
+    public function getFont()
+    {
+        return $this->_font;
+    }
+
+    /**
+     * Create an embedded link to add in others elements like lists, tables...
+     *
+     * @access public
+     */
+    public function createEmbeddedLink()
+    {
+        $this->_xml = '';
+
+        $this->generateR();
+        $this->generateFLDCHAR('begin');
+        $this->generateR();
+        $this->generateINSTRTEXT($this->_title);
+        $this->generateR();
+        $this->generateFLDCHAR('separate');
+        $this->generatePROOFERR('gramStart');
+        $this->generateR();
+        $this->generateRPR();
+        $this->generateRFONTS($this->_font);
+        $this->generateRSTYLE('Hipervnculo');
+        $this->generateT($this->_link);
+        $this->generatePROOFERR('gramEnd');
+        $this->generateR();
+        $this->generateFLDCHAR('end');
+    }
+
+    /**
+     * Create a link
+     *
+     * @access public
+     * @param string $arrArgs[0] Text to add
+     * @param string $arrArgs[1] URL to add
+     * @param string $arrArgs[2] RFONTS
+     */
+    public function createLink()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+
+        $this->generateP();
+        $this->generateR();
+        $this->generateFLDCHAR('begin');
+        $this->generateR();
+        $this->generateINSTRTEXT($args[1]);
+        $this->generateR();
+        $this->generateFLDCHAR('separate');
+        $this->generatePROOFERR('gramStart');
+        $this->generateR();
+        $this->generateRPR();
+        $this->generateRSTYLE('Hipervnculo');
+        $this->generateRFONTS($args[2]);
+        $this->generateT($args[0]);
+        $this->generatePROOFERR('gramEnd');
+        $this->generateR();
+        $this->generateFLDCHAR('end');
+    }
+
+    /**
+     * Init a link to assign values to variables
+     *
+     * @access public
+     * @param string $arrArgs[0]['title'] Text to add
+     * @param string $arrArgs[0]['link'] URL to add
+     * @param string $arrArgs[0]['font'] RFONTS
+     */
+    public function initLink()
+    {
+        $args = func_get_args();
+
+        if (!isset($args[0]['title'])) {
+            $args[0]['title'] = '';
+        }
+        if (!isset($args[0]['link'])) {
+            $args[0]['link'] = '';
+        }
+        if (!isset($args[0]['font'])) {
+            $args[0]['font'] = '';
+        }
+
+        $this->_link = $args[0]['title'];
+        $this->_title = $args[0]['link'];
+        $this->_font = $args[0]['font'];
+    }
+
+    /**
+     * Generate w:fldChar
+     * 
+     * @access protected
+     * @param string $fldCharType
+     */
+    protected function generateFLDCHAR($fldCharType)
+    {
+        $strXML = '<' . CreateElement::NAMESPACEWORD . ':fldChar '
+                . CreateElement::NAMESPACEWORD . ':fldCharType="'
+                . $fldCharType . '"></'
+                . CreateElement::NAMESPACEWORD . ':fldChar>';
+        $this->_xml = str_replace('__GENERATER__', $strXML, $this->_xml);
+    }
+
+    /**
+     * Generate w:hyperlink
+     * 
+     * @access protected
+     * @param string $type
+     */
+    protected function generateHYPERLINK($type)
+    {
+        $this->_xml = '<' . createElement::NAMESPACEWORD
+                . ':hyperlink r:id="rId5" w:history="1">__GENERATEP__</'
+                . createElement::NAMESPACEWORD . ':hyperlink>';
+    }
+
+    /**
+     * Generate w:instrText
+     * 
+     * @access protected
+     * @param string $link. Optional, use http://localhost as default
+     */
+    protected function generateINSTRTEXT($link = 'http://localhost')
+    {
+        $xml = '<' . createElement::NAMESPACEWORD
+                . ':instrText xml:space="preserve"> HYPERLINK "'
+                . $link . '"</' . createElement::NAMESPACEWORD
+                . ':instrText>';
+        $this->_xml = str_replace('__GENERATER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:proofErr
+     * 
+     * @access protected
+     * @param string $type
+     */
+    protected function generatePROOFERR($type)
+    {
+        $xml = '<' . createElement::NAMESPACEWORD . ':proofErr '
+                . createElement::NAMESPACEWORD . ':type="' . $type
+                . '"></' . createElement::NAMESPACEWORD
+                . ':proofErr>__GENERATERSUB__';
+        $this->_xml = str_replace('__GENERATERSUB__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:r
+     * 
+     * @access protected
+     */
+    protected function generateR()
+    {
+        if (preg_match("/__GENERATEP__/", $this->_xml)) {
+            $xml = '<' . createElement::NAMESPACEWORD
+                    . ':r>__GENERATER__</' . createElement::NAMESPACEWORD
+                    . ':r>__GENERATERSUB__';
+            $this->_xml = str_replace('__GENERATEP__', $xml, $this->_xml);
+        } elseif (preg_match("/__GENERATERSUB__/", $this->_xml)) {
+            $xml = '<' . createElement::NAMESPACEWORD . ':r>'
+                    . '__GENERATER__</' . createElement::NAMESPACEWORD
+                    . ':r>__GENERATERSUB__';
+            $this->_xml = str_replace('__GENERATERSUB__', $xml, $this->_xml);
+        } else {
+            $this->_xml = '<' . createElement::NAMESPACEWORD
+                    . ':r>__GENERATER__</' . createElement::NAMESPACEWORD
+                    . ':r>__GENERATERSUB__';
+        }
+    }
+
+    /**
+     * Generate w:rStyle
+     * 
+     * @access protected
+     * @param string $val
+     */
+    protected function generateRSTYLE($val)
+    {
+        $xml = '<' . createElement::NAMESPACEWORD . ':rStyle '
+                . createElement::NAMESPACEWORD . ':val="' . $val . '"></'
+                . createElement::NAMESPACEWORD . ':rStyle>';
+        $this->_xml = str_replace('__GENERATERPR__', $xml, $this->_xml);
+    }
+
+}

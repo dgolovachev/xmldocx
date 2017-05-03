@@ -1,1 +1,101 @@
-rVZdb9pKEH3nV4xQJExUbBKp1RUJNBLkSpUIjcitmje0rAdsxd713V3joKr/vbNrm5gSUtSWF+/HzDlnZmdnabWC8/MWnMNXqcK7KY3s5IYzg2uptgBwH2Wh5M9uOWP8ia2RVgETTFEYXZrLbKvidWQAxruhx7swY4ojg3slw5zzWArUcJcnJk4xjBk8+FPfAjR/XmRMNgiCoij8yzTkPpdp17EkMUehHXtWioLpp/Ht7OHWbW9QaWKw25f9iw9+/73fv6gcxVOF3gCvMCw+WQUtnjCtqzwAPhsUoYaxQkrFbRls61urZUFcyuyv/sAN4xzJO1Pxhux3yxumQBsVi3W1FLhvZQZni8LRXf1lXG2YiTnBx4KGgiMMYfZleshDx0UWKufmGHG+pLTvk7glWOWCG5vvxYLXIF7XWXxr1Yd5ZqJY90aLEJf5mkRM7HcwWKP5VCnzulfO+vuBtAn+ubIQjwg7wnnH1gSQoolk+A4UmlwJDTxXio4fHu0F+bUYuCkdqxOCeTk7RDmm2sgH53mgusKts1oXz+uxlKULihW7y32K9owpltbSz0Jm2JtquWOZs6Lk8JzHsTIoBVMdeCV+tyQ4FsG8yr8UyRZMRLHkdrYCKjhjU7mSCjBdYhi+3IS/G14sqHlgFdtBWGU84yin/jIEgQVMPt9NJM9tt6gr21kKlqKm9kn9bwid5zQRerDBYbvqR5pHmDLtywwFbVJcKTM0VesgZeopz3rUpTK61Ms4ic02uOz3P7ShhJHDNmVpUEH00pgrqeXKWJeBXK2oa1af2kOdwlu61ME4xkBhwmxadBRnukZLfxeNNqMaZPNWEJs0qe2K7BS2kIqezjdNSiJ7TJmSthxodVJu7hAv+ick0ELsPE6RsM9ZK0lZLHYw4vD8d9z2VaqS5qBeArG56Fz9XIO2qq4/EjBUz+CwfeH324CCS3s5hu0v//3b+6dtnwYRskRa8i3SIX4cXRcDJaWBDvh7hepDZ+TWXmk3+9T1iDyugxJt1NQoM1s1t8JQ7U4lC1GRUxIvSe8ijDVbJrhAt7tI3LZHXRu7B1TupvVG1ubR9ppytWH3JuYrMg4pHumWRS+X+fGepl6T/ohLb6RwHWuDalZn0OsUnXfQ+ZNa6TTZ/s+R/pHRQQc2x3s1oGYydK1lX5Lz8ErHJtIykfxpnCATGFrABhbpQsYj8HagTFNV0Kjb6HxlT6PFueW0g95IUkGr+ob3Rppt0B2S873ad90T4FcQ8xej6i2wv/rNa7rsHozvrR8=
+<?php
+
+/**
+ * WordML
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class WordML extends CreateElement
+{
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_wordML;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private static $_instance = NULL;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        $this->_debug = Debug::getInstance();
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_wordML;
+    }
+
+    /**
+     * Create raw WordML
+     *
+     * @access public
+     * @param string $data
+     */
+    public function createRawWordML($data)
+    {
+        $this->_wordML = (string) $data;
+    }
+
+    /**
+     * Returns only the runs of content for embedding
+     *
+     * @access public
+     * @param string $data
+     */
+    public function inlineWordML()
+    {
+        $wordMLChunk = new DOMDocument();
+        $namespaces = 'xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" ';
+        $wordML = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?><w:root ' . $namespaces . '>' . $this->_wordML;
+        $wordML = $wordML . '</w:root>';
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $wordMLChunk->loadXML($wordML);
+        libxml_disable_entity_loader($optionEntityLoader);
+        $wordMLXpath = new DOMXPath($wordMLChunk);
+        $wordMLXpath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
+        $query = '//w:r';
+        $wrNodes = $wordMLXpath->query($query);
+        $blockCleaned = '';
+        foreach ($wrNodes as $node) {
+            $nodeR = $node->ownerDocument->saveXML($node);
+            $blockCleaned .= $nodeR;
+        }
+
+        return $blockCleaned;
+    }
+
+}

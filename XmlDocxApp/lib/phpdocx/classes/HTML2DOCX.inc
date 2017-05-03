@@ -1,1 +1,1935 @@
-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
+<?php
+
+/**
+ * Transform HTML to DOCX
+ *
+ * @category   Phpdocx
+ * @package    transform
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+error_reporting(E_ERROR | E_USER_ERROR);
+ini_set('display_errors', false);
+
+require_once dirname(__FILE__) . '/CreateDocx.inc';
+require_once dirname(__FILE__) . '/TransformDoc.inc';
+require_once dirname(__FILE__) . '/../lib/VFXP.inc.php';
+require_once dirname(__FILE__) . '/../lib/cssparser.php';
+
+class HTML2DOCX
+{
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_acceptedTags = array(
+        '<a>' => 'a',
+        '<address>' => 'address',
+        '<b>' => 'b',
+        '<br>' => 'br',
+        '<body>' => 'body',
+        '<cite>' => 'cite',
+        '<dd>' => 'dd',
+        '<div>' => 'div',
+        '<dfn>' => 'dfn',
+        '<dt>' => 'dt',
+        '<em>' => 'em',
+        '<font>' => 'font',
+        '<h1>' => 'h1',
+        '<h2>' => 'h2',
+        '<h3>' => 'h3',
+        '<h4>' => 'h4',
+        '<h5>' => 'h5',
+        '<h6>' => 'h6',
+        '<hr>' => 'hr',
+        '<i>' => 'i',
+        '<img>' => 'img',
+        '<li>' => 'li',
+        '<ol>' => 'ol',
+        '<p>' => 'p',
+        '<span>' => 'span',
+        '<strong>' => 'strong',
+        '<table>' => 'table',
+        '<tbody>' => 'tbody',
+        '<td>' => 'td',
+        '<th>' => 'th',
+        '<tr>' => 'tr',
+        '<title>' => 'title',
+        '<u>' => 'u',
+        '<ul>' => 'ul',
+        '<var>' => 'var'
+    );
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_cleanChars = array(
+        '&Aacute;',
+        '&Eacute;',
+        '&Iacute;',
+        '&Oacute;',
+        '&Uacute;',
+        '&Ntilde;',
+        '&aacute;',
+        '&eacute;',
+        '&iacute;',
+        '&oacute;',
+        '&uacute;',
+        'ntilde;',
+        '&nbsp;',
+        '&',
+    );
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_cleanCharsTo = array(
+        'Á',
+        'É',
+        'Í',
+        'Ó',
+        'Ú',
+        'Ñ',
+        'á',
+        'é',
+        'í',
+        'ó',
+        'ú',
+        'ñ',
+        ' ',
+        '',
+    );
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_preOptions = array(
+        'b',
+        'div',
+        'i',
+        'h1',
+        'h2',
+        'h3',
+        'h4',
+        'h5',
+        'h6',
+        'p',
+        'span',
+        'u',
+    );
+
+    /**
+     *
+     * @access private
+     * @static
+     * @var array
+     */
+    private static $_datsList;
+
+    /**
+     *
+     * @access private
+     * @static
+     * @var array
+     */
+    private static $_datsTable;
+
+    /**
+     *
+     * @access private
+     * @static
+     * @var array
+     */
+    private static $_datsText;
+
+    /**
+     *
+     * @access private
+     * @static
+     * @var array
+     */
+    private static $_datsTextInline;
+
+    /**
+     *
+     * @access private
+     * @var int
+     */
+    private $_ind;
+
+    /**
+     *
+     * @access private
+     * @var CreateDocx
+     */
+    private $_docx;
+
+    /**
+     *
+     * @access private
+     * @var DOM
+     */
+    private $_rootXML;
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_css;
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_xml;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_strCSS;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_filename;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_strHTML;
+
+    /**
+     * Construct
+     *
+     * @access public
+     * @param string $html HTML
+     */
+    public function __construct($html = null)
+    {
+        $xmldoc = new VFXP_Document();
+        $this->_strHTML = $html;
+        $this->_filename = 'documentHTML';
+    }
+
+    /**
+     * Destruct
+     *
+     * @access private
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Getter. CSS
+     *
+     * @access public
+     * @return string
+     */
+    public function getCSS()
+    {
+        return $this->_strCSS;
+    }
+
+    /**
+     * Getter. File name
+     *
+     * @access public
+     * @return string
+     */
+    public function getFileName()
+    {
+        return $this->_filename;
+    }
+
+    /**
+     * Getter. HTML
+     *
+     * @access public
+     * @return string
+     */
+    public function getHTML()
+    {
+        return $this->_strHTML;
+    }
+
+    /**
+     * Setter. CSS
+     *
+     * @access public
+     * @param string $css
+     */
+    public function setCSS($css)
+    {
+        $this->_strCSS = str_replace(' ', '', $css);
+    }
+
+    /**
+     * Setter. File name
+     *
+     * @access public
+     * @param string $fileName
+     */
+    public function setFileName($fileName)
+    {
+        $this->_filename = $fileName;
+    }
+
+    /**
+     * Setter. HTML
+     *
+     * @access public
+     * @param string $html
+     */
+    public function setHTML($html)
+    {
+        $acceptedTags = array(
+            '<address>' => 'address',
+            '<b>' => 'b',
+            '<br>' => 'br',
+            '<cite>' => 'cite',
+            '<dd>' => 'dd',
+            '<div>' => 'div',
+            '<dfn>' => 'dfn',
+            '<dt>' => 'dt',
+            '<em>' => 'em',
+            '<font>' => 'font',
+            '<h1>' => 'h1',
+            '<h2>' => 'h2',
+            '<h3>' => 'h3',
+            '<h4>' => 'h4',
+            '<h5>' => 'h5',
+            '<h6>' => 'h6',
+            '<hr>' => 'hr',
+            '<i>' => 'i',
+            '<img>' => 'img',
+            '<li>' => 'li',
+            '<ol>' => 'ol',
+            '<p>' => 'p',
+            '<span>' => 'span',
+            '<strong>' => 'strong',
+            '<table>' => 'table',
+            '<tbody>' => 'tbody',
+            '<td>' => 'td',
+            '<th>' => 'th',
+            '<tr>' => 'tr',
+            '<title>' => 'title',
+            '<u>' => 'u',
+            '<ul>' => 'ul',
+            '<var>' => 'var'
+        );
+        $html = str_replace('<br />', '</p><p>', $html);
+        ob_start();
+        echo $html;
+        $html = ob_get_clean();
+        $config = array(
+            'indent' => true,
+            'output-xhtml' => true,
+            'wrap' => 200);
+        $tidy = new tidy();
+        $tidy->parseString($html, $config, 'utf8');
+        $tidy->cleanRepair();
+        $this->_strHTML = $tidy;
+        $this->_strHTML = strip_tags(
+                str_replace(
+                        $this->_cleanChars, $this->_cleanCharsTo, $this->_strHTML
+                ), implode(
+                        '', array_keys($acceptedTags)
+                )
+        );
+    }
+
+    /**
+     * Parse CSS styles
+     *
+     * @access private
+     * @param cssparser $element
+     * @param array $params
+     */
+    private function parserStylesCSS(&$element, &$params)
+    {
+        if ($element->attributeValue('class')) {
+            $cssElement = $element->name() . '.' .
+                    $element->attributeValue('class');
+        } elseif ($element->attributeValue('id')) {
+            $cssElement = $element->name() . '#' .
+                    $element->attributeValue('id');
+        } else {
+            $cssElement = $element->name();
+        }
+        if ($this->_css->Get($cssElement, 'align')) {
+            $params['jc'] = $this->_css->Get($cssElement, 'align');
+        }
+        if ($this->_css->Get($cssElement, 'border')) {
+            $borderSize = preg_replace(
+                    '/[px]|[em]|\%$/', '', $this->_css->Get($cssElement, 'border')
+            );
+            if ($borderSize == 0) {
+                $params['border'] = 'none';
+            } else {
+                $propertiesBorder = explode(
+                        ' ', $this->_css->Get($cssElement, 'border')
+                );
+                $params['border'] = 'single';
+                $params['border_color'] = $propertiesBorder[2];
+                $params['border_sz'] = $borderSize;
+            }
+        }
+        if ($this->_css->Get($cssElement, 'color')) {
+            $params['color'] = $this->_css->Get($cssElement, 'color');
+        }
+        if ($this->_css->Get($cssElement, 'font-size')) {
+            $params['sz'] = $this->_css->Get($cssElement, 'font-size');
+            if (
+                    preg_match(
+                            '/^\d+\%$/', $this->_css->Get($cssElement, 'font-size')
+                    )
+            ) {
+                $params['sz'] = (float) preg_replace(
+                                '/\%$/', '', $this->_css->Get($cssElement, 'font-size')
+                        ) * 0.12;
+            }
+        }
+        if ($this->_css->Get($cssElement, 'font-family')) {
+            $params['font'] = $this->_css->Get(
+                    $cssElement, 'font-family'
+            );
+        }
+        if ($this->_css->Get($cssElement, 'height')) {
+            $params['height'] = $this->_css->Get($cssElement, 'height');
+            $params['sizeY'] = $this->_css->Get($cssElement, 'height');
+        }
+        if ($this->_css->Get($cssElement, 'width')) {
+            $params['width'] = $this->_css->Get($cssElement, 'width');
+            $params['sizeX'] = $this->_css->Get($cssElement, 'width');
+        }
+    }
+
+    /**
+     * Parse style tags
+     *
+     * @access private
+     * @param string $styleTag
+     * @param cssparser $element
+     * @param array $params
+     */
+    private function parserStyleTag($styleTag, &$element, &$params)
+    {
+        $strFullStyleTag = $element->name() . '{' . $styleTag . '}';
+        if ($styleTag) {
+            $css = new cssparser();
+            $css->ParseStr($strFullStyleTag);
+            foreach ($css->css as $key => $arrCSS) {
+                if (count($arrCSS) > 0) {
+                    foreach ($arrCSS as $keyStyle => $cssStyle) {
+                        if ($keyStyle == 'align') {
+                            $params['jc'] = $cssStyle;
+                        }
+                        if ($keyStyle == 'border') {
+                            $borderSize = preg_replace(
+                                    '/[px]|[em]|\%$/', '', $cssStyle
+                            );
+                            if ($borderSize == 0) {
+                                $params['border'] = 'none';
+                            } else {
+                                $propertiesBorder = explode(' ', $cssStyle);
+                                $params['border'] = 'single';
+                                $params['border_color'] = $propertiesBorder[2];
+                                $params['border_sz'] = $borderSize;
+                            }
+                        }
+                        if ($keyStyle == 'color') {
+                            $params['color'] = $cssStyle;
+                        }
+                        if ($keyStyle == 'font-size') {
+                            $params['sz'] = $cssStyle;
+                            if (preg_match('/^\d+\%$/', $cssStyle)) {
+                                $params['sz'] = (float) preg_replace(
+                                                '/\%$/', '', $cssStyle
+                                        ) * 0.12;
+                            }
+                        }
+                        if ($keyStyle == 'font-family') {
+                            $params['font'] = $cssStyle;
+                        }
+                        if ($keyStyle == 'height') {
+                            $params['height'] = $cssStyle;
+                            $params['sizeY'] = $cssStyle;
+                        }
+                        if ($keyStyle == 'padding-left') {
+                            $size = preg_replace(
+                                    '/[px]|[em]|\%$/', '', $cssStyle
+                            );
+                            if ($size) {
+                                $params[''] = $size;
+                            }
+                        }
+                        if ($keyStyle == 'text-align') {
+                            if ($cssStyle == 'justify') {
+                                $cssStyle = 'both';
+                            }
+                            $params['jc'] = $cssStyle;
+                        }
+                        if ($keyStyle == 'text-decoration') {
+                            if ($cssStyle == 'underline') {
+                                $params['u'] = 'single';
+                            }
+                        }
+                        if ($keyStyle == 'width') {
+                            $params['width'] = $cssStyle;
+                            $params['sizeX'] = $cssStyle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Parse style tags
+     *
+     * @access private
+     * @param VFXP_Document $element
+     * @param int $level
+     * @param string $preOption
+     * @param array $params
+     */
+    private function recursiveElements(&$element, $level = 0, $preOption = null, $params = array())
+    {
+        if (in_array($element->name(), $this->_acceptedTags)) {
+            switch ($element->name()) {
+                case 'a':
+                    if ($preOption == 'li') {
+                        if ($element->attributeValue('title') != '') {
+                            $params['title'] = $element->attributeValue('title');
+                        } else {
+                            $params['title'] = $element->value();
+                        }
+                        $params['link'] = $element->attributeValue('href');
+                        $objLink = $this->_docx->addElement('addLink', $params);
+                        array_push($this->arrDatsList, $objLink);
+                    }
+                    if ($preOption == 'td') {
+                        if ($element->attributeValue('title') != '') {
+                            $params['title'] = $element->attributeValue('title');
+                        } else {
+                            $params['title'] = $element->value();
+                        }
+                        $params['link'] = $element->attributeValue('href');
+                        $objLink = $this->_docx->addElement('addLink', $params);
+                        array_push($this->arrDatsTable[$this->_ind], $objLink);
+                    }
+                    if (
+                            empty($preOption) ||
+                            in_array($preOption, $this->_preOptions)
+                    ) {
+                        $this->_docx->addLink(
+                                $element->value(), $element->attributeValue('href')
+                        );
+                    }
+                    break;
+                case 'b':
+                case 'strong':
+                    $finalTextTag = array();
+                    $params['b'] = 'single';
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($preOption == 'p') {
+                        if ($element->hasChildren()) {
+                            $this->datsTextInline = array();
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push(
+                                            $this->datsText, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                        }
+                    } elseif ($preOption == 'li') {
+                        $params['text'] = $element->value();
+                        if ($element->hasChildren()) {
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                        } else {
+                            $arrParamsText = $params;
+                            array_push(
+                                    $this->datsTextInline, $arrParamsText
+                            );
+                        }
+                    } elseif ($preOption == 'textInline') {
+                        if ($element->hasChildren()) {
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push(
+                                            $this->datsText, $arrPTextTag
+                                    );
+                                    array_push(
+                                            $this->datsTextInline, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                            array_push($this->datsTextInline, $params);
+                        }
+                    } elseif ($element->hasChildren()) {
+                        $this->datsTextInline = array();
+                        if ($element->value()) {
+                            $params['text'] = $element->value();
+                            array_push($this->datsTextInline, $params);
+                        }
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements(
+                                    $child, $level + 1, 'textInline', $params
+                            );
+                        }
+                        if (
+                                !strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                        ) {
+                            $this->_docx->addText($this->datsTextInline);
+                        } else {
+                            $textTag = explode(
+                                    '__TAG__', $this->datsTextInline[0]['text']
+                            );
+                            $i = 1;
+                            if ($textTag[0]) {
+                                $finalTextTag[]['text'] = $textTag[0];
+                            }
+                            while (
+                            strstr(
+                                    $this->datsTextInline[0]['text'], '__TAG__'
+                            )
+                            ) {
+                                $this->datsTextInline[0]['text'] = preg_replace(
+                                        '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                );
+                                $finalTextTag[] = $this->datsTextInline[$i];
+                                $textTag[$i] = preg_replace('/<.*>/', '', $textTag[$i]);
+                                $finalTextTag[]['text'] = $textTag[$i];
+                                $i++;
+                            }
+                            $this->_docx->addText($finalTextTag);
+                        }
+                    } else {
+                        $this->_docx->addText($element->value(), $params);
+                    }
+                    break;
+                case 'br':
+                    $this->_docx->addBreak('line');
+                    break;
+                case 'dd':
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    array_push($this->arrDatsList, $element->value());
+                    break;
+                case 'div':
+                case 'p':
+                    $this->datsText = array();
+                    $finalTextTag = array();
+
+                    if ($element->attributeValue('align')) {
+                        $params['jc'] = $element->attributeValue('align');
+                    }
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($element->value()) {
+                        $params['text'] = $element->value();
+                        array_push($this->datsText, $params);
+                    }
+                    if ($element->hasChildren()) {
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements($child, $level + 1, 'p');
+                        }
+                    }
+                    if (!strstr($this->datsText[0]['text'], '__TAG__')) {
+                        $this->_docx->addText($this->datsText);
+                    } else {
+                        $textTag = explode(
+                                '__TAG__', $this->datsText[0]['text']
+                        );
+                        $i = 1;
+                        if ($textTag[0]) {
+                            $finalTextTag[]['text'] = $textTag[0];
+                        }
+                        while (
+                        strstr(
+                                $this->datsText[0]['text'], '__TAG__'
+                        )
+                        ) {
+                            $this->datsText[0]['text'] = preg_replace(
+                                    '/__TAG__/', '', $this->datsText[0]['text'], 1
+                            );
+                            $finalTextTag[] = $this->datsText[$i];
+                            $textTag[$i] = preg_replace(
+                                    '/<.*>/', '', $textTag[$i]
+                            );
+                            $finalTextTag[]['text'] = $textTag[$i];
+                            $i++;
+                        }
+                        $this->_docx->addText($finalTextTag);
+                    }
+                    $this->_docx->addBreak($strParamsBreak);
+                    break;
+                case 'dl':
+                    $this->arrDatsList = array();
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    $params['val'] = '0';
+                    if ($element->hasChildren('dt')) {
+                        foreach ($element->children('dt') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                    }
+                    $this->_docx->addList($this->arrDatsList, $params);
+                    break;
+                case 'dt':
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    array_push($this->arrDatsList, $element->value());
+                    break;
+                case 'font':
+                    $finalTextTag = array();
+                    if ($element->attributeValue('size')) {
+                        $params['sz'] = $element->attributeValue('size');
+                    }
+                    if ($element->attributeValue('face')) {
+                        $params['font'] = $element->attributeValue('face');
+                    }
+                    if ($element->attributeValue('color')) {
+                        $params['color'] = $element->attributeValue('color');
+                    }
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($preOption == 'p') {
+                        if ($element->hasChildren()) {
+                            $this->datsTextInline = array();
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push(
+                                            $this->datsText, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                        }
+                    } elseif ($preOption == 'li') {
+                        $params['text'] = $element->value();
+                        if ($element->hasChildren()) {
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                        } else {
+                            $arrParamsText = $params;
+                            array_push(
+                                    $this->datsTextInline, $arrParamsText
+                            );
+                        }
+                    } elseif ($preOption == 'textInline') {
+                        if ($element->hasChildren()) {
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push(
+                                            $this->datsText, $arrPTextTag
+                                    );
+                                    array_push(
+                                            $this->datsTextInline, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                            array_push($this->datsTextInline, $params);
+                        }
+                    } elseif ($element->hasChildren()) {
+                        $this->datsTextInline = array();
+                        if ($element->value()) {
+                            $params['text'] = $element->value();
+                            array_push($this->datsTextInline, $params);
+                        }
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements(
+                                    $child, $level + 1, 'textInline', $params
+                            );
+                        }
+                        if (
+                                !strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                        ) {
+                            $this->_docx->addText($this->datsTextInline);
+                        } else {
+                            $textTag = explode(
+                                    '__TAG__', $this->datsTextInline[0]['text']
+                            );
+                            $i = 1;
+                            if ($textTag[0]) {
+                                $finalTextTag[]['text'] = $textTag[0];
+                            }
+                            while (
+                            strstr(
+                                    $this->datsTextInline[0]['text'], '__TAG__'
+                            )
+                            ) {
+                                $this->datsTextInline[0]['text'] = preg_replace(
+                                        '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                );
+                                $finalTextTag[] = $this->datsTextInline[$i];
+                                $textTag[$i] = preg_replace(
+                                        '/<.*>/', '', $textTag[$i]
+                                );
+                                $finalTextTag[]['text'] = $textTag[$i];
+                                $i++;
+                            }
+                            $this->_docx->addText($finalTextTag);
+                        }
+                    } else {
+                        $this->_docx->addText($element->value(), $params);
+                    }
+                    break;
+                case 'h1':
+                case 'h2':
+                case 'h3':
+                case 'h4':
+                case 'h5':
+                case 'h6':
+                    $finalTextTag = array();
+                    $params['b'] = 'single';
+                    if ($element->name() == 'h1') {
+                        $params['sz'] = '16';
+                    } elseif ($element->name() == 'h2') {
+                        $params['sz'] = '15';
+                    } elseif ($element->name() == 'h3') {
+                        $params['sz'] = '14';
+                    } elseif ($element->name() == 'h4') {
+                        $params['sz'] = '13';
+                    } elseif ($element->name() == 'h5') {
+                        $params['sz'] = '12';
+                    } elseif ($element->name() == 'h6') {
+                        $params['sz'] = '9';
+                    }
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($preOption == 'p') {
+                        if ($element->hasChildren()) {
+                            $this->datsTextInline = array();
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push(
+                                            $this->datsText, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                        }
+                    } elseif ($preOption == 'li') {
+                        $params['text'] = $element->value();
+                        if ($element->hasChildren()) {
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                        } else {
+                            $arrParamsText = $params;
+                            array_push(
+                                    $this->datsTextInline, $arrParamsText
+                            );
+                        }
+                    } elseif ($preOption == 'textInline') {
+                        if ($element->hasChildren()) {
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push(
+                                            $this->datsText, $arrPTextTag
+                                    );
+                                    array_push(
+                                            $this->datsTextInline, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                            array_push($this->datsTextInline, $params);
+                        }
+                    } elseif ($element->hasChildren()) {
+                        $this->datsTextInline = array();
+                        if ($element->value()) {
+                            $params['text'] = $element->value();
+                            array_push($this->datsTextInline, $params);
+                        }
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements(
+                                    $child, $level + 1, 'textInline', $params
+                            );
+                        }
+                        if (
+                                !strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                        ) {
+                            $this->_docx->addText($this->datsTextInline);
+                        } else {
+                            $textTag = explode(
+                                    '__TAG__', $this->datsTextInline[0]['text']
+                            );
+                            $i = 1;
+                            if ($textTag[0]) {
+                                $finalTextTag[]['text'] = $textTag[0];
+                            }
+                            while (
+                            strstr(
+                                    $this->datsTextInline[0]['text'], '__TAG__'
+                            )
+                            ) {
+                                $this->datsTextInline[0]['text'] = preg_replace(
+                                        '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                );
+                                $finalTextTag[] = $this->datsTextInline[$i];
+                                $textTag[$i] = preg_replace(
+                                        '/<.*>/', '', $textTag[$i]
+                                );
+                                $finalTextTag[]['text'] = $textTag[$i];
+                                $i++;
+                            }
+                            $this->_docx->addText($finalTextTag);
+                        }
+                    } else {
+                        $this->_docx->addText($element->value(), $params);
+                    }
+                    break;
+                case 'hr':
+                    $this->_docx->addShape('line');
+                    break;
+                case 'address':
+                case 'cite':
+                case 'dfn':
+                case 'em':
+                case 'i':
+                case 'var':
+                    $finalTextTag = array();
+                    $params['i'] = 'single';
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($preOption == 'p') {
+                        if ($element->hasChildren()) {
+                            $this->datsTextInline = array();
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push($this->datsText, $arrPTextTag);
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                        }
+                    } elseif ($preOption == 'li') {
+                        $params['text'] = $element->value();
+                        if ($element->hasChildren()) {
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                        } else {
+                            $arrParamsText = $params;
+                            array_push($this->datsTextInline, $arrParamsText);
+                        }
+                    } elseif ($preOption == 'textInline') {
+                        if ($element->hasChildren()) {
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push($this->datsText, $arrPTextTag);
+                                    array_push(
+                                            $this->datsTextInline, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                            array_push($this->datsTextInline, $params);
+                        }
+                    } elseif ($element->hasChildren()) {
+                        $this->datsTextInline = array();
+                        if ($element->value()) {
+                            $params['text'] = $element->value();
+                            array_push($this->datsTextInline, $params);
+                        }
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements(
+                                    $child, $level + 1, 'textInline', $params
+                            );
+                        }
+                        if (
+                                !strstr($this->datsTextInline[0]['text'], '__TAG__')
+                        ) {
+                            $this->_docx->addText($this->datsTextInline);
+                        } else {
+                            $textTag = explode(
+                                    '__TAG__', $this->datsTextInline[0]['text']
+                            );
+                            $i = 1;
+                            if ($textTag[0]) {
+                                $finalTextTag[]['text'] = $textTag[0];
+                            }
+                            while (
+                            strstr(
+                                    $this->datsTextInline[0]['text'], '__TAG__'
+                            )
+                            ) {
+                                $this->datsTextInline[0]['text'] = preg_replace(
+                                        '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                );
+                                $finalTextTag[] = $this->datsTextInline[$i];
+                                $textTag[$i] = preg_replace(
+                                        '/<.*>/', '', $textTag[$i]
+                                );
+                                $finalTextTag[]['text'] = $textTag[$i];
+                                $i++;
+                            }
+                            $this->_docx->addText($finalTextTag);
+                        }
+                    } else {
+                        $this->_docx->addText($element->value(), $params);
+                    }
+                    break;
+                case 'img':
+                    if ($element->attributeValue('align')) {
+                        $params['jc'] = $element->attributeValue('align');
+                    }
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    $params['name'] = $element->attributeValue('src');
+                    $this->_docx->addImage($params);
+                    break;
+                case 'li':
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($element->hasChildren()) {
+                        $this->datsTextInline = array();
+                        $arrFinalDatsTextInline = array();
+                        if ($element->value()) {
+                            $params['text'] = $element->value();
+                            array_push($this->datsTextInline, $params);
+                        }
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements($child, $level + 1, 'li');
+                        }
+                        if (
+                                !strstr($this->datsTextInline[0]['text'], '__TAG__')
+                        ) {
+                            array_push(
+                                    $arrFinalDatsTextInline, $this->datsTextInline
+                            );
+                        } else {
+                            $textTag = explode(
+                                    '__TAG__', $this->datsTextInline[0]['text']
+                            );
+                            $i = 1;
+                            if ($textTag[0]) {
+                                $finalTextTag[]['text'] = $textTag[0];
+                            }
+                            while (
+                            strstr(
+                                    $this->datsTextInline[0]['text'], '__TAG__'
+                            )
+                            ) {
+                                $this->datsTextInline[0]['text'] = preg_replace(
+                                        '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                );
+                                $finalTextTag[] = $this->datsTextInline[$i];
+                                $textTag[$i] = preg_replace(
+                                        '/<.*>/', '', $textTag[$i]
+                                );
+                                $finalTextTag[]['text'] = $textTag[$i];
+                                $i++;
+                            }
+                            foreach ($finalTextTag as $arrPTextTag) {
+                                array_push(
+                                        $arrFinalDatsTextInline, $arrPTextTag
+                                );
+                            }
+                        }
+                        $objText = $this->_docx->addElement(
+                                'addText', $arrFinalDatsTextInline
+                        );
+                        array_push($this->arrDatsList, $objText);
+                    } else {
+                        array_push($this->arrDatsList, $element->value());
+                    }
+                    break;
+                case 'ol':
+                    $this->arrDatsList = array();
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($element->hasChildren('li')) {
+                        foreach ($element->children('li') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                    }
+                    $params['val'] = '2';
+                    $this->_docx->addList($this->arrDatsList, $params);
+                    break;
+                case 'span':
+                    $finalTextTag = array();
+                    if ($element->attributeValue('align')) {
+                        $params['jc'] = $element->attributeValue('align');
+                    }
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($preOption == 'p') {
+                        if ($element->hasChildren()) {
+                            $this->datsTextInline = array();
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push($this->datsText, $arrPTextTag);
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                        }
+                    } elseif ($preOption == 'li') {
+                        $params['text'] = $element->value();
+                        if ($element->hasChildren()) {
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                        } else {
+                            $arrParamsText = $params;
+                            array_push($this->datsTextInline, $arrParamsText);
+                        }
+                    } elseif ($preOption == 'textInline') {
+                        if ($element->hasChildren()) {
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push($this->datsText, $arrPTextTag);
+                                    array_push(
+                                            $this->datsTextInline, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                            array_push($this->datsTextInline, $params);
+                        }
+                    } elseif ($element->hasChildren()) {
+                        $this->datsTextInline = array();
+                        if ($element->value()) {
+                            $params['text'] = $element->value();
+                            array_push($this->datsTextInline, $params);
+                        }
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements(
+                                    $child, $level + 1, 'textInline', $params
+                            );
+                        }
+                        if (
+                                !strstr($this->datsTextInline[0]['text'], '__TAG__')
+                        ) {
+                            $this->_docx->addText($this->datsTextInline);
+                        } else {
+                            $textTag = explode(
+                                    '__TAG__', $this->datsTextInline[0]['text']
+                            );
+                            $i = 1;
+                            if ($textTag[0]) {
+                                $finalTextTag[]['text'] = $textTag[0];
+                            }
+                            while (
+                            strstr(
+                                    $this->datsTextInline[0]['text'], '__TAG__'
+                            )
+                            ) {
+                                $this->datsTextInline[0]['text'] = preg_replace(
+                                        '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                );
+                                $finalTextTag[] = $this->datsTextInline[$i];
+                                $textTag[$i] = preg_replace(
+                                        '/<.*>/', '', $textTag[$i]
+                                );
+                                $finalTextTag[]['text'] = $textTag[$i];
+                                $i++;
+                            }
+                            $this->_docx->addText($finalTextTag);
+                        }
+                    } else {
+                        $this->_docx->addText($element->value(), $params);
+                    }
+                    break;
+                case 'table':
+                    $this->_ind = 0;
+                    $this->arrDatsTable = array();
+                    if ($element->attributeValue('align')) {
+                        $params['jc'] = $element->attributeValue('align');
+                    }
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    $params['TBLSTYLEval'] = 'Tablanormal';
+                    if (
+                            $element->hasChildren('tbody') ||
+                            $element->hasChildren('tr') ||
+                            $element->hasChildren('th')
+                    ) {
+                        foreach ($element->children('tbody') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                        foreach ($element->children('tr') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                        foreach ($element->children('th') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                    }
+                    $this->_docx->addTable($this->arrDatsTable, $params);
+                    break;
+                case 'tbody':
+                    if ($element->hasChildren('tr')) {
+                        foreach ($element->children('tr') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                    }
+                    break;
+                case 'td':
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($element->hasChildren()) {
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements($child, $level + 1, 'td');
+                        }
+                    } elseif (is_array($this->arrDatsTable[$this->_ind])) {
+                        array_push(
+                                $this->arrDatsTable[$this->_ind], $element->value()
+                        );
+                    }
+                    break;
+                case 'th':
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if (is_array($this->arrDatsTable[$this->_ind])) {
+                        array_push(
+                                $this->arrDatsTable[$this->_ind], $element->value()
+                        );
+                    }
+                    break;
+                case 'title':
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    $params['val'] = 1;
+                    $this->_docx->addTitle($element->value(), $params);
+                    break;
+                case 'tr':
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    array_push($this->arrDatsTable, array());
+                    if ($element->hasChildren('td')) {
+                        foreach ($element->children('td') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                    }
+                    $this->_ind++;
+                    break;
+                case 'u':
+                    $finalTextTag = array();
+                    $params['u'] = 'single';
+                    $this->parserStylesCSS($element, $params);
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($preOption == 'p') {
+                        if ($element->hasChildren()) {
+                            $this->datsTextInline = array();
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push($this->datsText, $arrPTextTag);
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                        }
+                    } elseif ($preOption == 'li') {
+                        $params['text'] = $element->value();
+                        if ($element->hasChildren()) {
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                        } else {
+                            $arrParamsText = $params;
+                            array_push($this->datsTextInline, $arrParamsText);
+                        }
+                    } elseif ($preOption == 'textInline') {
+                        if ($element->hasChildren()) {
+                            if ($element->value()) {
+                                $params['text'] = $element->value();
+                                array_push($this->datsTextInline, $params);
+                            }
+                            foreach ($element->children() as $child) {
+                                $this->recursiveElements(
+                                        $child, $level + 1, 'textInline', $params
+                                );
+                            }
+                            if (
+                                    !strstr(
+                                            $this->datsTextInline[0]['text'], '__TAG__'
+                                    )
+                            ) {
+                                array_push($this->datsText, $params);
+                            } else {
+                                $textTag = explode(
+                                        '__TAG__', $this->datsTextInline[0]['text']
+                                );
+                                $i = 1;
+                                if ($textTag[0]) {
+                                    $finalTextTag[]['text'] = $textTag[0];
+                                }
+                                while (
+                                strstr(
+                                        $this->datsTextInline[0]['text'], '__TAG__'
+                                )
+                                ) {
+                                    $this->datsTextInline[0]['text'] = preg_replace(
+                                            '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                    );
+                                    $finalTextTag[] = $this->datsTextInline[$i];
+                                    $textTag[$i] = preg_replace(
+                                            '/<.*>/', '', $textTag[$i]
+                                    );
+                                    $finalTextTag[]['text'] = $textTag[$i];
+                                    $i++;
+                                }
+                                foreach ($finalTextTag as $arrPTextTag) {
+                                    array_push($this->datsText, $arrPTextTag);
+                                    array_push(
+                                            $this->datsTextInline, $arrPTextTag
+                                    );
+                                }
+                            }
+                        } else {
+                            $params['text'] = $element->value();
+                            array_push($this->datsText, $params);
+                            array_push($this->datsTextInline, $params);
+                        }
+                    } elseif ($element->hasChildren()) {
+                        $this->datsTextInline = array();
+                        if ($element->value()) {
+                            $params['text'] = $element->value();
+                            array_push($this->datsTextInline, $params);
+                        }
+                        foreach ($element->children() as $child) {
+                            $this->recursiveElements(
+                                    $child, $level + 1, 'textInline', $params
+                            );
+                        }
+                        if (
+                                !strstr($this->datsTextInline[0]['text'], '__TAG__')
+                        ) {
+                            $this->_docx->addText($this->datsTextInline);
+                        } else {
+                            $textTag = explode(
+                                    '__TAG__', $this->datsTextInline[0]['text']
+                            );
+                            $i = 1;
+                            if ($textTag[0]) {
+                                $finalTextTag[]['text'] = $textTag[0];
+                            }
+                            while (
+                            strstr(
+                                    $this->datsTextInline[0]['text'], '__TAG__'
+                            )
+                            ) {
+                                $this->datsTextInline[0]['text'] = preg_replace(
+                                        '/__TAG__/', '', $this->datsTextInline[0]['text'], 1
+                                );
+                                $finalTextTag[] = $this->datsTextInline[$i];
+                                $textTag[$i] = preg_replace(
+                                        '/<.*>/', '', $textTag[$i]
+                                );
+                                $finalTextTag[]['text'] = $textTag[$i];
+                                $i++;
+                            }
+                            $this->_docx->addText($finalTextTag);
+                        }
+                    } else {
+                        $this->_docx->addText($element->value(), $params);
+                    }
+                    break;
+                case 'ul':
+                    $this->arrDatsList = array();
+                    if ($element->attributeValue('style')) {
+                        $this->parserStyleTag(
+                                $element->attributeValue('style'), $element, $params
+                        );
+                    }
+                    if ($element->hasChildren('li')) {
+                        foreach ($element->children('li') as $child) {
+                            $this->recursiveElements($child, $level + 1);
+                        }
+                    }
+                    $params['val'] = '1';
+                    $this->_docx->addList($this->arrDatsList, $params);
+                    break;
+                default:
+                    break;
+            }
+        }
+        if ($level == 0) {
+            foreach ($element->children() as $child) {
+                $this->recursiveElements($child, $level + 1);
+            }
+        }
+    }
+
+    /**
+     * Generate XML
+     *
+     * @access public
+     */
+    public function generateXML()
+    {
+        $this->_xml = new VFXP_Document();
+        $this->_xml->parseFromString(
+                '<content_xml_phpdocx>' . $this->_strHTML . '</content_xml_phpdocx>'
+        );
+        $this->_rootXML = $this->_xml->rootElement();
+        $this->_css = new cssparser();
+        if ($this->_strCSS) {
+            $this->_css->ParseStr($this->_strCSS);
+        }
+        $this->_docx = new CreateDocx();
+        $this->recursiveElements($this->_rootXML);
+    }
+
+    /**
+     * Generate and return XML
+     *
+     * @access public
+     * @return string
+     */
+    public function returnXML()
+    {
+        $this->generateXML();
+        return $this->_docx->getXmlWordDocumentContent();
+    }
+
+    /**
+     * Create DOCX
+     *
+     * @access public
+     */
+    public function generateDOCX()
+    {
+        $this->generateXML();
+        $this->_docx->createDocx($this->_filename);
+    }
+
+}

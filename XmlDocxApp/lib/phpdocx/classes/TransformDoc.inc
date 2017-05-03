@@ -1,1 +1,396 @@
-tVp7T+NIEv8/n6Ivis4Om9iAtKsVDJnhIMwi8RJkT3NHWMvYncS3fl27A2F25j77VbXbdvuVMBPGEsRxV/2qurq6Hu10OubOTofskAmzw2QWsYCcXp98IjwiN6dnJGLk02+TywugQKIPjs3pPGIvhJCbRexGzko8jm3nT3tO4SnhGU5KH8UvzJsvOCEn+a3u9MmVzRxqkxsWuUvH8aKQJuRy6XMvoK5nkzvjwkAA9dIXnMcHpvn8/GzsB65jOFHQF1J8z6FhIsTHqVbk4vxkfHU3FsNPlCUgAYf3d/d+MXZ/Nnb3JGP4p0RXwCUG4gOV2aGMRcxiNI4Y98K5PraOLy7I38n/xtbV9QQE9Q87Hce3k6Sw4mnkdP7qdBDZicKEk7uT38aXx9b55fHHMVj498vx1YQcEU3KTZwFDezEiGIargIfIWwOX9ncjGYzmB8ALgMacnN/d/cXk1Hf5jCnZOHFiekFYHztsC7t+uwM1HtrcWUKkCsECz/CK/sgH2zHoWCUmHlP4Df54yebkYQzMKV8ZIpPSUZ6liuhvwvZZsx+aQcGj4uTt1d5teCBX4MFp4fVYEuHt8lZPoLzljHFIzJbhg6anFiWk4HofUHxVyfbEuLma03qKd1eqEu/TeZHyjllBsnc4vtlzynPQGrCGeVLFpIeX3jJcKQ4yo9WKlGU6mViq9pV1YIN1/sGFYVrbms3AfIKu8l98KOVShSlejF+rDGaIEOjxa9R7szz6VbWAgdHjA3GklSbtJFpcgt17jgTIJsWT4aa9epcL3m85GS2rY1AqRTqdZYqaNsUvHuT1UuK1evhHFucStKgS81eodOWa5goa9hL5F2bu4tVRMUywhblcj1im9mBTEKkF+WGfoVKygoqjO02K+hRwWjjmt6mbvDZi0ls88VrLEg+SN9pyqqVSdiPSeQvOf23F98APMQR+F/THh+CuoCHpZpvO1QXpYCumdqAaNOp1h+Q0/Pb8cnk+vZf1t345vj2GG4HKWv/UIViHOOQ4LfAc8A79Hw4u+gq9iOX6mswQS7o49NQy7lVOYB/LOeWi9MVAijLqO0siC41shPIJza/wS99Ze54eTOia4ZGjo4UmprOUEpACbukhw28VeaKALxSg8RRrJd075fhvhLqQzVeZy8x3T8QRVoFoVO/k/7iBanVxao2aVF3zxOf2iHZbm87iNEcnnsJFTTXIW6XzCu0dwtquyNUUt3x6vJLvslzVOIzv41RdfiaxbWEOUfd96JBOOriPhAPxPfQCiNuzaJl6Br/iec4qiA3OSz6yd+8BIKKrlDe7z30q85SHsaFrievBvvd7yKtph02rH89cJbYjPrc0xV4F1Bui/ZuSP+79J6OulCUc6jIhpOXmHaJ1sTqpCRHXU5X3BQ6E2dhM5j60ZLPhr92iTnKVooYlfluiJOYikhoB9tlZgzIVwBS80cO7XllNUT4kPE8dzSzcDGZJyv7uOd6T55Lq3wG8CmBIMfuV9lnUsM8kkL7OMPyOYdVOL4Sx+YY68Yrh8Zikj1acysFUsP7Rk/JqpKMuDUuROETZTw/8Ni6hAspg26wJUpkZyRHJKTPBHLZMXMW3hNVA34P+/GbnDDjGY7wud66WGJfqrxVu1FnERHt99B+hKWEmc680CV8QdOpVwwpGFYeVxVTtiGD4H5qw5ZS9UN/ZFEg/FGzkMQ08L9WnhzaaQwZiL9cRLZLGWD43uMq8C3XS1A5i4pRyxfDOnSg6jx7+TkExj3MBBR5kdhK6wg9V09hWyuiQau+7OPxKlJwLns4ulWOQ0RShrGmfIzP77sizDxgblVPhw4OGs9omrJub5UGvEZr16hzrtRbqsVTK312uR7D2JQqr01sBtK0hz4EOYgYDbGyej3aCW0CaGWsj1QCiTKbUhu+KmXFnBIen15fyn0Gd8VhQjNxJYdCAn4+eI6Ym/FhKtYwVrbLA4iY0Xl7Hs4uzdTfldH7P+lGf0cfwePHyH0Z9UW1mn2TYl9loa23V3Z9kCYcjpDuE3YzzVP/jo1Vt17iv3apEj/VSM9c1LLOzi/GlpU6p2GYQGLi0e0+ZmwDvmnqXlaR+A2LHCn4093FBL9CnI+YvpZjOIKoEzFoql58miwoVkIw1u6wRblSQORH5JMoMy7MvVpEK7G31ORALxICXhcruWmycwR/+v20O4Ut9l5/r+/1iW7svO9Pp3vkC9Hv/5gm09HDT/2+5iWrbiFD+GuAKdeyfV/PkCtV5wAPsILzYJ6oZul5Lj5a37JIPqzNZN9SaynEwzPRXlFXLTFELSo46o1KoTiUMH9MZW3Lzl0zY8oQmwrTTGyTVAnVIluZuGhdkuUjhA1dBQOBA7I7IMO9NYuZY4lMJR1+fULFeGGmWTU7TjTAaX5ohpULvC7LKrpvl21V915s9qySjs3ZGEbaEjIMbczJpbc0jS6UaXqvpybpkxz73O0+oIPUR9Jc2H1ocCzEgxQtPCtdb2wrXgvRGCwKg8ntmm3Dc/G1thkrAWttX4lXF1vJadZcKsjTbneQjWJtmZjiv9VtqR665cLWFK8ATWGEws4K/oMQUNK3hFuqW8tFMg1i/qJn1q63rfn+g7aP2Q6fRC1zV+fVpH53kK9pm25lgY4fJbRecm/uWm5OzwZkmeCpIITc2J0ZYmg4En3IcATj2/c0AKJnJ2ya1nJyWGmADqvj6hlKbdCSFpfvL4rxhnYW5okvp/OyAbWr9a6CJi0YLHQRve04RZIXbx+y2SivU1rAoRy1YjvGwJYB3GuJ95lqDwOiPIqYB3FQRClI0y1gjIYYItd00YVmRfOPpY8Bq67VM6VcMLFijWkwmwWHQBHouaTXHuchvRUvuSVPS5JU4qBATo+O9erJgBKumrp+xjb1r5mnid8ooBpghMM6B0Jt3lD/tH3PRTD0TLmTuOe+fP+ueUoRo5b3OdEj5FGblarcVN/mQ7KejMjAB0tviW1U2kFg/5k3z5NmyRAatPr4lp4cjQgm+0F5NF2hoZDYRvPM7FiM7e/uljYuGEluQrzVq2PDUYwnZneyZpD1ZKos9DhLPvtVq/OI6d3S2PZYU5jI62mkXvMWTBxv5C9i8YUiBE2P1l5lysOi9l8NFO/EyxGqGgNf03a+QYFWa83UaCUFvk01ZpqZGWM8jsKwRuzQJUowK9QKoYIWXY5UD/QZ+xTVSf7xMrHnaSEbz+8+l5ZcCbu1gq/37Lki4YTL4JEyK/2RSj0fC9nQmHEa6Lt9IfqYg889LjnWzgfPEP1M8N0B2QevM0Q3r4pZUPGrpK3lLDbISe2GRtoAlBKqvBjNZemSDvbJly8FIkR4bEqZ7fFapG/LQkRlakmGWS7LV2dXtDfpwgwyy5UOcRtSxToNfHCoxIEM+q0qpKIzXZorvooDB1A6e2Hy7T57abPSQqZAqH56d9D4DmHmRxFssQ1rzaNYuM3ezyKTx6stsMSv694M7THiPAreDM6ns4puh1o5rFXP4XqXx7cfz6962I+nhh4oFVDxa4l6kii9iE+PrhpIit+lZM5WvEH82vk/
+<?php
+
+/**
+ * Transform DOCX to PDF or XHTML
+ *
+ * @category   Phpdocx
+ * @package    transform
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+error_reporting(E_ALL & ~E_NOTICE);
+
+class TransformDoc
+{
+
+    const SCHEMA_IMAGEDOCUMENT = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/image';
+    const SCHEMA_OFFICEDOCUMENT = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument';
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_document;
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_docProps;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_xhtml;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Getter. Document
+     *
+     * @access public
+     */
+    public function getDocument()
+    {
+        return $this->_document;
+    }
+
+    /**
+     * Getter. Document
+     *
+     * @access public
+     */
+    public function setDocument($document)
+    {
+        $this->_document = $document;
+    }
+
+    /**
+     * Getter. DocProps
+     *
+     * @access public
+     */
+    public function getDocProps()
+    {
+        return $this->_docProps;
+    }
+
+    /**
+     * Getter. DocProps
+     *
+     * @access public
+     */
+    public function setDocProps($props)
+    {
+        $this->_docProps = $props;
+    }
+
+    /**
+     * Getter. File
+     *
+     * @access public
+     */
+    public function getstrFile()
+    {
+        return $this->strFile;
+    }
+
+    /**
+     * Getter. XHTML
+     *
+     * @access public
+     */
+    public function getStrXHTML()
+    {
+        return $this->_xhtml;
+    }
+
+    /**
+     * Getter. Output file
+     *
+     * @access public
+     */
+    public function getStrOutputFile()
+    {
+        return $this->strOutputFile;
+    }
+
+    /**
+     * Setter. File
+     *
+     * @access public
+     */
+    public function setstrFile($file)
+    {
+        $this->strFile = $file;
+    }
+
+    /**
+     * Setter. XHTML
+     *
+     * @access public
+     */
+    public function setStrXHTML($strXHTML)
+    {
+        $this->_xhtml = $strXHTML;
+    }
+
+    /**
+     *
+     * @param string $outputFile
+     */
+    public function setStrOutputFile($outputFile)
+    {
+        $this->strOutputFile = $outputFile;
+    }
+
+    /**
+     * Return zip path
+     *
+     * @access public
+     * @return string
+     */
+    public function absoluteZipPath($path)
+    {
+        $path = str_replace(array('/', '\\'), DIRECTORY_SEPARATOR, $path);
+        $parts = array_filter(
+                explode(DIRECTORY_SEPARATOR, $path), 'strlen'
+        );
+        $arrAbsolutes = array();
+        foreach ($parts as $datParts) {
+            if ('.' == $datParts)
+                continue;
+            if ('..' == $datParts) {
+                array_pop($arrAbsolutes);
+            } else {
+                $arrAbsolutes[] = $datParts;
+            }
+        }
+        return implode('/', $arrAbsolutes);
+    }
+
+    /**
+     * Clean HTML
+     *
+     * @access public
+     */
+    public function cleanXHTML()
+    {
+        $sectionOne = explode('<head>', $this->_xhtml);
+        $sectionTwo = explode('</head>', $this->_xhtml);
+        $sectionTwo = str_replace(
+                'src="?image="', 'src="imagen_not_found.jpg"', $sectionTwo
+        );
+        if (!isset($sectionTwo[1])) {
+            $sectionTwo[1] = $this->_xhtml;
+            $sectionOne[0] = '';
+        }
+        $this->_xhtml = $sectionOne[0] .
+                '<head><meta http-equiv="Content-Type" ' .
+                'content="text/html; charset=utf-8" /></head>' . $sectionTwo[1];
+    }
+
+    /**
+     * Return file name
+     *
+     * @access public
+     */
+    public function getFileName()
+    {
+        try {
+            $partsFile = explode('/', $this->strFile);
+            $divideFile = explode('.', array_pop($partsFile));
+            $fileName = array_shift($divideFile);
+        } catch (Exception $e) {
+            $fileName = 'file';
+        }
+        return $fileName;
+    }
+
+    /**
+     * Convert DOCX to XHTML
+     *
+     * @access public
+     */
+    public function generateXHTML()
+    {
+        $package = new ZipArchive();
+        $openPackage = $package->open($this->strFile);
+        if (!$openPackage) {
+            echo 'Unable to find the DOCX file';
+            exit();
+        }
+        $relsData = $package->getFromName('_rels/.rels');
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $relations = simplexml_load_string($relsData);
+        libxml_disable_entity_loader($optionEntityLoader);
+
+        foreach ($relations->Relationship as $rel) {
+            if ($rel["Type"] == TransformDoc::SCHEMA_OFFICEDOCUMENT) {
+                $xml = $package->getFromName(
+                        $this->absoluteZipPath(
+                                dirname($rel['Target']) . '/' .
+                                basename($rel['Target'])
+                        )
+                );
+                $this->setDocument($xml);
+                $xmlDOM = new DOMDocument();
+                $xml = str_replace('</w:wordDocument>', '', $xml);
+                $xml = preg_replace(
+                        '/(<w:wordDocument)+(.)*(><w:body>)/', '<w:body>', $xml
+                );
+                $optionEntityLoader = libxml_disable_entity_loader(true);
+                @$xmlDOM->loadXML($xml);
+                libxml_disable_entity_loader($optionEntityLoader);
+                $xsl = new DOMDocument();
+                $xsl->load(dirname(__FILE__) . '/../xsl/docx2html.xsl');
+
+                $xsltProc = new XSLTProcessor();
+
+                $xsltProc->importStylesheet($xsl);
+                $this->_xhtml = $xsltProc->transformToXML($xmlDOM);
+            }
+        }
+
+        $pattern = "'src\s*=\s*([\"\'])?(?(1) (.*?)\\1 | ([^\s\>]+))'isx";
+        preg_match_all($pattern, $this->_xhtml, $domImgs);
+
+        $idImgs = array();
+        foreach ($domImgs[0] as $dats) {
+            $datsFiltered = explode('"', $dats);
+            if (preg_match('/^\?image=rId/', $datsFiltered[1])) {
+                $datFiltered = explode('?image=', $dats);
+                $idImgs[] = substr($datFiltered[1], 0, -1);
+            }
+        }
+        $relsDocumentData = $package->getFromName('word/_rels/document.xml.rels');
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $relationsImgs = simplexml_load_string($relsDocumentData);
+        libxml_disable_entity_loader($optionEntityLoader);
+        $pathImgs = array();
+        foreach ($relationsImgs->Relationship as $relImg) {
+            if ($relImg["Type"] == TransformDoc::SCHEMA_IMAGEDOCUMENT) {
+                $pathImgs[(string) $relImg["Id"]] = (string) $relImg["Target"];
+                $pathZip[] = 'word/' . (string) $relImg["Target"];
+            }
+        }
+
+        foreach ($idImgs as $datsIdImgs) {
+            $this->_xhtml = str_replace(
+                    "src=\"?image=$datsIdImgs\"", "src=\"files/files_" .
+                    "$this->strFile/media/word/$pathImgs[$datsIdImgs]\"", $this->_xhtml
+            );
+        }
+
+        if (!empty($pathZip)) {
+            $package->extractTo(
+                    "files/files_$this->strFile/media", $pathZip
+            );
+            $package->close();
+        }
+    }
+
+    /**
+     * Convert DOCX to PDF, using dompdf. DOCX->XHTML->PDF
+     *
+     * @access public
+     */
+    public function generatePDF($path = '')
+    {
+        $this->generateXHTML();
+        $this->cleanXHTML();
+        $this->_extractProps();
+        try {
+            $domPDF = new DOMPDF();
+            $domPDF->load_html($this->_xhtml);
+            $docProps = $this->getDocProps();
+            $domPDF->set_paper($docProps['size'], $docProps['orientation']);
+            $domPDF->render();
+            $fileName = $this->getFileName() . '.pdf';
+            if ($path == '') {
+                $domPDF->stream($fileName);
+            } else {
+                file_put_contents($path, $domPDF->output());
+            }
+        } catch (Exception $err) {
+            echo 'Unable to generate PDF file. ';
+            echo $err;
+        }
+    }
+
+    /**
+     * Validate HTML using tidy
+     *
+     * @access public
+     */
+    public function validatorXHTML()
+    {
+        ob_start();
+        echo $this->_xhtml;
+        $html = ob_get_clean();
+        $config = array(
+            'indent' => true,
+            'output-xhtml' => true,
+            'wrap' => 200);
+        $tidy = new tidy();
+        $tidy->parseString($html, $config, 'utf8');
+        $tidy->cleanRepair();
+        $this->_xhtml = $tidy;
+    }
+
+    /**
+     * Get the document properties
+     *
+     * @return array
+     */
+    private function _extractProps()
+    {
+        $xmlDOM = new DOMDocument();
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $xmlDOM->loadXML($this->getDocument());
+        libxml_disable_entity_loader($optionEntityLoader);
+        //Get the page size and orientation
+        $node = $xmlDOM->getElementsByTagName('pgSz');
+        $docProps = array();
+        $width = number_format(
+                $node->item(0)->getAttribute('w:w') / 20, 2, '.', '');
+        $height = number_format(
+                $node->item(0)->getAttribute('w:h') / 20, 2, '.', '');
+        $orient = $node->item(0)->getAttribute('w:orient');
+        if (empty($orient) || $orient == 'portrait') {
+            $docProps['orientation'] = 'portrait';
+            $docProps['size'] = array(0, 0, $width, $height);
+        } else {
+            $docProps['orientation'] = 'landscape';
+            $docProps['size'] = array(0, 0, $height, $width);
+        }
+
+        //Get the page margins
+        $node = $xmlDOM->getElementsByTagName('pgMar');
+        $margin = 'margin: ' .
+                floor($node->item(0)->getAttribute('w:top') / 15) . 'px ' .
+                floor($node->item(0)->getAttribute('w:right') / 15) . 'px ' .
+                floor($node->item(0)->getAttribute('w:bottom') / 15) . 'px ' .
+                floor($node->item(0)->getAttribute('w:left') / 15) . 'px;';
+        $xml = str_replace('$MARGIN$', $margin, $this->getStrXHTML());
+        $this->setStrXHTML($xml);
+
+        $this->setDocProps($docProps);
+    }
+
+}

@@ -1,1 +1,37 @@
-tZExb8IwEIV3/4obOkCGBJDaoV2QEAMSRUjp0NVcLolFYkf2pQRV/e+1TRqxdGu9JHp3/t7TsxBZkghIYKeZbCmRoDQWhsYNXg2DNUqmytgrABzrrjA4RLmTeJYVeRWooZY0u9u66a5WVTUDbKbfGc7hIC2ShKM1RY+ojCYHr33DqqVCScjTfRoA92dWM3fPWXa5XNJVW2CKpp1Hl0YhaRfdu1so2O8220O+jeMPss47hPFqsXxKF4/pYjle1OeRfgcfGYHvtzKhpjamXt5DJZ9ChJuxs3AS2Fjy/YAEGpAacDURj7OflbVEJOeg608+9qhm8XuToOw1csiLkbYNqDyQZg+FZDd/+d3W1dJSAY6t0hWUqvEPaE0LXNP4in+SJZjk0cP9mskS91b7TCxPIcb/ZHkL8CnDl/gG
+<?php
+
+/**
+ * Interface for xlsx
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+interface InterfaceXlsx
+{
+
+    /**
+     * Create a excel sheet
+     *
+     * @access public
+     */
+    public function createExcelSheet($dats);
+
+    /**
+     * Create a shared string file from the xlsx
+     *
+     * @access public
+     */
+    public function createExcelSharedStrings($dats);
+
+    /**
+     * return a table file from the xlsx
+     *
+     * @access public
+     */
+    public function createExcelTable($dats);
+}

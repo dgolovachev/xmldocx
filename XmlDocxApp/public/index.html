@@ -7,23 +7,29 @@
 </head>
 <body>
 
-    <form name="data" enctype="multipart/form-data" action="/protect" method="post">
+    <hr />
+    <form name="protect" enctype="multipart/form-data" action="/protect" method="post">
         <p> protect </p>
-        <input type="file" name="data" />
+        <input type="file" name="document" />
         <input type="submit" />
     </form>
+    <hr/>
 
-    <form name="data" enctype="multipart/form-data" action="/signature" method="post">
-        <p> digitally signe </p>
-        <input type="file" name="data" />
-        <input type="submit" />
-    </form>
-
-    <form name="data" enctype="multipart/form-data" action="/test" method="post">
+    <form name="test" enctype="multipart/form-data" action="/test" method="post">
         <p> test </p>
-        <input type="file" name="data" />
+        <input type="file" name="document" />
         <input type="submit" />
     </form>
+    <hr />
+
+    <form name="digitalSignature" enctype="multipart/form-data" action="/digitalSignature" method="post">
+        <p> digitally signe </p>
+        <p> document <input type="file" name="document" />  </p>
+        <p> certificate <input type="file" name="certificate" />  </p>
+        <p> key <input type="file" name="key" />  </p>
+        <input type="submit" />
+    </form>
+    <hr />
 
 </body>
 </html>

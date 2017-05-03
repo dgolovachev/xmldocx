@@ -1,1 +1,123 @@
-pVVtT9swEP6eX3GqkNrClnRI40MYCNRWW7W2IDoE35CxL4lFYke2Q0GI/z47SbvStLzNXxL77p7n3nz2vGB314Nd6CskBmFw1r+GSMkMrqRik7EVOekJtcJYqkcAOE9yJulDeZwTekditKeAKWYojF4/N4oIHUmVVTgyf1Q8TgxAf/nboV2YEkWRwLmSrKCUS4EaJkVqeIaME5j5Y98BrK5OYkweBsF8Pvf3M0Z9KrNuyZJyikKX9HnlLYxH/eF0NizF96i0ZXDi/d63A7/33e99qw3FXY2+Al5jOHyrFXg0JVrDMLtFVmUJ8MGgYLrO4rBKBfAsr5NSKQ8kLdzWe/I8R1Gm3q3FB04IpWixc8XvLdDy+J4o4Naw2gflt9aBnRvO4Ah6h58B1UZxEW/E1YYYTh28sL+CoiWZXo7H7+CRBqlB9jZTrWhJHrLU4rfbDXTbJ5ZfFdRsoytubb1fApdHEBWCGlfomxu6AOl0S40nb9FF5c9zg3WA/0/K8GOcExJbgAxNItkXUGgKJTTQQinXTdfuNr7tDJxUhnXC4aLaNVG2eW3krLRseF3j7piE66/HrmKHWwKZWfMUjRSLKGDZQzKC8vp8KJSVq7YUVe25KZa6cZchxWhGNX0jJh5BR2MaheFqn1eN3l3Rc6upBwLnq851uodLi+f1vK2bb0veTzQGlb9euHrSjAYfylxjaKyV2+WGvVVpzrb5Wsa+cI2L8vn4/I1Bh9ZwZqXf6gmxLuFsb69xGqNAZefY6fhP/9fl9PeiNpsSXmnCPCSp6SeFuHvnZNuW03Xm1yP60Qb/5csRhtPTyXB2ftofXp1dDMB/0YdutZeuggo5O2qpq8l4xBzSv6zYTbsF7U3mllroUB216mdO0wQzon2Zo7Ay914TY7cqDjbayyiyb+ziQQv2e72DQGFKXAJ0wnP9Ku/807xz22q2Cq4adsZkacWcES5aEBy3lyV+9v4C
+<?php
+
+/**
+ * Create DOCX from WordML
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @package    transform
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class EmbedWordML extends CreateElement implements EmbedDocument
+{
+
+    /**
+     *
+     * @access private
+     * @var int
+     */
+    private $_id = 0;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @access protected
+     * @var string
+     */
+    protected $_xml = '';
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return EmbedWordML
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new EmbedWordML();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Getter. Return current WordML ID
+     *
+     * @access public
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->_id;
+    }
+
+    /**
+     * Embed WordML in DOCX
+     *
+     * @access public
+     */
+    public function embed()
+    {
+        $this->_xml = '';
+        $this->_id++;
+        $this->generateALTCHUNK();
+    }
+
+    /**
+     * Generate w:altChunk
+     *
+     * @access protected
+     */
+    public function generateALTCHUNK()
+    {
+        $this->_xml = '<' . CreateElement::NAMESPACEWORD .
+                ':altChunk r:id="rWMLId' . $this->_id . '" ' .
+                'xmlns:r="http://schemas.openxmlformats.org/' .
+                'officeDocument/2006/relationships" ' .
+                'xmlns:w="http://schemas.openxmlformats.org/' .
+                'wordprocessingml/2006/main" />';
+    }
+
+}

@@ -1,1 +1,172 @@
-rVdRb9pIEH7nV0yrSIYoNUml9oE2KJQ6FRLhKE50d0ora1kvZlVjW7vrkKrKf79Z2xCbNeD06gcw9uw338x8M7u0Wt3T0xacwlAwohjwFQkYUJIoHkeQSh4FoNijAqkE3ks01dZXFI2DWPwEgOky8WP6mD1OCP2hAfBiIVuxSMncPE5+Ch4sFcBwe9umHZgQQRmBqYj9lFL0ySTcpKHiK+ZzAq49tjVA+WovlUp63e56vbbfrnxq03jVybyEnLJIZt6TnBSMR0Nn4jrZ6wcmpI4Kr7fnF+/t83f2+UWxMPpRoJfACwyNj1bdFg2JlEWiRjpPwyJNmB8W+ZtXTh5461erpQGz/Opr8wVXhFKGSIngD2i/fSwVUZwWP7vZd2EC+Ss48XiEtxFlcAlRGoYfXurjgYiilLV+Tjxd7N9CncdxuAdTLuO1F5I5M/miHDAikVK1z1U6D3eTkj2CRRrRLP2eRzcg7U5m8au1EUt282R4/cz+v1OfvcznDQkQYMXUMvbPQDCVikgCTYVAtcA/N+MmZOAqX1gUEWb5LxNlH2sVu9lKg3WBe6KWXL7pe48rLFZ9IC4uD5mKo00UsFVlvICsS14USt42RTMd7IY8mqIZtkEFTI0KAkZUfAFtycJFr1funUuY3I3HnZKdvkw7iNi6puHbnQ/bhU+7CdxF2WRxq4xSJr8wpZiwYZCnR8X5rH0gYcrwU/yGIg6WHzN1iw6O1T6fAfXFNynr7oasu19M2ZwZJmEX4cca/Rjr8pSp517scVWlHWGaEEFWm247IUIMRCDvz7+DTqQOn/j+wRBoWd1GDKV2Q7lZ1rOw0Fcg8ZkG8jAPnv6tlbe7NmARE+hiWpbl7rvp7NBb9/bfsdO2CpLWfssKSqXJzCrsttcO1G3buuZBKhiU/T3huQF38GMrK0v2ZuQ69F2+SkJWZs0X7bLO4ZVOe+egw0rUtYTKiMZwMIU4irgCAtmxQ0tISh5EedtnLYV9xMk8ZA3naK5R3Uxlhd5bz7Ww6vS6X9z3lg4EF93Nxk00zjGevQo/qmMtn1dcSqbambHBvWNIqdYMneCGzOpmc62LPMYD4EUSqn1pyq2kebSt52Z0VC6+S8PbTnvtHWKLjbah0RmteiQrzVejU3bLN2dByiOdhI+WXT3i9nqTwY3jTgdD5++/Zp/BtnrPtI4Za2u9R4rL1+A6X6EYBt9OYTAbfBoN4XV/S6KJZ9FvZDVtZhfF+JckXnT7H7t/EFX1ywMe/zNkaW3iQTUk0sCsUqa+531xJs5scOu4d59mnmeVNxiZ2VxzFmqmhRRsCy6wupq+qep8H8OqeoIlIcETmWV4OKsAn5XXdjZb91PrPw==
+<?php
+
+/**
+ * Create image caption using text strings
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateImageCaption extends CreateElement
+{
+
+    /**
+     *
+     * @access private
+     * @static
+     */
+    private static $_instance = null;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_text;
+
+    /**
+     *
+     * @access private
+     * @var bool
+     */
+    private $_show_label;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateCaption
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateImageCaption();
+        }
+        return self::$_instance;
+    }
+    
+    /**
+     * Getter. Access to text value var
+     *
+     * @access public
+     * @return string
+     */
+    public function getText()
+    {
+        return $this->_text;
+    }
+
+    /**
+     * Getter. Access to show label var
+     *
+     * @access public
+     * @return bool
+     */
+    public function getShowLabel()
+    {
+        return $this->_show_label;
+    }
+
+    /**
+     * Create Caption
+     *
+     * @access public
+     * @param string $arrArgs[0] Text to add
+     */
+    public function createCaption()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+
+        $this->generateP();
+        $this->generatePPR();
+        $this->generatePSTYLE('Caption');
+        $this->generateR();
+        
+        if ($this->_show_label) {
+            $this->generateT('Figure ');
+        } else {
+            $this->generateT('');
+        }
+
+        $this->generateFldSimple();
+        if($this->_text != ''){
+            $this->generateR();
+            $this->generateT($this->_text);
+        }
+    }
+
+    /**
+     * Init a link to assign values to variables
+     *
+     * @access public
+     * @param bool $arrArgs[0]['show_label'] Text to add
+     * @param string $arrArgs[0]['text'] URL to add
+     */
+    public function initCaption()
+    {
+        $args = func_get_args();
+
+        if (!isset($args[0]['show_label'])) {
+            $args[0]['show_label'] = true;
+        }
+        if (!isset($args[0]['text'])) {
+            $args[0]['text'] = '';
+        }
+
+        $this->_show_label = $args[0]['show_label'];
+        $this->_text = $args[0]['text'];
+        
+    }
+
+    /**
+     * Create fldSimple 
+     *
+     * @access private
+     */
+    private function generateFldSimple()
+    {
+        $beguin = '<'. CreateElement::NAMESPACEWORD .':fldSimple '. CreateElement::NAMESPACEWORD  .':instr=" SEQ Figure \* ARABIC ">
+        <'. CreateElement::NAMESPACEWORD .':r><'. CreateElement::NAMESPACEWORD .':rPr><'. CreateElement::NAMESPACEWORD .':noProof/></'. CreateElement::NAMESPACEWORD .':rPr><'. CreateElement::NAMESPACEWORD .':t>';
+        $end = '</'. CreateElement::NAMESPACEWORD .':t></'. CreateElement::NAMESPACEWORD .':r></'. CreateElement::NAMESPACEWORD  .':fldSimple>__GENERATESUBR__';
+
+        $simpleField = $beguin.' 1 '.$end;
+        $this->_xml = str_replace('__GENERATESUBR__', $simpleField, $this->_xml);
+    }
+}

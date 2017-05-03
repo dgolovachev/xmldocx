@@ -1,1 +1,325 @@
-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
+<?php
+
+/**
+ * Create paragraph styles
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateParagraphStyle
+{
+
+    /**
+     * @access private
+     * @var array
+     */
+    private $style;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     *
+     * @access public
+     * @param string $name
+     * @param array $styleOptions
+     * @return array
+     */
+    public function addParagraphStyle($name, $styleOptions)
+    {
+        $this->style = $styleOptions;
+        if (isset($styleOptions['spacingTop']) ||
+                isset($styleOptions['spacingBottom']) ||
+                isset($styleOptions['lineSpacing'])) {
+            $this->style['spacing'] = true;
+        }
+        if (isset($styleOptions['indent_left']) ||
+                isset($styleOptions['indent_right']) ||
+                isset($styleOptions['indent_firstLine']) ||
+                isset($styleOptions['hanging'])) {
+            $this->style['ind'] = true;
+        }
+        $style = array();
+        $style[0] = $this->createPStyle($name, $styleOptions['pStyle']);
+        $style[1] = $this->createCarStyle($name);
+        return $style;
+    }
+
+    /**
+     *
+     * @access private
+     * @param string $name
+     * @return string
+     */
+    private function createCarStyle($name)
+    {
+        $carStyle = '<w:style ';
+        $carStyle .= 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" ';
+        $carStyle .= 'w:type="character"  w:customStyle="1" w:styleId="' . $name . 'Car">';
+        $carStyle .= '<w:name w:val="' . $name . 'Car"/>'; //check ids with spaces and non-standard characters
+        //$carstyle .= '<w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>';
+        $carStyle .= '<w:link w:val="' . $name . '"/>';
+        $carStyle .= '<w:uiPriority w:val="99"/><w:semiHidden/><w:unhideWhenUsed/><w:rsid w:val="006E0FDA"/>';
+        $carStyle .= $this->XMLRPr();
+        $carStyle .= '</w:style>';
+
+        return $carStyle;
+    }
+
+    /**
+     *
+     * @access private
+     * @param string $name
+     * @return string
+     */
+    private function createPStyle($name, $basedOn = '')
+    {
+        $pStyle = '<w:style ';
+        $pStyle .= 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" ';
+        $pStyle .= 'w:type="paragraph" w:styleId="' . $name . '">';
+        $pStyle .= '<w:name w:val="' . $name . '"/>'; //check ids with spaces and non-standard characters
+        if(!empty($basedOn)){
+            $pStyle .= '<w:basedOn w:val="' . $basedOn  . '"/>';
+        }
+        $pStyle .= '<w:link w:val="' . $name . 'Car"/>';
+        $pStyle .= '<w:uiPriority w:val="99"/><w:semiHidden/><w:unhideWhenUsed/><w:rsid w:val="006E0FDA"/>';
+        $pStyle .= $this->XMLPPr();
+        $pStyle .= $this->XMLRPr();
+        $pStyle .= '</w:style>';
+
+        return $pStyle;
+    }
+
+    /**
+     *
+     * @access private
+     * @param string $tag
+     * @return string
+     */
+    private function generateBooleanProp($tag)
+    {
+        if ($this->style[$tag] == 'on') {
+            return '<w:' . $tag . '/>';
+        }
+    }
+
+    /**
+     *
+     * @access private
+     * @return string
+     */
+    private function generateBorders()
+    {
+        //Some auxiliary arrays
+        $sides = array('top', 'left', 'bottom', 'right');
+        $type = array('sz' => 4, 'color' => '000000', 'style' => 'single', 'space' => 2);
+
+        foreach ($type as $key => $value) {
+            foreach ($sides as $side) {
+                if (isset($this->style['border_' . $side . '_' . $key])) {
+                    $opt['border_' . $side . '_' . $key] = $this->style['border_' . $side . '_' . $key];
+                } else if (isset($this->style['border_' . $key])) {
+                    $opt['border_' . $side . '_' . $key] = $this->style['border_' . $key];
+                } else {
+                    $opt['border_' . $side . '_' . $key] = $value;
+                }
+            }
+        }
+        $strNode = '<w:pBdr>';
+        foreach ($sides as $side) {
+            $strNode .='<w:' . $side . ' w:val="' . $opt['border_' . $side . '_style'] . '" ';
+            $strNode .= 'w:color="' . $opt['border_' . $side . '_color'] . '" ';
+            $strNode .= 'w:sz="' . $opt['border_' . $side . '_sz'] . '" ';
+            $strNode .= 'w:space="' . $opt['border_' . $side . '_space'] . '" />';
+        }
+        $strNode .= '</w:pBdr>';
+        return $strNode;
+    }
+
+    /**
+     *
+     * @access private
+     * @return string
+     */
+    private function generateFontProp()
+    {
+        $font = $this->style['font'];
+        return '<w:rFonts w:ascii="' . $font . '" w:hAnsi="' . $font . '" w:eastAsia="' . $font . '" w:cs="' . $font . '" />';
+    }
+
+    /**
+     *
+     * @access private
+     * @return string
+     */
+    private function generateIndentation()
+    {
+        $strNode = '<w:ind ';
+        if (isset($this->style['indent_left'])) {
+            $strNode .= 'w:left="' . $this->style['indent_left'] . '" ';
+        }
+        if (isset($this->style['indent_right'])) {
+            $strNode .= 'w:right="' . $this->style['indent_right'] . '" ';
+        }
+        if (isset($this->style['indent_firstLine'])) {
+            $strNode .= 'w:firstLine="' . $this->style['indent_firstLine'] . '" ';
+        }
+        if (isset($this->style['hanging'])) {
+            $strNode .= 'w:hanging="' . $this->style['hanging'] . '" ';
+        }
+
+        $strNode .= ' />';
+
+        return $strNode;
+    }
+
+    /**
+     *
+     * @access private
+     * @return string
+     */
+    private function generateSpacing()
+    {
+        $strNode = '<w:spacing ';
+        if (isset($this->style['spacingTop'])) {
+            $strNode .= 'w:before="' . $this->style['spacingTop'] . '" ';
+        }
+        if (isset($this->style['spacingBottom'])) {
+            $strNode .= 'w:after="' . $this->style['spacingBottom'] . '" ';
+        }
+        if (isset($this->style['lineSpacing'])) {
+            $strNode .= 'w:line="' . $this->style['lineSpacing'] . '" ';
+        }
+        $strNode .= 'w:lineRule="auto" ';
+        $strNode .= ' />';
+
+        return $strNode;
+    }
+    
+    /**
+     *
+     * @access private
+     * @return string
+     */
+    private function generateTabPositions()
+    {
+        if (isset($this->style['tabPositions']) && is_array($this->style['tabPositions'])) {
+            $strNode = '<w:tabs>';
+            foreach($this->style['tabPositions'] as $key => $value){
+                $strNode .= '<w:tab w:val="' . $value['type'] . '" ';
+                if(isset($value['leader'])){
+                    $strNode .= 'w:leader="' . $value['leader'] . '" ';
+                }
+                $strNode .= 'w:pos="' . $value['position'] . '" />';
+            }
+            $strNode .= '</w:tabs>';
+        }
+
+        return $strNode;
+    }
+
+    /**
+     *
+     * @access private
+     * @param string $tag
+     * @return string
+     */
+    private function generateValProp($tag)
+    {
+        return '<w:' . $tag . ' w:val="' . $this->style[$tag] . '" />';
+    }
+
+    /**
+     *
+     * @access private
+     * @return string
+     */
+    private function XMLPPr()
+    {
+        $sequence = array('keepNext' => 'booleanProp',
+                           'keepLines' => 'booleanProp',
+                           'pageBreakBefore' => 'booleanProp',
+                           'widowControl' => 'booleanProp',
+                           'border' => 'generateBorders',
+                           'wordWrap' => 'booleanProp',
+                           'spacing' => 'generateSpacing',
+                           'ind' => 'generateIndentation',
+                           'contextualSpacing' => 'booleanProp',
+                           'jc' => 'valProp',
+                           'tabPositions' => 'generateTabPositions',
+                           'textDirection' => 'booleanProp',
+                           'outlineLvl' => 'valProp'
+                            );
+
+        $pPr = '<w:pPr>';
+        foreach ($sequence as $key => $value) {
+            if (isset($this->style[$key])) {
+                if ($value == 'booleanProp') {
+                    $pPr .= $this->generateBooleanProp($key);
+                } else if ($value == 'valProp') {
+                    $pPr .= $this->generateValProp($key);
+                } else {
+                    $pPr .= $this->$value();
+                }
+            }
+        }
+        $pPr .= '</w:pPr>';
+
+        return $pPr;
+    }
+
+    /**
+     *
+     * @access private
+     * @return string
+     */
+    private function XMLRPr()
+    {
+        $sequence = array('font' => 'generateFontProp',
+            'b' => 'booleanProp',
+            'i' => 'booleanProp',
+            'caps' => 'booleanProp',
+            'smallCaps' => 'booleanProp',
+            'color' => 'valProp',
+            'sz' => 'valProp',
+            'u' => 'valProp');
+        $rPr = '<w:rPr>';
+        foreach ($sequence as $key => $value) {
+            if (isset($this->style[$key])) {
+                if ($value == 'booleanProp') {
+                    $rPr .= $this->generateBooleanProp($key);
+                } else if ($value == 'valProp') {
+                    $rPr .= $this->generateValProp($key);
+                } else {
+                    $rPr .= $this->$value();
+                }
+            }
+        }
+        $rPr .= '</w:rPr>';
+
+        return $rPr;
+    }
+
+}

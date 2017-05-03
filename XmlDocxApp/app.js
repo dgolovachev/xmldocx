@@ -25,11 +25,11 @@ var upload = multer({ storage: storage });
 var app = express();
 app.use(express.static(__dirname + "/public"));
 
-app.post("/protect", upload.single('data'), controller.protect);
+app.post("/protect", upload.single("document"), controller.protect);
 
-app.post("/signature", upload.single('data'), controller.signature)
+app.post("/digitalSignature", upload.any(), controller.digitalSignature);
 
-app.post("/test", upload.single('data'), controller.test)
+app.post("/test", upload.single("document"), controller.test);
 
 app.listen(PORT, function () {
     logger.info("server start on port: " + PORT);

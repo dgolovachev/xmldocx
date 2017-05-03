@@ -28,7 +28,7 @@ function XmlDocx(xml, debug) {
 /**
  * XML file with content to be added to the Word document.
  */
-XmlDocx.prototype.addContent = function(xml) {
+XmlDocx.prototype.addContent = function (xml) {
     if (!fs.existsSync(xml)) {
         throw "The file does not exist";
     }
@@ -39,7 +39,7 @@ XmlDocx.prototype.addContent = function(xml) {
 /**
  * XML file with the general properties of the Word document.
  */
-XmlDocx.prototype.setDocumentProperties = function(xml) {
+XmlDocx.prototype.setDocumentProperties = function (xml) {
     if (!fs.existsSync(xml)) {
         throw "The file does not exist";
     }
@@ -50,19 +50,21 @@ XmlDocx.prototype.setDocumentProperties = function(xml) {
 /**
  * Absolute path to the xmldocx folder.
  */
-XmlDocx.prototype.setXmldocxPath = function(xmldocxPath) {
+XmlDocx.prototype.setXmldocxPath = function (xmldocxPath) {
     this.xmldocxPath = xmldocxPath;
 }
 
 /**
  * Renders Word document out of the XML data.
  */
-XmlDocx.prototype.render = function() {
-    var output = exec("php " + this.xmldocxPath + "xmldocx/XMLAPICommand.php -c" + this.config + " -d" + this.documentProperties.join(" ") + " -b" + this.documentContent.join(" ") + "");
-    console.log(output.spawnargs);
-    if (this.debug) {
-        console.log(output);
-    }
+XmlDocx.prototype.render = function (callback) {
+    exec("php " + this.xmldocxPath + "xmldocx/XMLAPICommand.php -c" + this.config + " -d" + this.documentProperties.join(" ") + " -b" + this.documentContent.join(" ") + "", (error, stdout, stderr) => {
+        if (error)
+            callback(error)
+        else {
+            callback(null);
+        }
+    });
 }
 
 module.exports = XmlDocx;

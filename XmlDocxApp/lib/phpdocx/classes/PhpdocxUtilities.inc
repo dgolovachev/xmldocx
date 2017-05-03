@@ -1,1 +1,78 @@
-zVRtT9swEP6eX3EDpCaIJaXspRShwUoiITGExvi0osg4TmqRJpntQFHV/75z4kR9m0DlyyxZTs73PPfc2WfL8vb3LdiHm3ER5XR6p3jKFWcSbdp8RoliSS5eABqXylwQ+kgShlYoFyDonxcvgidjBTBsP23qwDURlBG4EXlUUsrzjEn4UaaKT1jECdy6V64mWBz2WKli4HnPz89ubxJRl+YTp4qScsoyWYUvalVwdTn0r2/9avuJCYkR9Have/jF7X52u4cGmD0a9gVyw6H50cuzaEqkXC/JzLI0sKqYHs0CZ4RShoiifEBlrVUqohZ+n4gAnmE5mTA2r1oLwZ+wylC7w15o5AzzLObJyWpQGI4ZfQQeI0DwLAEu4e5X0G+2XxFVEEEmDXTPrLf1onKgmvxfGQimSpHBQ56njGTLSVRRmhziMqNKnwCXdyru2yZOyLOiVE4FmFnNMTciTmHJzSS+7FEIloSCFSmhzN7Z/T2ado9xnuO8GE173Y+j6Vf/fnfnAHZwGpxz8iamYQ/RF8E9fvY10fdgG6LR1O8iw7lheB8Zov1DRPtDnD7OJcJZb76dwIuG5Pj92QY62+P1bLcThwSBTjg4WuI62i7R4FND0n9dW0tobrndEp+iJ3wDJUoGA4hJKpmJP19rzp81mECZ8T8l45FuqgcGpWQRdj8oksitXg+jqtb0ltbDRpesfkPs1ZbDx8P+wKVkypYsjQeDlUfHcRac9djopUuug2C/8jDmKbMjLjIyYXYYBpdXfhg64ELHc12PVgDPwOs/F2Gdg6qsC8c5Xz2HjaH///LXAi6jtdrvtdJOKyce2R2TW9jZcA9b/zbnufUX
+<?php
+
+/**
+ * PhpdocxUtilities
+ *
+ * @category   Phpdocx
+ * @package    utilities
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class PhpdocxUtilities
+{
+
+    /**
+     *
+     * @access public
+     * @static
+     * @var integer
+     */
+    private static $_phpdocxConfig;
+
+    /**
+     * Check if string is UTF8
+     * 
+     * @access public
+     * @param string $string String to check
+     * @static
+     * @return boolean
+     */
+    public static function isUtf8($string_input)
+    {
+        $string = $string_input;
+
+        $string = preg_replace("#[\x09\x0A\x0D\x20-\x7E]#", "", $string);
+        $string = preg_replace("#[\xC2-\xDF][\x80-\xBF]#", "", $string);
+        $string = preg_replace("#\xE0[\xA0-\xBF][\x80-\xBF]#", "", $string);
+        $string = preg_replace("#[\xE1-\xEC\xEE\xEF][\x80-\xBF]{2}#", "", $string);
+        $string = preg_replace("#\xED[\x80-\x9F][\x80-\xBF]#", "", $string);
+        $string = preg_replace("#\xF0[\x90-\xBF][\x80-\xBF]{2}#", "", $string);
+        $string = preg_replace("#[\xF1-\xF3][\x80-\xBF]{3}#", "", $string);
+        $string = preg_replace("#\xF4[\x80-\x8F][\x80-\xBF]{2}#", "", $string);
+
+        return ($string == "" ? true : false);
+    }
+
+    /**
+     * Return a uniqueid to be used in tags
+     *
+     * @access public
+     * @static
+     * @return string
+     */
+    public static function parseConfig()
+    {
+        if (!isset(self::$_phpdocxConfig)) {
+            self::$_phpdocxConfig = parse_ini_file(dirname(__FILE__) . '/../config/phpdocxconfig.ini', true);
+        }
+        return self::$_phpdocxConfig;
+    }
+
+    /**
+     * Return a uniqueid to be used in tags
+     *
+     * @access public
+     * @static
+     * @return string
+     */
+    public static function uniqueId()
+    {
+        $uniqueid = uniqid('phpdocx_');
+
+        return $uniqueid;
+    }
+
+}

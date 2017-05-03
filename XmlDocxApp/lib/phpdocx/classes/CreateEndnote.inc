@@ -1,1 +1,289 @@
-1Vhta+M4EP6eX6ErBSfd3SQt1/uQvnChdUuh65qkx3Esi9HaSmrWsY0sb1uW/vcbybIjvyZxvD3OEJro5ZmZZx6Nxu31RkdHPXSErijBjCDiO37ASARDfPRPGwaXAX1FCJlPoRPYL2I4xPZ3vCQwiohHVsRnUbI8CF+pu3xiCF1lX/v2ABmY2gQjkwZObNtu4JMIfY495q6I42I0H94POYD69J8YCyej0fPz8/Bk5dhDO1gNhBXPtYkfCeth4hS6v7vSjbkupn8QGoEFPn0yPv5jOD4djo/lRv+7RFfAJQbHh1Wjnu3hKJKE6AkfiLwwoCYbTWLu/ez1OJagkD/pH/ABU/QtCLxsANs2AdQw/gbeZ6MRwyz7ORJ/kxUomUGHru8ydIHGZ42mcs6WbFL3B1aGq4wmSzKrluvDV98mYNr46/6+2boLVHRh0ymZARWBIzS2WdFuFZ85AhexbzMuA8uyU5D+QKz42Us1Jr68laxek/2NOmQnmxuEQgmLqQ9cUddfbrDMgrlYVrIsQQ7Zkxt9urReVt7ZBmfkjmZ57SjpzNMlYXdSZiVX3QXqR8RbTCaqFhMxDpR1/CmvQz55zjvdH5xle96KhBQBalhJayQUi5gf/7RYtleJLQCvJV7maoELJV8QmqatIznEdBnBGAe0gE6L/1ZDDTEF4MlkSXxCwZSpTkrcdG6mznH+BfqX8dcv2iLwmfYV/catF9kvopg5nKoVNw/G47yEXpmgfOigfouS0MMgGM2ybnVDn00fdTBpWdpH8O2juqE+0kfFOIPKniYg50QTO80xF2fnj//c6w0LdOPaeIAw9Bv4GFf6WvgO+oROyhttj2D/kayAibWya+XakUp/gTqreeiDxmrXNAnYbEyDuSkN75Lh/+f5qzs4oAkDNFF1bnbTqOhyOhLqHWC1EiudttNrujWh5TWs5GN/Ac/N6dWdcdtSwXPdnEKxfJht5+6W6buV6Oh5UpM9uIHwSvYtAA7myq0ibLMZcQrdoRxV+4UC7xytmGFZO2XbfCw7Sv7wIwUBsVelvg5qewkn2Z2Ov8F7Drxx1C3+8EE9PWsyQWfT+IVL7VxDw/zbw2RiTD/rPKv63w+za5jWUhK1QiHggdacfmlhCJNos4nc3vTRJhz/4oBvT0yBKwdaVT2oOUiZF+2c0Cauk5gvXn3Ck8v1VS9Tb1nnI60CaFt+L7XtBU3Joq4itRSuuAaKhUlWpC1kUkGfdHVGFpeCmL0QNOXMbNd/ie6LR1DVf23JMXyg866uHudclJfwLux0mALZax2Kkw4H6xclJIlrv1PBfRQHYe/kJt68a4rD5huBRq4za5q7Jgsce6xhibm3Ksx+YosnfDw+vRmf6Kc8XtWBqjkzN9ithEKl7Jmy4G0ucOHuuc1qausMh7SrCik6oG5pNKlKJH9VbHmKCkjA165Mm+057ozhrvlVOWnP7X/IbER4RWFBieFy54oeQs4lBiNatk1DOEJOUiOGe6dHadOFxQvVUreZy7V7ba+WPMh73itRiO31/0ILWXN9Bm90C+gsqiY81yc1aeZTs9jb/yUlfVtLvBD3BI+U4/MfJ79nP7k5PoRjFnScYskRsCW8kN1E4lHF+oN2bQoPQkKL8IZ7IXE6FDTBzrr52b3llxzsrk3T3KjOt96/
+<?php
+
+/**
+ * Create endnotes
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateEndnote extends CreateElement
+{
+
+    /**
+     *
+     * @var bool
+     * @access public
+     * @static
+     */
+    public static $init = 0;
+
+    /**
+     *
+     * @var CreateEndnote
+     * @access private
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @var int
+     * @access private
+     * @static
+     */
+    private static $_id;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     *
+     * @access public
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     *
+     * @return CreateEndnote
+     * @access public
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateEndnote();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create document endnote
+     *
+     * @access public
+     */
+    public function createDocumentEndnote()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+        parent::generateP();
+        $this->generateR();
+        if ($args[0]['font'] != '') {
+            $this->generateRPR();
+            $this->generateRFONTS($args[0]['font']);
+        }
+        $this->_xml = str_replace('__GENERATERPR__', '', $this->_xml);
+        $this->generateT($args[0]['textDocument']);
+        $this->generateR();
+        $this->generateRPR();
+        $this->generateRSTYLE();
+        $this->generateENDNOTEREFERENCE(self::$_id - 2);
+        $this->cleanTemplate();
+    }
+
+    /**
+     * Create endnote
+     *
+     * @access public
+     */
+    public function createEndnote()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+        $this->generateENDNOTE('');
+        $this->generateP();
+        $this->generatePPR();
+        $this->generatePSTYLE();
+        $this->generateR();
+        $this->generateRPR();
+        $this->generateRSTYLE();
+        $this->generateENDNOTEREF();
+        $this->generateR();
+        if ($args[0]['font'] != '') {
+            $this->generateRPR();
+            $this->generateRFONTS($args[0]['font']);
+        }
+        $this->generateT($args[0]['textEndNote']);
+        $this->cleanTemplate();
+    }
+
+    /**
+     * Create init endnote
+     *
+     * @access public
+     */
+    public function createInitEndnote()
+    {
+        $this->_xml = '';
+        $arrArgs = func_get_args();
+        $this->generateENDNOTE($arrArgs[0]['type']);
+        $this->generateP();
+        $this->generatePPR();
+        $this->generateSPACING();
+        $this->generateR();
+        $this->generateSEPARATOR($arrArgs[0]['type']);
+        $this->cleanTemplate();
+    }
+
+    /**
+     * Generate w:endnote
+     *
+     * @param string $type
+     * @access protected
+     */
+    protected function generateENDNOTE($type)
+    {
+        self::$init = 1;
+
+        if (empty(self::$_id)) {
+            self::$_id = 1;
+        } else {
+            self::$_id++;
+        }
+
+        $xmlAux = '<' . CreateElement::NAMESPACEWORD . ':endnote';
+        if ($type != '') {
+            $xmlAux .= ' ' . CreateElement::NAMESPACEWORD .
+                    ':type="' . $type . '"';
+        }
+        
+        $this->_xml = $xmlAux . ' ' . CreateElement::NAMESPACEWORD .
+                ':id="' . (self::$_id - 2) . '">__GENERATEENDNOTE__</' .
+                CreateElement::NAMESPACEWORD . ':endnote>';
+    }
+
+    /**
+     * Generate w:endnoteref
+     *
+     * @access protected
+     */
+    protected function generateENDNOTEREF()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':endnoteRef></' . CreateElement::NAMESPACEWORD .
+                ':endnoteRef>';
+
+        $this->_xml = str_replace('__GENERATER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:endnotereference
+     *
+     * @param <type> $id
+     * @access protected
+     */
+    protected function generateENDNOTEREFERENCE($id = '')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':endnoteReference ' . CreateElement::NAMESPACEWORD .
+                ':id="' . $id . '"></' . CreateElement::NAMESPACEWORD .
+                ':endnoteReference>';
+
+        $this->_xml = str_replace('__GENERATER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:p
+     *
+     * @param string $rsidR
+     * @param string $rsidRDefault
+     * @param string $rsidP
+     * @access protected
+     */
+    protected function generateP($rsidR = '005F02E5', $rsidRDefault = '005F02E5', $rsidP = '005F02E5')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':p>__GENERATEP__</' . CreateElement::NAMESPACEWORD . ':p>';
+
+        $this->_xml = str_replace('__GENERATEENDNOTE__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:ppr
+     *
+     * @access protected
+     */
+    protected function generatePPR()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':pPr>__GENERATEPPR__</' . CreateElement::NAMESPACEWORD .
+                ':pPr>__GENERATEP__';
+
+        $this->_xml = str_replace('__GENERATEP__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:r
+     *
+     * @access protected
+     */
+    protected function generateR()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':r>__GENERATER__</' . CreateElement::NAMESPACEWORD .
+                ':r>__GENERATEP__';
+
+        $this->_xml = str_replace('__GENERATEP__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:separator
+     *
+     * @param string $type Optional, 'separator' as default.
+     * @access protected
+     */
+    protected function generateSEPARATOR($type = 'separator')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':' . $type . '></' . CreateElement::NAMESPACEWORD .
+                ':' . $type . '>';
+
+        $this->_xml = str_replace('__GENERATER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:spacing
+     *
+     * @param int $after
+     * @param int $line
+     * @param string $lineRule
+     * @access protected
+     */
+    protected function generateSPACING($after = '0', $line = '240', $lineRule = 'auto')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD .
+                ':spacing w:after="' . $after .
+                '" ' . CreateElement::NAMESPACEWORD .
+                ':line="' . $line . '" ' . CreateElement::NAMESPACEWORD .
+                ':lineRule="' . $lineRule . '"></' .
+                CreateElement::NAMESPACEWORD . ':spacing>';
+
+        $this->_xml = str_replace('__GENERATEPPR__', $xml, $this->_xml);
+    }
+
+}

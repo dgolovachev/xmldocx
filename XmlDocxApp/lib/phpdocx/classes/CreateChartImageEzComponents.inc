@@ -1,1 +1,160 @@
-7VnfT+NGEH7PXzEPUZ1wxAmcrhKkia4H3B0SvSKC1IcInTb2Jl7h2O7umgA9/vfO7NrBSWwnVFep6uGHYHtnvvn9rW0aje7eXgP24ERypjl4AZNaAVMg5mzGFaRKRDM4ezyJ50kc8UgrlCaF9x7Kz2L5AACXQeLH3r25nTDvFjXxLmjJ1DSWcyseJw9SzAINcLI8bXlt+MKkxxlcythPPU+gEQW/paEWc+4LBiP3wiWA4tEKtE6Ou93FYuEezn3P9eJ521gJhccjZawn1im4OD85+zI6M8t3XCq0QMuHvYOf3d47t3eQKUa3GXoBPMMgfJTqNryQKZXl6oRSdU5ZKmYH+L3mkb8p1PirQeAm3XQsU64DDhFf2IRna13zN0knGA9M08jT5LVnFFpts2jh6MAUQ6spIp/fG3MwgF4fijd+gaYOhOoMTXnPaWFF4M2bdgGPDjFFyILO9UPCxwWNGxgMwJkwaa6cdXUTaZdQKDqVTjTqg1CAGvvmHp5gm0kOQSzFYxxpFm4grDsxsjilfpS6QEcGYLKLmaFM80fvk2RJ8Hlp+kMWSKvd3wrSGUosMJdcVsJdZQJlcE/AQ2zQFztb5+JTo1GWfp9pBjqGCQfm+9ync8q9SeaGQtOID7Aokj2QldKKai7zpjUw1giLfDKBy2TDIG1oY5ty5gWrJT1FydV6IvU0l0uVRSULZyGfm5Er+FwmnM1HPhY4DV6cRrr1bGbs8AzLuWmTzOZAVFoft5SWyJHtcjgM7gabFMqk7liY8kym3PWn6uhL7YZ8hq3nGIsrXpb2zPotrC8VkWqbtw6dF4hpNatZOW0HYNlu+QMMhtA0ce0yj52hiYQUb9ba/VeqKAU14lgpi7hrEIpreHsK89jfdLvAKTqQnJ/u5mfFyOeD/tavGMsK7yitMxmnCW2uxGl1fuaC5RysNG643N+J/zrDOKGdBK+N2gci4QHu0ykv837lytDWbttCIuy+58C3b7Bd3I/TWRClunorqaHFy8xWFWG9cmBu+H/Igf8+y5Ww1TKKuhKOezerbFzNbQRa0Wn/bSLLs6iFDrkLf8TSDIACMmjvUiczsHkwPYjUkL1jlAYklKKU7JzZ9m5BW18GsDvw96RDfLV4ER9O0skkfJEGPkezf8SeF7lrr/T5A9Ln6yNkZRA42UI7RF62RaciDIEGWeUhTWKt6avA2rEbJdQP7GaMy8c28uPCuDGAw4Pe96Qpyfy61/kaFrlaar7SyCuN/Jg0Ugc4JkjJVT0NlV8VklN4d7TZXa5sPDrZ9bGjgniBjQQ/QcVC5Ve/XDCJlSDucTKS2MoNuWpnmKti8Hkuj4+vzj99vu7Xk1SF7e28tMX29e+X/Yo0VyOFyCjKYwkfiUciPvfdM0bpt7wyGNSbMhTtb6nrNI40KDT0/HhctRGgZGc4Z/cf8SRz7eDQ4mfYhU/NI3bHnyeIxolBwnSQredi7++YBDvM0KR1uKQfFFcrALVfqUm0ZbWxaEbeVXczZ/2zdSZiJb464EIaiT+F35rrrxKT3jo6OtoH/DnCp3wXHAPSr8iLfa3JG2ghfB3s5yIBp/817FuDxd1Ecp3KyN7PM/f0Nw==
+<?php
+
+/**
+ * Create charts as images using EzComponents
+ *
+ * @category   Phpdocx
+ * @package    trasform
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateChartImageEzComponents extends CreateChartImage
+{
+    /**
+     * Create the new image
+     */
+    public function create()
+    {
+        for ($indexChart = 0; $indexChart < $this->chartIndex; $indexChart++) {
+            if ($this->chartType[$indexChart] == 'barChart') {
+                // if the subtype is bar, the bars are horizontal
+                if ($this->chartSubtype[$indexChart] == 'bar') {
+                    $this->image = new ezcGraphHorizontalBarChart();
+                    $this->image->renderer = new ezcGraphHorizontalRenderer();
+                } else {
+                    $this->image = new ezcGraphBarChart();
+                }
+
+
+                // data to be added to the chart
+                $data = array();
+
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    $dataElements = array();
+                    for ($i = 0; $i < count($chartData['elements']); $i++) {
+                        $dataElements[(string)$chartData['elements'][$i]] = (string)$chartData['values'][$i];
+                    }
+                    $data[(string)$chartData['legend']] = $dataElements;
+                }
+
+                // add the data to the image
+                foreach ($data as $key => $value) {
+                    $this->image->data[$key] = new ezcGraphArrayDataSet($value);
+                }
+
+                // set 3D mode
+                if ($this->threeD) {
+                    $this->image->renderer = new ezcGraphRenderer3d();
+                }
+
+                // set the grouping type
+                if ($this->groupingType[$indexChart] == 'stacked') {
+                    $this->image->options->stackBars = true;
+                }
+            } elseif ($this->chartType[$indexChart] == 'pieChart' || $this->chartType[$indexChart] == 'doughnutChart') {
+                $this->image = new ezcGraphPieChart();
+
+                // data to be added to the chart
+                $data = array();
+
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    $dataElements = array();
+                    for ($i = 0; $i < count($chartData['elements']); $i++) {
+                        $dataElements[(string)$chartData['elements'][$i]] = (string)$chartData['values'][$i];
+                    }
+                    $data = $dataElements;
+                }
+
+                // add the data to the image
+                $this->image->data[(string)$this->chartData[$indexChart][0]['legend']] = new ezcGraphArrayDataSet($data);
+
+                // set 3D mode
+                if ($this->threeD) {
+                    $this->image->renderer = new ezcGraphRenderer3d();
+                }
+
+                // add the title. Word adds this title as a legend for pie charts
+                if (isset($this->chartData[$indexChart][0]['legend'])) {
+                    $this->image->title = $this->chartData[$indexChart][0]['legend'];
+                }
+            } elseif ($this->chartType[$indexChart] == 'lineChart' || $this->chartType[$indexChart] == 'bubbleChart' || $this->chartType[$indexChart] == 'areaChart') {
+                $this->image = new ezcGraphLineChart();
+
+                // data to be added to the chart
+                $data = array();
+
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    $dataElements = array();
+                    for ($i = 0; $i < count($chartData['elements']); $i++) {
+                        $dataElements[(string)$chartData['elements'][$i]] = (string)$chartData['values'][$i];
+                    }
+                    $data[(string)$chartData['legend']] = $dataElements;
+                }
+
+                // add the data to the image
+                foreach ($data as $key => $value) {
+                    $this->image->data[$key] = new ezcGraphArrayDataSet($value);
+                }
+
+                // if it's a chart fill lines to the bottom
+                if ($this->chartType[$indexChart] == 'areaChart') {
+                    $this->image->options->fillLines = 210;
+                }
+            } elseif ($this->chartType[$indexChart] == 'radarChart') {
+                $this->image = new ezcGraphRadarChart();
+
+                // data to be added to the chart
+                $data = array();
+
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    $dataElements = array();
+                    for ($i = 0; $i < count($chartData['elements']); $i++) {
+                        $dataElements[(string)$chartData['elements'][$i]] = (string)$chartData['values'][$i];
+                    }
+                    $data[(string)$chartData['legend']] = $dataElements;
+                }
+
+                // add the data to the image
+                foreach ($data as $key => $value) {
+                    $this->image->data[$key] = new ezcGraphArrayDataSet($value);
+                    $this->image->data[$key][] = reset($value);
+                }
+            }
+        }
+
+        // set the legend
+        if (isset($this->legend['show']) & $this->legend['show']) {
+            if ($this->legend['position'] == 'r') {
+                $this->image->legend->position = ezcGraph::RIGHT;
+            } elseif ($this->legend['position'] == 't') {
+                $this->image->legend->position = ezcGraph::TOP;
+            }
+            $this->image->legend->landscapeSize = .5;
+        } else {
+            $this->image->legend = false;
+        }
+
+        // set the font sizes
+        $this->image->options->font->maxFontSize = 12;
+    }
+
+    /**
+     * Save the image to a path
+     *
+     * @var string $path Path to save the image
+     */
+    public function save($path = 'image.svg')
+    {
+        $path ='image_' . uniqid(mt_rand(999, 9999)) . '.svg';
+        $this->image->render($this->width, $this->height, $path);
+
+        return $path;
+    }
+}

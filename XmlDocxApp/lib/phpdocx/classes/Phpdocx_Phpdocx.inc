@@ -1,1 +1,19 @@
-TZAxb4MwEIV3/4rbAgyGRGqHdqlEqBqJRkhZuiHrfAIrYFPblERV/3sxQW1u8enuu/esx1iaJAwSyDvhHHgDoyOo3qq9wQ+YlG+VBgFa9OQGgTSjgX5B4akx9goAVTtIg5dlPCNn0dA8hZa6gewNNsPVqqb1APlfG2EMR2GRBFTWyBFRGU0O3sfOq56kEnDiJQ8C9xW13g9PaTpNE9/1EjmaPl5cOoWk3eI93L4E5SEvjqdiWX+RdbNDWO+y7SPPHni2XQ/1eVW/E181gv5MpczS56gs1UYjgVQ2RBLV9euhLOo6Bg6bNLc0x7IPV0rj5pkxXFJdE6rXF+jiSUsH/zz7ZsGe/bBf
+<?php
+
+/**
+ * Class to use PHPDocX within a namespace
+ *
+ * @category   Phpdocx
+ * @package    helper
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+require_once dirname(__FILE__) . '/CreateDocx.inc';
+
+class Phpdocx_Phpdocx extends CreateDocx
+{
+    
+}

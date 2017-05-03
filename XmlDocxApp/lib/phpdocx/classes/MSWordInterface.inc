@@ -1,1 +1,73 @@
-tVVta9tIEP7uXzFXCpaDYzuBtseFmAS7pYG8+M7h0qOUslmNLGFpV+yuIpuS/36zu7IsyzqO46g+JPLsPjPPPPOiXm98ctKDE7iJYPF5MZf8CyQaEqENS1MM6Q0YaFQvqKBMTEy/SqnWiVgBl/kWZARPUoVwPpl8AKlAYEk3t7KAjG2t40IjJAaMhFBCJFXGDCEF+dOJFHpk7yyLPJfKUDh/QQ9h/jD7AkyE9sWCF/NPQ/jjkf58fry73Z0Q2OKvODO4kmoLAIs4DyXfOHPO+JqtkKxVSENRPYC4q2QVG4BZ/RrwAdwzxZHBQsmw4JwYooa7IjVJhmHCYDm6dYybTxAbk/82HpdlOTrPQj7iMhu4KGnCUWgXP/e04PZm9vF++dEdVxrY4/PJ2fvR5N1oclYBxbry3nBe+bD+6da4x1Omid3SFuBGUG4R49j70etZnKurfX5abb3zf6+vv/c/auwdXDHOkfLNi2fStbbmTLEM3pIwS1lQ7eAv4qdjWaSh42ZihKhIU3hKRChLwjPKlKLZA1eSQGGG2TOlRlbUnOUIz9Q5muSNUQ86Qs1Rm0QwY6v308IpNIUS8CKTsLKN3X8vAEUR3BEwigltRf3khA32WgzbZL3zH71d677lMkS4BKYU2wa12T59QvbhcgqT4aE9DyNnP/vQOlDGH7xv2WOTpe7g1+ODTrvZGGd/V5sHF/XrePyEIGQJPEa+drLixtCYuVpE7Yz3qda3rm2ylDRu8pTSD/qj/rFQFx1AwmijjEwlzUHgNPueyzxouR4QuEYnEQS/+Ktr3H7HTaKNbiCGvgaDQaMq9qGLJug/xjSw2vf1ngbZhDSgdxPVb7B9bQhFc++6rtGslGWRoTDgiUCJQO0oX+wMH3COkhRrti1t2lyvCmEX1tG9JqsGrVukwLSDlKGF4xaMW0mCdlet+W6peTsJT7sHZg93wRvaUOGI5TmNgIvyZmBXk5frunt/lcwLFsmCVoqdGCerW3z9ZrFcb1XDvGsvWmdWxN2uJp93y4q1hrNzGzymrweqA/laCZxO/6zw00sCtQV0cQ19vmgjyByFi1iVfVexA0BXhfzIHxWnQ87T6bxyqk+nDxSvib84QL8CprTVjl16wauVa6nsFe63fbRyvafhpb7T7MWvS+qEFZruRP+Z+dezb6fTJfm4PmrQaqa+7qfsW4tSTYKnktKzIf5L2JlFBc3+7pJpN8IHzeM6p2qxZ7QNFNTf2MG+mbpH+ojW7wWFaHZwx+DQx8j7oiF87f0N
+<?php
+
+/**
+ * If PHPDocX is installed in a server with a working copy of Word 2007 or newer you may
+ * use it to do format conversions.
+ * Supported formats, DOCX and DOC to PDF, RTF, HTML and DOC
+ *
+ * @category   Phpdocx
+ * @package    converters
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class MSWordInterface
+{
+
+    /**
+     * If PHPDocX is installed in a server with a working copy of Word 2007 or newer you may
+     * use it to do format conversions.
+     * Supported formats, DOCX and DOC to PDF, RTF, HTML and DOC
+     * @access public
+     * @param $docSource You should use the full Windows path to the docx (remember to escape backslashes)
+     * @param $docDestination ou should use the full Windows path to the docx (remember to escape backslashes)
+     * @return void
+     */
+    public function transformFormat($docSource, $docDestination)
+    {
+        $code = array(
+            'doc' => 0,
+            'pdf' => 17,
+            'rtf' => 6,
+            'html' => 8,
+            'htm' => 8,
+            'txt' => 5
+        );
+        //We now check the extension of $docDestination
+        $extensionArray = explode('.', $docDestination);
+        $extension = strtolower(array_pop($extensionArray));
+
+        if (!array_key_exists($extension, $code)) {
+            exit('This source extension is not supported');
+        }
+        //If the destination document exists we remove it
+        if (file_exists($docDestination)) {
+            @unlink($docDestination);
+        }
+
+        //Lets start a Word instance
+        $MSWordInstance = new COM("word.application") or exit('A working copy of Word was not found on this server');
+
+        //We should check that the version of MS Word is 12 or higher
+        if ($MSWordInstance->Version >= 12) {
+            //We try to open the source document
+            if (file_exists($docSource)) {
+                $MSWordInstance->Documents->Open($docSource);
+            } else {
+                exit('Source file not found');
+            }
+            //Now we save the target document
+            $MSWordInstance->Documents[1]->SaveAs($docDestination, $code[$extension]);
+            //Now we close Word
+            $MSWordInstance->Documents[1]->Close();
+        } else {
+            exit('The version of Word should be 12 (Word 2007) or higher');
+        }
+        $MSWordInstance->Quit();
+
+        $MSWordInstance = null;
+    }
+
+}

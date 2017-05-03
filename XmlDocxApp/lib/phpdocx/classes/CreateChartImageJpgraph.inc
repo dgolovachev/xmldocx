@@ -1,1 +1,380 @@
-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
+<?php
+
+/**
+ * Create charts as images using JpGraph
+ *
+ * @category   Phpdocx
+ * @package    trasform
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateChartImageJpgraph extends CreateChartImage
+{
+    /**
+     * Create the new image
+     */
+    public function create()
+    {
+        $this->image = null;
+        for ($indexChart = 0; $indexChart < $this->chartIndex; $indexChart++) {
+            if ($this->chartType[$indexChart] == 'barChart') {
+                // data to be added to the chart
+                $data = array();
+                // new chart
+                if (!$this->image) {
+                    $this->image = new Graph($this->width, $this->height, 'auto');
+                }
+                // set the scale
+                $this->image->SetScale('textint');
+                // labels array
+                $labels = array();
+                // legend array
+                $legend = array();
+                $i = 0;
+
+                if ($this->chartSubtype[$indexChart] == 'bar') {
+                    $this->chartData[$indexChart] = array_reverse($this->chartData[$indexChart]);
+                }
+
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    // get the data axys
+                    $dataXAxis = array();
+                    foreach ($chartData['values'] as $value) {
+                        $dataXAxis[] = (string)$value;
+                    }
+                    $plot = new BarPlot($dataXAxis);
+                    // add the legend only is it's in the chart
+                    if (isset($this->legend['show']) && $this->legend['show']) {
+                        $plot->setLegend($chartData['legend']);
+                    }
+
+                    // add the color
+                    if (isset($chartData['color']) && $chartData['color']) {
+                        $this->image->graph_theme = null;
+                        $plot->SetColor('#' . $chartData['color']);
+                        $plot->SetFillColor('#' . $chartData['color']);
+                    }
+
+                    $data[] = $plot;
+                }
+
+                // iterate the first chart data and add the labels
+                foreach ($this->chartData[$indexChart][0]['elements'] as $chartElement) {
+                    $labels[] = (string)$chartElement;
+                }
+
+                // set the grouping type
+                if ($this->groupingType[$indexChart] == 'clustered') {
+                    $dataBar = new GroupBarPlot($data);
+                } else {
+                    $dataBar = new AccBarPlot($data);
+                }
+
+                // if the subtype is bar, the bars are horizontal
+                if ($this->chartSubtype[$indexChart] == 'bar') {
+                    $this->image->Set90AndMargin();
+                    $this->image->xaxis->HideLabels();
+                }
+
+                // add the labels
+                $this->image->xaxis->SetTickLabels($labels);
+
+                // add the data to the image
+                $this->image->Add($dataBar);
+            } elseif ($this->chartType[$indexChart] == 'pieChart') {
+                // data to be added to the chart
+                $data = array();
+                $dataLegend = array();
+                $colors = array();
+                // new chart
+                if (!$this->image) {
+                    $this->image = new PieGraph($this->width, $this->height);
+                }
+                // set the scale
+                $this->image->SetScale('intlin');
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    foreach ($chartData['values'] as $value) {
+                        $data[] = (string)$value;
+                    }
+                    foreach ($chartData['elements'] as $value) {
+                        $dataLegend[] = (string)$value;
+                    }
+                    if (isset($chartData['color']) && $chartData['color']) {
+                        $colors[] = '#' . $chartData['color'];
+                    }
+                    
+                }
+
+                // set 3D mode
+                if ($this->threeD) {
+                    $pieChart = new PiePlot3D($data);
+                } else {
+                    $pieChart = new PiePlot($data);
+                }
+                $pieChart->SetLegends($dataLegend);
+
+                // set the colors
+                if (count($colors) > 0) {
+                    $this->image->graph_theme = null;
+                    $pieChart->SetSliceColors($colors);
+                }
+
+                // add the title. Word adds this title as a legend for pie charts
+                if (isset($this->chartData[$indexChart][0]['legend'])) {
+                    $this->image->title->Set($this->chartData[$indexChart][0]['legend']);
+                }
+
+                // add the data to the image
+                $this->image->Add($pieChart);
+            } elseif ($this->chartType[$indexChart] == 'lineChart') {
+                // data to be added to the chart
+                $data = array();
+                // new chart
+                if (!$this->image) {
+                    $this->image = new Graph($this->width, $this->height, 'auto');
+                }
+                // set the scale
+                $this->image->SetScale('intlin');
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    // get the data axys
+                    $dataXAxis = array();
+                    foreach ($chartData['values'] as $value) {
+                        $dataXAxis[] = (string)$value;
+                    }
+                    $plot = new LinePlot($dataXAxis);
+                    // add the legend only is it's in the chart
+                    if (isset($this->legend['show']) & $this->legend['show']) {
+                        $plot->setLegend($chartData['legend']);
+                    }
+
+                    // add the color
+                    if (isset($chartData['color']) && $chartData['color']) {
+                        $plot->SetColor('#' . $chartData['color']);
+                        $plot->SetFillColor('#' . $chartData['color']);
+                        $this->image->graph_theme = null;
+                    }
+
+                    $data[] = $plot;
+                }
+
+                // iterate the first chart data and add the labels
+                foreach ($this->chartData[$indexChart][0]['elements'] as $chartElement) {
+                    $labels[] = (string)$chartElement;
+                }
+
+                // add the labels
+                $this->image->xaxis->SetTickLabels($labels);
+
+                // add the data to the image
+                $this->image->Add($data);
+            }  elseif ($this->chartType[$indexChart] == 'radarChart') {
+                // data to be added to the chart
+                $data = array();
+                // new chart
+                if (!$this->image) {
+                    $this->image = new RadarGraph($this->width, $this->height);
+                }
+
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    // get the data axys
+                    $dataAxis = array();
+                    foreach ($chartData['values'] as $value) {
+                        $dataAxis[] = (string)$value;
+                    }
+                    $plot = new RadarPlot($dataAxis);
+
+                    // add the color
+                    if (isset($chartData['color']) && $chartData['color']) {
+                        $plot->SetColor('#' . $chartData['color']);
+                        $plot->SetFillColor('#' . $chartData['color']);
+                        $this->image->graph_theme = null;
+                    }
+
+                    // add grid lines
+                    $this->image->grid->Show();
+                    $this->image->grid->SetLineStyle('dashed');
+
+                    // add the legend only is it's in the chart
+                    if (isset($this->legend['show']) & $this->legend['show']) {
+                        $plot->setLegend($chartData['legend']);
+                    }
+
+                    // add the data to the image
+                    $this->image->Add($plot);
+                }
+            } elseif ($this->chartType[$indexChart] == 'doughnutChart') {
+                // data to be added to the chart
+                $data = array();
+                $dataLegend = array();
+                $colors = array();
+
+                // new chart
+                if (!$this->image) {
+                    $this->image = new PieGraph($this->width, $this->height, 'auto');
+                }
+                // set the scale
+                $this->image->SetScale('intlin');
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    foreach ($chartData['values'] as $value) {
+                        $data[] = (string)$value;
+                    }
+                    foreach ($chartData['elements'] as $value) {
+                        $dataLegend[] = (string)$value;
+                    }
+                    if (isset($chartData['color']) && $chartData['color']) {
+                        $colors[] = '#' . $chartData['color'];
+                    }
+                }
+
+                $pieChart = new PiePlotC($data);
+                $pieChart->SetLegends($dataLegend);
+
+                // set the colors
+                if (count($colors) > 0) {
+                    $this->image->graph_theme = null;
+                    $pieChart->SetSliceColors($colors);
+                }
+
+                // add the title. Word adds this title as a legend for doughnut charts
+                if (isset($this->chartData[$indexChart][0]['legend'])) {
+                    $this->image->title->Set($this->chartData[$indexChart][0]['legend']);
+                }
+
+                // add the data to the image
+                $this->image->Add($pieChart);
+            } elseif ($this->chartType[$indexChart] == 'areaChart') {
+                // data to be added to the chart
+                $data = array();
+                // new chart
+                if (!$this->image) {
+                    $this->image = new Graph($this->width, $this->height, 'auto');
+                }
+                // set the scale
+                $this->image->SetScale('textlin');
+
+                $colors = array('red' => 'red', 'blue' => 'blue', 'green' => 'green');
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    // get the data axys
+                    $dataAxis = array();
+                    foreach ($chartData['values'] as $value) {
+                        $dataAxis[] = (string)$value;
+                    }
+
+                    if (isset($chartData['color']) && $chartData['color']) {
+                        $color = '#' . $chartData['color'];
+                    }
+
+                    $plot = new LinePlot($dataAxis);
+
+                    // add the legend only is it's in the chart
+                    if (isset($this->legend['show']) & $this->legend['show']) {
+                        $plot->setLegend($chartData['legend']);
+                    }
+
+                    // if there's a previous plot in the image, use a transparent color
+                    if ($indexChart > 0) {
+                        $this->image->graph_theme = null;
+                        $plot->SetFillColor($color.'@0.5');
+                    } else {
+                        $this->image->graph_theme = null;
+                        $plot->SetFillColor($color);
+                    }
+
+                    $data[] = $plot;
+                }
+
+                // create the accumulated graph
+                $accplot = new AccLinePlot($data);
+
+                // add the data to the image
+                $this->image->Add($accplot);
+            } elseif ($this->chartType[$indexChart] == 'bubbleChart') {
+                // data to be added to the chart
+                $dataX = array();
+                $dataY = array();
+
+                // new chart
+                if (!$this->image) {
+                    $this->image = new Graph($this->width, $this->height, 'auto');
+                }
+                // set the scale
+                $this->image->SetScale('linlin');
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    foreach ($chartData['valuesX'] as $value) {
+                        $dataX[] = (string)$value;
+                    }
+                    foreach ($chartData['valuesY'] as $value) {
+                        $dataY[] = (string)$value;
+                    }
+                }
+                // create the plot
+                $data = new ScatterPlot($dataX, $dataY);
+                $data->mark->SetType(MARK_FILLEDCIRCLE);
+
+                // add the data to the image
+                $this->image->Add($data);
+            } elseif ($this->chartType[$indexChart] == 'scatterChart') {
+                // data to be added to the chart
+                $dataX = array();
+                $dataY = array();
+                // new chart
+                if (!$this->image) {
+                    $this->image = new Graph($this->width, $this->height, 'auto');
+                }
+
+                // set the scale
+                $this->image->SetScale('intlin');
+                // iterate the chart data and add it to $data
+                foreach ($this->chartData[$indexChart] as $chartData) {
+                    foreach ($chartData['valuesX'] as $value) {
+                        $dataX[] = (string)$value;
+                    }
+                    foreach ($chartData['valuesY'] as $value) {
+                        $dataY[] = (string)$value;
+                    }
+                }
+                // create the plot
+                $data = new ScatterPlot($dataX, $dataY);
+                // add the data to the image
+                $this->image->Add($data);
+            }
+        }
+
+        // set the legend
+        if (isset($this->legend['show']) & $this->legend['show']) {
+            if ($this->legend['position'] == 'r') {
+                $this->image->legend->SetPos(0.05, 0.5, 'right', 'center');
+                $this->image->legend->SetLayout(LEGEND_VERT);
+            } elseif ($this->legend['position'] == 't') {
+                $this->image->legend->SetPos(0.5, 0.01, 'center', 'top');
+            } elseif ($this->legend['position'] == 'b') {
+                $this->image->legend->SetPos(0.5, 0.97, 'center', 'bottom');
+            }
+        }
+
+        $this->image->SetMargin(100, 20, 60, 20);
+    }
+
+    /**
+     * Save the image to a path
+     *
+     * @var string $path Path to save the image
+     */
+    public function save($path = 'image.png')
+    {
+        $path = 'image_' . uniqid(mt_rand(999, 9999)) . '.png';
+        $this->image->Stroke($path);
+
+        return $path;
+    }
+}

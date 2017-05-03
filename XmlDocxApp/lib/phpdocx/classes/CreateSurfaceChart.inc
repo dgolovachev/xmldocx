@@ -1,1 +1,307 @@
-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
+<?php
+
+/**
+ * Create Surface Chart
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateSurfaceChart extends CreateGraphic implements InterfaceGraphic
+{
+
+    /**
+     * Create embedded xml chart
+     *
+     * @access public
+     */
+    public function createEmbeddedXmlChart()
+    {
+        $this->_xmlChart = '';
+        $this->generateCHARTSPACE();
+        $this->generateDATE1904(1);
+        $this->generateLANG();
+        $this->generateROUNDEDCORNERS($this->_roundedCorners);
+        $color = 2;
+        if ($this->_color) {
+            $color = $this->_color;
+        }
+        $this->generateSTYLE($color);
+        $this->generateCHART();
+        if ($this->_title != '') {
+            $this->generateTITLE();
+            $this->generateTITLETX();
+            $this->generateRICH();
+            $this->generateBODYPR();
+            $this->generateLSTSTYLE();
+            $this->generateTITLEP();
+            $this->generateTITLEPPR();
+            $this->generateDEFRPR();
+            $this->generateTITLER();
+            $this->generateTITLERPR();
+            $this->generateTITLET($this->_title);
+            $this->generateTITLELAYOUT();
+        } else {
+            $this->generateAUTOTITLEDELETED();
+            $title = '';
+        }
+        $this->generateVIEW3D();
+        if (strpos($this->_type, '3D') !== false) {
+            $this->generatePERSPECTIVE(30);
+        } else {
+            $this->generateROTX(90);
+            $this->generateROTY(0);
+            $this->generateRANGAX($this->_rAngAx);
+            $this->generatePERSPECTIVE(0);
+        }
+
+        if ($this->values == '') {
+            exit('You haven`t added data');
+        }
+        $this->generatePLOTAREA();
+        $this->generateLAYOUT();
+
+        if (strpos($this->_type, '3D') !== false) {
+            $this->generateSURFACE3DCHART();
+        } else {
+            $this->generateSURFACECHART();
+        }
+        if ($this->_wireframe)
+            $this->generateWIREFRAME();
+        if (isset($this->values['legend'])) {
+            $legends = $this->values['legend'];
+        } else {
+            echo('You haven`t added legends');
+            return false;
+        }
+        $numValues = count($this->values) - 1;
+        $this->generateVARYCOLORS($this->_varyColors);
+        $letter = 'A';
+        for ($i = 0; $i < count($legends); $i++) {
+            $this->generateSER();
+            $this->generateIDX($i);
+            $this->generateORDER($i);
+            $letter++;
+
+            $this->generateTX();
+            $this->generateSTRREF();
+            $this->generateF('Sheet1!$' . $letter . '$1');
+            $this->generateSTRCACHE();
+            $this->generatePTCOUNT();
+            $this->generatePT();
+            $this->generateV($legends[$i]);
+
+            $this->cleanTemplate2();
+
+            $this->generateCAT();
+            $this->generateSTRREF();
+            $this->generateF('Sheet1!$A$2:$A$' . ($numValues + 1));
+            $this->generateSTRCACHE();
+            $this->generatePTCOUNT($numValues);
+
+            $num = 0;
+            foreach ($this->values as $legend => $value) {
+                if ($legend == 'legend') {
+                    continue;
+                }
+                $this->generatePT($num);
+                $this->generateV($legend);
+                $num++;
+            }
+            $this->cleanTemplate2();
+            if ($this->_type == 'radar' && $style == 'marker' && $marker == false) {
+                $this->generateMARKER();
+            }
+            $this->generateVAL();
+            $this->generateNUMREF();
+            $this->generateF('Sheet1!$' . $letter . '$2:$' . $letter . '$' . ($numValues + 1));
+            $this->generateNUMCACHE();
+            $this->generateFORMATCODE();
+            $this->generatePTCOUNT($numValues);
+            $num = 0;
+            foreach ($this->values as $legend => $value) {
+                if ($legend == 'legend') {
+                    continue;
+                }
+                $this->generatePT($num);
+                $this->generateV($value[$i]);
+                $num++;
+            }
+
+            $this->cleanTemplate3();
+        }
+
+        //Generate labels
+        $this->generateSERDLBLS();
+        $this->generateSHOWLEGENDKEY($this->_showLegendKey);
+        $this->generateSHOWVAL($this->_showValue);
+        $this->generateSHOWCATNAME($this->_showCategory);
+        $this->generateSHOWSERNAME($this->_showSeries);
+        $this->generateSHOWPERCENT($this->_showPercent);
+        $this->generateSHOWBUBBLESIZE($this->_showBubbleSize);
+
+        $this->generateBANDFMTS();
+        $this->generateAXID();
+        $this->generateAXID(59040512);
+        $this->generateAXID(83319040);
+        $this->generateVALAX();
+        $this->generateAXAXID(59040512);
+        $this->generateSCALING();
+        $this->generateDELETE($this->_delete);
+        $this->generateORIENTATION();
+        $this->generateAXPOS('l');
+        switch ($this->_hgrid) {
+            case 1:
+                $this->generateMAJORGRIDLINES();
+                break;
+            case 2:
+                $this->generateMINORGRIDLINES();
+                break;
+            case 3:
+                $this->generateMAJORGRIDLINES();
+                $this->generateMINORGRIDLINES();
+                break;
+            default:
+                break;
+        }
+
+        if (!empty($this->_vaxLabel)) {
+            $this->generateAXLABEL($this->_vaxLabel);
+            $vert = 'horz';
+            $rot = 0;
+            if ($this->_vaxLabelDisplay == 'vertical') {
+                $vert = 'wordArtVert';
+            }
+            if ($this->_vaxLabelDisplay == 'rotated') {
+                $rot = '-5400000';
+            }
+            $this->generateAXLABELDISP($vert, $rot);
+        }
+        $this->generateNUMFMT();
+        $this->generateMAJORTICKMARK('none');
+        $this->generateTICKLBLPOS('none');
+        $this->generateCROSSAX(59034624);
+        $this->generateCROSSES();
+        $this->generateCROSSBETWEEN('midCat');
+        $this->generateCATAX();
+        $this->generateAXAXID(59034624);
+        $this->generateSCALING();
+        $this->generateDELETE($this->_delete);
+        $this->generateORIENTATION();
+        $this->generateAXPOS();
+
+        switch ($this->_vgrid) {
+            case 1:
+                $this->generateMAJORGRIDLINES();
+                break;
+            case 2:
+                $this->generateMINORGRIDLINES();
+                break;
+            case 3:
+                $this->generateMAJORGRIDLINES();
+                $this->generateMINORGRIDLINES();
+                break;
+            default:
+                break;
+        }
+
+        if (!empty($this->_haxLabel)) {
+            $this->generateAXLABEL($this->_haxLabel);
+            $vert = 'horz';
+            $rot = 0;
+            if ($this->_haxLabelDisplay == 'vertical') {
+                $vert = 'wordArtVert';
+            }
+            if ($this->_haxLabelDisplay == 'rotated') {
+                $rot = '-5400000';
+            }
+            $this->generateAXLABELDISP($vert, $rot);
+        }
+
+        $this->generateMAJORTICKMARK();
+        $this->generateTICKLBLPOS();
+        $this->generateCROSSAX();
+        $this->generateCROSSES();
+        $this->generateAUTO();
+        $this->generateLBLALGN();
+        $this->generateLBLOFFSET();
+
+        $this->generateSERAX();
+        $this->generateAXAXID(83319040);
+        $this->generateSCALING();
+        $this->generateDELETE($this->_delete);
+        $this->generateORIENTATION();
+        $this->generateAXPOS('b');
+        switch ($this->_hgrid) {
+            case 2:
+                $this->generateMINORGRIDLINES();
+                break;
+            case 3:
+                $this->generateMAJORGRIDLINES();
+                $this->generateMINORGRIDLINES();
+                break;
+            case 1:
+            default:
+                $this->generateMAJORGRIDLINES();
+                break;
+        }
+        $this->generateMAJORTICKMARK();
+        $this->generateTICKLBLPOS();
+        $this->generateCROSSAX(59034624);
+        $this->generateCROSSES();
+        if (!empty($this->_showtable)) {
+            $this->generateDATATABLE();
+        }
+
+        $this->generateLEGEND();
+        $this->generateLEGENDPOS($this->_legendPos);
+        $this->generateLEGENDOVERLAY($this->_legendOverlay);
+
+        $this->generatePLOTVISONLY();
+        if ((!isset($this->_border) || $this->_border == 0 || !is_numeric($this->_border))
+        ) {
+            $this->generateSPPR();
+            $this->generateLN();
+            $this->generateNOFILL();
+        } else {
+            $this->generateSPPR();
+            $this->generateLN($this->_border);
+        }
+
+
+        $this->generateTXPR();
+        $this->generateLEGENDBODYPR();
+        $this->generateLSTSTYLE();
+        $this->generateAP();
+        $this->generateAPPR();
+        $this->generateDEFRPR();
+        if ($this->_font != '') {
+            $this->generateRFONTS($this->_font);
+        }
+        $this->generateENDPARARPR();
+
+        $this->generateEXTERNALDATA();
+        $this->cleanTemplateDocument();
+        return $this->_xmlChart;
+    }
+
+    public function dataTag()
+    {
+        return array('val');
+    }
+
+    /**
+     * retrun the type of the xlsx object
+     *
+     * @access public
+     */
+    public function getXlsxType()
+    {
+        return CreateCompletedXlsx::getInstance();
+    }
+
+}

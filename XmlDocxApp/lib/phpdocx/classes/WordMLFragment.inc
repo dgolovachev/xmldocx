@@ -1,1 +1,102 @@
-rVZhb+I4EP3OrxihSkC1BFppVyda2J7arrQS9Kp2V1vpdELGHpKoiZ2zHVK0t//9xk5Cw1Iq7rp8STKeee/NeDym1RocH7fgGC41MosGGHxTWsymsNQsTFFasAoWCLE0qC0KwMRgEaFGinKBF5ziQqXXAHAbZULxJ2/OGH9kIZKVQtAhmdJdZWsdh5EFuNy8dnkPbpjmyOBWK5FzHitJamZ5YuMURczgPpgGDqD560bWZqPBoCiK4DQVPOAq7XmWJOZIip1TVoqC6efL65v7a7+8Qm2IwS2fDk8+BMP3wfCkCpSPFXoDvMJw+OQ1aPGEGVNV6lNdKHyyKIWpSnldJt363mo5MF9m96sfcME4R0LJdLwi/415xTQYq2MZVqaBf1ZucDQvPO3ZL8Y1ltmYEzzttGWSI4zh5ut0l4e2jTx0zu0+4nxB5d8m8SZY5pJbV/f5nNcg3Z73+N6qN/XIRrHpT+YCF3lIIq7cczQK0X6ulHV7Z977x460K3y7MoF7hO3hnLGQAFK0kRLvQKPNtTTAc61dUzzMpoeIgYsysNohuCu/dlH2qbbq3kfuqK5w66rWzfNyLr8L4UYAj3I6BWoJmhVVlx+WRMY0S+scjgSz7FXZTIg7VpQEXe++rxlK2RCMS9R9+uvqK5mswUYIOndfS6B2s66QS6UB0wUK8XwOfm1OsaQRglVOO+mUeVz6+o5BYgFXf8yuFM/drKj72ntKlqKhIUpTcAydpzSRZrTCcbuaSoZHmDITqAwlLVJeKbP0qcNByvRjnvVpVmV0pBdxEtv14HQ4/NCGEkaN21SlUQXRT2OulVFL60JGarmk2Vk96gh9CG8ZUifjGQcaE+bKYqI4MzVa+n/RaDGqQVavJbFKk9qvyA5hE9TptL9pUhK5bcq0cu1A1qtycYN4MjyggA5iE3GIhG3OWknKYrmBkbv7v+F2d1NVNA/1nIirRefs5x50XXX+kYChugzH7ZNg2AaUXLnDMW5//fKp/1vbXQxSsEQ58jXSJn6cnBcjrZSFDgRbjRpAZ+JtLwybber6jSLOByXapKlRZa5rrqWl3p0qJlBTUBIvSO9cxIYtEpyjX50nfrlLMxt7O1T+pPUnzufBzZjS2vB7FfMFGbsUD3TKoufD/HBLn90m/Z6Q/kRjGBuL+qauYLdTdN5B5y290vkvbOnb2Gy0xfZ3jvQvkNpq4Hb0T6ls193Wxio9GhWjaJ2hdn+ven/BP+B8Npbqe6HUoxte95Zp+5PtWorKQn3uJsIdkyE2PZv22ptO48zJbNZE3yjhh+p2ebz6bplEM6tFovjjZYJM0p9fSq6BRTVCxiPobkCZofNAb73GzC+nORnvHKd76U8UHWVdz7b+xLAV+vb0sWfboVsCggri7tmpugXdr77rmyGbq/JH618=
+<?php
+
+/**
+ * Creates a WordML fragment to be inserted elsewhere
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class WordMLFragment extends CreateElement
+{
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_wordML;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private static $_instance = NULL;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        $this->_debug = Debug::getInstance();
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_wordML;
+    }
+
+    /**
+     * Adds a chunk of raw WordML
+     *
+     * @access public
+     * @param string $data
+     */
+    public function addRawWordML($data)
+    {
+        $this->_wordML .= $data;
+    }
+
+    /**
+     * returns only the runs of content for embedding
+     *
+     * @access public
+     * @param string $data
+     */
+    public function inlineWordML()
+    {
+        $wordMLChunk = new DOMDocument();
+        $namespaces = 'xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" ';
+        $wordML = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?><w:root ' . $namespaces . '>' . $this->_wordML;
+        $wordML = $wordML . '</w:root>';
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $wordMLChunk->loadXML($wordML);
+        libxml_disable_entity_loader($optionEntityLoader);
+        $wordMLXpath = new DOMXPath($wordMLChunk);
+        $wordMLXpath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
+        $wordMLXpath->registerNamespace('m', 'http://schemas.openxmlformats.org/wordprocessingml/2006/math');
+        $query = '//w:r[not(ancestor::w:hyperlink)] | //w:hyperlink | //w:bookmarkStart | //w:bookmarkEnd | //w:commentRangeStart | //w:commentRangeEnd | //m:oMath';
+        $wrNodes = $wordMLXpath->query($query);
+        $blockCleaned = '';
+        foreach ($wrNodes as $node) {
+            $nodeR = $node->ownerDocument->saveXML($node);
+            $blockCleaned .= $nodeR;
+        }
+
+        return $blockCleaned;
+    }
+
+}

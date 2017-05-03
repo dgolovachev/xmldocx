@@ -8,15 +8,16 @@ var XmlDocxTools = require("./xmldocx-tools.js");
 var multer = require("multer");
 var tempPath = "./temp"; // путь папки временного  хранения
 var delay = 6000; // время проверки файла
-var supportExtensions = ["docx"]; // триал версия работает только с файлами .docx
+var supportExtensions = ["docx", "doc"]; // триал версия работает только с файлами .docx
 
 module.exports.protect = function (request, response) {
-    if (!request.file) { // файл не принят
-        logger.warn("request witout file");
+    var file = request.file;
+    if (!file || file.size == 0) { // файл не принят или пустой
+        logger.warn("request witout file or file emty");
         response.sendStatus(400);
     }
     else {
-        var inputFileName = request.file.filename;
+        var inputFileName = file.filename;
         var inputFilePath = getInputFilePath(inputFileName);
         var ext = inputFileName.split(".").pop();
 
@@ -39,84 +40,112 @@ module.exports.protect = function (request, response) {
             var document = new XmlDocx(config);
             document.setDocumentProperties(settings);
             document.addContent(content);
-            document.render();
-
-            // асинхронная проверка файла
-            checkFile(outputFilePath, delay, function (err, data) {
+            document.render(function (err) {
                 if (err) {
-                    logger.error("error in process generating document: " + outputFilePath);
+                    logger.error(err);
+                    // удаляем временные файлы
+                    logger.info("delete temp file: " + inputFilePath + ", " + config + ", " + content + ", " + settings);
+                    removeFile(inputFilePath, config, content, settings);
                     response.sendStatus(500);
                 }
                 else {
-                    response.setHeader("Content-Type", "application/msword");
+                    //response.setHeader("Content-Type", "application/msword"); // word < 2007 .doc
+                    response.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"); // word > 2007 .docx
                     var file = fs.ReadStream(outputFilePath);
-                    sendFile(file, response); // возвращаем изменненый документ
-                    removeFile(outputFilePath); // удаляем сгенированный документ
+                    sendFile(file, response, function (err) {// возвращаем изменненый документ
+                        if (err) {
+                            logger.error(err);
+                            response.sendStatus(500);
+                        }
+                        // удаляем временные файлы
+                        logger.info("delete temp file: " + inputFilePath + ", " + outputFilePath + ", " + config + ", " + content + ", " + settings);
+                        removeFile(inputFilePath, outputFilePath, config, content, settings);
+                    });
                 }
-
-                // удаляем временные файлы
-                logger.info("delete temp file: " + inputFilePath + ", " + config + ", " + content + ", " + settings);
-                removeFile(inputFilePath, config, content, settings);
             });
         }
     }
 };
 
-module.exports.signature = function (request, response) {
-    if (!request.file) { // файл не принят
-        logger.warn("request witout file");
+module.exports.digitalSignature = function (request, response) {
+    var files = request.files;
+    if (!files) {
+        logger.warn("empy request");
         response.sendStatus(400);
     }
     else {
-        var inputFileName = request.file.filename;
-        var inputFilePath = getInputFilePath(inputFileName);
-        var ext = inputFileName.split(".").pop();
-
-        if (!supportExtension(ext)) { // не поддерживаемое расширение
-            logger.warn("sent unsupported file with extension: " + ext);
-            removeFile(inputFilePath); // удаляем принятый файл
+        if (files.length !== 3) {
+            logger.warn("count files: " + files.length);
+            for (var i = 0; i < files.length; i++) {
+                removeFile(__dirname + "/" + files[i].path);
+            }
             response.sendStatus(400);
         }
         else {
-            logger.info("acepted file: " + inputFileName);
-            var outputFilePath = getOutputFilePath(inputFileName);
+            if (!checkFilesExtension(files) || !checkFilesSize(files)) {
+                logger.warn("wrong file send");
+                for (var i = 0; i < files.length; i++) {
+                    removeFile(__dirname + "/" + files[i].path);
+                }
+                response.sendStatus(400);
+            }
+            else {
+                var inputFilePath = getInputFilePath(files[0].filename);
+                var certificatePath = getInputFilePath(files[1].filename);
+                var privateKeyPath = getInputFilePath(files[2].filename);
 
-            var certificatePath = `${__dirname}/cert/certificate.crt `;
-            var privaKeyPath = `${__dirname}/cert/privaKey.key `;
+                // создаем xml файлы конфигурации для xmldocx
+                var xmlDocxTools = new XmlDocxTools(tempPath);
+                var config = xmlDocxTools.getDigitalConfigXml(inputFilePath, privateKeyPath, certificatePath); // установка цифровой подписи
+                var content = xmlDocxTools.getContentXml();
+                var settings = xmlDocxTools.getSettingsXml();
 
-            // создаем xml файлы конфигурации для xmldocx
-            var xmlDocxTools = new XmlDocxTools(tempPath);
-            var config = xmlDocxTools.getDigitalConfigXml(inputFilePath, privaKeyPath, certificatePath); // установка цифровой подписи
-            var content = xmlDocxTools.getContentXml();
-            var settings = xmlDocxTools.getSettingsXml();
-
-            // изменяем документ
-            var document = new XmlDocx(config);
-            document.setDocumentProperties(settings);
-            document.addContent(content);
-            document.render();
-
-            // ожидание окончания работы xmldocx           
-            setTimeout(function () {
-                response.setHeader("Content-Type", "application/msword");
-                var file = fs.ReadStream(inputFilePath);
-                sendFile(file, response); // возвращаем изменненый документ
-
-                // удаляем временные файлы
-                logger.info("delete temp file: " + inputFilePath + ", " + config + ", " + content + ", " + settings);
-                removeFile(inputFilePath, config, content, settings);
-            }, 1500);
+                // изменяем документ
+                var document = new XmlDocx(config);
+                document.setDocumentProperties(settings);
+                document.addContent(content);
+                document.render(function (err) {
+                    if (err) {
+                        logger.error(err);
+                        // удаляем временные файлы
+                        logger.info("delete temp file");
+                        removeFile(config, content, settings);
+                        for (var i = 1; i < files.length; i++) {
+                            removeFile(__dirname + "/" + files[i].path);
+                        }
+                        response.sendStatus(500);
+                    }
+                    else {
+                        //response.setHeader("Content-Type", "application/msword"); // word < 2007 .doc
+                        response.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"); // word > 2007 .docx
+                        var file = fs.ReadStream(inputFilePath);
+                        sendFile(file, response, function (err) {
+                            if (err) {
+                                logger.error(err);
+                                response.sendStatus(500);
+                            }
+                            // удаляем временные файлы
+                            logger.info("delete temp file");
+                            removeFile(config, content, settings);
+                            for (var i = 1; i < files.length; i++) {
+                                removeFile(__dirname + "/" + files[i].path);
+                            }
+                        });
+                    }
+                });
+            }
         }
     }
 };
 
 module.exports.test = function (request, response) {
-    if (!request.file) { // файл не принят
-        logger.warn("request witout file");
+    var file = request.file;
+    if (!file || file.size == 0) { // файл не принят или пустой
+        logger.warn("request witout file or file emty");
         response.sendStatus(400);
     }
     else {
-        var inputFileName = request.file.filename;
+        var inputFileName = file.filename;
         var inputFilePath = getInputFilePath(inputFileName); // путь принятого файла
         var ext = inputFileName.split(".").pop(); // расширение принятого файла
 
@@ -142,56 +171,45 @@ module.exports.test = function (request, response) {
             var document = new XmlDocx(config);
             document.setDocumentProperties(settings);
             document.addContent(content);
-            document.render();
-
-            // асинхронная проверка файла
-            checkFile(outputFilePath, delay, function (err, data) {
+            document.render(function (err) {
                 if (err) {
+                    logger.error(err);
+                    // удаляем временные файлы
+                    logger.info("delete temp file: " + inputFilePath + ", " + config + ", " + content + ", " + settings);
+                    removeFile(inputFilePath, config, content, settings);
                     response.sendStatus(500);
-                    logger.error("error in process generating document: " + outputFilePath);
                 }
                 else {
-                    response.setHeader("Content-Type", "application/msword");
+                    //response.setHeader("Content-Type", "application/msword"); // word < 2007 .doc
+                    response.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"); // word > 2007 .docx
                     var file = fs.ReadStream(outputFilePath);
-                    sendFile(file, response); // возвращаем изменненый документ
-                    removeFile(outputFilePath); // удаляем сгенированный документ
+                    sendFile(file, response, function (err) { // возвращаем изменненый документ
+                        if (err) {
+                            logger.error(err);
+                            response.sendStatus(500);
+                        }
+                        logger.info("delete temp file: " + inputFilePath + ", " + outputFilePath + ", " + config + ", " + content + ", " + settings);
+                        removeFile(inputFilePath, outputFilePath, config, content, settings);
+                    });
                 }
-                // удаляем временные файлы
-                logger.info("delete temp file: " + inputFilePath + ", " + config + ", " + content + ", " + settings);
-                removeFile(inputFilePath, config, content, settings);
             });
         }
     }
 };
 
-function sendFile(file, response) { // отправка файла с обработкой ошибок
+function sendFile(file, response, callback) { // отправка файла с обработкой ошибок
     file.pipe(response);
     logger.info("sent file: " + file.path);
 
     file.on("error", function (error) { // обработка ошибки чтения файла
-        logger.error(error)
-        response.sendStatus(500);
+        callback(error);
     });
 
     response.on("close", function () { // освобождаем ресурсы занятые файлом если клиент не до конца скачал файл 
         logger.info("destroy file: " + file.path);
         file.destroy();
+        callback(null);
     });
-}
-
-function checkFile(path, delay, callback) { // асинхронная проверка существования файла т.к. библиотека xmldocx не возвращает результат работы
-    var timer = setTimeout(function () {
-        clearInterval(interval); // удаляем интервал проверки существования файла
-        callback("error file not exist", null);
-    }, delay);
-
-    var interval = setInterval(function () {
-        if (fs.existsSync(path)) {
-            clearTimeout(timer);// удаляем таймер отправлящий ошибку 
-            clearInterval(interval); // удаляем интервал проверки существования файла
-            callback(null, true);
-        }
-    }, 100);
 }
 
 function supportExtension(input) {
@@ -218,4 +236,29 @@ function getInputFilePath(fileName) {
 
 function getOutputFilePath(fileName) {
     return `${__dirname}/temp/upd_${fileName}`;
+}
+
+function checkFilesSize(filesArray) {
+    if (!filesArray) return false;
+
+    var result = true;
+    filesArray.forEach(function (item) {
+        if (item.size == 0) {
+            result = false;
+        };
+    });
+    return result;
+
+}
+
+function checkFilesExtension(filesArray) {
+    if (!filesArray) return false;
+
+    var dataExt = filesArray[0].filename.split(".").pop();
+    var certificateExt = filesArray[1].filename.split(".").pop();
+    var keyExt = filesArray[2].filename.split(".").pop();
+    if (dataExt === "doc" || dataExt === "docx" && certificateExt === "crt" || certificateExt === "pem" && keyExt === "key") {
+        return true;
+    }
+    return false;
 }

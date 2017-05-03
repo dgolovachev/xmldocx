@@ -1,1 +1,91 @@
-pVVRT9swEH7PrzhFSG3RSArS0BRogZVOQmo7RIfYGzLOJY1I7Mh2CAzx33dO0qo0RRWbHxrHvvu+u+8uV8fx9/cd2IeRQmYQQoxYkRoo8UGjMYmINfyeTsjCGp1zsomlegGA60UeSv5cHeeMP7IY6RQwxQyF0bW5zF9UEi8MwGi17fIezJjiyOBaybDgPJECNUyJN8kwTBjMvYlnAdZXd2FMHvh+WZbeURZyj8usV7GkCUehK/a8DgomV6PxbD6urp9QaWKw10f9w2Ov/9XrHzaO4rFBXwNvMCw+WfkOT5nWjT53+DBfyoLPBkW4vBnXeTuvjmPxKlXtWj7gnHGOBJQraZAbDJsLv3quTmHv/jlLT3ajJE/EujrWhpmEb0BWJlBfEW4iaCs4wgBmt5NJi4NqRBaq4OYj0uIh3SSpjiAqBDdW5Pt7vgTp9iqLV2dZwWrz1mK9xP8nDfFznFMWE0CGZiHDL6DQFEpo4IVSVMO64XcHA+e1IymsqCPgpn5ro3wUtZHzyrMVdYO7ZxaJPhjWDbE9kTm5p2ikWGYBqyrLCKrW/VQqrTbflkLTUatMYjRXDWsrlSSCrsY0CoL1Bqw7sLdmZ1fbDgSW7Zi6vZOV39umaJsgHyk3ZYkAw+hDJqFa4+5fWzFGgWoz2g1J1spKGXZOz+ymmVID99Dru4CCy5CcB+7trx8H31wruQhZSoNy4L6gduFs2HmnnV0egXXo991ECoLZxXQ8v74Yje9+3lxao6BcG2NbYSgioQM1cJu5qPkCM6Y9maOgu0iqjBl6VbEvo4jm76XkhWXzt8Id9fvHvsKUWY30IskpgZqi3EWxFc/yllKFNDVtYSiPLPUrkoyq6g5Pt3ntVEXm9P+T/MEfUn1XstSowB+ebs3oMwoPO6sWfHP+Ag==
+<?php
+
+/**
+ * Create default websettings XML
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateWebSettings extends CreateElement
+{
+
+    /**
+     *
+     * @access protected
+     */
+    protected $_xml;
+
+    /**
+     *
+     * @access private
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateWebSettings
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateWebSettings();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Main tags of websettings XML
+     *
+     * @access public
+     */
+    public function generateWebSettings()
+    {
+        $this->_xml = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>'
+                . '<' . CreateElement::NAMESPACEWORD . ':webSettings '
+                . 'xmlns:r="http://schemas.openxmlformats.org/officeDocument/'
+                . '2006/relationships" xmlns:w="http://schemas.openxmlformats.'
+                . 'org/wordprocessingml/2006/main"><'
+                . CreateElement::NAMESPACEWORD . ':optimizeForBrowser /></'
+                . CreateElement::NAMESPACEWORD . ':webSettings>';
+    }
+
+}

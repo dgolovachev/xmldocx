@@ -1,1 +1,141 @@
-rVZtT+M4EP7eXzGqKjVFkBROt9qFLQsC9oTUwmrblZBOp8g40za3iZ2zXQpa8d937Lw0TVs4bi8fWr/MPDPzzIztVivY22vBHpxHETBImZkD/kMLdu2MM4MzqZ4A4Ms8iyR/dMsZ49/ZDGkVMMEUhdG5uMyeVDybG4CLaujxHtwwxZHBFyWjBeexFKhhtEhMnGIUMxj7Q98C1D9vbkx2HATL5dI/SiPuc5n2nJUk5ii0s57lTsHw+uLqZnzlth9QabJgt4/6h+/8/u9+/7BQFN8L9Bp4gWHxSSpo8YRpDRcKKfaRo+PRoIjKpas84NaPVssCOfbsV/7BGeMcCSFT8QPJV8vaMBPzYhq4/0IE8i3ohLGgoeAIAxCLJDl5q40HpghMxWK21U4ntPkdDTdwKV1kWS242WVocZ80nXdLMF0IbizfYchLEK/nJH60ymS6wfOG1Uv8daMRvs3miM0IIEUzl9E+KDQLJTTwhVKUVRg5fv6NP3CW6xZ8w9d8thVol+9Gjp3yhu8FdMfMY31wWmVte0RjQkjQSFGGA1UZySm4cn5TQHmdD6lZtrlf1GoVxQzNdWFuI4x4Cp7GZHp8XC/tAdx8Gw57NTn7bcqBwGWtD73eSaXw3GSqqb2Lqz/QGFQ+nOcEGOlOvLvREKh1/kPaX0wwUTPK0X8twf+D0xlTLC1LtZO+Xpx65Xsh3gxh3XdKV+e1KAQqewoxl9i8Qdxd8/YAmFLnaqb/7P8Fo/LGeiEYXiuiHVE8pgmF0O2uaqw0QssWKKRshozmtg6b6kYxoadSpc5Gzb3eLjYmpQbRUVEBC23DuxvvPIGUNMgNRi8mdjsnpeqKlobXO9JMwVzSLW+Qzio9cpmmJfbkdT+m8Wl3H7ofAzvonWzRmcgtWqLUEutaVSVROKHCLGF0pmzY398Gv19qryVHaX7nAG3BXd6OLiVf2Mu7fpR0ZGbJuBImNk9DySJUpJDE91QRYRRrdp9giG43TNy2R/cN1hFyMwendrveMCuRF+G2eLDm3/3fVBATejvxIpJyShUhlbcp+1rATih314tiJViKXhh+vh5ehWEPfOgGvh886iQgYo9u6ScUPml0d3h1cBqnmVRmbJ4S1HNE4xXbWzqldlysQVS1OJGOwpzTRk3drhfSJ9u0xXNv0D70+21AwWVErTBof5t8Pnjf/kSltnbNdIGUhD5OB+3iDaj5HFOmfZmhoD3rAzM0VbNATqf01ixJDI76/XdBdw2OyLIBtUvUNKlw7dty+ZvDOfzw4X1gmyzIW73dbJaJXA/N9seaTJO8ZofcVo2RQ+03VFbn0HPrJw==
+<?php
+
+/**
+ * Add a math eq
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateMath extends CreateElement
+{
+
+    /**
+     *
+     * @access private
+     * @static
+     */
+    private static $_instance = null;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_mathML;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current MathML
+     *
+     * @access public
+     * @return string Return current MathML
+     */
+    public function __toString()
+    {
+        return $this->_mathML;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateLink
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateMath();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Getter. Access to mathXML var
+     *
+     * @access public
+     * @return string
+     */
+    public function getMathXML()
+    {
+        return $this->_mathML;
+    }
+
+    /**
+     * Getter. Access to mathXML var
+     *
+     * @access public
+     * @param string $mathML
+     */
+    public function setMathXML($mathML)
+    {
+        $this->_mathML = $mathML;
+    }
+
+    /**
+     * Generate a new MathML eq
+     *
+     * @access public
+     * @param string $arrArgs[0] Math eq
+     */
+    public function createMath()
+    {
+        $this->_xml = '';
+        $arrArgs = func_get_args();
+
+        $this->transformMath($arrArgs[0]);
+    }
+
+    /**
+     * Transform a MathML eq using XSL
+     *
+     * @access protected
+     * @param string $mathML Math eq
+     */
+    protected function transformMath($mathML)
+    {
+        $arrDeleteStrsMML = array('<mi>', '</mi>');
+        $arrDeleteToStrsMML = array('<mn>', '</mn>');
+        $mathML = str_replace($arrDeleteStrsMML, $arrDeleteToStrsMML, $mathML);
+
+        $rscXML = new DOMDocument();
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $rscXML->loadXML($mathML);
+        libxml_disable_entity_loader($optionEntityLoader);
+        $objXSLTProc = new XSLTProcessor();
+        $objXSL = new DOMDocument();
+        $objXSL->load(dirname(__FILE__) . '/../xsl/MML2OMML_n.XSL');
+        $objXSLTProc->importStylesheet($objXSL);
+
+        $this->_mathML = $objXSLTProc->transformToXML($rscXML);
+        $arrOMML = array('<?xml version="1.0" encoding="UTF-8"?>',
+            ' xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/'
+            . 'math" xmlns:mml="http://www.w3.org/1998/Math/MathML"');
+        $arrToOMML = array('', '');
+        $this->_mathML = str_replace($arrOMML, $arrToOMML, $this->_mathML);
+    }
+
+}

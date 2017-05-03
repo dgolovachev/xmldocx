@@ -1,1 +1,139 @@
-tVZRT9swEH7Pr7iHSk0RNIC0PRSBmIBNSIWhlUl7q4xzTSySOLMdSof47zs7SUmbtIOx5SWJfXff992dL/G8YGfHgx24UZgzhRpMjGAwzRNm6G0mlVvhMntApYXMIE+KSGTkY91OOZlFUi0A4CbOQ8kf3XLO+D2LkFaBwmpUpbHMF0pEsQE4Wz76fADXTHFkREKGBeeEQtBXRWJEiqFgMBmOhzZA8/JjY/JREMzn8+FhGvIhl+nAoSSCY6ZL7JISjC/PLq4nF2671kHX4f7Bx+H+h+H+QeWY3VfRG8GrGDY+WQUeT5jWdb5uq0x5T55n/Vw27VXf4JRxjuSQK/FgDevlB6ZAGyWyqFoK3L0yoy1mBIfeVGT0mHGEY7j+Ph4f/Q0OU4otOmF608c0odDOwh+0olOdCF8V3LwKbjX4rMi4sameTnkdxh84kyevrqN7eG7hnuN22OKOyryK6paaoCG+DfOKRRQgRRPLcBcUmkJlGnihFGYGflyNX0MGTkvHqrjwrXxrR9nE2siJ82yxruL2TCz03okt3NEGIRNyT9DIrFYByy6SM3AN/CYpZwqpnrf4aJY7ZX92Sak6d6koQnNZobckiRn4GpPZaNRs9LLTBw07e7XtIMM55TdnQtnWrQ2f1zO27rkpbV/QGFSvLXR3/Ugt+b+ndv+AhC5J9AhmnUiDASWwt4VI5xcBtARhwCiWafo2pHYAyBxVsiAzJYso3vS5KIP+od8IkKUAv0T+SfFYPNCAotm7VWu+OojPlsg3Dti3AdaTEAQXjySBG0dW4c9CKAxhJhLUo4YVuRYpndohpamxrM2CDO2ifW+ltvaiEtgU0+veCbXFZyXTa5ai359LFa7E7je6t45SgmyP8UKkX4/ukuFYstBqS+ngO43nX6828qS96izR03m16HeoabKUuc3+RWaEWVg0atljSMQdcZmGQrO7BKfodqeJ2/ZpFGOHzgaLvRNr6jp3K/hWmA5mG7O7XfmyAv9F95JBW3UX8Ds0B8HEMFX2enlaWHVypDuDK00cBDe0HymWx3qdc3XUXgz88rehX5epD8cnXYUd7LZlrxC8taJ0Y+Eypb9HvWEy3bJ7GkucqNjPmZNVU6rGkRHLg7wD85Gm39GXH61XDqEqqXp1+qz/2rRz0quFa1Jdyt30//Hs/QY=
+<?php
+
+/**
+ * Prepares the templates for the conversion plugin
+ *
+ * @category   Phpdocx
+ * @package    parser
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class PrepareTemplate
+{
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @access private
+     * @var array
+     */
+    private $_xml = array();
+
+    /**
+     * Construct
+     *
+     * @access private
+     */
+    private function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateText
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new Repair();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Getter XML
+     *
+     * @access public
+     */
+    public function getXML()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Setter XML
+     *
+     * @access public
+     */
+    public function setXML($xml)
+    {
+        $this->_xml = $xml;
+    }
+
+    /**
+     * Prepares the template so it transforms properly through the conversion plugin
+     * 
+     * @access public
+     * @param  zipArchive $doc
+     */
+    public function prepareTemplateConversionPlugin($doc)
+    {
+        //Extract the required files:
+        //document.xml
+        //styles.xml    
+        $this->_documentXML = $doc->getFromName('word/document.xml');
+        $this->_stylesXML = $doc->getFromName('word/styles.xml');
+
+        //Load them in the DOM
+        $this->_documentDOM = new DOMDocument($this->_documentXML);
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $this->_documentDOM->loadXML($this->_documentXML);
+        libxml_disable_entity_loader($optionEntityLoader);
+        $this->_stylesDOM = new DOMDocument($this->_stylesXML);
+        $optionEntityLoader = libxml_disable_entity_loader(true);
+        $this->_stylesDOM->loadXML($this->_stylesXML);
+        libxml_disable_entity_loader($optionEntityLoader);
+        //Start the preparation process     
+        //Paragraphs
+        $this->prepareParagraphs(array('document' => $this->_documentDOM), $this->_stylesDOM);
+        //Tables
+        //Images
+    }
+
+    /**
+     * Takes care of the paragraph properties:
+     * w:spacing
+     * 
+     * @access public
+     * @param  $options
+     */
+    private function prepareParagraphs($documents, $styles)
+    {
+        
+    }
+
+}

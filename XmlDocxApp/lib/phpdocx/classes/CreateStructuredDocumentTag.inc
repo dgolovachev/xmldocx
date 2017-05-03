@@ -1,1 +1,188 @@
-rVhtb9s2EP7uX3ErjMouUsvJsAFLl6Cd0wwBnCBo2mFAERgMRdtEZNEgqThum/++I0XJ1Istp5m+WCLvnufeSB7d6YRv3nTgDYwkI5qB0jKlOpUsgkjQdMESDZrMUMIIvacoMxNyDQDX8yVKPNrhJaH3ZMZwFFjMjJLKxMVyLflsrgFGxWuP9uGKSMoIXEsRpZRykTAFl2ms+YJFnMDNYDwwAP7Tm2u9PA7D1Wo1OFpEdEDFom9ZYk5Zoiz7MjMKxhejj1c3H+30A5MKGcz00fDw98Hwt8Hw0Ckm9w7dA3cYBh+lwg6NiVIuPjdFeM5cdD5jcL53OgbDRtI8+Q+8J5QyVF5K/oDaxfADkSbSPJm5odD+OjGcIppT6E54gq8JZXACV1/G43f/M0938riIa6CYqiQrg20s6R2GvIxoh2CaJlSbWE8mNAfp9a3E906eSPvyVGM9Yy8njdjzOC/JDAEWTM9FdACSYWYTBTSV0tT9v5fjfYyB95miizR8yr7qKNus1uLGatasdrhdPefq7WmWrGZHblA9ZlokuRdQlI6Ygq3gZ7mSVftn9qiLmawom1xx5Vp4NGP6wrHXXOJT6CkWT4+P/erOyrvvyZmnLgcJW+1aib3+uwLhqRrGKty2WLqdcEMAOQOYxb5XGJdEkgUs+CNqd4mcqa/D251VQHc5VYmhBcRgGOUJBntivn3XvYJBsSDwZmJB7/8hccoMAJGSrHuBivQYh1kUHECA61Yj72YgTeLiHSVHpXmflEcIKUkS9Q6H7jmAP/Kn7/YZG+zwcADnXCoNxTYBeo4bX6SvZX6E9LacRbh9iSWTmjPVt3AbEzJ9dPnP1bF9P/V9z2YHJ3l8ZixhEqP+6Vr2siQd3noOmVL9hS2Wel3Mfg1IzIkKbvvVWt2AG24rBavjBxKfvApgADUAHAteQejb97Sb2WQBieH1a1zbkyx11dkDP8EtNhrBZhMzrJ0WlqEw8z4QftZ1G33CbLbG0mS80Uyr3BpHrhTTPiXaICSRaxfLKh7uRVh2rMWmHGQbcxheiRWsGMzJAwMtgESRrfC8PQLckQXlWH2RmWaEzgE3DdxH0xgPbb1eMg9sJBZ3Au7E41bXhpk3xZfxA9cyqv0lHgP48QNKMxEuoTOxSsZc6aAlAZuoD224fY+3VysCX2CYVF6yql6ynkjVAvNMhbRhaVbBAEL3nq3h5BS6D6bgmzAayt5BYE1FXC1jsjannKsti+PcfJVVXcpKc4dNFVfPf/3LtyLcHVS/jM7MUYSRWBDdlvtyglEv2J1XI7JXLo3guTVhS6bquJl487r14bYE8wnXCTb0z2e6DKNwjU8T5h5FKyiJ9/Ixrmx5VYiX+eWhs+Ttl5uf8wYNYUlE5F4O5cLNXm2gXuZYlWUmzW2Sk6TVw8ryqdauv2Q+cdw0dNG6wn4LRqKW2QlaFk0uVt34G0/G0OtC/O7naLC5Y+V9j+ur8gMCtnY/rkHr53Al5hylaIHcwOkmn0c2h862YrrUnf06AHd83aU8zg6u1VzE1tDs74Ccs9xpZpwZmYtDyawNcR69evv9t+vK8IgEiQiJiPILbdt1N+u67TkDXbE0jXV+7SlffL2ritcCOo1auy2LnlKWO0p/2Tnlr8EUfW1qaqRXROfCtADYJyrKuVtsFYD8CJp/SFSLCCNKf1Cc7Jaiatf8Hp1ooXfX4t5daRPx1Z7PxVu4eDMXb+tfPYhEXEshplu71QKUilg07aY+mJVptsmpPz8G6lsLqfrmM/aOcC1UtH+GdNR4zynRjlSzq4bz+ZRpC1/aTJbuneuwWMG1v1hwvNiQnjr/AQ==
+<?php
+
+/**
+ * Create structured document tag
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateStructuredDocumentTag
+{
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_xml;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateText
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateStructuredDocumentTag();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create Structured Document Tag
+     *
+     * @access public
+     * @param mixed $args[0]
+     */
+    public function createStructuredDocumentTag()
+    {
+        $args = func_get_args();
+        $this->_xml = '';
+        $lockValues = array('sdtLocked', 'contentLocked', 'unlocked', 'sdtContentLocked');
+        $id = rand(100000000, 999999999);
+
+        //1. First construct the sdtPr element(structured document tag properties)     
+        $sdtPr = '<w:sdtPr>';
+        $sdtPr .= $this->generateRPr($args[1]);
+        if (!empty($args[1]['alias'])) {
+            $sdtPr .= '<w:alias w:val="' . $args[1]['alias'] . '" />';
+        }
+        if (!empty($args[1]['lock']) && in_array($args[1]['lock'], $lockValues)) {
+            $sdtPr .= '<w:lock w:val="' . $args[1]['lock'] . '" />';
+        }
+        $sdtPr .= '<w:id w:val="' . $id . '" />';
+        if (!empty($args[1]['tag'])) {
+            $sdtPr .= '<w:tag w:val="' . $args[1]['tag'] . '" />';
+        }
+        if (isset($args[1]['temporary']) && $args[1]['tag'] == true) {
+            $sdtPr .= '<w:temporary />';
+        }
+        //Now we have to add the elements associated to each particular type
+        //Combo box
+        if (isset($args[0]) && ($args[0] == 'comboBox' || $args[0] == 'dropDownList')) {
+            $sdtPr .= '<w:' . $args[0] . '>';
+            if (!empty($args[1]['listItems']) && is_array($args[1]['listItems'])) {
+                foreach ($args[1]['listItems'] as $key => $value) {
+                    $sdtPr .= '<w:listItem w:displayText="' . $value[0] . '" w:value="' . $value[1] . '" />';
+                }
+            }
+            $sdtPr .= '</w:' . $args[0] . '>';
+        }
+        //Date format
+        if (isset($args[0]) && $args[0] == 'date') {
+            $sdtPr .= '<w:date>';
+            if (!empty($args[1]['dateFormat'])) {
+                $sdtPr .= '<w:dateFormat w:val="' . $args[1]['dateFormat'] . '" />';
+            } else {
+                $sdtPr .= '<w:dateFormat w:val="M/d/yyyy" />';
+            }
+            if (!empty($args[1]['local'])) {
+                $sdtPr .= '<w:lid w:val="' . $args[1]['local'] . '" />';
+            } else {
+                $sdtPr .= '<w:lid w:val="en-US" />';
+            }
+            if (!empty($args[1]['calendar'])) {
+                $sdtPr .= '<w:calendar w:val="' . $args[1]['calendar'] . '" />';
+            } else {
+                $sdtPr .= '<w:calendar w:val="gregorian" />';
+            }
+            $sdtPr .= '</w:date>';
+        }
+        //Rich text
+        if (isset($args[0]) && $args[0] == 'richText') {
+            $sdtPr .= '<w:richText />';
+        }
+
+        $sdtPr .= '</w:sdtPr>';
+
+
+        //2. Construct the sdtContent element (structured document tag content)        
+        $sdtContent = '<w:sdtContent>' . $args[2] . '</w:sdtContent>';
+
+        //3. Now we build the whole sdt tag
+        $this->_xml = '<w:sdt>' . $sdtPr . $sdtContent . '</w:sdt>';
+    }
+
+    /**
+     * Generates a rPr node
+     *
+     * @access private
+     * @param array $options
+     */
+    private function generateRPr($options)
+    {
+        $rPr = '<w:rPr>';
+        if (!empty($options['font'])) {
+            $rPr .= '<w:rFonts w:ascii="' . $options['font'] . '" w:hAnsi="' . $options['font'] . '" w:eastAsia="' . $options['font'] . '" w:cs="' . $options['font'] . '" />';
+        }
+        if (!empty($options['b'])) {
+            $rPr .= '<w:b w:val="' . $options['b'] . '" />';
+        }
+        if (!empty($options['i'])) {
+            $rPr .= '<w:i w:val="' . $options['i'] . '" />';
+        }
+        $rPr .= '<w:noProof/>';
+        if (!empty($options['color'])) {
+            $rPr .= '<w:color w:val="' . $options['color'] . '" />';
+        }
+        if (!empty($options['sz'])) {
+            $rPr .= '<w:sz w:val="' . (2 * $options['sz']) . '" />';
+        }
+        if (!empty($options['szCs'])) {
+            $rPr .= '<w:szCs w:val="' . $options['sz'] . '" />';
+        }
+        if (!empty($options['u'])) {
+            $rPr .= '<w:u w:val="' . $options['u'] . '" />';
+        }
+        $rPr .= '</w:rPr>';
+
+        return $rPr;
+    }
+
+}

@@ -1,1 +1,37 @@
-nZAxb8IwEIX3/IobIUMCSO3QLkgRqpAoQoKB1VwuiUtiR/alCar632ubFCF1qIQX2+/uvnd6UZTGcQQxrBWTKQQSFNoAVsKwdbovLVEwldpcAGBXtbnGIcitwLMoyalANTWkwoRr1+3FyLJigOz2nOAUtsIgCdgZnXeIUiuy8N7VLBvKpYB9skk84P5MKub2JU37vk8WTY4J6mYaXGqJpGxwb69LwWadrbb7VSh/krHOwZcXs/lzMntKZvNxUJ1H+h18ZHi+60ojecvjlsybEW0lMfqKIj8cgvMnhsyQiwioOVGeUw5DU18jHBt++5YCkayFtju59Uc1DfdVgqJTyH5vDMjVSDw2deZ5k+nrH3ND3BkFXBGwKC30FRkK31ywAOkUI5lJPb6MBx1E+Y+7Pn0QMvClde8iSENth8dtS+KjAxwc0Ft/Rz8=
+<?php
+
+/**
+ * Interface for charts
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+interface InterfaceGraphic
+{
+
+    /**
+     * Create embedded xml chart
+     *
+     * @access public
+     */
+    public function createEmbeddedXmlChart();
+
+    /**
+     * return the tags where the data is written
+     *
+     * @access public
+     */
+    public function dataTag();
+
+    /**
+     * return the object type of the xlsx
+     *
+     * @access public
+     */
+    public function getXlsxType();
+}

@@ -1,1 +1,93 @@
-rZRfa9swFMXf/SnuIFA7MDsNbA8tG4X8YYW0DeRhewuafB2LxpKR5Dih5LtPkuXg1aV9cPXi+Ojod3xvrh0EyXgcwBjmT7M/MIX1fGnurHBHicadkCcAWOdlKujRySWhz2SHRgUtCVeZkEXjF+VJsl2uAWaXnyGN4JFIigTWUqQVpUxwVPBQ7TUrMGUENvEqtoDuCnOty5skqes6nhYpjakoIpeyZxS5cvFl81Swup8tHjcLt31AqUyC3Z5Orr/Hk2/x5Nof5M+e3oF7huUbVxLQPVEKNlpWVFcS57bqlyCwp1yj7BrDbyHThxWkWCJPkVOGqt26OxAJREpyuiiEUjTQUrKDaamXE3f1Goy2XdZtL3DBUy708BT0nH7CUhhdDg7IGszb/E8pIWtB/YxfSNJPqCFvMH3+fWEGfzCeOUqfvkGqzegO5ivP6SfMjOomuxV64Oqveb/+5zoJsoo7Kmy3tKWEkXO8NH6zRjpn6uvPy5TBj+b5w+i25/GD8pHlQ47/s96zNA1/z9G27LXn3Gvhk3lL3bcyHtBDYSD2yxKOMrbHNdH5606yDMIvdnOLR6a06jijjs0unUtRA8caFkeKpQ0Ir5bGDaZ30By/6tR8bis7B/8A
+<?php
+
+/**
+ * DOCX 2 PDF
+ *
+ * @category   Phpdocx
+ * @package    transform
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class StructureDocx
+{
+
+    /**
+     * WordML dependencies
+     * @var array
+     * @access private
+     */
+    private $_dependencies;
+
+    /**
+     * Endnotes
+     * @var array
+     * @access private
+     */
+    private $_endnotes;
+
+    /**
+     * Footers
+     * @var array
+     * @access private
+     */
+    private $_footers;
+
+    /**
+     * Footnotes
+     * @var array
+     * @access private
+     */
+    private $_footnotes;
+
+    /**
+     * Headers
+     * @var array
+     * @access private
+     */
+    private $_headers;
+
+    /**
+     * Images
+     * @var array
+     * @access private
+     */
+    private $_images;
+
+    /**
+     * Sections
+     * @var array
+     * @access private
+     */
+    private $_sections;
+
+    /**
+     * Construct
+     * 
+     * @access public
+     */
+    public function __construct()
+    {
+        $this->_endnotes = array();
+        $this->_footers = array();
+        $this->_footnotes = array();
+        $this->_headers = array();
+        $this->_images = array();
+        $this->_sections = array();
+    }
+
+    /**
+     * Open DOCX.
+     * 
+     * @access public
+     */
+    public function openDocx($filePath)
+    {
+        if (!file_exists($filePath)) {
+            throw new Exception('File not exists');
+        }
+    }
+
+}

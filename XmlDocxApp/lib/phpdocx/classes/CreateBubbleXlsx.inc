@@ -1,1 +1,190 @@
-7Vhtb+I4EP7Or/CtkBJKgcLq7kNpq6U07aGjUEG2L1pVyDgGos0LckyhXfW/39gxaTAhsKc73X04pIrUnpnn8YznJRQKtaOjAjpCbUYxp2jlRSs0CRkaL8ZjjyIyw4xHICBkvhAQmYbsFSF0N5s7IVnJ5Tkm3/GUwiqiHvVpIDVAPJy/Mnc64wi1k0eTlFAPM0IxumOhsyDEDQMaoduFx12fOi5Gw2q3KgykP+aM8/lprbZcLqsN3yFVEvolieK5hAaRRJ/HpFC307Z6Q0tuv1AWAYLYbpzUf6ue/Fo9qSvF4LuynjKubAj7IFUrEA9HkXLPpXTKo/ARXXEaOOsNsVT4USgIW9Kh4gMQmBAK2nPmvoBUsvyCmVK8DkNOWbIRccxdov6tyW+li+ItVBy5ATwGhKJz1Pva7TZ11C3wxdhLbKIvjPIFC9K888Cl7hp7sggIF76cUt5RLMySFPxRWAfKnSAzot7k9DRNNeZaSsmJz7YcCuhyy9lmqZmovSdP6iC6jVj0fSsW6oLTFaEeimaU8sP8NccM++AB5gZTVMRsGn07edZ2MWP4VW3Wn7M8mLiOSBqWYDEUJMyig3mkO3EBF1ptfTM8OoWrZjyXmqhWgwxzfTcQR+EzN0IsXKIxJXgBGRBOYI2iJXDZSF80w4HjUbkZnx8M4wSsKAxVLkYr34MAGMaHs4uR+0avgASsk3ARrNlqEu3QExKfm7pJ4E0ZUH3oD/4Y/m5ZdjqSmsxV5xZyttPvmQnq8Yf53XrS7n3HehjmGE+E8mSsrtW2Nwig8sEMrvuD25Z9N8gBaPe7eRxhe98Jrlp2a0NGRP8c1VMrJPS0FY9yKDEisi1jp/lB/8EU1lIuRxVUT2GJpmAWg4UPlk6aSD6dfUjHK+WynuL6Ic01nyqK8QwD/iIjhZShdi+RdZnYUrmsLYML0mvv+pmJR3FgU3/uqYNrHhXK6WNTTGYovvkIR6joBg46v0DFF+ztOe1+r2bHLCdum5yAgqQE3wsa6WwO93+g+z87BgomQ1TzuXYIfet986TK5xnYeaHaiqvudcje+o4SoiFuOcm4NBIHNfT7mXk3BdhumbvWjXXbGtx0enkVwG5ddq271sA+SMjMwNvwV9qIapapUn9gn8SMOqr7RXrDPKQ1buzWP3azmu0BHVPQGcZssjtnXjN729PK3vY2suHQNs21IRFxOMpneGik7cT9WhiSc4FpPFbuZeKITHtKPQ/hZqYvlhidfoHg8Ve99YNfS1u1RuHAHkBtK2RlSg5CPQehnoVQ/1mERg5CIwuhkYkQNyJXtSFXNqE31YLcvQ1o2DHzW41tJqSK7vNGvdl5Kzp5+WoaSAR7zmhE2YsM+IesH03FNbVDMaoF03hGY/JJ1C0x0sVF9xgK0lZ5NRyGp1JlHHIe+ih+xSIhA+zdzX4PX0Fqg+Q/U1s4hgn1L8zguXXmJ0dwW3D4NwqJrOLrSnKcqFTymojUgSnx6y10EaXxf93Zj/CfqDup4Akj8Wiyq9Dk2RjaT12r07vuZ+Tw35CiNwoLOa5PA/HLSXbXdwMej1aPuzaetpKahZwSTp3N7Fyvpn9eyHwlfFTD3JOeqrVavF6pNGs1HoqfJ6ASOuv34XVewDSXek+CUUKfrbMiLOyKtNwRZGFmx8uGpIzK58pIKliqpJwlLob4TM4/teqncuqU1KprAxlV/9PFWS3RvRiNbqyeNWjZVvKaPRoZ2/VbVTIolCNG4YYQahrZuseS4nFasZTcl/fCnw==
+<?php
+
+/**
+ * Create xlsx for bubble charts
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateBubbleXlsx extends CreateXlsx
+{
+
+    /**
+     * @access private
+     * @var CreateFooter
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @access public
+     * @return CreateXlsx
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateBubbleXlsx();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create excel sheet
+     *
+     * @access public
+     * @param string $args[0]
+     * @param array $args[1]
+     */
+    public function createExcelSheet($dats)
+    {
+        unset($dats['legend']); // eliminate this row because of the way bubble charts handle the excel data
+        $this->_xml = '';
+        $sizeDats = count($dats);
+        $sizeCols = 3;
+        $this->generateWORKSHEET();
+        $this->generateDIMENSION($sizeDats, $sizeCols);
+        $this->generateSHEETVIEWS();
+        $this->generateSHEETVIEW();
+        $this->generateSELECTION($sizeDats + $sizeCols);
+        $this->generateSHEETFORMATPR();
+        $this->generateCOLS();
+        $this->generateCOL();
+        $this->generateSHEETDATA();
+        $row = 1;
+        $col = 1;
+        $letter = 'A';
+        $this->generateROW($row, $sizeCols - 1);
+        for ($num = 0; $num < $sizeCols; $num++) {
+            $this->generateC($letter . $row, '', 's');
+            $this->generateV($num);
+            $letter++;
+            $col++;
+        }
+        $this->cleanTemplateROW();
+        $row++;
+
+        foreach ($dats as $ind => $val) {
+            $this->generateROW($row, $sizeCols - 1);
+            $col = 1;
+            $letter = 'A';
+            foreach ($val as $values) {
+                $this->generateC($letter . $row, '', 'n');
+                $this->generateV($values);
+                $col++;
+                $letter++;
+            }
+            $row++;
+            $this->cleanTemplateROW();
+        }
+        $this->generateROW($row + 1, $sizeCols);
+        $row++;
+        $this->generateC('B' . $row, 2, 's');
+        $this->generateV($num + 1);
+        $this->generatePAGEMARGINS();
+        $this->generateTABLEPARTS();
+        $this->generateTABLEPART(1);
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Create excel shared strings
+     *
+     * @param string $args[0]
+     * @param string $args[1]
+     * @access public
+     */
+    public function createExcelSharedStrings($dats)
+    {
+        $this->_xml = '';
+        $szDats = count($dats);
+        $szCols = 3;
+        $this->generateSST(($szDats + 1) * 3 + 2);
+        $legends = array('X-Values', 'Y-Values', 'Size');
+        if (!empty($dats['legend'][0])) {
+            $legends[0] = $dats['legend'][0];
+        }
+        if (!empty($dats['legend'][1])) {
+            $legends[1] = $dats['legend'][1];
+        }
+        if (!empty($dats['legend'][2])) {
+            $legends[2] = $dats['legend'][2];
+        }
+        for ($i = 0; $i < $szCols; $i++) {
+            $this->generateSI();
+            $this->generateT($legends[$i]);
+        }
+
+        $this->generateSI();
+        $this->generateT(' ', 'preserve');
+
+        $msg = 'To change the range size of values,' .
+                'drag the bottom right corner';
+        $this->generateSI();
+        $this->generateT($msg);
+
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Create excel table
+     *
+     * @access public
+     * @param string args[0]
+     * @param string args[1]
+     */
+    public function createExcelTable($dats)
+    {
+        $this->_xml = '';
+        $szDats = count($dats);
+        $szCols = 3;
+        $this->generateTABLE($szDats, $szCols - 1);
+        $this->generateTABLECOLUMNS($szCols);
+        $legends = array('X-Values', 'Y-Values', 'Size');
+        if (!empty($dats['legend'][0])) {
+            $legends[0] = $dats['legend'][0];
+        }
+        if (!empty($dats['legend'][1])) {
+            $legends[1] = $dats['legend'][1];
+        }
+        if (!empty($dats['legend'][2])) {
+            $legends[2] = $dats['legend'][2];
+        }
+        for ($i = 0; $i < $szCols; $i++) {
+            $this->generateTABLECOLUMN($i + 1, $legends[$i]);
+        }
+        $this->generateTABLESTYLEINFO();
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Generate dimension
+     *
+     * @param int $sizeX
+     * @param int $sizeY
+     * @access protected
+     */
+    protected function generateDIMENSION($sizeX, $sizeY)
+    {
+        //$sizeY--;//to get rid of the legends row
+        $char = 'A';
+        for ($i = 0; $i < $sizeY - 1; $i++) {
+            $char++;
+        }
+        $sizeX += $sizeY;
+        $xml = '<dimension ref="A1:' . $char . $sizeX .
+                '"></dimension>__GENERATEWORKSHEET__';
+
+        $this->_xml = str_replace('__GENERATEWORKSHEET__', $xml, $this->_xml);
+    }
+
+}

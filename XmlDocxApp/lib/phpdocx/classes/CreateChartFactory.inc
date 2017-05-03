@@ -1,1 +1,34 @@
-hVBdS8MwFH3Pr7gPQtspbVX0QRGGdYIwdbAfINlttta1TUhSuzH87+ZrZaBgoTQ993zcHEKyyYTABIqKSg1riprLvQEsNkWq2cb8A8CiEiXHnYMFxS3dMIMCWpnyZC72st5UGqAYjzEm8EYlMgoLycseseYdU/DaN7puWVlTWKbz1BqcPnGltbjLsmEY0qu2xBR5m7iUpkbWKZct/Eowfylmb8uZG38xqUyCHV/ll7dpfpPml0HYbYP7iXnwsP6GlRFsqFJQSGZu7ip5Do0cCLFS15Z9JoEEtAO++mSoA34cTykiM16iX5mdR1RQSVtQWtbdBs70XjB4d3Kw55Emme5lB229Y+UIKk31aJW5r3cHP4F136G210e3mzeOXUri6AdybNhHP4DqV2YZz7mA/MKuJrg6ApErIUrgHG6S+99qLT8kEw1FFkfXT5ERmNcH/mZHvrIIUuhx4LIMMf8ZF7yxzo9U/mEemurY4EdxmH0T8k1+AA==
+<?php
+
+/**
+ * Chart factory
+ *
+ * @category   Phpdocx
+ * @package    charts
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateChartFactory
+{
+
+    /**
+     * Create an object
+     *
+     * @access public
+     * @param string $type Object type
+     * @return mixed
+     * @static
+     */
+    public static function createObject($type)
+    {
+        $type = substr($type, 0, strpos($type, 'Chart') + 5);
+        $type = str_replace('3D', '', $type);
+        $type = 'Create' . ucwords($type);
+        $type = str_replace('Col', 'Bar', $type);
+        return new $type();
+    }
+
+}

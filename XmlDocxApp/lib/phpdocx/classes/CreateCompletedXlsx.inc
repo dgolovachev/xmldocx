@@ -1,1 +1,186 @@
-3VdtT9tIEP6eXzGVItkhISFI1w9wVE2DaaPLmxK33AmhalkviYVjR7sbCFT89876LX7DMUcrnc4Swtl5e/aZ8exsrdY5OKjBAfQ5I5JB31utHSaZBVtHbOHW43BDeId6jmiBY7usBZxYhLfa7TbQJeFSoLVy8JGi/cLjjwAwXa4tj2795TWhd2TBcBWYw1bM9S1Q3Vs/cnuxlIBBo1edNmBMOGUEptyzNpTanssEjDaOtFfMsgnM28O2cpB89KWU65NO5+HhoX28smibequGH8WxKXOFH30dgILhoG+M54YvvmdcYAQlPj7qvm8f/dE+6oaG7l3oPeE89KH8o1anRh0iRMhdTN3fijm2lcy1Iplaqv2o1ZQ7n3D1YBRCKUMHa27fo1a8fE94aHjheZLxWCAkkTYNf3b8/6EtBCKof7ddfHUpgzMYfx0OT7NRc8E3N07sEz5yJjfcTeIuC+7bRrFvNy6Vis4Fk4MQhd7wFX/UolzZt6AL5tyenCShBlgbCT315PXAZQ9FfOuN09jyOX4L95J1E6g+59IRfgNsS5kDYsmYrEbZmnCyQhK47S6gTvhCXB1dZ6SEc/IYCrvXRSTG7FEfhqFQzBUIvW4RKbI81uXSFocfvm9XDtKiabv914X9xM7RBNept3EjBzsN/KwZoUsIBEAE1G3XgrMPoBZINg2+wz62gJRDknConhv0eVeUhRjP4eFpFv6CuYzjbi8ns7/mXwzDTCYyo3M+GOGHO5iM9dhja4ftZTvf77eBcTkvcR4rlekYQ6NvpgBAszKCi8ls1DOns5IA/cmwDCOK9+3gvGf2Ujrce8CsdSvl/p44udRj50/b+6v43WFbUnXX0zKiNKjZ5FJXGIoTVbRHPXLehsBQ0/BPaOVm3/amJIG72Uwv7yhBBnxG8D+uiSwbb8BbjFmxewjdIl0UZXGWbOG5iBzqMOKaDNtkmIksHYg36+jFr/h1daO6fCDHGnEYbtnSitiknittd8Mq7OYVJfXGos3ntFu9BP0+2Qw+vEM4/h0VKDINP0W62vu7swQ3ObXYR3dvieaZqGfJLmYigv+rC7ugYisUe+IsKq4lTFj3hbMkEzFHkPZJi8k5zpZJtS6lor9sNO19Nka92efBuOxsMHufhsa0NzMrKekF8VIEJp2EU1Ri4Kg4QBGO94hgLBLZSarKzJSSdnfSoimswiil4MwDNK8fqZ5+7UD19JZx6mnPMDWfm3qEuBkHa/rNKAlZtWjEcHSKaOHPSFH9ajZzkDMhBtnDRDWfd7YQ0bx6FbX966u6fd0obGR5vYLOVnoYmIXBkrT99w6wPHf5TWHkKv0r7SrnRgM1i6yxETN+z7Rk+usrsVBkm566xrt4QZdLhnd79ab6Eni3gLRsmGhhf8ttW7M4WfgmN56U3gqC+zv1OMbWXq7McrwKVArk7+lMktw40WX7NVe70i71ypudqTD8v9uQf9pEjagVRdtzOuEd5+sIT7pd1yo5GhMWuhrRQEuT8YYGl3SNxk11tu9rNWWu5uY/Q2MwvpgUfAD/pr6faz8B
+<?php
+
+/**
+ * Create Completed xlsx for bar/cols, line, radar,... charts
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateCompletedXlsx extends CreateXlsx
+{
+
+    /**
+     * @access private
+     * @var CreateFooter
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @access public
+     * @return CreateXlsx
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateCompletedXlsx();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create excel sheet
+     *
+     * @access public
+     * @param string $args[0]
+     * @param array $args[1]
+     */
+    public function createExcelSheet($dats)
+    {
+        $this->_xml = '';
+        $sizeDats = count($dats);
+        foreach ($dats as $ind => $data) {
+            $sizeCols = count($data);
+            break;
+        }
+        $sizeDats--;
+        $this->generateWORKSHEET();
+        $this->generateDIMENSION($sizeDats, $sizeCols);
+        $this->generateSHEETVIEWS();
+        $this->generateSHEETVIEW();
+        $this->generateSELECTION($sizeDats + $sizeCols);
+        $this->generateSHEETFORMATPR();
+        $this->generateCOLS();
+        $this->generateCOL();
+        $this->generateSHEETDATA();
+        $row = 1;
+        foreach ($dats as $ind => $val) {
+            $col = 1;
+            $letter = 'A';
+            $this->generateROW($row, $sizeCols);
+            $this->generateC($letter . $row, '', 's');
+            $this->generateV($sizeDats + $sizeCols);
+            $letter++;
+            foreach ($val as $valores) {
+                $this->generateC($letter . $row, '', 's');
+                $this->generateV($col - 1);
+                $col++;
+                $letter++;
+            }
+            $this->cleanTemplateROW();
+            $row++;
+            break;
+        }
+        foreach ($dats as $ind => $val) {
+            if ($ind == 'legend') {
+                continue;
+            }
+            $this->generateROW($row, $sizeCols);
+            $col = 1;
+            $letter = 'A';
+            $this->generateC($letter . $row, 1, 's');
+            $this->generateV($sizeCols + $row - 2);
+            $letter++;
+            foreach ($val as $valores) {
+                $s = '';
+                if ($col != $sizeCols)
+                    $s = 1;
+                $this->generateC($letter . $row, $s);
+                $this->generateV($valores);
+                $col++;
+                $letter++;
+            }
+            $row++;
+            $this->cleanTemplateROW();
+        }
+        $this->generateROW($row + 1, $sizeCols);
+        $row++;
+        $this->generateC('B' . $row, 2, 's');
+        $this->generateV($sizeDats + $sizeCols + 1);
+        $this->generatePAGEMARGINS();
+        $this->generateTABLEPARTS();
+        $this->generateTABLEPART(1);
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Create excel shared strings
+     *
+     * @param string $args[0]
+     * @param string $args[1]
+     * @access public
+     */
+    public function createExcelSharedStrings($dats)
+    {
+        $this->_xml = '';
+        $szDats = count($dats);
+        foreach ($dats as $ind => $data) {
+            $szCols = count($data);
+            break;
+        }
+        $szDats--;
+        $this->generateSST($szDats + $szCols + 2);
+
+        for ($i = 0; $i < $szCols; $i++) {
+            $this->generateSI();
+            if (!isset($dats['legend'][$i])) {
+                $dats['legend'][$i] = '';
+            }
+            $this->generateT($dats['legend'][$i]);
+        }
+
+        foreach ($dats as $ind => $val) {
+            if ($ind == 'legend') {
+                continue;
+            }
+            $this->generateSI();
+            $this->generateT($ind);
+        }
+        $this->generateSI();
+        $this->generateT(' ', 'preserve');
+
+        $msg = 'To change the range size of values,' .
+                'drag the bottom right corner';
+        $this->generateSI();
+        $this->generateT($msg);
+
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Create excel table
+     *
+     * @access public
+     * @param string args[0]
+     * @param string args[1]
+     */
+    public function createExcelTable($dats)
+    {
+        $this->_xml = '';
+        $szDats = count($dats);
+        foreach ($dats as $ind => $data) {
+            $szCols = count($data);
+            break;
+        }
+        $szDats--;
+        $this->generateTABLE($szDats, $szCols);
+        $this->generateTABLECOLUMNS($szCols + 1);
+        $this->generateTABLECOLUMN(1, ' ');
+        for ($i = 0; $i < $szCols; $i++) {
+            $this->generateTABLECOLUMN($i + 2, $dats['legend'][$i]);
+        }
+        $this->generateTABLESTYLEINFO();
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+}

@@ -1,1 +1,339 @@
-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
+<?php
+
+/**
+ * Create pages
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreatePage extends CreateElement
+{
+
+    /**
+     * @access protected
+     * @var string
+     */
+    protected $_xml;
+
+    /**
+     * @access private
+     * @var CreatePage
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        $this->pageWidthInches = 8.5;
+        $this->pageHeightInches = 11;
+        $this->marginTopTwips = 1417;
+        $this->marginBottomTwips = 1417;
+        $this->marginLeftTwips = 1701;
+        $this->marginRightTwips = 1701;
+        $this->marginHeaderTwips = 708;
+        $this->marginFooterTwips = 708;
+        $this->gutterTwips = 0;
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     *
+     * @access public
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     *
+     * @access public
+     * @return CreatePage
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreatePage();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create page
+     */
+    public function createPage()
+    {
+        $this->_xml = '';
+    }
+
+    /**
+     * Gnerate pagebreak
+     *
+     * @access public
+     * @param array $options
+     */
+    public function generatePageBreak($options)
+    {
+        if ($options['type'] == 'line') {
+            $options['type'] = 'textWrapping';
+        }
+        $this->_xml = '';
+        $this->generateP();
+        for ($j = 0; $j < $options['number']; $j++) {
+            $this->generateR();
+            $this->generateBR($options['type']);
+        }
+        $this->cleanTemplate();
+    }
+
+    /**
+     * Generate section
+     *
+     * @access public
+     * @param array args[0]
+     */
+    public function createSection()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+        $this->generateP();
+        $this->generatePPR();
+        $this->generateSECTIONSECTPR();
+        if (isset($args[0]['orient']) && $args[0]['orient'] == 'landscape') {
+            $this->generatePGSZ($this->pageHeightInches * 1440, $this->pageWidthInches * 1440, 'landscape');
+        } else {
+            $this->generatePGSZ($this->pageWidthInches * 1440, $this->pageHeightInches * 1440);
+        }
+        $this->generatePGMAR($args);
+        if (isset($args[0]['columns'])) {
+            $this->generateCOLS($args[0]['columns']);
+        } else {
+            $this->generateCOLS();
+        }
+        if (isset($args[0]['titlePage'])) {
+            $this->generateTITLEPG();
+        }
+        $this->generateDOCGRID();
+    }
+
+    /**
+     * Create sectpr
+     *
+     * @access public
+     * @param array args[0]
+     */
+    public function createSECTPR()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+        $this->generateSECTPR();
+        if (isset($args[0]['orient']) && $args[0]['orient'] == 'landscape') {
+            $this->generatePGSZ($this->pageHeightInches * 1440, $this->pageWidthInches * 1440, 'landscape');
+        } else {
+            $this->generatePGSZ($this->pageWidthInches * 1440, $this->pageHeightInches * 1440);
+        }
+        $this->generatePGMAR($args);
+        if (isset($args[0]['columns'])) {
+            $this->generateCOLS($args[0]['columns']);
+        } else {
+            $this->generateCOLS();
+        }
+        if (isset($args[0]['titlePage'])) {
+            $this->generateTITLEPG();
+        }
+        $this->generateDOCGRID();
+    }
+
+    /**
+     * Generate w:br
+     *
+     * @access protected
+     * @param string $type
+     */
+    protected function generateBR($type = '')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':br ' .
+                CreateElement::NAMESPACEWORD . ':type="' . $type . '"></' .
+                CreateElement::NAMESPACEWORD . ':br>';
+        $this->_xml = str_replace('__GENERATER__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:col
+     *
+     * @access protected
+     * @deprecated
+     * @param string $w
+     * @param string $space
+     */
+    protected function generateCOL($w = '', $space = '708')
+    {
+        
+    }
+
+    /**
+     * Generate w:cols
+     *
+     * @access protected
+     * @param string $num
+     * @param string $sep
+     * @param string $space
+     * @param string $equalWidth
+     */
+    protected function generateCOLS($num = '1', $sep = '', $space = '708', $equalWidth = '')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':cols ' .
+                CreateElement::NAMESPACEWORD . ':space="' . $space . '" ' .
+                CreateElement::NAMESPACEWORD . ':num="' . $num . '"></' .
+                CreateElement::NAMESPACEWORD . ':cols>__GENERATECOLS__';
+        $this->_xml = str_replace('__GENERATEPGMAR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:docgrid
+     *
+     * @access protected
+     * @param string $linepitch
+     */
+    protected function generateDOCGRID($linepitch = '360')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':docGrid ' .
+                CreateElement::NAMESPACEWORD . ':linePitch="' .
+                $linepitch . '"></' . CreateElement::NAMESPACEWORD . ':docGrid>';
+        $this->_xml = str_replace('__GENERATECOLS__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:pgmar
+     *
+     * @access protected
+     * @param array $args[0]
+     */
+    protected function generatePGMAR()
+    {
+        $top = $this->marginTopTwips;
+        $right = $this->marginRightTwips;
+        $bottom = $this->marginBottomTwips;
+        $left = $this->marginLeftTwips;
+        $header = $this->marginHeaderTwips;
+        $footer = $this->marginFooterTwips;
+        $gutter = $this->gutterTwips;
+        $args = func_get_args();
+        if (isset($args[0][0]['top'])) {
+            $top = $args[0][0]['top'];
+        }
+        if (isset($args[0][0]['bottom'])) {
+            $bottom = $args[0][0]['bottom'];
+        }
+        if (isset($args[0][0]['right'])) {
+            $right = $args[0][0]['right'];
+        }
+        if (isset($args[0][0]['left'])) {
+            $left = $args[0][0]['left'];
+        }
+
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':pgMar ' .
+                CreateElement::NAMESPACEWORD . ':top="' . $top . '" ' .
+                CreateElement::NAMESPACEWORD . ':right="' . $right . '" ' .
+                CreateElement::NAMESPACEWORD . ':bottom="' . $bottom . '" ' .
+                CreateElement::NAMESPACEWORD . ':left="' . $left . '" ' .
+                CreateElement::NAMESPACEWORD . ':header="' . $header . '" ' .
+                CreateElement::NAMESPACEWORD . ':footer="' . $footer . '" ' .
+                CreateElement::NAMESPACEWORD . ':gutter="' . $gutter . '"></' .
+                CreateElement::NAMESPACEWORD . ':pgMar>__GENERATEPGMAR__';
+        $this->_xml = str_replace('__GENERATEPGSZ__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:pgsz
+     *
+     * @access protected
+     * @param string $w
+     * @param string $h
+     * @param string $orient
+     */
+    protected function generatePGSZ($w = '11906', $h = '16838', $orient = '')
+    {
+        $xmlAux = '<' . CreateElement::NAMESPACEWORD . ':pgSz ' .
+                CreateElement::NAMESPACEWORD . ':w="' . $w . '" ' .
+                CreateElement::NAMESPACEWORD . ':h="' . $h . '"';
+        if ($orient != '') {
+            $xmlAux .= ' ' . CreateElement::NAMESPACEWORD . ':orient="' .
+                    $orient . '"';
+        }
+
+        $xmlAux .= '></' . CreateElement::NAMESPACEWORD .
+                ':pgSz>__GENERATEPGSZ__';
+
+        $this->_xml = str_replace('__GENERATESECTPR__', $xmlAux, $this->_xml);
+    }
+
+    /**
+     * Generate w:sectionsectpr
+     *
+     * @access protected
+     * @param string $rId
+     */
+    protected function generateSECTIONSECTPR($rId = '00012240')
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':sectPr ' .
+                CreateDocx::NAMESPACEWORD . ':rsidR="' . $rId . '" ' .
+                CreateDocx::NAMESPACEWORD . ':rsidRPr="' . $rId . '" ' .
+                CreateDocx::NAMESPACEWORD . ':rsidSect="' . $rId .
+                '">__GENERATEHEADERREFERENCE____GENERATEFOOTERREFERENCE____' .
+                'GENERATESECTPR__</' . CreateElement::NAMESPACEWORD .
+                ':sectPr>__GENERATEPPR__';
+        $this->_xml = str_replace('__GENERATEPPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:sectpr
+     *
+     * @access protected
+     * @param string $rId
+     */
+    protected function generateSECTPR($rId = '00012240')
+    {
+        $this->_xml = '<' . CreateElement::NAMESPACEWORD . ':sectPr ' .
+                CreateDocx::NAMESPACEWORD . ':rsidR="' . $rId . '" ' .
+                CreateDocx::NAMESPACEWORD . ':rsidRPr="' . $rId . '" ' .
+                CreateDocx::NAMESPACEWORD . ':rsidSect="' . $rId .
+                '">__GENERATEHEADERREFERENCE____GENERATEFOOTERREFERENCE____' .
+                'GENERATESECTPR__</' . CreateElement::NAMESPACEWORD .
+                ':sectPr>';
+    }
+
+    /**
+     * Generate w:titlepg
+     *
+     * @access protected
+     */
+    protected function generateTITLEPG()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':titlePg></' .
+                CreateElement::NAMESPACEWORD . ':titlePg>__GENERATECOLS__';
+        $this->_xml = str_replace('__GENERATECOLS__', $xml, $this->_xml);
+    }
+
+}

@@ -1,1 +1,1065 @@
-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
+<?php
+
+/**
+ * This class contains a series of static variables with useful OOXML structure info
+ * 
+ * @category   Phpdocx
+ * @package    Resources
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class OOXMLResources
+{
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $commentsXML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                                    <w:comments xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                                    xmlns:o="urn:schemas-microsoft-com:office:office" 
+                                    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" 
+                                    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" 
+                                    xmlns:v="urn:schemas-microsoft-com:vml" 
+                                    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" 
+                                    xmlns:w10="urn:schemas-microsoft-com:office:word" 
+                                    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" 
+                                    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
+                                    </w:comments>';
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $customProperties = '<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+                                        <Properties xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes" 
+                                        xmlns="http://schemas.openxmlformats.org/officeDocument/2006/custom-properties">
+                                        </Properties>';
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $defaultPHPDOCXStyles = array('Default Paragraph Font PHPDOCX', //This is the default paragraph font style used in multiple places
+        'List Paragraph PHPDOCX', //This is the style used for the defolt ordered and unorderd lists
+        'Title PHPDOCX', //This style is used by the addTitle method
+        'Subtitle PHPDOCX', //This style is used by the addTitle method
+        'Normal Table PHPDOCX', //This style is used for the basic table
+        'Table Grid PHPDOCX', //This style is for basic tables and is also used to embed HTML tables with border="1"
+        'footnote Text PHPDOCX', //This style is used for default footnotes
+        'footnote text Car PHPDOCX', //The character style for footnotes
+        'footnote Reference PHPDOCX', // The style for the footnote
+        'endnote Text PHPDOCX', //This style is used for default endnotes
+        'endnote text Car PHPDOCX', //The character style for endnotes
+        'endnote Reference PHPDOCX', // The style for the endnote
+        'annotation reference PHPDOCX', //styles for comments
+        'annotation text PHPDOCX', //styles for comments
+        'Comment Text Char PHPDOCX', //styles for comments
+        'annotation subject PHPDOCX', //styles for comments
+        'Comment Subject Char PHPDOCX', //styles for comments
+        'Balloon Text PHPDOCX', //styles for comments
+        'Balloon Text Char PHPDOCX'); //styles for comments
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $endnotesXML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                                    <w:endnotes xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                                    xmlns:o="urn:schemas-microsoft-com:office:office" 
+                                    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" 
+                                    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" 
+                                    xmlns:v="urn:schemas-microsoft-com:vml" 
+                                    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" 
+                                    xmlns:w10="urn:schemas-microsoft-com:office:word" 
+                                    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" 
+                                    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
+                                        <w:endnote w:type="separator" w:id="-1">
+                                            <w:p w:rsidR="006E0FDA" w:rsidRDefault="006E0FDA" w:rsidP="006E0FDA">
+                                                <w:pPr>
+                                                    <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:separator/>
+                                                </w:r>
+                                            </w:p>
+                                        </w:endnote>
+                                        <w:endnote w:type="continuationSeparator" w:id="0">
+                                            <w:p w:rsidR="006E0FDA" w:rsidRDefault="006E0FDA" w:rsidP="006E0FDA">
+                                                <w:pPr>
+                                                    <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:continuationSeparator/>
+                                                </w:r>
+                                            </w:p>
+                                        </w:endnote>
+                                    </w:endnotes>';
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $notesXMLRels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                                <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                                </Relationships>';
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $footnotesXML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                                    <w:footnotes xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                                    xmlns:o="urn:schemas-microsoft-com:office:office" 
+                                    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" 
+                                    xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" 
+                                    xmlns:v="urn:schemas-microsoft-com:vml" 
+                                    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" 
+                                    xmlns:w10="urn:schemas-microsoft-com:office:word" 
+                                    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" 
+                                    xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
+                                        <w:footnote w:type="separator" w:id="-1">
+                                            <w:p w:rsidR="006E0FDA" w:rsidRDefault="006E0FDA" w:rsidP="006E0FDA">
+                                                <w:pPr>
+                                                    <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:separator/>
+                                                </w:r>
+                                            </w:p>
+                                        </w:footnote>
+                                        <w:footnote w:type="continuationSeparator" w:id="0">
+                                            <w:p w:rsidR="006E0FDA" w:rsidRDefault="006E0FDA" w:rsidP="006E0FDA">
+                                                <w:pPr>
+                                                    <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                                </w:pPr>
+                                                <w:r>
+                                                    <w:continuationSeparator/>
+                                                </w:r>
+                                            </w:p>
+                                        </w:footnote>
+                                    </w:footnotes>';
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $notesRels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                                <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                                </Relationships>';
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $PHPDOCXStyles = '<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" >
+                                        <w:style w:type="character" w:styleId="DefaultParagraphFontPHPDOCX">
+                                            <w:name w:val="Default Paragraph Font PHPDOCX"/>
+                                            <w:uiPriority w:val="1"/>
+                                            <w:semiHidden/>
+                                            <w:unhideWhenUsed/>
+                                        </w:style>
+                                        <w:style w:type="paragraph" w:styleId="ListParagraphPHPDOCX">
+                                            <w:name w:val="List Paragraph PHPDOCX"/>
+                                            <w:basedOn w:val="Normal"/>
+                                            <w:uiPriority w:val="34"/>
+                                            <w:qFormat/>
+                                            <w:rsid w:val="00DF064E"/>
+                                            <w:pPr>
+                                                <w:ind w:left="720"/>
+                                                <w:contextualSpacing/>
+                                            </w:pPr>
+                                        </w:style>
+                                        <w:style w:type="paragraph" w:styleId="TitlePHPDOCX">
+                                            <w:name w:val="Title PHPDOCX"/>
+                                            <w:basedOn w:val="Normal"/>
+                                            <w:next w:val="Normal"/>
+                                            <w:link w:val="TitleCarPHPDOCX"/>
+                                            <w:uiPriority w:val="10"/>
+                                            <w:qFormat/>
+                                            <w:rsid w:val="00DF064E"/>
+                                            <w:pPr>
+                                                <w:pBdr>
+                                                    <w:bottom w:val="single" w:sz="8" w:space="4" w:color="4F81BD" w:themeColor="accent1"/>
+                                                </w:pBdr>
+                                                <w:spacing w:after="300" w:line="240" w:lineRule="auto"/>
+                                                <w:contextualSpacing/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:asciiTheme="majorHAnsi" w:eastAsiaTheme="majorEastAsia" w:hAnsiTheme="majorHAnsi" w:cstheme="majorBidi"/>
+                                                <w:color w:val="17365D" w:themeColor="text2" w:themeShade="BF"/>
+                                                <w:spacing w:val="5"/>
+                                                <w:kern w:val="28"/>
+                                                <w:sz w:val="52"/>
+                                                <w:szCs w:val="52"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:customStyle="1" w:styleId="TitleCarPHPDOCX">
+                                            <w:name w:val="Title Car PHPDOCX"/>
+                                            <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                            <w:link w:val="TitlePHPDOCX"/>
+                                            <w:uiPriority w:val="10"/>
+                                            <w:rsid w:val="00DF064E"/>
+                                            <w:rPr>
+                                                <w:rFonts w:asciiTheme="majorHAnsi" w:eastAsiaTheme="majorEastAsia" w:hAnsiTheme="majorHAnsi" w:cstheme="majorBidi"/>
+                                                <w:color w:val="17365D" w:themeColor="text2" w:themeShade="BF"/>
+                                                <w:spacing w:val="5"/>
+                                                <w:kern w:val="28"/>
+                                                <w:sz w:val="52"/>
+                                                <w:szCs w:val="52"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="paragraph" w:styleId="SubtitlePHPDOCX">
+                                            <w:name w:val="Subtitle PHPDOCX"/>
+                                            <w:basedOn w:val="Normal"/>
+                                            <w:next w:val="Normal"/>
+                                            <w:link w:val="SubtitleCarPHPDOCX"/>
+                                            <w:uiPriority w:val="11"/>
+                                            <w:qFormat/>
+                                            <w:rsid w:val="00DF064E"/>
+                                            <w:pPr>
+                                                <w:numPr>
+                                                    <w:ilvl w:val="1"/>
+                                                </w:numPr>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:asciiTheme="majorHAnsi" w:eastAsiaTheme="majorEastAsia" w:hAnsiTheme="majorHAnsi" w:cstheme="majorBidi"/>
+                                                <w:i/>
+                                                <w:iCs/>
+                                                <w:color w:val="4F81BD" w:themeColor="accent1"/>
+                                                <w:spacing w:val="15"/>
+                                                <w:sz w:val="24"/>
+                                                <w:szCs w:val="24"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:customStyle="1" w:styleId="SubtitleCarPHPDOCX">
+                                            <w:name w:val="Subtitle Car PHPDOCX"/>
+                                            <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                            <w:link w:val="SubtitlePHPDOCX"/>
+                                            <w:uiPriority w:val="11"/>
+                                            <w:rsid w:val="00DF064E"/>
+                                            <w:rPr>
+                                                <w:rFonts w:asciiTheme="majorHAnsi" w:eastAsiaTheme="majorEastAsia" w:hAnsiTheme="majorHAnsi" w:cstheme="majorBidi"/>
+                                                <w:i/>
+                                                <w:iCs/>
+                                                <w:color w:val="4F81BD" w:themeColor="accent1"/>
+                                                <w:spacing w:val="15"/>
+                                                <w:sz w:val="24"/>
+                                                <w:szCs w:val="24"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="table" w:styleId="NormalTablePHPDOCX">
+                                            <w:name w:val="Normal Table PHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:unhideWhenUsed/>
+                                            <w:qFormat/>
+                                            <w:pPr>
+                                                <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                            </w:pPr>
+                                            <w:tblPr>
+                                                <w:tblInd w:w="0" w:type="dxa"/>
+                                                <w:tblCellMar>
+                                                    <w:top w:w="0" w:type="dxa"/>
+                                                    <w:left w:w="108" w:type="dxa"/>
+                                                    <w:bottom w:w="0" w:type="dxa"/>
+                                                    <w:right w:w="108" w:type="dxa"/>
+                                                </w:tblCellMar>
+                                            </w:tblPr>
+                                        </w:style>
+                                        <w:style w:type="table" w:styleId="TableGridPHPDOCX">
+                                            <w:name w:val="Table Grid PHPDOCX"/>
+                                            <w:uiPriority w:val="59"/>
+                                            <w:rsid w:val="00493A0C"/>
+                                            <w:pPr>
+                                                <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                            </w:pPr>
+                                            <w:tblPr>
+                                                <w:tblInd w:w="0" w:type="dxa"/>
+                                                <w:tblBorders>
+                                                    <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                                    <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                                    <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                                    <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                                    <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                                    <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+                                                </w:tblBorders>
+                                                <w:tblCellMar>
+                                                    <w:top w:w="0" w:type="dxa"/>
+                                                    <w:left w:w="108" w:type="dxa"/>
+                                                    <w:bottom w:w="0" w:type="dxa"/>
+                                                    <w:right w:w="108" w:type="dxa"/>
+                                                </w:tblCellMar>
+                                            </w:tblPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:styleId="CommentReferencePHPDOCX">
+                                            <w:name w:val="annotation reference PHPDOCX"/>
+                                            <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:unhideWhenUsed/>
+                                            <w:rsid w:val="00E139EA"/>
+                                            <w:rPr>
+                                                <w:sz w:val="16"/>
+                                                <w:szCs w:val="16"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="paragraph" w:styleId="CommentTextPHPDOCX">
+                                            <w:name w:val="annotation text PHPDOCX"/>
+                                            <w:basedOn w:val="Normal"/>
+                                            <w:link w:val="CommentTextCharPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:unhideWhenUsed/>
+                                            <w:rsid w:val="00E139EA"/>
+                                            <w:pPr>
+                                                <w:spacing w:line="240" w:lineRule="auto"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:sz w:val="20"/>
+                                                <w:szCs w:val="20"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:customStyle="1" w:styleId="CommentTextCharPHPDOCX">
+                                            <w:name w:val="Comment Text Char PHPDOCX"/>
+                                            <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                            <w:link w:val="CommentTextPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:rsid w:val="00E139EA"/>
+                                            <w:rPr>
+                                                <w:sz w:val="20"/>
+                                                <w:szCs w:val="20"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="paragraph" w:styleId="CommentSubjectPHPDOCX">
+                                            <w:name w:val="annotation subject PHPDOCX"/>
+                                            <w:basedOn w:val="CommentTextPHPDOCX"/>
+                                            <w:next w:val="CommentTextPHPDOCX"/>
+                                            <w:link w:val="CommentSubjectCharPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:unhideWhenUsed/>
+                                            <w:rsid w:val="00E139EA"/>
+                                            <w:rPr>
+                                                <w:b/>
+                                                <w:bCs/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:customStyle="1" w:styleId="CommentSubjectCharPHPDOCX">
+                                            <w:name w:val="Comment Subject Char PHPDOCX"/>
+                                            <w:basedOn w:val="CommentTextCharPHPDOCX"/>
+                                            <w:link w:val="CommentSubjectPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:rsid w:val="00E139EA"/>
+                                            <w:rPr>
+                                                <w:b/>
+                                                <w:bCs/>
+                                                <w:sz w:val="20"/>
+                                                <w:szCs w:val="20"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="paragraph" w:styleId="BalloonTextPHPDOCX">
+                                            <w:name w:val="Balloon Text PHPDOCX"/>
+                                            <w:basedOn w:val="Normal"/>
+                                            <w:link w:val="BalloonTextCharPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:unhideWhenUsed/>
+                                            <w:rsid w:val="00E139EA"/>
+                                            <w:pPr>
+                                                <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Tahoma" w:hAnsi="Tahoma" w:cs="Tahoma"/>
+                                                <w:sz w:val="16"/>
+                                            <w:szCs w:val="16"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:customStyle="1" w:styleId="BalloonTextCharPHPDOCX">
+                                            <w:name w:val="Balloon Text Char PHPDOCX"/>
+                                            <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                            <w:link w:val="BalloonTextPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:rsid w:val="00E139EA"/>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Tahoma" w:hAnsi="Tahoma" w:cs="Tahoma"/>
+                                                <w:sz w:val="16"/>
+                                                <w:szCs w:val="16"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="paragraph" w:styleId="footnoteTextPHPDOCX">
+                                            <w:name w:val="footnote Text PHPDOCX"/>
+                                            <w:basedOn w:val="Normal"/>
+                                            <w:link w:val="footnoteTextCarPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:unhideWhenUsed/>
+                                            <w:rsid w:val="006E0FDA"/>
+                                            <w:pPr>
+                                                <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:sz w:val="20"/>
+                                                <w:szCs w:val="20"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:customStyle="1" w:styleId="footnoteTextCarPHPDOCX">
+                                            <w:name w:val="footnote Text Car PHPDOCX"/>
+                                            <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                            <w:link w:val="footnoteTextPHPDOCX"/>
+                                            <w:uiPriority w:val="99"/>
+                                            <w:semiHidden/>
+                                            <w:rsid w:val="006E0FDA"/>
+                                            <w:rPr>
+                                                <w:sz w:val="20"/>
+                                                <w:szCs w:val="20"/>
+                                            </w:rPr>
+                                        </w:style>
+                                        <w:style w:type="character" w:styleId="footnoteReferencePHPDOCX">
+                                        <w:name w:val="footnote Reference PHPDOCX"/>
+                                        <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                        <w:uiPriority w:val="99"/>
+                                        <w:semiHidden/>
+                                        <w:unhideWhenUsed/>
+                                        <w:rsid w:val="006E0FDA"/>
+                                        <w:rPr>
+                                            <w:vertAlign w:val="superscript"/>
+                                        </w:rPr>
+                                    </w:style>
+                                    <w:style w:type="paragraph" w:styleId="endnoteTextPHPDOCX">
+                                        <w:name w:val="endnote Text PHPDOCX"/>
+                                        <w:basedOn w:val="Normal"/>
+                                        <w:link w:val="endnoteTextCarPHPDOCX"/>
+                                        <w:uiPriority w:val="99"/>
+                                        <w:semiHidden/>
+                                        <w:unhideWhenUsed/>
+                                        <w:rsid w:val="006E0FDA"/>
+                                        <w:pPr>
+                                            <w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+                                        </w:pPr>
+                                        <w:rPr>
+                                            <w:sz w:val="20"/>
+                                            <w:szCs w:val="20"/>
+                                        </w:rPr>
+                                    </w:style>
+                                    <w:style w:type="character" w:customStyle="1" w:styleId="endnoteTextCarPHPDOCX">
+                                        <w:name w:val="endnote Text Car PHPDOCX"/>
+                                        <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                        <w:link w:val="endnoteTextPHPDOCX"/>
+                                        <w:uiPriority w:val="99"/>
+                                        <w:semiHidden/>
+                                        <w:rsid w:val="006E0FDA"/>
+                                        <w:rPr>
+                                            <w:sz w:val="20"/>
+                                            <w:szCs w:val="20"/>
+                                        </w:rPr>
+                                    </w:style>
+                                    <w:style w:type="character" w:styleId="endnoteReferencePHPDOCX">
+                                        <w:name w:val="endnote Reference PHPDOCX"/>
+                                        <w:basedOn w:val="DefaultParagraphFontPHPDOCX"/>
+                                        <w:uiPriority w:val="99"/>
+                                        <w:semiHidden/>
+                                        <w:unhideWhenUsed/>
+                                        <w:rsid w:val="006E0FDA"/>
+                                        <w:rPr>
+                                            <w:vertAlign w:val="superscript"/>
+                                        </w:rPr>
+                                    </w:style>
+                                 </w:styles>';
+
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $unorderedListStyle = '<w:abstractNum w:abstractNumId="" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" >
+                                        <w:multiLevelType w:val="hybridMultilevel"/>
+                                        <w:lvl w:ilvl="0" w:tplc="">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val=""/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="720" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Symbol" w:hAnsi="Symbol" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="1" w:tplc="0C0A0003" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val="o"/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="1440" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Courier New" w:hAnsi="Courier New" w:cs="Courier New" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="2" w:tplc="0C0A0005" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val=""/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="2160" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Wingdings" w:hAnsi="Wingdings" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="3" w:tplc="0C0A0001" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val=""/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="2880" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Symbol" w:hAnsi="Symbol" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="4" w:tplc="0C0A0003" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val="o"/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="3600" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Courier New" w:hAnsi="Courier New" w:cs="Courier New" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="5" w:tplc="0C0A0005" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val=""/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="4320" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Wingdings" w:hAnsi="Wingdings" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="6" w:tplc="0C0A0001" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val=""/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="5040" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Symbol" w:hAnsi="Symbol" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="7" w:tplc="0C0A0003" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val="o"/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="5760" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Courier New" w:hAnsi="Courier New" w:cs="Courier New" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="8" w:tplc="0C0A0005" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="bullet"/>
+                                            <w:lvlText w:val=""/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="6480" w:hanging="360"/>
+                                            </w:pPr>
+                                            <w:rPr>
+                                                <w:rFonts w:ascii="Wingdings" w:hAnsi="Wingdings" w:hint="default"/>
+                                            </w:rPr>
+                                        </w:lvl>
+                                    </w:abstractNum>';
+
+    /**
+     * @access public
+     * @var ostring
+     * @static
+     */
+    public static $orderedListStyle = '<w:abstractNum w:abstractNumId="" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" >
+                                        <w:multiLevelType w:val="hybridMultilevel"/>
+                                        <w:lvl w:ilvl="0" w:tplc="">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="decimal"/>
+                                            <w:lvlText w:val="%1."/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="720" w:hanging="360"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="1" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="lowerLetter"/>
+                                            <w:lvlText w:val="%2."/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="1440" w:hanging="360"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="2" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="lowerRoman"/>
+                                            <w:lvlText w:val="%3."/>
+                                            <w:lvlJc w:val="right"/>
+                                            <w:pPr>
+                                                <w:ind w:left="2160" w:hanging="180"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="3" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="decimal"/>
+                                            <w:lvlText w:val="%4."/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="2880" w:hanging="360"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="4" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="lowerLetter"/>
+                                            <w:lvlText w:val="%5."/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="3600" w:hanging="360"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="5" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="lowerRoman"/>
+                                            <w:lvlText w:val="%6."/>
+                                            <w:lvlJc w:val="right"/>
+                                            <w:pPr>
+                                                <w:ind w:left="4320" w:hanging="180"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="6" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="decimal"/>
+                                            <w:lvlText w:val="%7."/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="5040" w:hanging="360"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="7" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="lowerLetter"/>
+                                            <w:lvlText w:val="%8."/>
+                                            <w:lvlJc w:val="left"/>
+                                            <w:pPr>
+                                                <w:ind w:left="5760" w:hanging="360"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                        <w:lvl w:ilvl="8" w:tplc="" w:tentative="1">
+                                            <w:start w:val="1"/>
+                                            <w:numFmt w:val="lowerRoman"/>
+                                            <w:lvlText w:val="%9."/>
+                                            <w:lvlJc w:val="right"/>
+                                            <w:pPr>
+                                                <w:ind w:left="6480" w:hanging="180"/>
+                                            </w:pPr>
+                                        </w:lvl>
+                                    </w:abstractNum>';
+
+    /**
+     *
+     * @access public
+     * @static
+     * @var array
+     */
+    public static $paragraphProperties = array('w:pStyle',
+        'w:keepNext',
+        'w:keepLines',
+        'w:pageBreakBefore',
+        'w:framePr',
+        'w:widowControl',
+        'w:numPr',
+        'w:suppressLineNumbers',
+        'w:pBdr',
+        'w:shd',
+        'w:tabs',
+        'w:suppressAutoHyphens',
+        'w:kinsoku',
+        'w:wordWrap',
+        'w:overflowPunct',
+        'w:topLinePunct',
+        'w:autoSpaceDE',
+        'w:autoSpaceDN',
+        'w:bidi',
+        'w:adjustRightInd',
+        'w:snapToGrid',
+        'w:spacing',
+        'w:ind',
+        'w:contextualSpacing',
+        'w:mirrorIndents',
+        'w:suppressOverlap',
+        'w:jc',
+        'w:textDirectio',
+        'w:textAlignment',
+        'w:textboxTightWrap',
+        'w:outlineLvl',
+        'w:divId',
+        'w:cnfStyle',
+        'w:rPr',
+        'w:sectPr',
+        'w:pPrChange'
+    );
+
+    /**
+     *
+     * @access public
+     * @static
+     * @var array
+     */
+    public static $runProperties = array('w:rStyle',
+        'w:rFonts',
+        'w:b',
+        'w:bCs',
+        'w:i',
+        'w:iCs',
+        'w:caps',
+        'w:smallCaps',
+        'w:strike',
+        'w:dstrike',
+        'w:outline',
+        'w:shadow',
+        'w:emboss',
+        'w:imprint',
+        'w:noProof',
+        'w:snapToGrid',
+        'w:vanish',
+        'w:webHidden',
+        'w:color',
+        'w:spacin',
+        'w:w',
+        'w:kern',
+        'w:position',
+        'w:sz',
+        'w:szCs',
+        'w:highlight',
+        'w:u',
+        'w:effect',
+        'w:bdr',
+        'w:shd',
+        'w:fitText',
+        'w:vertAlign',
+        'w:rtl',
+        'w:cs',
+        'w:em',
+        'w:lang',
+        'w:eastAsianLayout',
+        'w:specVanish',
+        'w:oMath'
+    );
+
+    /**
+     *
+     * @access public
+     * @static
+     * @var array
+     */
+    public static $sectionProperties = array('w:footnotePr',
+        'w:endnotePr',
+        'w:type',
+        'w:pgSz',
+        'w:pgMar',
+        'w:paperSrc',
+        'w:pgBorders',
+        'w:lnNumType',
+        'w:pgNumType',
+        'w:cols',
+        'w:formProt',
+        'w:vAlign',
+        'w:noEndnote',
+        'w:titlePg',
+        'w:textDirection',
+        'w:bidi',
+        'w:rtlGutter',
+        'w:docGrid',
+        'w:printerSettings',
+        'w:sectPrChange'
+    );
+
+    /**
+     *
+     * @access public
+     * @static
+     * @var array
+     */
+    public static $settings = array('w:writeProtection',
+        'w:view',
+        'w:zoom',
+        'w:removePersonalInformation',
+        'w:removeDateAndTime',
+        'w:doNotDisplayPageBoundaries',
+        'w:displayBackgroundShape',
+        'w:printPostScriptOverText',
+        'w:printFractionalCharacterWidth',
+        'w:printFormsData',
+        'w:embedTrueTypeFonts',
+        'w:embedSystemFonts',
+        'w:saveSubsetFonts',
+        'w:saveFormsData',
+        'w:mirrorMargins',
+        'w:alignBordersAndEdges',
+        'w:bordersDoNotSurroundHeader',
+        'w:bordersDoNotSurroundFooter',
+        'w:gutterAtTop',
+        'w:hideSpellingErrors',
+        'w:hideGrammaticalErrors',
+        'w:activeWritingStyle',
+        'w:proofState',
+        'w:formsDesign',
+        'w:attachedTemplate',
+        'w:linkStyles',
+        'w:stylePaneFormatFilter',
+        'w:stylePaneSortMethod',
+        'w:documentType',
+        'w:mailMerge',
+        'w:revisionView',
+        'w:trackRevisions',
+        'w:doNotTrackMoves',
+        'w:doNotTrackFormatting',
+        'w:documentProtection',
+        'w:autoFormatOverride',
+        'w:styleLockTheme',
+        'w:styleLockQFSet',
+        'w:defaultTabStop',
+        'w:autoHyphenation',
+        'w:consecutiveHyphenLimit',
+        'w:hyphenationZone',
+        'w:doNotHyphenateCaps',
+        'w:showEnvelope',
+        'w:summaryLength',
+        'w:clickAndTypeStyle',
+        'w:defaultTableStyle',
+        'w:evenAndOddHeaders',
+        'w:bookFoldRevPrinting',
+        'w:bookFoldPrinting',
+        'w:bookFoldPrintingSheets',
+        'w:drawingGridHorizontalSpacing',
+        'w:drawingGridVerticalSpacing',
+        'w:displayHorizontalDrawingGridEvery',
+        'w:displayVerticalDrawingGridEvery',
+        'w:doNotUseMarginsForDrawingGridOrigin',
+        'w:drawingGridHorizontalOrigin',
+        'w:drawingGridVerticalOrigin',
+        'w:doNotShadeFormData',
+        'w:noPunctuationKerning',
+        'w:characterSpacingControl',
+        'w:printTwoOnOne',
+        'w:strictFirstAndLastChars',
+        'w:noLineBreaksAfter',
+        'w:noLineBreaksBefore',
+        'w:savePreviewPicture',
+        'w:doNotValidateAgainstSchema',
+        'w:saveInvalidXml',
+        'w:ignoreMixedContent',
+        'w:alwaysShowPlaceholderText',
+        'w:doNotDemarcateInvalidXml',
+        'w:saveXmlDataOnly',
+        'w:useXSLTWhenSaving',
+        'w:saveThroughXslt',
+        'w:showXMLTags',
+        'w:alwaysMergeEmptyNamespace',
+        'w:updateFields',
+        'w:hdrShapeDefaults',
+        'w:footnotePr',
+        'w:endnotePr',
+        'w:compat',
+        'w:docVars',
+        'w:rsids',
+        'm:mathPr',
+        'w:uiCompat97To2003',
+        'w:attachedSchema',
+        'w:themeFontLang',
+        'w:clrSchemeMapping',
+        'w:doNotIncludeSubdocsInStats',
+        'w:doNotAutoCompressPictures',
+        'w:forceUpgrade',
+        'w:captions',
+        'w:readModeInkLockDown',
+        'w:smartTagType',
+        'sl:schemaLibrary',
+        'w:shapeDefaults',
+        'w:doNotEmbedSmartTags',
+        'w:decimalSymbol',
+        'w:listSeparator'
+    );
+
+    /**
+     * Class constructor
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Class destructor
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * @access public
+     * @static
+     * @param int $integer 
+     * @param bool $uppercase
+     * @return string
+     */
+    public static function integer2Letter($integer, $uppercase = false)
+    {
+        $letter = '';
+        $integer = $integer - 1;
+        $letter = chr(($integer % 26) + 97);
+        $letter .= (floor($integer / 26) > 0) ? str_repeat($letter, floor($integer / 26)) : '';
+        if ($uppercase)
+            $letter = strtoupper($letter);
+        return $letter;
+    }
+
+    /**
+     * @access public
+     * @static
+     * @param int $integer 
+     * @param bool $uppercase
+     * @return string
+     */
+    public static function integer2RomanNumeral($integer, $uppercase = false)
+    {
+        $roman = '';
+        $baseTransform = array('m' => 1000,
+            'cm' => 900,
+            'd' => 500,
+            'cd' => 400,
+            'c' => 100,
+            'xc' => 90,
+            'l' => 50,
+            'xl' => 40,
+            'x' => 10,
+            'ix' => 9,
+            'v' => 5,
+            'iv' => 4,
+            'i' => 1);
+        foreach ($baseTransform as $key => $value) {
+            $result = floor($integer / $value);
+            $roman .= str_repeat($key, $result);
+            $integer = $integer % $value;
+        }
+        if ($uppercase)
+            $roman = strtoupper($roman);
+        return $roman;
+    }
+
+    /**
+     * @access public
+     * @param DOMNode $targetNode this is the node where we want to insert the new child
+     * @param DOMNode $sourceNode the child to be inserted
+     * @param array $XMLSequence the sequence of childs given by the corresponding Schema for the target node
+     * @param $type it can be ignore (if the node already exists jus leave silently, default value) or replace to overwrite the current node
+     * @static
+     */
+    public static function insertNodeIntoSequence($targetNode, $sourceNode, $XMLSequence, $type = 'ignore')
+    {
+        //make sure that the $newNode belongs to the same DOM document as the $targetNode
+        $newNode = $targetNode->ownerDocument->importNode($sourceNode, true);
+        $nodeName = $newNode->nodeName;
+        if ($nodeName == '#document-fragment') {
+            $baseString = $newNode->ownerDocument->saveXML($newNode);
+            $fragArray = explode(' ', $baseString);
+            $nodeName = trim(str_replace('<', '', $fragArray[0]));
+        }
+        $sequenceIndex = array_search($nodeName, $XMLSequence);
+        if (empty($sequenceIndex)) {
+            //PhpdocxLogger::logger('The new node does not belong to the  given XML sequence', 'fatal');
+        }
+        $childNodes = $targetNode->childNodes;
+        $append = true;
+        foreach ($childNodes as $node) {
+            $name = $node->nodeName;
+            $index = array_search($node->nodeName, $XMLSequence);
+            if ($index == $sequenceIndex) {
+                if ($type == 'ignore') {
+                    $append = false;
+                    break;
+                } else {
+                    $node->parentNode->insertBefore($newNode, $node);
+                    $node->parentNode->removeChild($node);
+                    $append = false;
+                    break;
+                }
+            } else if ($index > $sequenceIndex) {
+                $node->parentNode->insertBefore($newNode, $node);
+                $append = false;
+                break;
+            }
+        }
+        //in case no node was found we should append the node
+        if ($append) {
+            $targetNode->appendChild($newNode);
+        }
+    }
+
+    /**
+     * The child elements of the second node are added to the first node. If overwrite is set to true coincident nodes
+     * will be overwritten
+     * @access public
+     * @param DOMNode $firstNode
+     * @param DOMNode $secondNode
+     * @param array $XMLSequence the sequence of childs given by the corresponding Schema for the given nodes
+     * @param string $overwrite can take the values:
+     * ignore (if the node already exists jus leave silently, default value) or replace to overwrite the current node
+     * @param array $exceptions exceptions to teh overwrite rule
+     * @static
+     */
+    public static function mergeXMLNodes($firstNode, $secondNode, $XMLSequence, $overwrite = false, $exceptions = array())
+    {
+        $childs = $secondNode->childNodes;
+        foreach ($childs as $child) {
+            $name = $child->nodeName;
+            if ($overwrite) {
+                if (!in_array($name, $exceptions)) {
+                    OOXMLResources::insertNodeIntoSequence($firstNode, $child, $XMLSequence, $type = 'replace');
+                } else {
+                    OOXMLResources::insertNodeIntoSequence($firstNode, $child, $XMLSequence);
+                }
+            } else {
+                if (!in_array($name, $exceptions)) {
+                    OOXMLResources::insertNodeIntoSequence($firstNode, $child, $XMLSequence);
+                } else {
+                    OOXMLResources::insertNodeIntoSequence($firstNode, $child, $XMLSequence, $type = 'replace');
+                }
+            }
+        }
+    }
+
+}

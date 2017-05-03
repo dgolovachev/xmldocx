@@ -1186,8 +1186,8 @@ class CreateDocx extends CreateDocument
      *  'scalingMax' (float) scaling max X axis value for bar and line charts
      *  'scalingMin' (float) scaling min X axis value for bar and line charts
      *  'tickLblPos' tick label position for bar charts
-     *  'majorUnit' (float) for bar charts
-     *  'minorUnit' (float) for bar charts
+     *  'majorUnit' (float) for bar and line charts
+     *  'minorUnit' (float) for bar and line charts
      */
     public function addChart($options = array())
     {
@@ -1354,7 +1354,6 @@ class CreateDocx extends CreateDocument
         $tempNode = $this->_wordCommentsT->createDocumentFragment();
         $tempNode->appendXML($commentBase);
         $this->_wordCommentsT->documentElement->appendChild($tempNode);
-
 
         PhpdocxLogger::logger('Add comment to word document.', 'info');
 
@@ -1544,6 +1543,7 @@ class CreateDocx extends CreateDocument
         $optionEntityLoader = libxml_disable_entity_loader(true);
         $dateDOM->loadXML($dateRef);
         libxml_disable_entity_loader($optionEntityLoader);
+
         $pPrNodes = $dateDOM->getElementsByTagName('pPr');
         if ($pPrNodes->length > 0) {
             $pPrContent = $dateDOM->saveXML($pPrNodes->item(0));
@@ -2488,7 +2488,6 @@ class CreateDocx extends CreateDocument
 
         if (!$this->_docm) {
             PhpdocxLogger::logger('The base template should be a docm to include a macro in your document', 'fatal');
-            exit();
         }
         try {
             $package = new ZipArchive();
@@ -2974,7 +2973,6 @@ class CreateDocx extends CreateDocument
         $sdtTypes = array('comboBox', 'date', 'dropDownList', 'richText');
         if (!in_array($type, $sdtTypes)) {
             PhpdocxLogger::logger('The chosen Structured Document Tag type is not available', 'fatal');
-            exit();
         }
         $sdtBase = CreateText::getInstance();
         $ParagraphOptions = $options;
@@ -3317,6 +3315,12 @@ class CreateDocx extends CreateDocument
      */
     public function createDocx($fileName = 'document')
     {
+        try {
+            GenerateDocx::beginDocx();
+        } catch (Exception $e) {
+            PhpdocxLogger::logger($e->getMessage(), 'fatal');
+        }
+
         PhpdocxLogger::logger('Set DOCX name to: ' . $fileName . '.', 'info');
         //Check if there are openbookmars and if so throw an error
         if (count(CreateDocx::$bookmarksIds) > 0) {
@@ -3324,63 +3328,6 @@ class CreateDocx extends CreateDocument
         }
 
         PhpdocxLogger::logger('Set DOCX name to: ' . $fileName . '.', 'info');
-
-        // trial message
-        $message = '<w:p xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
-                            <w:r>
-                                <w:t>'.str_rot13('Guvf qbphzrag unf orra trarengrq jvgu n').'</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:b/>
-                                </w:rPr>
-                                <w:t xml:space="preserve"> '.str_rot13('gevny').'</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:t xml:space="preserve"> '.str_rot13('pbcl bs').' </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:b/>
-                                </w:rPr>
-                                <w:t>'.str_rot13('kzyqbpk').'</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:t>. '.str_rot13('Cyrnfr').'</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:t>, '.str_rot13('ivfvg').'</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:t xml:space="preserve"> '.str_rot13('gur').' </w:t>
-                            </w:r>
-                            <w:r>
-                                <w:fldChar w:fldCharType="begin" />
-                            </w:r>
-                            <w:r>
-                                <w:instrText xml:space="preserve">HYPERLINK "'.str_rot13('uggc://jjj.kzyqbpk.pbz').'"</w:instrText>
-                            </w:r>
-                            <w:r>
-                                <w:fldChar w:fldCharType="separate" />
-                            </w:r>
-                            <w:r>
-                                <w:rPr>
-                                    <w:b/>
-                                    <w:color w:val="3333EE"/>
-                                    <w:u/>
-                                </w:rPr>
-                                <w:t xml:space="preserve">'.str_rot13('kzyqbpk jrofvgr').'</w:t>
-                            </w:r>
-                            <w:r>
-                                <w:fldChar w:fldCharType="end" />
-                            </w:r>
-                            <w:r>
-                                <w:t xml:space="preserve"> '.str_rot13('gb ohl gur yvprafr gung orfg nqncgf gb lbhe arrqf').'.</w:t>
-                            </w:r>
-                        </w:p>';
-        $this->addWordML($message);
-        $this->addBackgroundImage(dirname(__FILE__) . '/../../../samples/files/img/imagebg.jpg');
-        $this->addProperties(array('creator' => trim($phpdocxconfig['license']['email']), 'description' => str_rot13('Trarengrq ol CUCQbpK gevny irefvba')));
 
         $this->saveToZip($this->_contentTypeT, '[Content_Types].xml');
         $this->saveToZip($this->_wordRelsDocumentRelsT, 'word/_rels/document.xml.rels');
@@ -3465,6 +3412,7 @@ class CreateDocx extends CreateDocument
         foreach ($this->_tempFileXLSX as $file) {
             unlink($file);
         }
+
     }
 
     /**
@@ -4182,7 +4130,7 @@ class CreateDocx extends CreateDocument
     }
 
     /**
-     * Imports an existing list style  from an existing docx document.
+     * Imports an existing list style from an existing docx document
      *
      * @access public
      * @param string $path Must be a valid path to an existing .docx, .dotx o .docm document
@@ -4733,7 +4681,7 @@ class CreateDocx extends CreateDocument
             if (isset($layout['marginHeader'])) {
                 $sectionNode->getElementsByTagName('pgMar')->item(0)->setAttribute('w:header', $layout['marginHeader']);
             }
-            if (isset($layout[$paperType]['marginFooter'])) {
+            if (isset($layout['marginFooter'])) {
                 $sectionNode->getElementsByTagName('pgMar')->item(0)->setAttribute('w:footer', $layout['marginFooter']);
             }
             if (isset($layout['gutter'])) {
@@ -5047,7 +4995,7 @@ class CreateDocx extends CreateDocument
             }
         }
     }
-    
+
     /**
      * Removes headers and footers
      *
@@ -5846,7 +5794,7 @@ class CreateDocx extends CreateDocument
     {
         $strContent = $this->_contentTypeT->saveXML();
         if (
-                strpos($strContent, 'Extension="' . strtolower($extension)) === false
+            strpos($strContent, 'Extension="' . strtolower($extension)) === false
         ) {
             $strContentTypes = '<Default Extension="' . $extension . '" ContentType="' . $contentType . '"> </Default>';
             $tempNode = $this->_contentTypeT->createDocumentFragment();
@@ -6782,7 +6730,7 @@ class CreateDocx extends CreateDocument
         // finally, if it exists, the evenAndOddHeader element from settings
         $this->removeSetting('w:evenAndOddHeaders');
     }
-    
+
     /**
      *
      * Remove existing headers

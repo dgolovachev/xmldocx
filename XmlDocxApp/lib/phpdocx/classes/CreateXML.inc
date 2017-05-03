@@ -1,1 +1,446 @@
-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
+<?php
+
+/**
+ * Use DOCX as templates
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateXML
+{
+
+    /**
+     * @access private
+     * @var CreateTemplate
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     * @access private
+     * @var string
+     */
+    private $_xml;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    private function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current word XML
+     *
+     * @access public
+     * @return string Return current word
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     *
+     * @access public
+     * @return CreateTemplate
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateXML();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     *
+     */
+    public function getXML()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     *
+     */
+    public function setXML($xml)
+    {
+        $this->_xml = $xml;
+    }
+
+    /**
+     * Returns an array with clean exploded variables
+     *
+     * @param string $delimiter
+     * @param string $string
+     * @return array
+     */
+    public function cleanExplode($delimiter, $string)
+    {
+        $array = explode($delimiter, $string);
+        foreach ($array as $key => $part) {
+            $array[$key] = trim(strip_tags($part));
+        }
+        return $array;
+    }
+
+    /**
+     * Returns CRC (16) of $data
+     *
+     * @access private
+     * @param string $data Data tu calculate CRC16
+     * @return string
+     */
+    private function crc16($data)
+    {
+        $crc = 0xFFFF;
+        for ($i = 0; $i < strlen($data); $i++) {
+            $x = (($crc >> 8) ^ ord($data[$i])) & 0xFF;
+            $x ^= $x >> 4;
+            $crc = (($crc << 8) ^ ($x << 12) ^ ($x << 5) ^ $x) & 0xFFFF;
+        }
+        return $crc;
+    }
+
+    /**
+     * Return XML
+     *
+     * @access public
+     * @return array
+     */
+    public function XML()
+    {
+        $templateVariables = CreateTemplate::getTemplateVariables();
+
+        if (!empty($templateVariables) && is_array($templateVariables)) {
+            $dom = new DOMDocument('1.0', 'UTF-8');
+            $dom->formatOutput = true;
+            $forms = $dom->createElement("forms");
+            $attr = $forms->setAttribute('id', 'frm' . $this->crc16(serialize($templateVariables))); //form id
+            $dom->appendChild($forms);
+
+            //new elements type list or row
+            $aTemp = array();
+            $aTempElCount = array(); //saves elements list and counts occurrences
+            foreach ($templateVariables as $key => $section) {
+                if (!empty($templateVariables[$key]) && is_array($templateVariables[$key])) {
+                    foreach ($section as $variable) {
+                        switch ($variable['TAG']) {
+                            case 'LIST': //repeated regions as list
+                            case 'ROW': //repeated regions as table
+                                if (isset($aTempElCount[$variable['GROUPID']])) { //gets only first occurrence
+                                    $aTempElCount[$variable['GROUPID']] ++;
+                                    //continue;
+                                } else {
+                                    $aTempElCount[$variable['GROUPID']] = 1;
+                                    $aTemp[$key][] = array('TAG' => $variable['TAG'], 'NAME' => $variable['GROUPID'], 'GROUPID' => $variable['GROUPID']); //repeated region
+                                }
+                                $variableParts = $this->cleanExplode("_", $variable['NAME']);
+                                if (isset($aTempElCount[$variableParts[1]])) { //gets only first occurrence
+                                    $aTempElCount[$variableParts[1]] ++;
+                                    continue;
+                                }
+                                $aTempElCount[$variableParts[1]] = 1;
+                                $aTemp[$key][] = array('TAG' => $variableParts[0], 'NAME' => $variableParts[1], 'GROUP' => $variable['GROUPID']); //repeated field
+                                break;
+                            case 'BLOCK':
+                            case 'GROUP':
+                            case 'TAB':
+                                if (isset($aTempElCount[$variable['NAME']])) { //gets only first occurrence
+                                    $aTempElCount[$variable['NAME']] ++;
+                                    continue;
+                                }
+                                $aTempElCount[$variable['GROUPID']] = 1;
+                                $aTemp[$key][] = $variable;
+                                $aTemp[$key][count($aTemp[$key]) - 1]['GROUPID'] = $variable['NAME'];
+                                break;
+                            default:
+                                if (isset($aTempElCount[$variable['NAME']])) { //gets only first occurrence
+                                    $aTempElCount[$variable['NAME']] ++;
+                                    continue;
+                                }
+                                $aTempElCount[$variable['NAME']] = 1;
+                                $aTemp[$key][] = $variable;
+                        }
+                    }
+                }
+            }
+            $templateVariables = $aTemp;
+
+            foreach ($templateVariables as $key => $section) {
+                if (!empty($templateVariables[$key]) && is_array($templateVariables[$key])) {
+                    $aBlockOpen = array(); //lifo stack, control groups like $TYPE_name$[...]$TYPE_name$
+                    foreach ($section as $variable) {
+
+                        switch ($variable['TAG']) {
+
+                            case 'IMAGE':
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME']);
+                                $element = $this->createElement(
+                                        $dom, strtolower($variable['TAG']), NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Select (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $element->appendChild($label);
+
+                                if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                    $group[$variable['GROUP']]->appendChild($element);
+                                    if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP']) {
+                                        array_pop($aBlockOpen);
+                                    }
+                                } elseif (count($aBlockOpen)) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($element);
+                                } else {
+                                    $forms->appendChild($element);
+                                }
+                                break;
+
+                            case 'NUMBERING':
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME']);
+                                $element = $this->createElement(
+                                        $dom, strtolower($variable['TAG']), NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Numbering (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $element->appendChild($label);
+
+                                if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                    $group[$variable['GROUP']]->appendChild($element);
+                                    if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP']) {
+                                        array_pop($aBlockOpen);
+                                    }
+                                } elseif (count($aBlockOpen)) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($element);
+                                } else {
+                                    $forms->appendChild($element);
+                                }
+                                break;
+
+                            case 'BLOCK':
+                            case 'GROUP':
+                            case 'TAB':
+                                if (count($aBlockOpen) && $aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUPID']) {
+                                    array_pop($aBlockOpen);
+                                    break;
+                                } else {
+                                    $aBlockOpen[] = $variable['GROUPID'];
+                                }
+
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME'],
+                                    'mode' => strtolower($variable['TAG']));
+                                $group[$variable['GROUPID']] = $this->createElement(
+                                        $dom, "group", NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Group (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $group[$variable['GROUPID']]->appendChild($label);
+                                if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                    $group[$variable['GROUP']]->appendChild($group[$variable['GROUPID']]);
+                                    if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP'])
+                                        array_pop($aBlockOpen);
+                                } elseif (count($aBlockOpen) > 1) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 2]]->appendChild($group[$variable['GROUPID']]);
+                                } else {
+                                    $forms->appendChild($group[$variable['GROUPID']]);
+                                }
+                                break;
+                            case 'CHECKBOX':
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME']);
+                                $checkbox = $this->createElement(
+                                        $dom, "checkbox", NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Checkbox (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $checkbox->appendChild($label);
+
+                                if (!empty($variable['GROUP']) && isset($group[$variable['GROUP']])) {
+                                    $group[$variable['GROUP']]->appendChild($checkbox);
+                                    if (isset($aBlockOpen[count($aBlockOpen) - 1]) && $aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP'])
+                                        array_pop($aBlockOpen);
+                                } elseif (!empty($aBlockOpen)) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($checkbox);
+                                } else {
+                                    $forms->appendChild($checkbox);
+                                }
+                                break;
+                            case 'COMMENT':
+                            case 'HEADING':
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME'],
+                                    'mode' => strtolower($variable['TAG']),
+                                    'length' => 255);
+                                if ($attr['mode'] == 'comment') {
+                                    $attr['length'] = 65534;
+                                }
+                                $heading = $this->createElement(
+                                        $dom, "heading", NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Heading (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $heading->appendChild($label);
+
+                                if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                    $group[$variable['GROUP']]->appendChild($heading);
+                                    if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP'])
+                                        array_pop($aBlockOpen);
+                                } elseif (count($aBlockOpen)) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($heading);
+                                } else {
+                                    $forms->appendChild($heading);
+                                }
+                                break;
+
+                            case 'LIST': //repeated regions as list
+                            case 'ROW': //repeated regions as table
+                                if (!isset($group[$variable['GROUPID']])) {
+                                    $attr = array('ref' => '',
+                                        'id' => $variable['GROUPID'],
+                                        'mode' => strtolower($variable['TAG']));
+                                    $group[$variable['GROUPID']] = $this->createElement($dom, "repeat", NULL, $attr);
+                                    $label = $this->createElement($dom, "label");
+                                    $cdata = $dom->createCDATASection("Group (" . $variable['GROUPID'] . ')');
+
+                                    $group[$variable['GROUPID']]->appendChild($label);
+                                    if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                        $group[$variable['GROUP']]->appendChild($group[$variable['GROUPID']]);
+                                        if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP']) {
+                                            array_pop($aBlockOpen);
+                                        }
+                                    } elseif (count($aBlockOpen)) {
+                                        $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($group[$variable['GROUPID']]);
+                                    } else {
+                                        $forms->appendChild($group[$variable['GROUPID']]);
+                                    }
+                                }
+                                break;
+
+                            case 'SELECT':
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME']);
+                                $element = $this->createElement(
+                                        $dom, strtolower($variable['TAG']), NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Select (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $element->appendChild($label);
+
+                                if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                    $group[$variable['GROUP']]->appendChild($element);
+                                    if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP']) {
+                                        array_pop($aBlockOpen);
+                                    }
+                                } elseif (count($aBlockOpen)) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($element);
+                                } else {
+                                    $forms->appendChild($element);
+                                }
+                                break;
+
+                            case 'DATE':
+                            case 'TEXT':
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME'],
+                                    'length' => 255);
+                                if ($variable['TAG'] == 'DATE') {
+                                    $attr['validation'] = 'fecha';
+                                }
+                                $text = $this->createElement(
+                                        $dom, "text", NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Text box (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $text->appendChild($label);
+
+                                if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                    $group[$variable['GROUP']]->appendChild($text);
+                                    if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP'])
+                                        array_pop($aBlockOpen);
+                                } elseif (count($aBlockOpen)) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($text);
+                                } else {
+                                    $forms->appendChild($text);
+                                }
+                                break;
+
+                            case 'TEXTAREA':
+                                $attr = array('ref' => '',
+                                    'id' => $variable['NAME'],
+                                    'length' => 65534);
+                                $textarea = $this->createElement(
+                                        $dom, "textarea", NULL, $attr);
+                                $label = $this->createElement($dom, "label");
+                                $cdata = $dom->createCDATASection("Textarea (" . $variable['NAME'] . ')');
+
+                                $label->appendChild($cdata);
+                                $textarea->appendChild($label);
+
+                                if (isset($group[$variable['GROUP']]) && !empty($variable['GROUP'])) {
+                                    $group[$variable['GROUP']]->appendChild($textarea);
+                                    if ($aBlockOpen[count($aBlockOpen) - 1] == $variable['GROUP']) {
+                                        array_pop($aBlockOpen);
+                                    }
+                                } elseif (count($aBlockOpen)) {
+                                    $group[$aBlockOpen[count($aBlockOpen) - 1]]->appendChild($textarea);
+                                } else {
+                                    $forms->appendChild($textarea);
+                                }
+                                break;
+
+                            default:
+                                //unknown tag, TODO
+                                break;
+                        }
+                    }
+                }
+            }
+            $this->_xml = $dom->saveXML(); //returns false on error
+        }
+    }
+
+    function createElement($domObj, $tag_name, $value = NULL, $attributes = NULL)
+    {
+        $element = ($value != NULL ) ? $domObj->createElement($tag_name, $value) : $domObj->createElement($tag_name);
+
+        if ($attributes != NULL) {
+            foreach ($attributes as $attr => $val) {
+                $element->setAttribute($attr, $val);
+            }
+        }
+
+        $domObj->appendChild($element);
+
+        return $element;
+    }
+
+}

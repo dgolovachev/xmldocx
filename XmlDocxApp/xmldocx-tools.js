@@ -59,7 +59,7 @@ XmlDocxTools.prototype.getDigitalConfigXml = function (documentPath, privateKeyP
     var data = `<?xml version="1.0" encoding="UTF-8"?>
                 <pdx:document xmlns:pdx="http://www.phpdocx.com/main">
                     <pdx:config>
-                        <pdx: output pdx: name="output" pdx: type="docx" />
+                        <pdx:output pdx:name="output" pdx:type="docx" />
                         <pdx:crypto>
                             <pdx:sign pdx:privateKey="${privateKeyPath}" pdx:password="" pdx:X509Certificate="${certificatePath}" pdx:src="${documentPath}" />
                         </pdx:crypto>

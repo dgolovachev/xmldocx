@@ -1,1 +1,170 @@
-xVdbb+I6EH7nV4xWSAmFhYJ0zkNvWpamXXS4VCTbi1YVch0D0YYEOaalXfHfj+2YEJwQWOkcLQ/brD2Xb77xzNilUuPkpAQn0KEEMQIrP1rBJKQQYcQYoYBniLKISwihL3yRTEP6DgB3s4Ub4pVcXiD8E00JXwXikzkJpAYXDxfv1JvOGEAn+TRxBQaIYoLgjobuEmMvDEgE/aXPvDlxPQR2vVcXBtI/c8bY4qzReHt7q7fmLq7jcF6RXnwPkyCS3hcxKOh1O9bAtuT2K6ER9yC2W6fNv+unf9VPm0ox+Kmsp4wrG8I+l2qUsI+iSPFjx6w8CpbIipHA3eyIpdKvUkkYk5SKH/eBMCZcfUG9Vy6VLL8iqhRvwpBbTDYihpiH1X8b8q/ShXgLymMv4J8BJnAJg++93rnuNeN8+eInNuELJWxJgzTuIudSd+N7sgwwE2ROCesqFGZFCv4qbTLlTcCMiD85O0tDjbFWUnLil5WDgLxl2TYr54neOvlSkehGYtF1JhnqjJMVJj5EM0LYcYQtEEVzTgH1gimUEZ1GP06ftV1EKXpXm83nPAoT7rCEYQkUtgBhll3EIp3FMpt50eer8Wruc1IMYxt/OfI+yDVX4es4XAYbA5pEJ/SFROtcNzklAaEcwcNw9I/9zbKcNLmazHW3zwupOxyYW69VaNa2LvbrStv3XevBLnCQCBXJWD2r4+ggtkF+huYBBzfDUb/t3I0KnHSGvSKcfPtQFNdtp70jQ8M3noBmagWHvrbiE9lmeYbbxl7zo+GDKazV9gYtWrZZDpZzbun0HOTXxVY6XqlW9fLTgzQ3eOoQ+zOaBv8nMlKucvTupWtdJjZVrWrLnIP02loPGvsEBQ6ZL3wVuUapUE7HTRCeQVwCgCIoe4ELl1dQfkX+gXAP05qftILE7WLiECQk/ndJIh3NcQkQ/Ac6//k5UG5yRDXOtSD0rfVupIrzHN9FqcrkVWe9oI9oHjMkGV+NhKCWfj5zz6Zwtl/mrn1r9duj2+6gqAU47a896649co4SMnP87fCVNqIGWarnHznDECWumkyRPsyOGVs7u83tbt4gPGKaCTh2jOb3p9rHgZn2cXCi2bZjbuSq0Epr+2Qqb2uX8aQ2jUe4l+Ui6utp853pqJ7qp57sph+ql3oHO6ndNYtbpmNuIP0oe887dbM3um7RuTMNEKEsKIkIfSUilK3sPJoKup1Q3OcDflNnMwJUfon6g3ACcfOo8cLKtAnDpWgqVV5CxsI5xBd5HFLue//UOoBXgNoB+f/UCEMvPtFL44h7XmG9/OY1zxEY/kRByG5kKku1RKXwwiR1+HXne593Q6XxByspBUcYiYfGvtIpsmE7Tz2rO7gZ5pzK/+DQ3Spf4PJHbCBenPn92AtYPPQe9208ZR+P/ImIGXG1Z6FaTb/Kcm/tj2rMPmUOn3jd61eYvHQJZXFq9mRMmNlzp5P+oXqpjKSYVyf+IuGLkz25/NRunsnhLqHVNwZymtKnq4tGons1Ht9aA2vUdqzkWTMeG9n2ogqN1/GYEp5u/n418nVrEmItrVhJkr8u/Qs=
+<?php
+
+/**
+ * Create xlsx for scatter charts
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateScatterXlsx extends CreateXlsx
+{
+
+    /**
+     * @access private
+     * @var CreateFooter
+     * @static
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @access public
+     * @return CreateXlsx
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateScatterXlsx();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create excel sheet
+     *
+     * @access public
+     * @param string $args[0]
+     * @param array $args[1]
+     */
+    public function createExcelSheet($dats)
+    {
+        $this->_xml = '';
+        $sizeDats = count($dats);
+        $sizeCols = 2;
+        $this->generateWORKSHEET();
+        $this->generateDIMENSION($sizeDats + 1, $sizeCols);
+        $this->generateSHEETVIEWS();
+        $this->generateSHEETVIEW();
+        $this->generateSELECTION($sizeDats + $sizeCols - 1);
+        $this->generateSHEETFORMATPR();
+        $this->generateCOLS();
+        $this->generateCOL();
+        $this->generateSHEETDATA();
+        $row = 1;
+        $col = 1;
+        $letter = 'A';
+        $this->generateROW($row, $sizeCols - 1);
+        for ($num = 0; $num < $sizeCols; $num++) {
+            $this->generateC($letter . $row, '1', 's');
+            $this->generateV($num);
+            $letter++;
+            $col++;
+        }
+        $this->cleanTemplateROW();
+        $row++;
+
+        foreach ($dats as $ind => $val) {
+            $this->generateROW($row, $sizeCols - 1);
+            $col = 1;
+            $letter = 'A';
+            foreach ($val as $values) {
+                $this->generateC($letter . $row, '', 'n');
+                $this->generateV($values);
+                $col++;
+                $letter++;
+            }
+            $row++;
+            $this->cleanTemplateROW();
+        }
+        $this->generateROW($row + 1, $sizeCols);
+        $row++;
+        $this->generateC('B' . $row, 2, 's');
+        $this->generateV($num + 1);
+        $this->generatePAGEMARGINS();
+        $this->generateTABLEPARTS();
+        $this->generateTABLEPART(1);
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Create excel shared strings
+     *
+     * @param string $args[0]
+     * @param string $args[1]
+     * @access public
+     */
+    public function createExcelSharedStrings($dats)
+    {
+        $this->_xml = '';
+        $szDats = count($dats);
+        $szCols = 2;
+        $this->generateSST($szCols + 2);
+        $legends = array('X Values', 'Y Values');
+        for ($i = 0; $i < $szCols; $i++) {
+            $this->generateSI();
+            $this->generateT($legends[$i]);
+        }
+
+        $this->generateSI();
+        $this->generateT(' ', 'preserve');
+
+        $msg = 'To change the range size of values,' .
+                'drag the bottom right corner';
+        $this->generateSI();
+        $this->generateT($msg);
+
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Create excel table
+     *
+     * @access public
+     * @param string args[0]
+     * @param string args[1]
+     */
+    public function createExcelTable($dats)
+    {
+        $this->_xml = '';
+        $szDats = count($dats);
+        $szCols = 2;
+        $this->generateTABLE($szDats, $szCols - 1);
+        $this->generateTABLECOLUMNS($szCols);
+        $legends = array('X Values', 'Y Values');
+        for ($i = 0; $i < $szCols; $i++) {
+            $this->generateTABLECOLUMN($i + 1, $legends[$i]);
+        }
+        $this->generateTABLESTYLEINFO();
+        $this->cleanTemplate();
+        return $this->_xml;
+    }
+
+    /**
+     * Generate dimension
+     *
+     * @param int $sizeX
+     * @param int $sizeY
+     * @access protected
+     */
+    protected function generateDIMENSION($sizeX, $sizeY)
+    {
+        $char = 'A';
+        for ($i = 0; $i < $sizeY - 1; $i++) {
+            $char++;
+        }
+        $sizeX += $sizeY;
+        $xml = '<dimension ref="A1:' . $char . $sizeX .
+                '"></dimension>__GENERATEWORKSHEET__';
+
+        $this->_xml = str_replace('__GENERATEWORKSHEET__', $xml, $this->_xml);
+    }
+
+}

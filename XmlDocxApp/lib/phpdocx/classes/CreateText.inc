@@ -1,1 +1,1164 @@
-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
+<?php
+
+/**
+ * Create text
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    phpdocx LICENSE
+ * @version    2016.05.01
+ * @link       http://www.phpdocx.com
+ */
+class CreateText extends CreateElement
+{
+
+    const IDTITLE = 229998237;
+
+    /**
+     * @access private
+     * @var array
+     * @static
+     */
+    private static $_borders = array('top', 'left', 'bottom', 'right');
+
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private static $_instance = NULL;
+
+    /**
+     *
+     * @access private
+     * @var int
+     */
+    private static $_idTitle = 0;
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+        
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+        
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateText
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateText();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create text
+     *
+     * @access public
+     * @param mixed $args[0]
+     * @param array $args[1]
+     */
+    public function createText()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+
+        $args[1] = CreateDocx::translateTextOptions2StandardFormat($args[1]);
+
+        $this->generateP();
+
+        $this->generatePPR();
+        if (!empty($args[1]['pStyle'])) {
+            $this->generatePSTYLE($args[1]['pStyle']);
+        }
+        if (!empty($args[1]['keepNext'])) {
+            $this->generateKEEPNEXT($args[1]['keepNext']);
+        }
+        if (!empty($args[1]['keepLines'])) {
+            $this->generateKEEPLINES($args[1]['keepLines']);
+        }
+        if (!empty($args[1]['pageBreakBefore'])) {
+            $this->generatePAGEBREAKBEFORE($args[1]['pageBreakBefore']);
+        }
+        if (!empty($args[1]['widowControl'])) {
+            $this->generateWIDOWCONTROL($args[1]['widowControl']);
+        }
+        //we set the drawPBorders to false
+        $drawPBorders = false;
+        $border = array();
+
+        //Run over the general border properties
+        if (isset($args[1]['border'])) {
+            $drawPBorders = true;
+            foreach (self::$_borders as $key => $value) {
+                $border[$value]['type'] = $args[1]['border'];
+            }
+        }
+        if (isset($args[1]['border_color'])) {
+            $drawPBorders = true;
+            foreach (self::$_borders as $key => $value) {
+                $border[$value]['color'] = $args[1]['border_color'];
+            }
+        }
+        if (isset($args[1]['border_spacing'])) {
+            $drawPBorders = true;
+            foreach (self::$_borders as $key => $value) {
+                $border[$value]['spacing'] = $args[1]['border_spacing'];
+            }
+        }
+        if (isset($args[1]['border_sz'])) {
+            $drawPBorders = true;
+            foreach (self::$_borders as $key => $value) {
+                $border[$value]['sz'] = $args[1]['border_sz'];
+            }
+        }
+        //Run over the border choices of each side
+        foreach (self::$_borders as $key => $value) {
+            if (isset($args[1]['border_' . $value])) {
+                $drawPBorders = true;
+                $border[$value]['type'] = $args[1]['border_' . $value];
+            }
+            if (isset($args[1]['border_' . $value . '_color'])) {
+                $drawPBorders = true;
+                $border[$value]['color'] = $args[1]['border_' . $value . '_color'];
+            }
+            if (isset($args[1]['border_' . $value . '_spacing'])) {
+                $drawPBorders = true;
+                $border[$value]['spacing'] = $args[1]['border_' . $value . '_spacing'];
+            }
+            if (isset($args[1]['border_' . $value . '_sz'])) {
+                $drawPBorders = true;
+                $border[$value]['sz'] = $args[1]['border_' . $value . '_sz'];
+            }
+        }
+        if ($drawPBorders) {
+            $this->generatePBDR($border);
+        }
+        if (!empty($args[1]['backgroundColor'])) {
+            $this->generatePPRSHD($args[1]['backgroundColor']);
+        }
+        if (!empty($args[1]['jc'])) {
+            $this->generateJC($args[1]['jc']);
+        }
+        if (!empty($args[1]['tabPositions']) && is_array($args[1]['tabPositions'])) {
+            $this->generateTABPOSITIONS($args[1]['tabPositions']);
+        }
+        if (!empty($args[1]['wordWrap'])) {
+            $this->generateWORDWRAP($args[1]['wordWrap']);
+        }
+        if (!empty($args[1]['bidi'])) {
+            $this->generateBIDI($args[1]['bidi']);
+        }
+        if (isset($args[1]['lineSpacing']) ||
+                isset($args[1]['spacingTop']) ||
+                isset($args[1]['spacingBottom'])) {
+            if (!isset($args[1]['lineSpacing'])) {
+                $args[1]['lineSpacing'] = 240;
+            }
+            if (!isset($args[1]['spacingTop'])) {
+                $args[1]['spacingTop'] = '';
+            }
+            if (!isset($args[1]['spacingBottom'])) {
+                $args[1]['spacingBottom'] = '';
+            }
+            $this->generateSPACING($args[1]['lineSpacing'], $args[1]['spacingTop'], $args[1]['spacingBottom']);
+        }
+        if (
+                isset($args[1]['indent_left']) ||
+                isset($args[1]['indent_right']) ||
+                isset($args[1]['firstLineIndent']) ||
+                isset($args[1]['hanging']
+                )
+        ) {
+            $indentation = array();
+            if (isset($args[1]['indent_left'])) {
+                $indentation['left'] = $args[1]['indent_left'];
+            }
+            if (isset($args[1]['indent_right'])) {
+                $indentation['right'] = $args[1]['indent_right'];
+            }
+            if (isset($args[1]['hanging'])) {
+                $indentation['hanging'] = $args[1]['hanging'];
+            }
+            if (isset($args[1]['firstLineIndent'])) {
+                $indentation['firstLine'] = $args[1]['firstLineIndent'];
+            }
+
+
+            $this->generateINDENT($indentation);
+        }
+        if (!empty($args[1]['contextualSpacing'])) {
+            $this->generateCONTEXTUALSPACING($args[1]['contextualSpacing']);
+        }
+        if (!empty($args[1]['textDirection'])) {
+            $this->generateTEXTDIRECTION($args[1]['textDirection']);
+        }
+        if (!empty($args[1]['headingLevel'])) {
+            $this->generateHEADINGLEVEL($args[1]['headingLevel']);
+        }
+        //We include now paragraph wide run properties                
+        $this->generatePPRRPR();
+        if (!empty($args[1]['rStyle'])) {
+            $this->generateRSTYLE($args[1]['rStyle']);
+        }
+        if (!empty($args[1]['font'])) {
+            $this->generateRFONTS($args[1]['font']);
+        }
+        if (!empty($args[1]['b'])) {
+            $this->generateB($args[1]['b']);
+        }
+        if (!empty($args[1]['i'])) {
+            $this->generateI($args[1]['i']);
+        }
+        if (!empty($args[1]['caps'])) {
+            $this->generateCAPS($args[1]['caps']);
+        }
+        if (!empty($args[1]['em'])) {
+            $this->generateEM($args[1]['em']);
+        }
+        if (!empty($args[1]['smallCaps'])) {
+            $this->generateSMALLCAPS($args[1]['smallCaps']);
+        }
+        if (!empty($args[1]['color'])) {
+            $this->generateCOLOR($args[1]['color']);
+        }
+        if (!empty($args[1]['sz'])) {
+            $this->generateSZ($args[1]['sz']);
+        }
+        if (!empty($args[1]['u'])) {
+            $this->generateU($args[1]['u']);
+        }
+        if (!empty($args[1]['rtl'])) {
+            $this->generateRTL($args[1]['rtl']);
+        }
+        if (!empty($args[1]['highlightColor'])) {
+            $this->generateHIGHLIGHT($args[1]['highlightColor']);
+        }
+        if (!empty($args[1]['tab']) && $args[1]['tab']) {
+            $this->generateTABS();
+        }
+        $this->cleanTemplateFirstRPR();
+        if (!is_array($args[0])) {
+            if ($args[0] instanceof WordFragment || $args[0] instanceof DOCXPathResult) {
+                if ($args[0] instanceof WordFragment) {
+                    $runContent = $args[0]->inlineWordML();
+                } else if ($args[0] instanceof DOCXPathResult) {
+                    $runContent = $args[0]->inlineXML();
+                }
+                if (preg_match("/__GENERATEP__/", $this->_xml)) {
+                    $this->_xml = str_replace('__GENERATEP__', $runContent . '__GENERATESUBR__', $this->_xml);
+                } else {
+                    $this->_xml = str_replace('__GENERATESUBR__', $runContent . '__GENERATESUBR__', $this->_xml);
+                }
+            } else {
+                $this->generateR();
+                $this->generateRPR();
+                if (!empty($args[1]['rStyle'])) {
+                    $this->generateRSTYLE($args[1]['rStyle']);
+                }
+                if (!empty($args[1]['font'])) {
+                    $this->generateRFONTS($args[1]['font']);
+                }
+                if (!empty($args[1]['b'])) {
+                    $this->generateB($args[1]['b']);
+                }
+                if (!empty($args[1]['i'])) {
+                    $this->generateI($args[1]['i']);
+                }
+                if (!empty($args[1]['caps'])) {
+                    $this->generateCAPS($args[1]['caps']);
+                }
+                if (!empty($args[1]['em'])) {
+                    $this->generateEM($args[1]['em']);
+                }
+                if (!empty($args[1]['lang']) && is_array($args[1]['lang'])) {
+                    $this->generateLANG($args[1]['lang']);
+                }
+                if (!empty($args[1]['smallCaps'])) {
+                    $this->generateSMALLCAPS($args[1]['smallCaps']);
+                }
+                if (!empty($args[1]['color'])) {
+                    $this->generateCOLOR($args[1]['color']);
+                }
+                if (!empty($args[1]['sz'])) {
+                    $this->generateSZ($args[1]['sz']);
+                }
+                if (!empty($args[1]['u'])) {
+                    $this->generateU($args[1]['u']);
+                }
+                if (!empty($args[1]['rtl'])) {
+                    $this->generateRTL($args[1]['rtl']);
+                }
+                if (!empty($args[1]['highlightColor'])) {
+                    $this->generateHIGHLIGHT($args[1]['highlightColor']);
+                }
+                if (!empty($args[1]['tab']) && $args[1]['tab']) {
+                    $this->generateTABS();
+                }
+                if (empty($args[1]['spaces'])) {
+                    $args[1]['spaces'] = '';
+                }
+                if (!isset($args[1]['lineBreak'])) {
+                    $args[1]['lineBreak'] = false;
+                }
+                if (!isset($args[1]['columnBreak'])) {
+                    $args[1]['columnBreak'] = false;
+                }
+
+                $this->generateT($args[0], $args[1]['spaces'], $args[1]['lineBreak'], $args[1]['columnBreak']);
+                $this->cleanTemplateFirstRPR();
+            }
+        } else {
+            foreach ($args[0] as $texts) {
+                $texts = CreateDocx::translateTextOptions2StandardFormat($texts);
+                if ($texts instanceof WordFragment || $texts instanceof DOCXPathResult) {
+                    if ($texts instanceof WordFragment) {
+                        $runContent = $texts->inlineWordML();
+                    } else if ($texts instanceof DOCXPathResult) {
+                        $runContent = $texts->inlineXML();
+                    }
+                    if (preg_match("/__GENERATEP__/", $this->_xml)) {
+                        $this->_xml = str_replace('__GENERATEP__', $runContent . '__GENERATESUBR__', $this->_xml);
+                    } else if (preg_match("/__GENERATER__/", $this->_xml)) {
+                        $this->_xml = str_replace('__GENERATER__', $runContent . '__GENERATER__', $this->_xml);
+                    } else {
+                        $this->_xml = str_replace('__GENERATESUBR__', $runContent . '__GENERATESUBR__', $this->_xml);
+                    }
+                } else {
+                    $texts = CreateDocx::setRTLOptions($texts);
+                    $this->generateR();
+                    //Inherit run styles from paragraph styles if they have not been
+                    //explicitely set
+                    if (empty($texts['b']) && !empty($args[1]['b'])) {
+                        $texts['b'] = $args[1]['b'];
+                    }
+                    if (empty($texts['i']) && !empty($args[1]['i'])) {
+                        $texts['i'] = $args[1]['i'];
+                    }
+                    if (empty($texts['caps']) && !empty($args[1]['caps'])) {
+                        $texts['caps'] = $args[1]['caps'];
+                    }
+                    if (empty($texts['em']) && !empty($args[1]['em'])) {
+                        $texts['em'] = $args[1]['em'];
+                    }
+                    if (empty($texts['smallCaps']) && !empty($args[1]['smallCaps'])) {
+                        $texts['smallCaps'] = $args[1]['smallCaps'];
+                    }
+                    if (empty($texts['u']) && !empty($args[1]['u'])) {
+                        $texts['u'] = $args[1]['u'];
+                    }
+                    if (empty($texts['rtl']) && !empty($args[1]['rtl'])) {
+                        $texts['rtl'] = $args[1]['rtl'];
+                    }
+                    if (empty($texts['highlightColor']) && !empty($args[1]['highlightColor'])) {
+                        $texts['highlightColor'] = $args[1]['highlightColor'];
+                    }
+                    if (empty($texts['sz']) && !empty($args[1]['sz'])) {
+                        $texts['sz'] = $args[1]['sz'];
+                    }
+                    if (empty($texts['color']) && !empty($args[1]['color'])) {
+                        $texts['color'] = $args[1]['color'];
+                    }
+                    if (empty($texts['font']) && !empty($args[1]['font'])) {
+                        $texts['font'] = $args[1]['font'];
+                    }
+                    if (empty($texts['tab']) && !empty($args[1]['tab'])) {
+                        $texts['tab'] = $args[1]['tab'];
+                    }
+
+
+                    $this->generateRPR();
+                    if (!empty($texts['font'])) {
+                        $this->generateRFONTS($texts['font']);
+                    }
+                    if (!empty($texts['b'])) {
+                        $this->generateB($texts['b']);
+                    }
+                    if (!empty($texts['i'])) {
+                        $this->generateI($texts['i']);
+                    }
+                    if (!empty($texts['caps'])) {
+                        $this->generateCAPS($texts['caps']);
+                    }
+                    if (!empty($texts['em'])) {
+                        $this->generateEM($texts['em']);
+                    }
+                    if (!empty($texts['lang']) && is_array($texts['lang'])) {
+                        $this->generateLANG($texts['lang']);
+                    }
+                    if (!empty($texts['smallCaps'])) {
+                        $this->generateSMALLCAPS($texts['smallCaps']);
+                    }
+                    if (!empty($texts['u'])) {
+                        $this->generateU($texts['u']);
+                    }
+                    if (!empty($texts['rtl'])) {
+                        $this->generateRTL($texts['rtl']);
+                    }
+                    if (!empty($texts['highlightColor'])) {
+                        $this->generateHIGHLIGHT($texts['highlightColor']);
+                    }
+                    if (!empty($texts['sz'])) {
+                        $this->generateSZ($texts['sz']);
+                    }
+                    if (!empty($texts['color'])) {
+                        $this->generateCOLOR($texts['color']);
+                    }
+                    if (!empty($texts['tab']) && $texts['tab']) {
+                        $this->generateTABS();
+                    }
+                    if (empty($texts['spaces'])) {
+                        $texts['spaces'] = '';
+                    }
+                    if (!isset($texts['lineBreak'])) {
+                        $texts['lineBreak'] = false;
+                    }
+                    if (!isset($texts['columnBreak'])) {
+                        $texts['columnBreak'] = false;
+                    }
+                    if (!isset($texts['text'])) {
+                        $texts['text'] = '';
+                    }
+
+                    $this->generateT($texts['text'], $texts['spaces'], $texts['lineBreak'], $texts['columnBreak']);
+                    $this->cleanTemplateFirstRPR();
+                }
+            }
+        }
+    }
+
+    /**
+     * Create title
+     *
+     * @access protected
+     * @param string $arrArgs[0]
+     * @param array $arrArgs[1]
+     */
+    public function createTitle()
+    {
+        $this->_xml = '';
+        $args = func_get_args();
+        if (isset($args[0])) {
+            $this->generateP();
+            $this->generatePPR();
+            if (!isset($args[1]['val'])) {
+                $args[1]['val'] = '';
+            }
+            if (isset($args[1]['type'])) {
+                if ($args[1]['type'] == 'subtitle') {
+                    $this->generatePSTYLE('SubtitlePHPDOCX');
+                } else {
+                    $this->generatePSTYLE('TitlePHPDOCX');
+                }
+            } else {
+                $this->generatePSTYLE('TitlePHPDOCX');
+            }
+            if (isset($args[1]['pageBreakBefore'])) {
+                $this->generatePAGEBREAKBEFORE($args[1]['pageBreakBefore']);
+            }
+            if (isset($args[1]['widowControl'])) {
+                $this->generateWIDOWCONTROL($args[1]['widowControl']);
+            }
+            if (!empty($args[1]['tabPositions']) && is_array($args[1]['tabPositions'])) {
+                $this->generateTABPOSITIONS($args[1]['tabPositions']);
+            }
+            if (isset($args[1]['wordWrap'])) {
+                $this->generateWORDWRAP($args[1]['wordWrap']);
+            }
+            if (isset($args[1]['bidi'])) {
+                $this->generateBIDI($args[1]['bidi']);
+            }
+            self::$_idTitle++;
+            $this->generateBOOKMARKSTART(
+                    self::$_idTitle, '_Toc' . (self::$_idTitle + self::IDTITLE)
+            );
+            $this->generateR();
+            if (
+                    isset($args[1]['b']) ||
+                    isset($args[1]['i']) ||
+                    isset($args[1]['u']) ||
+                    isset($args[1]['rtl']) ||
+                    isset($args[1]['sz']) ||
+                    isset($args[1]['color']) ||
+                    isset($args[1]['font'])
+            ) {
+                $this->generateRPR();
+                if (isset($args[1]['font'])) {
+                    $this->generateRFONTS($args[1]['font']);
+                }
+                if (isset($args[1]['b'])) {
+                    $this->generateB($args[1]['b']);
+                }
+                if (isset($args[1]['i'])) {
+                    $this->generateI($args[1]['i']);
+                }
+                if (isset($args[1]['color'])) {
+                    $this->generateCOLOR($args[1]['color']);
+                }
+                if (isset($args[1]['sz'])) {
+                    $this->generateSZ($args[1]['sz']);
+                }
+                if (isset($args[1]['u'])) {
+                    $this->generateU($args[1]['u']);
+                }
+                if (isset($args[1]['rtl'])) {
+                    $this->generateRTL($args[1]['rtl']);
+                }
+            }
+            $this->generateT($args[0]);
+            $this->generateBOOKMARKEND(self::$_idTitle);
+            $this->cleanTemplate();
+        }
+    }
+
+    /**
+     * Init text
+     *
+     * @access public
+     * @param array $args[0]
+     */
+    public function initText()
+    {
+        $args = func_get_args();
+
+        $this->_embeddedText = $args[0];
+    }
+
+    /**
+     * Generate w:bidi
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateBIDI($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':bidi w:val="' . $val . '"></' . CreateElement::NAMESPACEWORD .
+                ':bidi>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:bookmarkend
+     *
+     * @access protected
+     * @param int $id
+     */
+    protected function generateBOOKMARKEND($id)
+    {
+        $this->_xml = str_replace(
+                '__GENERATEBOOKMARKEND__', '<' . CreateElement::NAMESPACEWORD .
+                ':bookmarkEnd ' . CreateElement::NAMESPACEWORD . ':id="' . $id .
+                '"></' . CreateElement::NAMESPACEWORD . ':bookmarkEnd>', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:bookmarkstart
+     *
+     * @access protected
+     * @param int $id
+     * @param string $name
+     */
+    protected function generateBOOKMARKSTART($id, $name)
+    {
+        $this->_xml = str_replace(
+                '__GENERATER__', '<' . CreateElement::NAMESPACEWORD .
+                ':bookmarkStart ' . CreateElement::NAMESPACEWORD . ':id="' . $id .
+                '" ' . CreateElement::NAMESPACEWORD . ':name="' . $name . '"></' .
+                CreateElement::NAMESPACEWORD .
+                ':bookmarkStart>__GENERATER____GENERATEBOOKMARKEND__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:color
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateCOLOR($val = '000000')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':color ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':color>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:contextualSpacing
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateCONTEXTUALSPACING($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':contextualSpacing w:val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':contextualSpacing>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:caps
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateCAPS($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':caps ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':caps>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:em
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateEM($val = 'none')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':em ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':em>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:lang
+     *
+     * @access protected
+     * @param array $value
+     */
+    protected function generateLANG($value)
+    {
+        $attrType = array_keys($value);
+        $attrVal = array_values($value);
+
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':lang ' .
+                CreateElement::NAMESPACEWORD . ':'.$attrType[0].'="' . $attrVal[0] . '"></' .
+                CreateElement::NAMESPACEWORD . ':lang>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:outlineLvl
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateHEADINGLEVEL($val)
+    {
+        if (is_integer($val) && $val > 0) {
+            $this->_xml = str_replace(
+                    '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                    ':outlineLvl w:val="' . $val . '"></' .
+                    CreateElement::NAMESPACEWORD . ':outlineLvl>__GENERATEPPR__', $this->_xml
+            );
+        }
+    }
+
+    /**
+     * Generate w:highlight
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateHIGHLIGHT($val)
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':highlight ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':highlight>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:i and w:iCs
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateI($val = 'single')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':i ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':i><' . CreateElement::NAMESPACEWORD . ':iCs ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':iCs>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:ind
+     *
+     * @access protected
+     * @param string $indentation
+     */
+    protected function generateINDENT($indentation = array())
+    {
+        $xmlInd = '<' . CreateElement::NAMESPACEWORD . ':ind ';
+        foreach ($indentation as $key => $value) {
+            $xmlInd .= CreateElement::NAMESPACEWORD . ':' . $key . '="' . $value . '" ';
+        }
+        $xmlInd .= '></' . CreateElement::NAMESPACEWORD . ':ind>__GENERATEPPR__';
+        $this->_xml = str_replace('__GENERATEPPR__', $xmlInd, $this->_xml);
+    }
+
+    /**
+     * Generate w:keepLines
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateKEEPLINES($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':keepLines w:val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':keepLines>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:keepNext
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateKEEPNEXT($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':keepNext w:val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':keepNext>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:jc
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateJC($val = '')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD . ':jc ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':jc>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:pagebreakbefore
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generatePAGEBREAKBEFORE($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':pageBreakBefore val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':pageBreakBefore>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:tcBorders
+     *
+     * @param array $border
+     * @access protected
+     */
+    protected function generatePBDR($border)
+    {
+        $xml = '<w:pBdr>';
+        foreach (self::$_borders as $key => $value) {
+            if (isset($border[$value])) {
+                if (isset($border[$value]['type'])) {
+                    $border_type = $border[$value]['type'];
+                } else {
+                    $border_type = 'single';
+                }
+                if (isset($border[$value]['color'])) {
+                    $border_color = $border[$value]['color'];
+                } else {
+                    $border_color = '000000';
+                }
+                if (isset($border[$value]['sz'])) {
+                    $border_sz = $border[$value]['sz'];
+                } else {
+                    $border_sz = 6;
+                }
+                if (isset($border[$value]['spacing'])) {
+                    $border_spacing = $border[$value]['spacing'];
+                } else {
+                    $border_spacing = 0;
+                }
+                $xml .= '<w:' . $value . ' w:val="' . $border_type . '" w:color="' . $border_color . '" w:sz="' . $border_sz . '" w:space="' . $border_spacing . '"/>';
+            }
+        }
+        $xml .= '</w:pBdr>__GENERATEPPR__';
+        $this->_xml = str_replace('__GENERATEPPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:ppr
+     *
+     * @access protected
+     */
+    protected function generatePPR()
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':pPr>__GENERATEPPR__</' . CreateElement::NAMESPACEWORD .
+                ':pPr>__GENERATER__';
+
+        $this->_xml = str_replace('__GENERATEP__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:rPr within a w:pPr tag
+     *
+     * @access protected
+     */
+    protected function generatePPRRPR()
+    {
+        /* $xml = '<' . CreateElement::NAMESPACEWORD .
+          ':rPr>__GENERATERPR__</' . CreateElement::NAMESPACEWORD .
+          ':rPr>__GENERATER__';
+
+          $this->_xml = str_replace('__GENERATER__', $xml, $this->_xml); */
+
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD . ':rPr >__GENERATERPR__</' .
+                CreateElement::NAMESPACEWORD . ':rPr>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:shd
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generatePPRSHD($val = 'FFFFFF')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD . ':shd ' .
+                CreateElement::NAMESPACEWORD . ':val="clear" ' .
+                CreateElement::NAMESPACEWORD . ':fill="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':shd>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:pstyle
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generatePSTYLE($val = 'TitlePHPDOCX')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD . ':pStyle ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':pStyle>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:rtl
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateRTL($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':rtl ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':rtl>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:shd
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateSHD($val = 'FFFFFF')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':shd ' .
+                CreateElement::NAMESPACEWORD . ':val="clear" ' .
+                CreateElement::NAMESPACEWORD . ':fill="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':shd>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:smallCaps
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateSMALLCAPS($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':smallCaps ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':smallCaps>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:spacing
+     *
+     * @access protected
+     */
+    protected function generateSPACING($line = '240', $spacingTop, $spacingBottom)
+    {
+        $xml = '<' . CreateElement::NAMESPACEWORD . ':spacing ';
+        if (isset($spacingTop) && $spacingTop !== '') {
+            $xml .= CreateElement::NAMESPACEWORD . ':before="' . (int) $spacingTop . '" ';
+        }
+        if (isset($spacingBottom) && $spacingBottom !== '') {
+            $xml .= CreateElement::NAMESPACEWORD . ':after="' . (int) $spacingBottom . '" ';
+        }
+        $xml .= CreateElement::NAMESPACEWORD . ':line="' . $line .
+                '" ' . CreateElement::NAMESPACEWORD . ':lineRule="auto"/>__GENERATEPPR__';
+
+        $this->_xml = str_replace('__GENERATEPPR__', $xml, $this->_xml);
+    }
+
+    /**
+     * Generate w:sz and w:szCs
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateSZ($val = '11')
+    {
+        $val *= 2;
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':sz ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':sz>' .
+                '<' . CreateElement::NAMESPACEWORD . ':szCs ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':szCs>' .
+                '__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:t
+     *
+     * @access protected
+     * @param string $dat
+     * @param int $spaces
+     * @param string $lineBreak
+     * @param string $columnBreak
+     */
+    protected function generateT($dat, $spaces = 0, $lineBreak = false, $columnBreak = false)
+    {
+        $strSpaces = '';
+        if ($spaces) {
+            $i = 0;
+            while ($i < $spaces) {
+                $strSpaces .= ' ';
+                $i++;
+            }
+        }
+        if ($lineBreak == 'before') {
+            $this->_xml = str_replace(
+                    '__GENERATER__', '<w:br /><' . CreateElement::NAMESPACEWORD .
+                    ':t xml:space="preserve">' . $strSpaces . htmlspecialchars($dat) . '</' .
+                    CreateElement::NAMESPACEWORD . ':t>', $this->_xml
+            );
+        } else if ($lineBreak == 'after') {
+            $this->_xml = str_replace(
+                    '__GENERATER__', '<' . CreateElement::NAMESPACEWORD .
+                    ':t xml:space="preserve">' . $strSpaces . htmlspecialchars($dat) . '</' .
+                    CreateElement::NAMESPACEWORD . ':t><w:br />', $this->_xml
+            );
+        } else if ($lineBreak == 'both') {
+            $this->_xml = str_replace(
+                    '__GENERATER__', '<w:br /><' . CreateElement::NAMESPACEWORD .
+                    ':t xml:space="preserve">' . $strSpaces . htmlspecialchars($dat) . '</' .
+                    CreateElement::NAMESPACEWORD . ':t><w:br />', $this->_xml
+            );
+        } else if ($columnBreak == 'before') {
+            $this->_xml = str_replace(
+                    '__GENERATER__', '<w:br w:type="column" /><' . CreateElement::NAMESPACEWORD .
+                    ':t xml:space="preserve">' . $strSpaces . htmlspecialchars($dat) . '</' .
+                    CreateElement::NAMESPACEWORD . ':t>', $this->_xml
+            );
+        } else if ($columnBreak == 'after') {
+            $this->_xml = str_replace(
+                    '__GENERATER__', '<' . CreateElement::NAMESPACEWORD .
+                    ':t xml:space="preserve">' . $strSpaces . htmlspecialchars($dat) . '</' .
+                    CreateElement::NAMESPACEWORD . ':t><w:br w:type="column" />', $this->_xml
+            );
+        } else if ($columnBreak == 'both') {
+            $this->_xml = str_replace(
+                    '__GENERATER__', '<w:br w:type="column" /><' . CreateElement::NAMESPACEWORD .
+                    ':t xml:space="preserve">' . $strSpaces . htmlspecialchars($dat) . '</' .
+                    CreateElement::NAMESPACEWORD . ':t><w:br w:type="column" />', $this->_xml
+            );
+        } else {
+            $this->_xml = str_replace(
+                    '__GENERATER__', '<' . CreateElement::NAMESPACEWORD .
+                    ':t xml:space="preserve">' . $strSpaces . htmlspecialchars($dat) . '</' .
+                    CreateElement::NAMESPACEWORD . ':t>', $this->_xml
+            );
+        }
+    }
+
+    /**
+     * Generate w:abs
+     *
+     * @access protected
+     * @param array $tabs
+     */
+    protected function generateTABPOSITIONS($tabs)
+    {
+        $typesArray = array('clear', 'left', 'center', 'right', 'decimal', 'bar', 'num');
+        $leaderArray = array('none', 'dot', 'hyphen', 'underscore', 'heavy', 'middleDot');
+        $xml = '<w:tabs>';
+        foreach ($tabs as $key => $tab) {
+            if (isset($tab['type']) && in_array($tab['type'], $typesArray)) {
+                $type = $tab['type'];
+            } else {
+                $type = 'left';
+            }
+            if (isset($tab['leader']) && in_array($tab['leader'], $leaderArray)) {
+                $leader = $tab['leader'];
+            } else {
+                $leader = 'none';
+            }
+            if (isset($tab['position']) && is_int($tab['position'])) {
+                $xml .='<w:tab w:val="' . $type . '" w:leader="' . $leader . '" w:pos="' . (int) $tab['position'] . '" />';
+            }
+        }
+        $xml .='</w:tabs>';
+        $this->_xml = str_replace('__GENERATEPPR__', $xml . '__GENERATEPPR__', $this->_xml);
+    }
+
+    /**
+     * Generate w:abs
+     *
+     * @access protected
+     */
+    protected function generateTABS()
+    {
+        $this->_xml = str_replace(
+                '__GENERATER__', '<' . CreateElement::NAMESPACEWORD .
+                ':tab/>__GENERATER__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:textDirection
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateTEXTDIRECTION($val = 'lrTb')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':textDirection w:val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':textDirection>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:u
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateU($val = 'single')
+    {
+        $this->_xml = str_replace(
+                '__GENERATERPR__', '<' . CreateElement::NAMESPACEWORD . ':u ' .
+                CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':u>__GENERATERPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:widowcontrol
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateWIDOWCONTROL($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':widowControl ' . CreateElement::NAMESPACEWORD . ':val="' . $val . '"></' .
+                CreateElement::NAMESPACEWORD . ':widowControl>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+    /**
+     * Generate w:wordwrap
+     *
+     * @access protected
+     * @param string $val
+     */
+    protected function generateWORDWRAP($val = 'on')
+    {
+        $this->_xml = str_replace(
+                '__GENERATEPPR__', '<' . CreateElement::NAMESPACEWORD .
+                ':wordWrap w:val="' . $val . '"></' . CreateElement::NAMESPACEWORD .
+                ':wordWrap>__GENERATEPPR__', $this->_xml
+        );
+    }
+
+}
